@@ -1,0 +1,37 @@
+[	 
+	{
+        "eventName":"Leave0",
+	    "class"	   :"class0",	   
+        "date"	   :"2013-09-10"
+    },  
+    {
+        "eventName":"Leave1",
+		"class"	   :"class1",	   
+        "date"	   :"2013-09-11"
+    },
+	{
+        "eventName":"Leave2",
+		"class"	   :"class2",	   
+        "date"	   :"2013-09-12"
+    },
+	{
+        "eventName":"Leave3",
+		"class"	   :"class3",	   
+        "date"	   :"2013-09-13"
+    },
+	{
+        "eventName":"Leave4",
+		"class"	   :"class4",	   
+        "date"	   :"2013-09-14"
+    },
+	{
+        "eventName":"Leave5",
+		"class"	   :"class5",	   
+        "date"	   :"2013-09-15"
+    },
+	{
+        "eventName":"Leave6",
+		"class"	   :"class5",	   
+        "date"	   :"2013-09-16"
+    }      
+]

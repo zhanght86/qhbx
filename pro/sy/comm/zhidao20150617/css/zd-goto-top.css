@@ -1,0 +1,28 @@
+/*返回顶部的箭头——样式*/
+.zd-goto-top {
+    border-radius: 0;
+    bottom: 20px;
+    /*box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);*/
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    height:50px;
+    z-index: 9999;
+    display:none;
+    background: url("/sy/comm/zhidao/baidu_style_files/zd-goto-top.png") no-repeat scroll 0 0 transparent;
+    background-position: 0 0;
+}
+
+.zd-goto-top a {
+    background: url("/sy/comm/zhidao/img/gotoTop.png") no-repeat scroll 0 0 #999999;
+    border: 0 none;
+    color: #888888 !important;
+    display: block;
+    height: 23px;
+    padding-top: 48px;
+    text-align: center;
+}
+
+.zd-goto-top-hover {
+   background-position: 0 -50px;
+}

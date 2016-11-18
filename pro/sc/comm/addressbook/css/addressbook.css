@@ -1,0 +1,55 @@
+.bbit-tree-node-el .bbit-tree-node-expanded{background-color:red}
+.bbit-tree ul, .bbit-tree li{margin-left:3px;}
+.bbit-tree-node-el span{line-height:25px;}
+
+.bbit-tree-node .bbit-tree-node-over {background-color: #F7EBC0;}
+.bbit-tree-node .bbit-tree-node-over span {color:#185f86;}
+.bbit-tree-node-collapsed .bbit-tree-node-icon, .bbit-tree-node-expanded .bbit-tree-node-icon, .bbit-tree-node-leaf .bbit-tree-node-icon{height:26px}
+.bbit-tree-node .bbit-tree-selected {background-color: #F7EBC0;background-image:url(images/i-node-selected.png);}
+.bbit-tree-node .bbit-tree-selected span{color:#185f86;}
+
+.txl{background:#fff;width:1200px;}
+.txl-conHeader{width:100%;float:left;height:88px;background:url("/sc/comm/addressbook/img/txl_bg.png") repeat-x 0px -90px;}
+.txl-conHeader-left{float:left;width:254px;height:100%;margin-top:10px;background:url("/sc/comm/addressbook/img/txl_bg.png") no-repeat 0px 0px;}
+.txl-conHeader-right{float:left;width:945px;height:100%;}
+.txl-conHeader-line{float:left;width:10px;height:100%;background:url("/sc/comm/addressbook/img/txl_bg.png") no-repeat 0px -178px;}
+.txl-conHeader-button{float:left;width:100px;height:35px;margin-top:42px;margin-left:15px;background:url("/sc/comm/addressbook/img/bn_txl.png") no-repeat;}
+.txl-conHeader-button span{line-height: 35px;margin-left: 15px;color: white;font-weight: bold;}
+.txl-conHeader-button span:hover{cursor:pointer;}
+.txl-conHeader-search{float:right;width:200px;height:35px;margin-top:42px;margin-right:30px;background:url("/sc/comm/addressbook/img/txl_bg.png") no-repeat 0px -385px;cursor: pointer;}
+.txl-conHeader-search input{margin-top: 4px;height: 28px;margin-left: 16px;border-bottom: none;border-top: none;border-left: none;line-height: 25px;border-right: 1px #eee solid;}
+.txl-content{width:100%;float:left;}
+.txl-content-left{float:left;width:255px;min-height:967px;height:100%;background:#FBFBFB;overflow: auto;}
+.txl-content-right{float:left;width:945px;min-height:967px;background:#f2f2f2}
+.txl-zmsearch-cont{width:100%;height:27px;background:url("/sc/comm/addressbook/img/txl_bg.png") repeat-x 0px -274px;}
+.txl-zmsearch{width:535px;height:27px;margin:auto;border:1px #eee solid;background:#000;position:relative}
+.txl-zmsearch-back-left{float:left;width:200px;height:27px;background:url("/sc/comm/addressbook/img/txl_bg.png") no-repeat 0px -301px;}
+.txl-zmsearch-back-center{float:left;width:135px;height:27px;background:url("/sc/comm/addressbook/img/txl_bg.png") no-repeat -10px -301px;}
+.txl-zmsearch-back-right{float:left;width:200px;height:27px;background:url("/sc/comm/addressbook/img/txl_bg.png") no-repeat 0px -342px;}
+.txl-zm-div{float:left;width:18px;line-height:27px;color:#FFFFFF;}
+.txl-zm-div:hover{float:left;cursor:pointer;color:#185f86;}
+.txl-zmsearch-selected{width:18px;height:31px;background:url("/sc/comm/addressbook/img/txl_bg.png") no-repeat -90px -719px;}
+.txl-zmsearch-all{float:left;line-height:27px;width:35px;height:31px;}
+.txl-zmsearch-all:hover{cursor:pointer;}
+.txl-zmsearch-all-selected{background:url("/sc/comm/addressbook/img/txl_bg.png") no-repeat -82px -719px;}
+.txl-zm-div span{margin-left: 4px;}
+.txl-zm-lable{position:absolute;margin-left:20px}
+.txl-users{padding:20px 45px 10px 45px;}
+.txl-user-div{position:relative;width:171px;height:230px; float:left;/* background:url("/sc/comm/addressbook/img/txl_bg.png") no-repeat -15px -482px; */}
+.txl-user-container{padding:20px 30px 20px 30px;text-align: center;}
+.txt-user-name{line-height:25px;}
+.txt-user-post{line-height:20px;}
+.txl-user-div img:hover{cursor:pointer;}
+.txl-user-div-dsp{display:none;position:absolute;width:205px;height:265px;background:#c2c2c2;top:-16px;left:-16px;z-index:9990;}
+.dsp-box{width:195px;height:255px;background:#fff;margin:5px;float:left;}
+.dsp-cont{width:185px;height:245px;margin:5px;}
+.dsp-cont-up{width:100%;height:60px;border-bottom:1px #eee solid;float:left;}
+.dsp-cont-up table{width:100%;height:50px}
+.dsp-cont-down{width:100%;height:185px;float:left;}
+.dsp-cont-down table{width:100%;height:185px;}
+.dsp-cont-down-buttons{width:90px;height:35px;float:right;}
+.dsp-cont-down-email{float:right;width:21px;height:21px;margin-top: 10px;margin-right:5px;background:url('/sc/comm/addressbook/img/txl_bg.png') no-repeat -21px -461px;}
+.dsp-cont-down-email:hover{cursor:pointer;}
+.dsp-cont-down-msg{float:right;width:21px;height:21px;margin-top: 10px;margin-right:5px;background:url('/sc/comm/addressbook/img/txl_bg.png') no-repeat 0px -461px;}
+.dsp-cont-down-msg:hover{cursor:pointer;}
+.dsp-cont-rtx{float:right;margin-top: 10px;margin-right:5px;}

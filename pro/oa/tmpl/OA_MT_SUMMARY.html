@@ -1,0 +1,48 @@
+<style>
+	.summary_table{  border-collapse:collapse; width:100%; margin-bottom:50px;}
+	.summary_title_div{ text-align:center; color:#FF0000; font-size:30px; font-weight:bold;margin:0px 50px 0px 50px;}
+	.summary_table_div{ padding:0px 20px 0px 20px;margin:0px 50px 0px 50px;}
+	.summary_first_line,.summary_third_line{ height:3px; background-color:#FF0000; margin-top:10px;}
+	.summary_second_line{ height:1px; background-color:#FF0000; margin-top:2px; margin-bottom:20px;}
+	.summary_last_line{ text-align:right; color:#999999; font-size:14px; padding-top:5px;}
+	.summary_left_td{ text-align:right; padding: 5px 10px 0px 5px; border-bottom:1px #EEE solid;height:35px;}
+	.summary_right_td{ text-align:left; color:#FF0000;border-bottom:1px #EEE solid;height:30px;padding-top:8px;}
+	.summary_last_td{ vertical-align: text-top; padding: 10px 6px 5px 5px;text-align:right; }
+	.summary_last_div{margin:0px 50px 0px 50px;}
+	.summary_zengwen_td{text-align:center;padding-top:10px;padding-right:2px;}
+</style>
+<div class="tmpl_container" align="center">
+	<div style="height:60px"></div>
+	<div  class="summary_title_div">
+		<div>会&nbsp;&nbsp;&nbsp;&nbsp;议&nbsp;&nbsp;&nbsp;&nbsp;纪&nbsp;&nbsp;&nbsp;&nbsp;要</div>
+		<div class="summary_title_line"><div class="summary_first_line"></div><div class="summary_second_line"></div></div>
+	</div>
+	<div class="summary_table_div">
+		<table class="summary_table">
+		  <tr>
+			<td class="summary_left_td">会议议题:</td>
+			<td colspan="3" class="summary_right_td rh-item" code="MEETING_TITLE"></td>
+		  </tr>
+		  <tr>
+			<td width="10%" class="summary_left_td"><p>会&nbsp;&nbsp;&nbsp;&nbsp;议&nbsp;</p><p>开始时间:</p></td>
+			<td width="40%" class="summary_right_td rh-item" code="START_TIME"></td>
+			<td width="10%" class="summary_left_td"><p>会&nbsp;&nbsp;&nbsp;&nbsp;议&nbsp;</p><p>结束时间:</p></td>
+			<td width="40%" class="summary_right_td rh-item" code="END_TIME"></td>
+		  </tr>
+		  <tr>
+			<td class="summary_left_td">主办部门:</td>
+			<td class="summary_right_td rh-item" code="HOLD_DEPT"></td>
+			<td class="summary_left_td">记录员:</td>
+			<td class="summary_right_td rh-item" code="REGISTRAR"></td>
+		  </tr>
+		  <tr>
+			<td class="summary_last_td">会议内容:</td>
+			<td colspan="3" class="summary_zengwen_td rh-item" code="SUMMARY_MEMO"></td>
+		  </tr>
+		</table>
+	</div>
+	<div class="summary_last_div">
+		<div class="summary_title_line"><div class="summary_third_line"></div><div class="summary_last_line">北京软红科技</div></div>
+	</div>
+	<div style="height:40px"></div>	
+</div>

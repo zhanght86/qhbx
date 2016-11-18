@@ -1,0 +1,600 @@
+
+#maincontent{
+	width:985px;
+	height:auto;
+	display:block;
+}
+#lefttarea{
+	width:200px;
+	height:auto;
+	float:left;	
+	margin-right:10px;
+}
+#righttarea{
+	width:775px;
+	height:auto;
+	float:left;
+}
+#newscenter{
+	width:200px;
+	height:auto;
+	align:center;
+	display:block;
+	clear:both;
+}
+#newscentertop{
+	width:200px;
+	height:45px;
+	align:center;
+	display:block;
+	clear:both;
+	background:url(../images/aeonNews/news/newscentertop3.jpg) no-repeat;
+}
+#careertop{
+	width:200px;
+	height:45px;
+	align:center;
+	display:block;
+	clear:both;
+	background:url(../images/career/aeonrecruitment.jpg) no-repeat;
+}
+#newscenterbody{
+	width:200px;
+	height:auto;
+	display:block;
+	text-align:center;
+	background:url(../images/aeonNews/news/newscenterbody2.jpg) repeat-y;
+}
+#newscenterbody ul li a {
+	text-decoration:none;
+	color:#999999;
+}
+#newscenterbody ul li a:hover{
+	text-decoration:none;
+	color:#ff6600;
+}
+#newscenterbottom{
+	width:200px;
+	height:30px;
+	align:center;
+	display:block;
+	clear:both;
+	background:url(../images/aeonNews/news/newscenterbottom2.jpg) no-repeat;
+}
+#products{	
+	width:200px;
+	height:230px;
+	display:block;
+	clear:both;
+	text-align:left;
+	line-height:20px;
+	padding-top:50px;
+	background:url(../images/aeonNews/news/products2.jpg) no-repeat;
+}
+#products ul li{
+	width:110px;
+	height:36px;
+	text-align:left;
+	display:block;
+	clear:both;
+}
+#products ul li a{
+	text-decoration:none;
+	color:#666666;
+}
+#products ul li a:hover{
+	font-size:13px;
+	color:#cc0000;
+}
+
+#customerlogo{
+	float:left;	
+	width:200px;
+	height:45px;
+	text-align:left;
+}
+#customerTel{
+	width:200px;
+	height:85px;
+	background:url(../images/aeonNews/news/customerTel.jpg) no-repeat;
+	text-align:left;
+	display:block;
+	clear:both;
+}
+#TEL{
+	width:150px;
+	height:20px;
+	color:#cc0000;
+	padding-top:40px;
+	font-style: italic;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	display:block;
+	clear:both;
+}
+#rightflash{
+	width:775px;
+	height:210px;
+	background:url(../images/aeonNews/news/rightflash2.jpg) no-repeat;	
+	display:block;
+	clear:both;
+	padding-top:5px;
+	margin-top:1px;
+}
+#rightflasharea{
+	width:764px;
+	height:206px;
+	display:block;
+	clear:both;
+}
+#location{
+	width:775px;
+	height:23px;	
+	display:block;
+	clear:both;
+	text-align:left;
+	padding-top:7px;
+	color:black;
+	display:block;
+	clear:both;
+	background:url(../images/aeonNews/news/location2.jpg) no-repeat;
+}
+#location ul li{
+	float:left;
+}
+#overview{
+	display:block;
+	clear:both;
+	width:774px;
+	min-height:450px;
+	height:100%;
+	_height:450px;
+	background:url(../images/aeonNews/news/overviewbodybg.jpg) repeat-y;	
+}
+#overviewlaw{
+	display:block;
+	clear:both;
+	width:774px;
+	min-height:450px;
+	height:100%;
+	_height:450px;
+	background:url(../images/aeonNews/flack/overviewlarge.jpg) no-repeat;	
+}
+.overviewbottom{
+	width:774px;
+	height:55px;
+	background:url(../images/aeonNews/news/overviewbottom2.jpg) no-repeat;	
+	margin-bottom:30px;
+}
+#overviewtitle{
+	display:block;
+	clear:both;
+	width:742px;
+	height:22px;
+	padding-top:16px;
+	text-align:left;
+	padding-left:33px;
+	color:white;
+	font-weight: bolder;
+	background:url(../images/aeonNews/news/overviewtitlebg.jpg) no-repeat;	
+}
+#overviewfirst{
+	display:block;
+	clear:both;
+	width:695px;
+	height:180px;
+	background:url(../images/aeonNews/news/overviewfirst.jpg) no-repeat;	
+}
+#overviewimg{
+	display:block;
+	float:left;
+	width:155px;
+	height:105px;
+	padding-top:30px;
+	padding-left:20px;
+}
+#overviewtext{
+	display:block;
+	float:left;
+	width:490px;
+	height:105px;
+	margin-left:30px;
+	padding-top:29px;
+	text-align:left;
+	line-height:18px;
+}
+#overviewtext a{
+
+	text-decoration:none;
+}
+.overviewlist{
+	display:block;
+	clear:both;
+	width:695px;
+	min-height:450px;
+	height:100%;
+	_height:450px;
+	height:auto;
+}
+.detailtitle{
+	display:block;
+	clear:both;
+	width:695px;
+	height:65px;
+	padding-top:20px;
+	line-height:25px;
+	background:url(../images/aeonNews/flack/detailtitlebg.jpg) no-repeat;
+	background-position:bottom;
+	margin-bottom:35px;
+}
+
+.detailarea{
+	display:block;
+	clear:both;
+	min-height:450px;
+	height:100%;
+	height:auto;
+	_height:450px;
+	width:695px;
+	line-height:25px;
+	text-align:left;
+	color:#666666;
+}
+
+.small{
+	font-weight:bolder;
+	cursor:pointer;
+}
+.nosmall{
+	font-weight:bolder;
+	cursor:pointer;
+	color:#cc0000;
+}
+.big{
+	font-size:14px;
+	font-weight:bolder;
+	cursor:pointer;
+}
+.nobig{
+	font-size:14px;
+	font-weight:bolder;
+	cursor:pointer;
+	color:#cc0000;
+}
+.detailareabig{
+	display:block;
+	clear:both;
+	min-height:450px;
+	height:100%;
+	height:auto;
+	_height:450px;
+	width:695px;
+	line-height:25px;
+	text-align:left;
+	color:#666666;
+	font-size:14px;
+}
+.detailareabig span{
+	font-size:14px;
+}
+.detailareabig a{
+	font-size:14px;
+}
+.detailareabig strong{
+	font-size:14px;
+}
+
+.detailareabig p{
+	font-size:14px;
+}
+.overviewlist ul li{
+	display:none;
+	clear:both;
+	width:695px;
+	height:70px;
+	text-align:left;
+	line-height:18px;
+	padding-top:14px;
+	background:url(../images/aeonNews/news/libg.jpg) no-repeat;
+	background-position:bottom;
+}
+.overviewlist ul li a {
+	color:#999999;
+	text-decoration:none;
+}
+.overviewlist ul li a:hover{
+	color:#cccccc;
+}
+.firstTitle{
+	padding-bottom:8px;
+}
+.firstTitle a{
+	text-decoration:none;
+	color:#666666;font-size:13px;font-weight:bolder;
+}
+.firstTitle a:hover{
+	text-decoration:none;
+	color:#999999;font-size:13px;font-weight:bolder;
+}
+.currenttitle{
+	display:bloack;
+	clear:both;
+	width:675px;
+	height:30px;
+	padding-top:35px;
+	padding-left:20px;
+	text-align:left;
+	color:#666666;
+	font-weight:bolder;
+	background:url(../images/aeonNews/intertek/currenttitlebg.jpg) no-repeat;
+	background-position:bottom;
+}
+.currenttitle a {
+	color:#666666;
+	text-decoration:none;
+}
+.currenttekp1{
+	padding-top:20px;
+	padding-bottom:10px;
+	color:red;
+	text-align:left;
+	width:345px; 
+	margin-right:45px;
+	font-weight:bolder;
+	font-size:13px;
+	background:url(../images/aeonNews/intertek/currenttekline.jpg) no-repeat;
+	background-position:bottom;
+}
+.currenttekp2{
+	padding-top:10px;
+	width:345px;
+	margin-right:45px;
+	color:#666666;
+	text-align:left;
+}
+.currenttekp3{
+	padding-bottom:8px;
+	padding-top:8px;
+	color:#666666;
+	text-align:left;
+	width:345px; 
+	line-height:20px;
+	margin-right:45px;
+	background:url(../images/aeonNews/intertek/currenttekline.jpg) no-repeat;
+	background-position:bottom;
+}
+.currenttek {
+	min-height:350px;
+	height:100%;
+	height:auto;
+	_height:350px;
+	width:695px;
+	background:url(../images/aeonNews/intertek/currenttek.jpg) no-repeat;
+	background-position:bottom;
+}
+.currentspan a {
+	display:block;
+	margin-top:15px;
+	text-decoration:none;
+	width:150px;
+	height:25px;
+	align:center;
+	clear:both;
+	line-height:25px;
+	text-align:center;
+	color:white;
+	background:url(../images/aeonNews/intertek/datespan.jpg) no-repeat;
+	background-position:bottom;
+}
+.currentspan a:hover{
+	color:#cc3333;
+	text-decoration:none;
+}
+.side{
+	display:block;
+	width:178px;
+	text-align:left;
+	overflow:hidden;
+	border-bottom:1px solid #cccccc;
+}
+.sideBottom{
+	 display:block;
+	 width:180px;
+	 overflow:hidden;
+	 text-align:left;
+}
+.sidemouseon a{
+	line-height:35px;
+	height:35px;
+	width:180px;
+	padding-left:15px;
+	display:block;
+	color:#cc0000;	
+	text-decoration:none;
+    height:35px;
+    background:url(../images/aeonNews/news/openbg2.jpg) no-repeat;
+    background-position:left;
+}
+.sidemouseout a{
+	line-height:35px;
+	height:35px;
+	width:180px;
+	padding-left:15px;
+	display:block;
+	color:#666666;	
+	text-decoration:none;
+    height:35px;
+    background:url(../images/aeonNews/news/closebg2.jpg) no-repeat;
+    background-position:left;
+}
+.sidemouseover{
+	font-size:12px;
+	line-height:35px;
+	height:35px;
+	width:180px;
+	padding-left:15px;
+	display:block;
+	color:#666666;	
+	text-decoration:none;
+    height:35px;
+    background:url(../images/aeonNews/news/closebg2.jpg) no-repeat;
+    background-position:left;
+}
+.sidemousehold{
+	font-size:12px;
+	line-height:35px;
+	height:35px;
+	width:180px;
+	padding-left:15px;
+	display:block;
+	color:#cc0000;	
+	text-decoration:none;
+    height:35px;
+    background:url(../images/aeonNews/news/openbg2.jpg) no-repeat;
+    background-position:left;
+}
+.limousehold{
+	text-decoration:none;
+	color:#ff6600;
+}
+
+
+#pic a img {
+	display:block;
+	cursor:pointer;
+	border:1px solid #666666;
+}
+#pic a:hover img {
+	display:block;
+	cursor:pointer;
+	border:1px solid #cc3333;
+}
+
+#pic a:hover {
+	display:block;
+	cursor:pointer;
+	border:none;
+}
+#pic {
+	width:180px;
+	float:left;
+	text-align:center;
+}
+.interteklist{
+	overflow:hidden;
+	zoom:1;
+	width:692px;
+	margin-top:35px;
+	height:250px;
+}
+a.leftbutton  {
+	display:block;
+	width:61px;
+	height:201px;
+	float:left;
+	margin-right:16px;
+	cursor:pointer;
+	background:url(../images/aeonNews/intertek/leftbutton2.jpg) no-repeat;
+	background-position:top;
+	
+}
+a.leftbutton:hover{
+	width:61px;
+	display:block;
+	height:201px;
+	float:left;
+	margin-right:16px;
+	cursor:pointer;
+	background:url(../images/aeonNews/intertek/leftbutton2.jpg) no-repeat;
+	background-position:bottom;
+}
+a.rightbutton{
+	width:61px;
+	height:201px;
+	float:right;
+	cursor:pointer;
+	background:url(../images/aeonNews/intertek/rightbutton2.jpg) no-repeat;
+	background-position:top;
+}
+a.rightbutton:hover{
+	width:61px;
+	height:201px;
+	float:right;
+	cursor:pointer;
+	background:url(../images/aeonNews/intertek/rightbutton2.jpg) no-repeat;
+	background-position:bottom;
+}
+.table_Show111{
+	border: 0px solid #29a46d;
+	border-collapse:collapse; 
+/*	background:#d2d2d2;*/
+}
+.td_style3_td4{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-right:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td12{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td8{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#ffffff;
+ 	vertical-align:middle;
+	border-right:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td5{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-right:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td9{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#ffffff;
+ 	vertical-align:middle;
+	border-left:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td12 a{color:#666666;text-decoration:none}
+.td_style3_td12 a:hover{color:blue;text-decoration:underline}
+.td_style3_td9 a{color:#666666;text-decoration:none}
+.td_style3_td9 a:hover{color:blue;text-decoration:underline}
+.td_style3_td10{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#ffffff;
+ 	vertical-align:middle;
+	border-right:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}

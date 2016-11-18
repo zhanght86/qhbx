@@ -1,0 +1,225 @@
+
+body, html {
+    height: 100%;
+    overflow: none;
+
+    background-color: #fff;
+    /*font-family: Helvetica, Arial, sans-serif;*/
+    font-size: 12px;
+    overflow-y: hidden;
+}
+
+#world {
+    background: url('background.png');
+    border-radius: 2px;
+    cursor: crosshair;
+}
+
+#options {
+    display: none;
+    width: 800px;
+    color: #fff;
+    text-align: center;
+}
+
+#options .link,
+#options .switch {
+    margin: 2px 10px 2px 2px;
+    padding: 7px 7px;
+}
+
+#options .switch.on {
+    background: #fa6d35;
+}
+
+#options .switch:hover {
+    background: #fa6d35;
+}
+
+#options .switch span {
+    padding: 3px 0 3px 0;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/**
+ * Size Dropdown
+*/
+.dropdown {
+    display: inline-block;
+    margin: 2px 10px 2px 2px;
+}
+
+.dropdown-title {
+    display: inline-block;
+    width: 100%;
+    margin: 2px 0 0 0;
+    padding: 7px 0;
+}
+
+.dropdown-title:hover {
+    background: #fa6d35;
+}
+
+.dropdown-title.open {
+    background: #fa6d35;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.dropdown-title span {
+    display: block;
+}
+
+.dropdown-list {
+    position: absolute;
+    display: none;
+    z-index: 111111;
+
+    margin-left: 1px;
+
+
+    font-size: 14px;
+    background: #fff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px #bbb solid;
+    border-top: none;
+}
+
+.dropdown-list.open {
+    display: block;
+}
+
+.dropdown-list ul li {
+
+}
+
+.dropdown-list ul li a {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+
+    text-indent: 5px;
+    text-decoration: none;
+    color: #333;
+
+    -webkit-transition: background-color,color .03s,.03s linear;
+    -moz-transition: background-color,color .03s,.03s linear;
+    -o-transition: background-color,color .03s,.03s linear;
+    transition: background-color,color .03s,.03s linear;
+}
+
+.dropdown-list ul li a:hover {
+    background: #fdcdb5;
+}
+
+.switch,
+.link, 
+.dropdown-title {
+    position: relative;
+    height: 12px;
+
+    color: #fff;
+    background: #fb956c;
+
+    cursor: pointer;
+    border-radius: 2px;
+
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px #fff;
+
+    -webkit-transition: background-color,color,left,top .11s,.11s,0s,0s ease-out!important;
+    -moz-transition: background-color,color,left,top .11s,.11s,0s,0s ease-out!important;
+    -o-transition: background-color,color,left,top .11s,.11s,0s,0s ease-out!important;
+    transition: background-color,color,left,top .11s,.11s,0s,0s ease-out!important;
+
+    -webkit-box-shadow: 2px 2px 1px rgb(210,100,70);
+    -moz-box-shadow: 2px 2px 1px rgb(210,100,70);
+    -o-box-shadow: 2px 2px 1px rgb(210,100,70);
+    box-shadow: 2px 2px 1px rgb(210,100,70);
+}
+
+.link:active,
+.switch:active,
+.switch.on,
+.dropdown-title:active,
+.dropdown-title.open {
+    left: 1px;
+    top: 1px;
+
+    -webkit-box-shadow: 1px 1px 1px rgb(210,100,70);
+    -moz-box-shadow: 1px 1px 1px rgb(210,100,70);
+    -o-box-shadow: 1px 1px 1px rgb(210,100,70);
+    box-shadow: 1px 1px 1px rgb(210,100,70);
+}
+
+
+.link {
+    background: #8bbbff;
+
+    -webkit-box-shadow: 2px 2px 1px rgb(80,150,200);
+    -moz-box-shadow: 2px 2px 1px rgb(80,150,200);
+    -o-box-shadow: 2px 2px 1px rgb(80,150,200);
+    box-shadow: 2px 2px 1px rgb(80,150,200);
+}
+.link:hover {
+    background: #749fff;
+}
+.link:active {
+    -webkit-box-shadow: 1px 1px 1px rgb(80,150,200);
+    -moz-box-shadow: 1px 1px 1px rgb(80,150,200);
+    -o-box-shadow: 1px 1px 1px rgb(80,150,200);
+    box-shadow: 1px 1px 1px rgb(80,150,200);
+}
+
+
+#dash-toggle {
+    display: inline-block;
+    width: 65px;
+}
+
+#size-dropdown {
+    width: 70px;
+}
+#size-dropdown-list {
+    width: 69px;
+}
+
+#vibration-dropdown {
+    width: 60px;
+}
+#vibration-dropdown-list {
+    width: 59px;
+}
+
+#color-dropdown {
+    width: 90px;
+}
+#color-dropdown-list {
+    width: 89px;
+}
+
+#alpha-dropdown {
+    width: 70px;
+}
+#alpha-dropdown-list {
+    width: 69px;
+}
+
+#save_box {
+    display: none;
+    width: 440px;
+    height: 280px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-140px;
+    margin-left:-220px;
+    z-index: 1;
+}

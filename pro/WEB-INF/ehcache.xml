@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="false"
+	monitoring="autodetect" dynamicConfig="false">
+	<diskStore path="java.io.tmpdir" />
+	<!--start count -->
+	<defaultCache maxElementsInMemory="100000" eternal="true"
+		overflowToDisk="false" diskSpoolBufferSizeMB="30" maxElementsOnDisk="10000000"
+		diskPersistent="false" statistics="true"
+		diskExpiryThreadIntervalSeconds="120" memoryStoreEvictionPolicy="LRU">
+		<terracotta clustered="false" />
+		<cacheEventListenerFactory
+			class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"
+			properties="replicateAsynchronously=true, replicatePuts=false, replicateUpdates=false,
+			replicateUpdatesViaCopy=false, replicateRemovals=true " />
+	</defaultCache>
+
+	<cache name="_CACHE_TO_REBUILD" maxElementsInMemory="100000"
+		eternal="true" overflowToDisk="false" diskSpoolBufferSizeMB="300"
+		maxElementsOnDisk="10000000" diskPersistent="false" statistics="false"
+		memoryStoreEvictionPolicy="LRU">
+		<cacheEventListenerFactory
+			class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"
+			properties="replicateAsynchronously=true, replicatePuts=true, replicateUpdates=false,
+			replicateUpdatesViaCopy=false, replicateRemovals=false " />
+	</cache>
+
+	<!--在线用户 -->
+	<cache name="ONLINE_USER" maxElementsInMemory="50000" eternal="true"
+		overflowToDisk="false" statistics="true" memoryStoreEvictionPolicy="LFU">
+		<cacheEventListenerFactory
+			class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"
+			properties="replicateAsynchronously=true, replicatePuts=true, replicateUpdates=true,
+			replicateUpdatesViaCopy=true, replicateRemovals=true " />
+	</cache>
+
+	<cache name="SimplePageCachingFilter" maxEntriesLocalHeap="10"
+		eternal="false" overflowToDisk="false" memoryStoreEvictionPolicy="LFU">
+	</cache>
+	<cache name="SSO_TICKET" maxElementsInMemory="2000000" 
+eternal="false" overflowToDisk="false" timeToIdleSeconds="60" 
+timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU" />
+
+	<cacheManagerPeerProviderFactory
+		class="net.sf.ehcache.distribution.RMICacheManagerPeerProviderFactory"
+		properties="peerDiscovery=automatic, multicastGroupAddress=230.0.0.1,	multicastGroupPort=4446, timeToLive=0" />
+
+	<cacheManagerPeerListenerFactory
+		class="net.sf.ehcache.distribution.RMICacheManagerPeerListenerFactory" />
+</ehcache>

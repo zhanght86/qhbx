@@ -1,0 +1,32 @@
+<script type="text/javascript">
+jQuery(".ui-form-default table tr td").css({"border":"1px solid #CCCCCC"});
+</script>
+<div class="item ui-corner-5 seal-count" style="font-size:12px;line-height:40px;">
+	<div class="fieldsetContainer">
+		<div>
+			<div align="center" style="font-size:24px;color:red;font-weight:bold;margin:4px;">${title}印章列表</div>
+			<div>
+				<table border="0" style="width:100%; text-align:center;">
+					<tr style="background:#F1EFEE;font-weight:bold;">
+						<td>序号</td>
+						<td>印章名称</td>
+						<td>启用时间</td>
+						<td>保管部门</td>
+						<td>保管人</td>
+						<td>有无电子印章</td>
+					</tr>
+					<#list list as seal>
+					<tr>
+						<td>${seal_index + 1}</td>
+						<td>${seal.SEAL_NAME}</td>
+						<td>${seal.ENABLE_DATE}</td>
+						<td>${seal.KEEP_TDEPT_CODE__NAME}</td>
+						<td>${seal.FST_USER_CODE__NAME}</td>
+						<td>${seal.SEAL_HAS_ESEAL__NAME}</td>
+					</tr>
+					</#list>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

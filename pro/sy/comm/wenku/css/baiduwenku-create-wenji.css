@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+.album-boxes .tips {
+	display: block;
+	line-height: 24px;
+	height: 24px;
+	color: #858585
+}
+.border-warning{
+	border:1px solid red !important;
+}
+.color-warning{
+	color:red !important;
+}
+.album-boxes dl {
+	margin-bottom: 10px;
+	clear: both
+}
+.album-boxes dt {
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	font-size: 14px;
+	width: 90px;
+	margin-right: 10px;
+	text-align: right
+}
+.album-boxes dd {
+	float: left
+}
+.album-boxes .cate-line {
+	height: 26px;
+	line-height: 26px
+}
+
+.album-boxes {
+	width: 717px;
+	padding-top: 20px
+}
+.album-boxes #describe {
+	height: 130px
+}
+.album-boxes .tips {
+	display: block;
+	line-height: 24px;
+	height: 24px;
+	color: #858585
+}
+.album-boxes dl {
+	margin-bottom: 10px;
+	clear: both
+}
+.album-boxes dt {
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	font-size: 14px;
+	width: 90px;
+	margin-right: 10px;
+	text-align: right
+}
+.album-boxes dd {
+	float: left
+}
+.album-boxes .cate-line {
+	height: 26px;
+	line-height: 26px;
+}
+#info-part {
+	/* border-bottom: dashed 1px #CCC */
+}
+#doclist-part {
+	padding-top: 20px
+}
+#category-box {
+	position: absolute;
+	border: solid 1px #AAA;
+	background: #FFF;
+	outline: 0;
+	-moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+	-o-box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.1)
+}
+#category-box .js-category-item {
+	width: 140px;
+	height: 170px;
+	display: block;
+	float: left;
+	line-height: 26px;
+	overflow: auto;
+	border: 0
+}
+#cate-btn {
+	text-decoration: none
+}
+#category-box .js-category-item p {
+	padding-left: 5px;
+	cursor: pointer
+}
+#category-box .js-category-item p: hover {
+	background: #dcefea
+}
+#category-box .js-category-item .selected,#category-box .js-category-item .selected: hover {
+	background: #316ac5;
+	color: #FFF
+}
+#submit-tip {
+	display: inline;
+	margin-left: 10px
+}
+
+.aside {
+	width: 250px
+}
+
+body {
+ 	background:url("/sy/comm/wenku/baidu_style_files/line_ba86e9d8.jpg") repeat-x 0 174px;
+}
+#dialog-confirm{
+	text-align:center;
+}
+#info-part{
+	padding-top:20px;
+/* 	background: #FAFDFC;
+	border-top:1px solid #CBDFD6;
+	border-left:1px solid #CBDFD6;
+	border-right:1px solid #CBDFD6; */
+}
+.document-dl{
+	/* border-top:1px dashed #CCC; */
+}
+#document-part{
+	width: 400px;
+	padding-top:5px;
+	padding-bottom:20px;
+	display:none;
+}
+.list-heading{
+	height: 32px;
+	line-height: 32px;
+	background: #F6FBFA;
+	padding: 0 10px;
+}
+.p-add-doc{
+	width: 400px;
+	display:block;
+}
+.doc-add-more{
+	float:right;
+	margin-right:15px;
+	font-size:14px;
+	display:none;
+}
+.normal-input {
+	border: solid 1px #a9bac5;
+	width: 400px;
+	height: 24px;
+	line-height: 24px;
+	text-indent: 5px
+}
+.required {
+	color: red
+}
+.list_a_div{
+	height:38px;
+	width:740px;
+	}
+.list_a_span{
+	display: inline-block; height:25px; line-height:38px;
+	}
+/*
+---------------------------my-doc--------------------------------
+*/
+.list-doc-head{
+	height: 70px;
+	line-height: 40px;
+	color: #666;
+}
+.doc-common{
+	display: inline-block;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+}
+.doc-title{
+	width: 50%;
+	padding-left: 10px;
+}
+.doc-size{
+	width: 23%;
+	padding-left: 10px;
+}
+.doc-opt{
+	width: 17%;
+	padding-right: 10px;
+	text-align:right;
+}
+.doc-opt a{
+		cursor: pointer;
+		display:block;
+}
+.doc-list{
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #F2F2F2;
+	color: #999;
+}
+.doc-list:hover{
+	background: #FBFBFB;
+}
+.list-doc-content{
+	list-style: none;
+}
+.ic-del{
+	background:url("/sy/comm/wenku/baidu_style_files/delete.png") no-repeat;
+}

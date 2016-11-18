@@ -1,0 +1,1 @@
+chnl_list.ftl

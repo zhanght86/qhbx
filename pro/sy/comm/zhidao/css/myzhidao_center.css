@@ -1,0 +1,182 @@
+@charset "utf-8";
+* {
+    border: none;
+    outline: none;
+    font-size: 100%;
+    list-style: none;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+a:link, a:visited {
+	color: #2D64B3;
+	text-decoration: none;
+}
+html{
+	background-color:#FFFFFF;
+}
+.zd-container{
+	margin: 0 auto;
+	width:980px;
+	
+}
+.zd-grid-770 {
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	width:100%;
+}
+.zd-right {
+	font-size: 12px;
+	color: #000;
+	font-family: Arial;
+	background: rgba(0, 0, 0, 0);
+	padding: 0;
+	margin: 10px 12px 100px 12px;
+}
+.zd-right .header {
+	height: 28px;
+	line-height: 28px;
+	border-bottom: 2px solid #AAD29E;
+}
+.zd-right .header h2 {
+	font-family: Arial;
+	line-height: 28px;
+	font-size: 14px;
+	color: #125908;
+	width: 107px;
+	border-bottom: 2px solid #269D00;
+	margin-bottom: -2px;
+	position: relative;
+	font-weight: bold;
+}
+.zd-right h3 {
+	margin-top: 16px;
+	background-color: #E6F4D0;
+	padding: 7px 0 6px 10px;
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #125908;
+}
+
+.zd-right h3 .more {
+	float: right;
+	padding-right: 10px;
+	font-size: 12px;
+}
+.base-info{
+	margin-top:10px;
+	margin-left:0;
+}
+.base-info ul{
+	height:50px;
+	padding-left:20px;
+}
+.base-info ul li{
+	list-style:none;
+	float:left;
+	width:100px;
+	height：38px;
+	margin-right:20px;
+}
+.base-info ul li span{
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	text-align: left;
+}
+.base-info ul li i{
+	width:100px;
+	height:19px;
+	float:left;
+	margin-top:5px;
+	
+	font-size: 18px;
+	line-height: 20px;
+	color: #D55111;
+	text-align: left;
+}
+.nomal{
+	display: inline-block;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+}
+.zd-grid-header{
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+	word-spacing: -0.43em;
+}
+.zd-grid-header .nomal:last-child,
+.zd-grid-list .nomal:last-child{
+	text-align:right;
+	padding-right:10px;
+}
+.wp60{
+	width:60%
+}
+.wp55{
+	width:55%
+}
+.wp50{
+	width:50%
+}
+.wp40{
+	width:40%
+}
+.wp23{
+	width:23%
+}
+.wp17{
+	width:17%;
+}
+.wp10{
+	width:10%;
+}
+.tc{
+	text-align:center;
+}
+.pl{
+	padding-left:10px;
+}
+.zd-grid-list {
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #F2F2F2;
+	color: #999;
+}
+.zd-grid-list:hover{
+	background: #FBFBFB;
+}
+.zd-grid-list a{
+	font-size: 14px;
+}
+ 
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before, .clearfix:after {
+	content: '';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+	zoom: 1;
+}

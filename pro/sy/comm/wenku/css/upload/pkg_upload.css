@@ -1,0 +1,55 @@
+.ui-category {
+	font-size: 12px
+}
+
+.ui-category li {
+	width: 140px;
+	height: 170px;
+	float: left;
+	margin-right: 5px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: #fff;
+	border: 1px solid #b8cdc6
+}
+
+.ui-category li p {
+	padding: 0 5px;
+	height: 24px;
+	line-height: 24px;
+	cursor: default;
+	font-size: 12px
+}
+
+.ui-category li p.hover {
+	background: #dcefea
+}
+
+.ui-category li p.selected {
+	color: #fff;
+	background: #316ac5
+}
+
+.ui-category .disabled p.hover {
+	background: #fff
+}
+
+.ui-category .disabled p.selected {
+	color: #fff;
+	background: #ccc
+}
+
+/*****************************************************************/
+.chai-add{
+	width: 100px;
+	height: 26px;
+	line-height:26px;
+	padding-left:10px;
+	border: 1px #C1D8CE solid;
+	background: #EBF9F2;
+	font-weight: bold;
+	cursor: pointer;
+}
+.chai-add:hover{
+	background: #DDF3E7;
+}

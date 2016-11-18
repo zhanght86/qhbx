@@ -1,0 +1,106 @@
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	<#list list as data>
+		<#list data.TYPE_STATUS as item>
+			jQuery("<a/>",{
+				"attr":{"href":"javascript:;"},
+				"text":"${item.COUNT}"
+			}).appendTo(jQuery("td[odept='${data.DEPT_BEAN.DEPT_CODE}'][col='${item.SEAL_STATUS}'][row='${item.SEAL_CATEGORY}']"));
+		</#list>
+		<#list data.TYPE as item>
+			jQuery("<a/>",{
+				"attr":{"href":"javascript:;"},
+				"text":"${item.COUNT}"
+			}).appendTo(jQuery("td[odept='${data.DEPT_BEAN.DEPT_CODE}'][col='合计'][row='${item.SEAL_CATEGORY}']"));
+		</#list>
+		<#list data.STATUS as item>
+			jQuery("<a/>",{
+				"attr":{"href":"javascript:;"},
+				"text":"${item.COUNT}"
+			}).appendTo(jQuery("td[odept='${data.DEPT_BEAN.DEPT_CODE}'][col='${item.SEAL_STATUS}'][row='小计']"));
+		</#list>
+		jQuery("<a/>",{
+			"attr":{"href":"javascript:;"},
+			"text":"${data.total}"
+		}).appendTo(jQuery("td[odept='${data.DEPT_BEAN.DEPT_CODE}'][col='合计'][row='小计']"));
+	</#list>
+	<#list STATUS as item>
+		jQuery("td[col='${item.SEAL_STATUS}'][row='总计']").text("${item.COUNT}");
+	</#list>
+	jQuery("td[col='合计'][row='总计']").text("${total}");
+	jQuery(".seal-count a").css({"color":"blue","text-decoration":"none"});
+	jQuery(".ui-form-default table tr td").css({"border":"1px solid #CCCCCC"});
+	
+	//打印高度处理,A4纸高度955px
+	jQuery("table.if_break").each(function(i,n){
+		if ((i+1)%5 == 0) {
+			jQuery(n).css({"page-break-after":"always","margin-bottom":"20px"});
+			jQuery(n).after(jQuery("#table_title").clone());
+		}
+	});
+	jQuery(".ui-form-default .seal-count").css({"border":"0"});
+});
+</script>
+<div class="item ui-corner-5 seal-count" style="font-size:12px;line-height:40px;">
+	<div class="fieldsetContainer">
+		<div>
+			<div align="center" style="font-size:24px;color:red;font-weight:bold;margin:4px;">印章库统计表</div>
+			<div>
+				<table border="0" style="width:100%; text-align:center;" id="table_title">
+					<tr style="background:#F1EFEE;font-weight:bold;">
+						<td>单位名称</td>
+						<td width="100px">印章分类</td>
+						<#list statusTh as status>
+						<td col="${status.ID}" width="60px">${status.NAME}</td>
+						</#list>
+						<td col="合计" width="60px">合计</td>
+					</tr>
+				</table>
+				<#list list as item>
+				<table border="0" style="width:100%; text-align:center;" class="if_break">
+					<#list typeTh as type>
+					<#if type_index = 0>
+					<tr>
+						<td rowspan="${typeTh?size}" odept="${item.DEPT_BEAN.DEPT_CODE}" class="odept">
+							<a href="javascript:;">${item.DEPT_BEAN.DEPT_NAME}</a>
+						</td>
+						<td row="${type.ID}"  width="100px">${type.NAME}</td>
+						<#list statusTh as status>
+						<td  width="60px" row="${type.ID}" rowName="${type.NAME}" col="${status.ID}" colName="${status.NAME}" odept="${item.DEPT_BEAN.DEPT_CODE}" odept="${item.DEPT_BEAN.DEPT_NAME}"></td>
+						</#list>
+						<td  width="60px" row="${type.ID}" rowName="${type.NAME}" col="合计" odept="${item.DEPT_BEAN.DEPT_CODE}" odept="${item.DEPT_BEAN.DEPT_NAME}"></td>
+					</tr>
+					<#else>
+					<tr>
+						<td row="${type.ID}">${type.NAME}</td>
+						<#list statusTh as status>
+						<td row="${type.ID}" rowName="${type.NAME}" col="${status.ID}" colName="${status.NAME}" odept="${item.DEPT_BEAN.DEPT_CODE}" odept="${item.DEPT_BEAN.DEPT_NAME}"></td>
+						</#list>
+						<td row="${type.ID}" rowName="${type.NAME}" col="合计" odept="${item.DEPT_BEAN.DEPT_CODE}" odept="${item.DEPT_BEAN.DEPT_NAME}"></td>
+					</tr>
+					</#if>
+					</#list>
+					<tr>
+						<td colspan="2" row="小计">小计</td>
+						<#list statusTh as status>
+						<td width="60px" row="小计" col="${status.ID}" colName="${status.NAME}" odept="${item.DEPT_BEAN.DEPT_CODE}" odept="${item.DEPT_BEAN.DEPT_NAME}"></td>
+						</#list>
+						<td width="60px" row="小计" col="合计" odept="${item.DEPT_BEAN.DEPT_CODE}" odept="${item.DEPT_BEAN.DEPT_NAME}"></td>
+					</tr>
+				</table>
+				</#list>
+				<#if list?size gt 1>
+				<table border="0" style="width:100%; text-align:center;">
+					<tr style="font-weight:bold;">
+						<td colspan="2" row="小计">总计</td>
+						<#list statusTh as status>
+						<td width="60px" row="总计" col="${status.ID}" colName="${status.NAME}"></td>
+						</#list>
+						<td width="60px" row="总计" col="合计"></td>
+					</tr>
+				</table>
+				</#if>
+			</div>
+		</div>
+	</div>
+</div>

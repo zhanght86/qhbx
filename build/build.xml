@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Build-Deploy" default="dist" basedir=".">
+
+	<property file="build.properties" description="产品属性文件" />
+
+	<property environment="env" description="载入环境变量" />
+	<path id="compile.classpath" description="编译路径">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar" />
+			<include name="*.zip" />
+		</fileset>
+	</path>	
+
+	<target name="compile" description="编译java文件">
+		<echo message="准备编译源文件......" />
+		<delete dir="${classes.dir}" />
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" encoding="utf-8" debug="${compile.debug}" optimize= "true"   fork= "no"   verbose= "no"  failonerror= "off">
+			<classpath refid="compile.classpath" />
+		</javac>
+	</target>
+
+	<target name="jar" depends="create-Manifest" description="创建Jar文件">
+		<echo message="准备创建Jar......" />
+		<mkdir dir="${classes.dir}/com/rh/resource" />
+		<zip destfile="${classes.dir}/com/rh/resource/${def.prefix}_SERV.zip" basedir="${web-info-doc.dir}/SY_SERV" />
+		<zip destfile="${classes.dir}/com/rh/resource/${def.prefix}_SERV_DICT.zip" basedir="${web-info-doc.dir}/SY_SERV_DICT" />
+		<mkdir dir="${dist.dir}" />
+		<jar jarfile="${dist.dir}/${jar.name}" basedir="${classes.dir}" manifest="${manifest.mf}" index="yes">
+		</jar>
+		<delete file="${manifest.mf}" />
+		<delete dir="${classes.dir}/com/rh/resource" />
+		<echo message="Jar创建成功！......" />
+	</target>
+
+	<target name="create-Manifest" description="创建JAR清单文件">
+		<delete dir="${dist.dir}" />
+		<mkdir dir="${dist.dir}" />
+		<manifest file="${manifest.mf}">
+			<attribute name="Built-By" value="${env.COMPUTERNAME}" />
+			<attribute name="Built-On" value="${TODAY}" />
+			<attribute name="Create-By" value="${corp.name}" />
+		</manifest>
+	</target>
+
+	<target name="package" depends="jar" description="创建打包发布文件">
+		<echo message="准备创建发布包......" />
+		<zip destfile="${dist.dir}/${zip.jsp.name}">
+			<fileset dir="${web.dir}">
+				<include name="${def.prefix}/" />
+			</fileset>
+		</zip>
+		<zip destfile="${dist.dir}/${zip.package.name}">
+			<fileset dir="${dist.dir}">
+				<include name="${jar.name}" />
+				<include name="${zip.jsp.name}" />
+			</fileset>
+			<fileset dir="${db.dir}" includes="db-${def.name}*.sql"/>
+			<fileset dir="${db.dir}" includes="init-${def.name}*.sql"/>
+		</zip>
+		<delete file="${dist.dir}/${jar.name}" />
+		<delete file="${dist.dir}/${zip.jsp.name}" />
+		<echo message="发布包创建成功！......" />
+	</target>
+
+	<target name="package_release" depends="package" description="版本发布到正式目录">
+		<echo message="准备发布版本......" />
+		<copy todir="${release.dir}" overwrite="true" verbose="true" >
+			<fileset dir="${dist.dir}">
+				<include name="${zip.package.name}" />
+			</fileset>
+		</copy>
+		<echo message="发布版本成功！......" />
+	</target>
+
+	<target name="war" depends="jar" description="创建完全发布war文件">
+		<echo message="准备创建War......" />
+		<copy file="${dist.dir}/${jar.name}" todir="${lib.dir}" />
+		<war destfile="${dist.dir}/${war.name}" webxml="${web-info.dir}/web.xml" whenempty="skip" basedir="${web.dir}">
+			<exclude name="**/WEB-INF/doc/SY_SERV/"/>
+			<exclude name="**/WEB-INF/doc/SY_SERV_DICT/"/>
+			<exclude name="**/WEB-INF/doc/SY_COMM_MENU/"/>
+			<exclude name="**/WEB-INF/doc/UPGRADE_DONE/"/>
+			<exclude name="**/WEB-INF/work/"/>
+			<exclude name="**/WEB-INF/temp/"/>
+			<exclude name="**/WEB-INF/classes/"/>
+			<exclude name="**/WEB-INF/server/"/>
+			<exclude name="**/WEB-INF/sessions/"/>
+			<exclude name="**/WEB-INF/lib/jsdk-15.jar"/>
+		</war>
+		<echo message="War创建成功！......" />
+		<delete file="${lib.dir}/${jar.name}" />
+		<delete dir="${web-info-doc.dir}/UPGRADE_TODO" />
+	</target>
+
+	<target name="war_release" depends="war" description="版本发布到正式目录">
+		<echo message="准备发布版本......" />
+		<copy todir="${release.dir}" overwrite="true" verbose="true" >
+			<fileset dir="${dist.dir}">
+				<include name="${war.name}" />
+			</fileset>
+		</copy>
+		<echo message="发布版本成功！......" />
+	</target>
+
+	<target name="upgrade" depends="upgrade_core,upgrade_opt,upgrade_cms" description="升级依赖版本">
+	</target>
+
+	<target name="upgrade_core" description="升级所依赖的平台">
+		<echo message="准备升级平台......" />
+		<unzip src="${release.dir}/rh-core.zip" dest="${dist.dir}"/>
+		<copy file="${dist.dir}/rh-core.jar" todir="${lib.dir}" overwrite="true"/>
+		<unzip src="${dist.dir}/jsp-core.zip" dest="${web.dir}"/>
+		<copy todir="${db.dir}">
+			<fileset dir="${dist.dir}">
+				<include name="*core*.sql"/>
+			</fileset>
+		</copy>
+		<echo message="升级平台成功！......" />
+	</target>
+	<target name="upgrade_opt" description="升级所依赖的扩展包">
+		<echo message="准备升级扩展包......" />
+		<unzip src="${release.dir}/rh-opt.zip" dest="${dist.dir}"/>
+		<copy file="${dist.dir}/rh-opt.jar" todir="${lib.dir}" overwrite="true"/>
+		<unzip src="${dist.dir}/jsp-opt.zip" dest="${web.dir}"/>
+		<copy todir="${db.dir}">
+			<fileset dir="${dist.dir}">
+				<include name="*opt*.sql"/>
+			</fileset>
+		</copy>
+		<echo message="升级扩展包成功！......" />
+	</target>
+	<target name="upgrade_cms" description="升级所依赖的内容管理">
+		<echo message="准备升级内容管理......" />
+		<unzip src="${release.dir}/rh-cms.zip" dest="${dist.dir}"/>
+		<copy file="${dist.dir}/rh-cms.jar" todir="${lib.dir}" overwrite="true"/>
+		<unzip src="${dist.dir}/jsp-cms.zip" dest="${web.dir}"/>
+		<copy todir="${db.dir}">
+			<fileset dir="${dist.dir}">
+				<include name="*cms*.sql"/>
+			</fileset>
+		</copy>
+		<echo message="升级内容管理成功！......" />
+	</target>
+</project>

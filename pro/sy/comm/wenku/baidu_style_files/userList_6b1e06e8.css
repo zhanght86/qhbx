@@ -1,0 +1,112 @@
+.userListMod {
+	border: 1px solid #acd1eb;
+	padding: 3px;
+	background: #ffffff;
+	_zoom: 1
+}
+
+.userListMod .hd,.userListMod .bd {
+	background-color: #fff
+}
+
+.userListMod .hd {
+	padding: 10px 10px 0 10px
+}
+
+.userListMod .bd {
+	padding: 0 10px 10px 10px
+}
+
+.userListMod h2 {
+	font-size: 14px;
+	color: #000;
+	font-weight: bold
+}
+
+.userListMod .more {
+	font-size: 12px;
+	float: right;
+	font-weight: normal;
+	margin-right: 3px
+}
+
+.userListMod .ic-userList {
+	background: url(icons.gif)
+		-1000px -1000px no-repeat;
+	_zoom: 1;
+	font-size: 12px;
+	cursor: default;
+	width: 20px;
+	height: 20px
+}
+
+.userListMod .reward td {
+	padding: 5px 0
+}
+
+.userListMod .reward .score {
+	color: #888;
+	font-size: 11px
+}
+
+.userListMod .c {
+	text-align: center
+}
+
+.userListMod .un a,.userListMod h2 a {
+	font-size: 14px;
+	text-decoration: none
+}
+
+.userListMod .ic {
+	background: url(icons.gif)
+		-1000px -1000px no-repeat;
+	width: 21px;
+	height: 19px
+}
+
+.userListMod .num1 {
+	background-position: 0 -96px
+}
+
+.userListMod .num2 {
+	background-position: -25px -96px
+}
+
+.userListMod .num3 {
+	background-position: -50px -96px
+}
+
+.userListMod .num4 {
+	background-position: -75px -96px
+}
+
+.userListMod .num5 {
+	background-position: -100px -96px
+}
+
+.userListMod .arr_up {
+	background-position: 0 -75px
+}
+
+.userListMod .arr_down {
+	background-position: -23px -75px
+}
+
+.userListMod .arr_stay {
+	background-position: -48px -75px
+}
+
+.userListMod .arr_new {
+	background-position: -74px -75px
+}
+
+.fenyuejinbu .ic-userList {
+	background-position: -159px -118px;
+	margin-right: 0
+}
+
+.huihuangchengjiu .ic-userList {
+	background-position: -134px -120px;
+	margin-right: 0
+}

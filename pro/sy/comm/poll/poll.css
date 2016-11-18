@@ -1,0 +1,159 @@
+.mbSearch-container{
+	margin: 0;
+	padding:0;
+	font-size: 14px;
+	font-family: "宋体",Tahoma,sans-serif;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 100%;
+}
+.join_nm{
+	text-align: center;
+	width: 90px;
+	background: none repeat scroll 0 0 #E7F1F6;
+	margin-right: 10px;
+	color: #78B6D6;
+	float: left;
+}
+.join_nm .text{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    height: 23px;
+    line-height: 23px;
+    background-color: #82AAC0;
+    color: white;
+}
+.join_nm .count{
+    font-size: 18px;
+    font-weight: 900;
+    height: 31px;
+    line-height: 31px;
+}
+.rh-cusearch-titleDiv{
+	
+}
+
+.rh-set-title{
+	color: #323232;
+    font-weight: bold;
+    font-size:16px;
+    margin: 0 auto 5px;
+    padding-top: 5px;
+    text-align: left;
+    width: 760px;
+    height: 54px;
+}
+
+.rh-set-info{
+	margin: 10px;
+}
+
+.rh-set-time{
+	margin-left: 5%;
+	color: #888;
+}
+
+.rh-set-descDiv{
+	margin: 10px;
+}
+
+.rh-set-table{
+	border-top: 1px solid #DFDFDF;
+	width: 100%;
+}
+
+.rh-set-table td{
+	 border-bottom: 1px solid #F1EFF0;
+}
+
+.optionItem{
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.option{
+	margin: 0px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.process{
+	background: none repeat scroll 0 0 #EDEDED;
+    height: 11px;
+    overflow: hidden;
+    width: 162px;
+}
+
+.process .style0{
+	background-position: 0 0px;
+    border-left: 1px solid #EA7211;
+    border-right:  1px solid #EA7211;
+}
+.process .style1{
+	background-position: 0 -11px;
+    border-left: 1px solid #AABF00;
+    border-right:  1px solid #AABF00;
+}
+.process .style2{
+	background-position: 0 -22px;
+    border-left: 1px solid #8B2A00;
+    border-right:  1px solid #8B2A00;
+}
+.process .style3{
+	background-position: 0 -33px;
+    border-left: 1px solid #BF844A;
+    border-right:  1px solid #BF844A;
+}
+.process .style4{
+	background-position: 0 -44px;
+    border-left: 1px solid #3A8938;
+    border-right:  1px solid #3A8938;
+}
+.process .style5{
+	background-position: 0 -55px;
+    border-left: 1px solid #486193;
+    border-right:  1px solid #486193;
+}
+.process .style6{
+	background-position: 0 -66px;
+    border-left: 1px solid #7DA3AE;
+    border-right:  1px solid #7DA3AE;
+}
+.process .style7{
+	background-position: 0 -77px;
+    border-left: 1px solid #AE1486;
+    border-right:  1px solid #AE1486;
+}
+.process .style8{
+	background-position: 0 -88px;
+    border-left: 1px solid #5AB502;
+    border-right:  1px solid #5AB502;
+  
+   
+}
+.process .style9{
+	background-position: 0 -99px;
+    border-left: 1px solid #BF2146;
+    border-right:  1px solid #BF2146;
+}
+
+.process div{
+	background: url("/sy/comm/poll/vote_icon_bg_v2.gif") repeat-x scroll 0 0 transparent;
+	 height: 11px;
+}
+
+.btn{
+	margin: 10px;
+	padding: 10px;
+	
+}
+.btn input{
+	padding: 3px;
+	height: 30px;
+	cursor: pointer;
+}
+.done{
+	color: green;
+	font-size: 16px;
+	margin: 10px;
+}

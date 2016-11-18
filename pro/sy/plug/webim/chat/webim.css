@@ -1,0 +1,1911 @@
+/* 由 F12 开发人员工具生成。这可能不是原始源文件的准确表示形式。*/
+.wbim_box {
+	Z-INDEX: 1000; POSITION: fixed; FONT: 12px Arial, Helvetica, "宋体", sans-serif; COLOR: #777; RIGHT: 0px
+}
+.wbim_box * {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.wbim_box LI {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+.wbim_box EM {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+.wbim_box I {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+.wbim_box FIELDSET {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.wbim_box IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.wbim_box INPUT {
+	OUTLINE-STYLE: none
+}
+.wbim_box TEXTAREA {
+	OUTLINE-STYLE: none
+}
+.wbim_box TEXTAREA {
+	resize: none
+}
+.wbim_box TABLE {
+	BORDER-SPACING: 0; BORDER-COLLAPSE: collapse
+}
+.wbim_box .spetxt {
+	COLOR: #c90000
+}
+.wbim_box A {
+	COLOR: white; TEXT-DECORATION: none
+}
+.wbim_box A:hover {
+	TEXT-DECORATION: underline
+}
+.wbim_box .clearfix:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+.wbim_box .clearfix {
+	DISPLAY: inline-block
+}
+* HTML .wbim_box .clearfix {
+	HEIGHT: 1%
+}
+.wbim_box .clearfix {
+	DISPLAY: block
+}
+.wbim_box .clear {
+	FONT: 0px/0 Arial; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both
+}
+
+.wbim_box .wbim_btn_c {
+	LINE-HEIGHT: 24px; DISPLAY: inline-block; BACKGROUND: url(img/btns.png) no-repeat; HEIGHT: 24px; COLOR: #fff; CURSOR: pointer
+}
+.wbim_box .wbim_btn_c EM {
+	LINE-HEIGHT: 24px; DISPLAY: inline-block; BACKGROUND: url(img/btns.png) no-repeat; HEIGHT: 24px; COLOR: #fff; CURSOR: pointer
+}
+.wbim_box .wbim_btn_n {
+	LINE-HEIGHT: 24px; DISPLAY: inline-block; BACKGROUND: url(img/btns.png) no-repeat; HEIGHT: 24px; COLOR: #fff; CURSOR: pointer
+}
+.wbim_box .wbim_btn_n EM {
+	LINE-HEIGHT: 24px; DISPLAY: inline-block; BACKGROUND: url(img/btns.png) no-repeat; HEIGHT: 24px; COLOR: #fff; CURSOR: pointer
+}
+.wbim_box .wbim_btn_n {
+	COLOR: #777
+}
+.wbim_box .wbim_btn_n EM {
+	COLOR: #777
+}
+.wbim_box .wbim_btn_c {
+	PADDING-LEFT: 2px; BACKGROUND-POSITION: 0px 0px
+}
+.wbim_box .wbim_btn_c EM {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 10px; BACKGROUND-POSITION: right -25px; PADDING-TOP: 0px
+}
+.wbim_box .wbim_btn_c:hover {
+	BACKGROUND-POSITION: 0px -100px; TEXT-DECORATION: none
+}
+.wbim_box .wbim_btn_c:hover EM {
+	BACKGROUND-POSITION: right -125px
+}
+.wbim_box .wbim_btn_n {
+	PADDING-LEFT: 2px; BACKGROUND-POSITION: 0px -50px
+}
+.wbim_box .wbim_btn_n EM {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 10px; BACKGROUND-POSITION: right -75px; PADDING-TOP: 0px
+}
+.wbim_box .wbim_btn_n:hover {
+	BACKGROUND-POSITION: 0px -150px; TEXT-DECORATION: none
+}
+.wbim_box .wbim_btn_n:hover EM {
+	BACKGROUND-POSITION: right -175px
+}
+.wbim_box .wbim_layerclose {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_list_srch {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_status_online {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_status_disconnected {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_status_busy {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_status_away {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_status_offline {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_status_mobile {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_status_client {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_status_client_busy {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_status_client_away {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_list_group_tit {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_vf {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_mini {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_close {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_close_s {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_scrolltop {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_scrollbtm {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_scrolltop_n {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_scrollbtm_n {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_scrolltop_a {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_scrollbtm_a {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_face {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_img {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_doc {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_chatdoc {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_face_arr {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_p {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_ask {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_tips {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_arrd {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_msg {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_msg_s {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_setup {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_min_line {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_down {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_fk {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_file {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_err {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_ok {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_btn_pmsg {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_p_arr {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl A {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_picview_box .wbim_pic_bar_cls {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_btn_smesg {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_icon_mini {
+	BACKGROUND: url(img/icons_n.png) no-repeat; _background: url(img/icons_n.gif) no-repeat
+}
+.wbim_box .wbim_icon_close {
+	BACKGROUND: url(img/icons_n.png) no-repeat; _background: url(img/icons_n.gif) no-repeat
+}
+.wbim_box .wbim_icon_fk {
+	BACKGROUND: url(img/icons_n.png) no-repeat; _background: url(img/icons_n.gif) no-repeat
+}
+.wbim_box .wbim_icon_setup {
+	BACKGROUND: url(img/icons_n.png) no-repeat; _background: url(img/icons_n.gif) no-repeat
+}
+.wbim_box .wbim_icon_close_s {
+	WIDTH: 12px; DISPLAY: block; BACKGROUND-POSITION: -88px -17px; HEIGHT: 12px; FONT-SIZE: 0px
+}
+.wbim_box .wbim_icon_close_s:hover {
+	BACKGROUND-POSITION: -103px -17px
+}
+.wbim_box .wbim_layerclose {
+	WIDTH: 7px; DISPLAY: inline-block; BACKGROUND-POSITION: -90px -20px; HEIGHT: 6px
+}
+.wbim_box .wbim_layerclose:hover {
+	BACKGROUND-POSITION: -120px -20px
+}
+.wbim_box .wbim_icon_vf {
+	WIDTH: 15px; DISPLAY: inline-block; BACKGROUND-POSITION: -80px 0px; HEIGHT: 12px; VERTICAL-ALIGN: middle
+}
+.wbim_box .wbim_icon_ask {
+	MARGIN: 0px 5px 0px 0px; WIDTH: 16px; DISPLAY: block; BACKGROUND-POSITION: -200px -40px; FLOAT: left; HEIGHT: 16px; _display: inline-block; _margin-right: 2px
+}
+.wbim_box .wbim_icon_p {
+	MARGIN: 3px 3px 0px 9px; WIDTH: 16px; DISPLAY: inline-block; BACKGROUND-POSITION: -180px -40px; HEIGHT: 16px
+}
+.wbim_box .wbim_icon_tips {
+	WIDTH: 14px; DISPLAY: inline-block; BACKGROUND-POSITION: -130px -60px; HEIGHT: 14px
+}
+.wbim_box .wbim_icon_down {
+	WIDTH: 12px; DISPLAY: inline-block; BACKGROUND-POSITION: -59px -238px; HEIGHT: 12px
+}
+.wbim_box .wbim_icon_file {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND-POSITION: -75px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_err {
+	WIDTH: 14px; DISPLAY: inline-block; BACKGROUND-POSITION: -145px -60px; HEIGHT: 14px
+}
+.wbim_box .wbim_icon_ok {
+	WIDTH: 14px; DISPLAY: inline-block; BACKGROUND-POSITION: -238px -60px; HEIGHT: 14px
+}
+.wbim_box .wbim_ico_member {
+	WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(img/icons.png) no-repeat; HEIGHT: 14px; VERTICAL-ALIGN: -1px; _margin-top: 6px; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_ico_member_dis {
+	WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(img/icons.png) no-repeat; HEIGHT: 14px; VERTICAL-ALIGN: -1px; _margin-top: 6px; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .wbim_ico_member {
+	BACKGROUND-POSITION: -138px 0px
+}
+.wbim_box .wbim_ico_member_dis {
+	BACKGROUND-POSITION: -159px 0px
+}
+.wbim_box .wbim_status_online {
+	WIDTH: 9px; DISPLAY: inline-block; HEIGHT: 9px; OVERFLOW: hidden
+}
+.wbim_box .wbim_status_disconnected {
+	WIDTH: 9px; DISPLAY: inline-block; HEIGHT: 9px; OVERFLOW: hidden
+}
+.wbim_box .wbim_status_away {
+	WIDTH: 9px; DISPLAY: inline-block; HEIGHT: 9px; OVERFLOW: hidden
+}
+.wbim_box .wbim_status_busy {
+	WIDTH: 9px; DISPLAY: inline-block; HEIGHT: 9px; OVERFLOW: hidden
+}
+.wbim_box .wbim_status_offline {
+	WIDTH: 9px; DISPLAY: inline-block; HEIGHT: 9px; OVERFLOW: hidden
+}
+.wbim_box .wbim_status_mobile {
+	WIDTH: 9px; DISPLAY: inline-block; HEIGHT: 9px; OVERFLOW: hidden
+}
+.wbim_box .wbim_status_client {
+	WIDTH: 9px; DISPLAY: inline-block; HEIGHT: 9px; OVERFLOW: hidden
+}
+.wbim_box .wbim_status_client_busy {
+	WIDTH: 9px; DISPLAY: inline-block; HEIGHT: 9px; OVERFLOW: hidden
+}
+.wbim_box .wbim_status_client_away {
+	WIDTH: 9px; DISPLAY: inline-block; HEIGHT: 9px; OVERFLOW: hidden
+}
+.wbim_box .wbim_status_online {
+	BACKGROUND-POSITION: 0px 0px
+}
+.wbim_box .wbim_status_away {
+	BACKGROUND-POSITION: -10px 0px
+}
+.wbim_box .wbim_status_busy {
+	BACKGROUND-POSITION: -30px 0px
+}
+.wbim_box .wbim_status_offline {
+	BACKGROUND-POSITION: -20px 0px
+}
+.wbim_box .wbim_status_mobile {
+	WIDTH: 9px; BACKGROUND-POSITION: -40px 0px; HEIGHT: 12px
+}
+.wbim_box .wbim_status_client {
+	BACKGROUND-POSITION: -50px 0px
+}
+.wbim_box .wbim_status_client_busy {
+	BACKGROUND-POSITION: -100px 0px
+}
+.wbim_box .wbim_status_client_away {
+	BACKGROUND-POSITION: -110px 0px
+}
+.wbim_box .wbim_status_disconnected {
+	BACKGROUND-POSITION: -120px 0px
+}
+.wbim_icon_ing {
+	WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(img/loading2.gif); HEIGHT: 16px
+}
+.wbim_box .wbim_tit {
+	PADDING-BOTTOM: 0px;  HEIGHT: 25px; COLOR: white; CURSOR: pointer; PADDING-TOP: 0px
+}
+.wbim_box .wbim_titin {
+	BACKGROUND: url(img/i-window-top-back.png) repeat-x 0px 0px; HEIGHT: 25px
+}
+.wbim_box .wbim_tit_hover .wbim_titin {
+	BACKGROUND: url(img/i-window-top-back.png) repeat-x 0px -60px
+}
+.wbim_box .wbim_tit_lf {
+	Z-INDEX: 100; POSITION: relative; FLOAT: left;
+}
+.wbim_box .rh_wbim_tit_lf {
+	margin-left:40px;
+}
+.wbim_box .wbim_tit_lf P {
+	LINE-HEIGHT: 14px; OVERFLOW: hidden
+}
+.wbim_box .wbim_tit_lf P SPAN {
+	FLOAT: left
+}
+.wbim_box .wbim_tit_lf P .txt {
+	MARGIN: 5px 8px 0px 0px
+}
+.wbim_box .wbim_tit_lf P .msg_tit {
+	MARGIN-LEFT: 8px
+}
+.wbim_box .wbim_tit_lf P .txt .txtg {
+	COLOR: #777; MARGIN-LEFT: 4px
+}
+.wbim_box .wbim_tit_lf P .txt .txtg A {
+	COLOR: #7aa5b9
+}
+.wbim_box .wbim_tit_lf P .bringin {
+	PADDING-BOTTOM: 0px; MARGIN: 5px 0px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 15px; BACKGROUND: url(img/bingin.gif) no-repeat right 6px; COLOR: #777; PADDING-TOP: 0px
+}
+.wbim_box .wbim_tit_lf P .wbim_status_online {
+	MARGIN: 7px 7px 0px 6px
+}
+.wbim_box .wbim_tit_lf P .wbim_status_away {
+	MARGIN: 7px 7px 0px 6px
+}
+.wbim_box .wbim_tit_lf P .wbim_status_busy {
+	MARGIN: 7px 7px 0px 6px
+}
+.wbim_box .wbim_tit_lf P .wbim_status_offline {
+	MARGIN: 7px 7px 0px 6px
+}
+.wbim_box .wbim_tit_lf P .wbim_status_client {
+	MARGIN: 7px 7px 0px 6px
+}
+.wbim_box .wbim_tit_lf P .wbim_status_client_busy {
+	MARGIN: 7px 7px 0px 6px
+}
+.wbim_box .wbim_tit_lf P .wbim_status_client_away {
+	MARGIN: 7px 7px 0px 6px
+}
+.wbim_box .wbim_tit_lf P .wbim_status_mobile {
+	MARGIN: 5px 7px 0px 6px
+}
+.wbim_box .wbim_tit_lf .tit {
+	WIDTH: 64px; HEIGHT: 23px; OVERFLOW: hidden
+}
+.wbim_box .wbim_tit_lf .tit .wbim_status_online {
+	MARGIN: 7px 0px 0px 7px; FLOAT: left
+}
+.wbim_box .wbim_tit_lf .tit .wbim_status_busy {
+	MARGIN: 7px 0px 0px 7px; FLOAT: left
+}
+.wbim_box .wbim_tit_lf .tit .wbim_status_away {
+	MARGIN: 7px 0px 0px 7px; FLOAT: left
+}
+.wbim_box .wbim_tit_lf .tit .wbim_status_offline {
+	MARGIN: 7px 0px 0px 7px; FLOAT: left
+}
+.wbim_box .wbim_tit_lf .tit .wbim_status_disconnected {
+	MARGIN: 7px 0px 0px 7px; FLOAT: left
+}
+.wbim_box .wbim_tit_lf .tit .txt {
+	LINE-HEIGHT: 14px; MARGIN-TOP: 6px; FLOAT: left; MARGIN-LEFT: 7px
+}
+.wbim_box .wbim_tit_lf .tit .icon {
+	MARGIN: 10px 0px 0px 7px; WIDTH: 5px; BACKGROUND: url(img/icons_n.gif) no-repeat -246px 0px; FLOAT: left; HEIGHT: 4px
+}
+.wbim_box .wbim_tit_lf .linert {
+	POSITION: absolute; WIDTH: 2px; BACKGROUND: url(img/icons_n.gif) no-repeat -240px 0px; HEIGHT: 24px; TOP: 0px; LEFT: 64px
+}
+.wbim_box .wbim_tit_lf UL {
+	Z-INDEX: 200; BORDER-BOTTOM: #b8b8b8 1px solid; POSITION: absolute; BORDER-LEFT: #b8b8b8 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; WIDTH: 64px; PADDING-RIGHT: 1px; DISPLAY: none; BACKGROUND: #fff; OVERFLOW: hidden; BORDER-TOP: 0px; BORDER-RIGHT: #b8b8b8 1px solid; PADDING-TOP: 1px; TOP: 22px; LEFT: -2px
+}
+.wbim_box .wbim_tit_lf LI {
+	LINE-HEIGHT: 25px; WIDTH: 64px; FLOAT: left; HEIGHT: 23px; COLOR: #777; OVERFLOW: hidden; CURSOR: pointer
+}
+.wbim_box .wbim_tit_lf LI A {
+	MARGIN: 0px; WIDTH: 100%; DISPLAY: block; HEIGHT: 100%; COLOR: #777; TEXT-DECORATION: none
+}
+.wbim_box .wbim_tit_lf LI A:hover {
+	MARGIN: 0px; WIDTH: 100%; DISPLAY: block; HEIGHT: 100%; COLOR: #777; TEXT-DECORATION: none
+}
+.wbim_box .wbim_tit_lf LI A:hover {
+	BACKGROUND: #eee
+}
+.wbim_box .wbim_tit_lf LI SPAN {
+	MARGIN: 6px 7px 0px; FLOAT: left; CURSOR: pointer; _margin-right: 4px
+}
+.wbim_box .wbim_tit_lf LI.lingtop {
+	MARGIN-BOTTOM: 1px; BACKGROUND: #f0f0f0; HEIGHT: 1px
+}
+.wbim_box .wbim_tit_lf_hover {
+	WIDTH: 64px; BACKGROUND: url(img/bg_rx.png) repeat-x 0px -240px; HEIGHT: 22px
+}
+.wbim_box .wbim_tit_lf_hover .linert {
+	BACKGROUND-POSITION: -243px 0px
+}
+.wbim_box .wbim_tit_lf_hover UL {
+	DISPLAY: block
+}
+.wbim_box .wbim_tit_rt {
+	FLOAT: right
+}
+.wbim_box .wbim_icon_mini {
+	WIDTH: 24px; DISPLAY: block; FLOAT: left; HEIGHT: 23px; MARGIN-RIGHT: -1px
+}
+.wbim_box .wbim_icon_close {
+	WIDTH: 24px; DISPLAY: block; FLOAT: left; HEIGHT: 23px; MARGIN-RIGHT: -1px
+}
+.wbim_box .wbim_icon_fk {
+	WIDTH: 24px; DISPLAY: block; FLOAT: left; HEIGHT: 23px; MARGIN-RIGHT: -1px
+}
+.wbim_box .wbim_icon_setup {
+	WIDTH: 24px; DISPLAY: block; FLOAT: left; HEIGHT: 23px; MARGIN-RIGHT: -1px
+}
+.wbim_box .wbim_icon_close {
+	BACKGROUND-POSITION: 0px 0px
+}
+.wbim_box .wbim_icon_close:hover {
+	BACKGROUND-POSITION: -30px 0px
+}
+.wbim_box .wbim_icon_mini {
+	BACKGROUND-POSITION: -60px 0px
+}
+.wbim_box .wbim_icon_mini:hover {
+	BACKGROUND-POSITION: -90px 0px
+}
+.wbim_box .wbim_icon_fk {
+	BACKGROUND-POSITION: -120px 0px
+}
+.wbim_box .wbim_icon_fk:hover {
+	BACKGROUND-POSITION: -150px 0px
+}
+.wbim_box .wbim_icon_setup {
+	BACKGROUND-POSITION: -180px 0px
+}
+.wbim_box .wbim_icon_setup:hover {
+	BACKGROUND-POSITION: -210px 0px
+}
+.wbim_box .wbim_list_srch {
+	Z-INDEX: 2; BORDER-BOTTOM: #d3d3d3 1px solid; POSITION: relative; BORDER-LEFT: #d3d3d3 1px solid; BACKGROUND-COLOR: #fff; MARGIN: 0px 0px; BACKGROUND-POSITION: -235px 0px; 
+	HEIGHT: 21px; BORDER-TOP: #d3d3d3 1px solid; BORDER-RIGHT: #d3d3d3 1px solid;border:none;margin-top:3px;
+}
+.wbim_box .wbim_list_srchin {
+	 HEIGHT: 21px; OVERFLOW: hidden; 
+}
+.wbim_box .wbim_list_srch INPUT {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 2px; LINE-HEIGHT: 16px; MARGIN: 0px 0px 0px 21px; PADDING-LEFT: 0px; WIDTH: 140px; PADDING-RIGHT: 0px; HEIGHT: 16px; COLOR: #999; OVERFLOW: hidden; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 2px
+}
+.wbim_box .wbim_list_srch .wbim_icon_close_s {
+	POSITION: absolute; RIGHT: 5px; TOP: 5px
+}
+.wbim_box .wbim_loading {
+	BACKGROUND: url(img/loading.gif) no-repeat center center
+}
+.wbim_box .wbim_userhead {
+	POSITION: relative; WIDTH: 21px; FLOAT: left; HEIGHT: 21px
+}
+.wbim_box .wbim_userhead IMG {
+	WIDTH: 20px; DISPLAY: block; HEIGHT: 20px
+}
+.wbim_box .wbim_userhead SPAN {
+	POSITION: absolute; BOTTOM: 0px; RIGHT: 0px; _bottom: -1px; _right: -1px
+}
+.wbim_box .wbim_offline {
+	COLOR: #999
+}
+.wbim_box .wbim_offline .wbim_userhead IMG {
+	FILTER: alpha(opacity=60); -moz-opacity: .6; opacity: .6
+}
+.wbim_box .wbim_username {
+	WORD-WRAP: break-word; WHITE-SPACE: nowrap; FLOAT: left; OVERFLOW: hidden; WORD-BREAK: break-all; _font-family: "宋体"; _white-space: normal
+}
+.wbim_box .wbim_username .wbim_icon_vf {
+	_vertical-align: 0; _margin: 8px 0 0
+}
+.wbim_box .wbim_icon_msg_s {
+	POSITION: absolute; WIDTH: 7px; DISPLAY: inline-block; BACKGROUND-POSITION: -60px 0px; HEIGHT: 8px; TOP: 7px; LEFT: -11px
+}
+.wbim_box .wbim_list_expand {
+	BORDER-BOTTOM: #afafaf 1px solid; POSITION: absolute; BORDER-LEFT: #afafaf 1px solid; WIDTH: 213px; BACKGROUND: #fff; HEIGHT: 394px; BORDER-TOP: #afafaf 1px solid; BORDER-RIGHT: #afafaf 1px solid
+}
+.wbim_box .wbim_list_con {
+	border:5px #0f1829 solid;border-bottom:none;border-top:none;
+}
+.wbim_box .wbim_list_box {
+	POSITION: relative; OVERFLOW-X: hidden; OVERFLOW-Y: auto; MARGIN: 3px 1px; HEIGHT: 311px
+}
+.wbim_box .wbim_list_pos {
+	POSITION: absolute; WIDTH: 203px; BOTTOM: 0px; HEIGHT: 26px; border:5px #0f1829 solid;BORDER-TOP: none; LEFT: 0px; _bottom: -1px
+}
+.wbim_box .wbim_clicknone {
+	border-top:#dedede 1px solid;TEXT-ALIGN: center; FILTER: alpha(opacity=60); WIDTH: 160px; DISPLAY: block; BACKGROUND: #f4f4f4; FLOAT: left; HEIGHT: 24px; -moz-opacity: .6; opacity: .6
+}
+.wbim_box .wbim_clicknone:hover {
+	FILTER: alpha(opacity=85); -moz-opacity: .85; opacity: .85
+}
+.wbim_box .wbim_send_pmsg:hover {
+	FILTER: alpha(opacity=85); -moz-opacity: .85; opacity: .85
+}
+.wbim_box .wbim_icon_arrd {
+	MARGIN: 7px 0px 0px; WIDTH: 11px; DISPLAY: inline-block; BACKGROUND-POSITION: -160px -40px; HEIGHT: 10px
+}
+.wbim_box .wbim_list_expand_nof {
+	HEIGHT: 128px
+}
+.wbim_box .wbim_list_expand_nof .wbim_list_box {
+	HEIGHT: 73px
+}
+.wbim_box .wbim_list_nof {
+	LINE-HEIGHT: 18px; MARGIN: 20px 0px 0px 26px; WIDTH: 160px
+}
+.wbim_box .wbim_list_nof .wbim_icon_tips {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 20px; FLOAT: left; MARGIN-RIGHT: 5px; _margin-right: 2px
+}
+.wbim_box .wbim_send_con {
+	BORDER-LEFT: #dedede 1px solid; border-top:#dedede 1px solid;FLOAT: left
+}
+.wbim_box .wbim_send_pmsg {
+	FILTER: alpha(opacity=60); WIDTH: 42px; DISPLAY: block; BACKGROUND: #f4f4f4; HEIGHT: 24px; -moz-opacity: .6; opacity: .6
+}
+.wbim_box .wbim_btn_pmsg {
+	WIDTH: 17px; DISPLAY: inline-block; BACKGROUND-POSITION: -204px -240px; HEIGHT: 13px
+}
+.wbim_box .wbim_btn_smesg {
+	WIDTH: 19px; DISPLAY: inline-block; BACKGROUND-POSITION: -239px -280px; HEIGHT: 16px
+}
+.wbim_box .wbim_gmsging .wbim_btn_pmsg {
+	BACKGROUND-POSITION: -240px -240px
+}
+.wbim_box .wbim_send_pmsg .wbim_btn_pmsg {
+	MARGIN: 6px 0px 0px 13px
+}
+.wbim_box .wbim_send_pmsg .wbim_btn_smesg {
+	MARGIN: 6px 0px 0px 13px
+}
+.wbim_box .wbim_gmsging {
+	FILTER: alpha(opacity=100); BACKGROUND: #feffe5; -moz-opacity: 1; opacity: 1
+}
+.wbim_box .wbim_gmsging:hover {
+	FILTER: alpha(opacity=100); BACKGROUND: #feffe5; -moz-opacity: 1; opacity: 1
+}
+.wbim_box .wbim_list_group {
+	MARGIN: 5px 2px
+}
+.wbim_box .wbim_list_group_tit {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 18px; ZOOM: 1; HEIGHT: 20px; CURSOR: pointer
+}
+.wbim_box .wbim_list_group_tit_hover {
+	BACKGROUND-COLOR: #e9e9e9
+}
+.wbim_box .wbim_open.wbim_list_group_tit {
+	BACKGROUND-POSITION: -233px -40px
+}
+.wbim_box .wbim_close.wbim_list_group_tit {
+	BACKGROUND-POSITION: -233px -20px
+}
+.wbim_box .wbim_list_friend UL LI {
+	MARGIN: 2px 0px 0px; PADDING-LEFT: 18px; HEIGHT: 28px; CLEAR: both; OVERFLOW: hidden; CURSOR: pointer
+}
+.wbim_box .wbim_list_friend UL LI:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; OVERFLOW: hidden; CONTENT: ""
+}
+.wbim_box .wbim_list_friend UL LI:hover {
+	BACKGROUND: #e9e9e9
+}
+.wbim_box .wbim_list_friend UL LI.wbim_hover {
+	BACKGROUND: #e9e9e9
+}
+.wbim_box .wbim_list_friend .wbim_userhead {
+	MARGIN: 4px 9px 0px 0px
+}
+.wbim_box .wbim_list_friend .wbim_username {
+	LINE-HEIGHT: 28px; WIDTH: 120px; HEIGHT: 28px
+}
+.wbim_box .wbim_list_friend .noresult {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #fff; HEIGHT: auto; CURSOR: text; PADDING-TOP: 0px
+}
+.wbim_box .wbim_list_friend .noresult:hover {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #fff; HEIGHT: auto; CURSOR: text; PADDING-TOP: 0px
+}
+.wbim_box .chat_con {padding:0px 5px 5px 5px;BACKGROUND: #0f1829;}
+.wbim_box .wbim_chat_box {
+	BORDER-BOTTOM: #afafaf 1px solid; POSITION: absolute; 
+	BORDER-LEFT: #afafaf 1px solid; width:430px;
+	BACKGROUND: #0f1829;HEIGHT: 394px; BORDER-TOP: #afafaf 1px solid; BORDER-RIGHT: #afafaf 1px solid
+}
+.wbim_box .wbim_chat_box_s {
+	WIDTH: 326px
+}
+.wbim_box .wbim_chat_lf {
+	WIDTH: 104px; BACKGROUND: url(img/bg_ry.png) #f4f4f4 repeat-y right 0px; FLOAT: left; HEIGHT: 364px
+}
+.wbim_box .wbim_scrolltop {
+	WIDTH: 104px; DISPLAY: block; HEIGHT: 20px
+}
+.wbim_box .wbim_scrolltop_a {
+	WIDTH: 104px; DISPLAY: block; HEIGHT: 20px
+}
+.wbim_box .wbim_scrolltop_n {
+	WIDTH: 104px; DISPLAY: block; HEIGHT: 20px
+}
+.wbim_box .wbim_scrollbtm {
+	WIDTH: 104px; DISPLAY: block; HEIGHT: 20px
+}
+.wbim_box .wbim_scrollbtm_a {
+	WIDTH: 104px; DISPLAY: block; HEIGHT: 20px
+}
+.wbim_box .wbim_scrollbtm_n {
+	WIDTH: 104px; DISPLAY: block; HEIGHT: 20px
+}
+.wbim_box .wbim_scrolltop {
+	BACKGROUND-POSITION: 0px -90px
+}
+.wbim_box .wbim_scrolltop:hover {
+	BACKGROUND-POSITION: 0px -110px
+}
+.wbim_box .wbim_scrolltop:active {
+	BACKGROUND-POSITION: 0px -130px
+}
+.wbim_box .wbim_scrolltop_n {
+	BACKGROUND-POSITION: 0px -150px; CURSOR: default
+}
+.wbim_box .wbim_scrolltop_a {
+	BACKGROUND-POSITION: 0px -170px
+}
+.wbim_box .wbim_scrolltop_a:hover {
+	BACKGROUND-POSITION: 0px -190px
+}
+.wbim_box .wbim_scrolltop_a:active {
+	BACKGROUND-POSITION: 0px -210px
+}
+.wbim_box .wbim_scrollbtm {
+	BACKGROUND-POSITION: -105px -90px
+}
+.wbim_box .wbim_scrollbtm:hover {
+	BACKGROUND-POSITION: -105px -110px
+}
+.wbim_box .wbim_scrollbtm:active {
+	BACKGROUND-POSITION: -105px -130px
+}
+.wbim_box .wbim_scrollbtm_n {
+	BACKGROUND-POSITION: -105px -150px; CURSOR: default
+}
+.wbim_box .wbim_scrollbtm_a {
+	BACKGROUND-POSITION: -105px -170px
+}
+.wbim_box .wbim_scrollbtm_a:hover {
+	BACKGROUND-POSITION: -105px -190px
+}
+.wbim_box .wbim_scrollbtm_a:active {
+	BACKGROUND-POSITION: -105px -210px
+}
+.wbim_box .wbim_chat_friend_box {
+	POSITION: relative; MARGIN: 1px 0px 4px; HEIGHT: 319px; OVERFLOW: hidden
+}
+.wbim_box .wbim_chat_friend_list {
+	POSITION: absolute; MIN-HEIGHT: 320px; WIDTH: 104px; TOP: 0px
+}
+.wbim_box .wbim_chat_friend_list LI {
+	POSITION: relative; PADDING-BOTTOM: 1px; MARGIN: 2px 0px 0px 3px; PADDING-LEFT: 6px; WIDTH: 99px; PADDING-RIGHT: 1px; ZOOM: 1; DISPLAY: inline; FLOAT: left; HEIGHT: 28px; OVERFLOW: hidden; CURSOR: pointer; PADDING-TOP: 1px
+}
+.wbim_box .wbim_chat_friend_list LI:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; OVERFLOW: hidden; CONTENT: ""
+}
+.wbim_box .wbim_chat_friend_list .wbim_userhead {
+	MARGIN: 4px 6px 0px 0px
+}
+.wbim_box .wbim_chat_friend_list .wbim_username {
+	LINE-HEIGHT: 30px; WIDTH: 48px; HEIGHT: 30px
+}
+.wbim_box .wbim_chat_friend_list .wbim_icon_close_s {
+	WIDTH: 0px; DISPLAY: none; HEIGHT: 0px
+}
+.wbim_box .wbim_chat_friend_list LI:hover .wbim_icon_close_s {
+	POSITION: absolute; WIDTH: 12px; DISPLAY: block; HEIGHT: 12px; CURSOR: pointer; TOP: 10px; LEFT: 83px
+}
+.wbim_box .wbim_chat_friend_list LI.wbim_hover .wbim_icon_close_s {
+	POSITION: absolute; WIDTH: 12px; DISPLAY: block; HEIGHT: 12px; CURSOR: pointer; TOP: 10px; LEFT: 83px
+}
+.wbim_box .wbim_chat_friend_list LI.wbim_active:hover .wbim_icon_close_s {
+	LEFT: 82px
+}
+.wbim_box .wbim_chat_friend_list LI.wbim_highlight:hover .wbim_icon_close_s {
+	LEFT: 82px
+}
+.wbim_box .wbim_chat_friend_list LI.wbim_highlight {
+	BORDER-BOTTOM: #f6e2ae 1px solid; BORDER-LEFT: #f6e2ae 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff1ba; PADDING-LEFT: 5px; WIDTH: 90px; PADDING-RIGHT: 0px; BORDER-TOP: #f6e2ae 1px solid; BORDER-RIGHT: #f6e2ae 1px solid; PADDING-TOP: 0px
+}
+.wbim_box .wbim_chat_friend_list LI.wbim_highlight:hover {
+	BORDER-BOTTOM: #f6e2ae 1px solid; BORDER-LEFT: #f6e2ae 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff1ba; PADDING-LEFT: 5px; WIDTH: 90px; PADDING-RIGHT: 0px; BORDER-TOP: #f6e2ae 1px solid; BORDER-RIGHT: #f6e2ae 1px solid; PADDING-TOP: 0px
+}
+.wbim_box .wbim_chat_friend_list LI.wbim_highlight_shine {
+	BORDER-BOTTOM: #f3c345 1px solid; BORDER-LEFT: #f3c345 1px solid; BACKGROUND-COLOR: #fae892; BORDER-TOP: #f3c345 1px solid; BORDER-RIGHT: #f3c345 1px solid
+}
+.wbim_box .wbim_chat_friend_list LI.wbim_highlight_shine:hover {
+	BORDER-BOTTOM: #f3c345 1px solid; BORDER-LEFT: #f3c345 1px solid; BACKGROUND-COLOR: #fae892; BORDER-TOP: #f3c345 1px solid; BORDER-RIGHT: #f3c345 1px solid
+}
+.wbim_box .wbim_chat_friend_list LI.wbim_active {
+	Z-INDEX: 3; BORDER-BOTTOM: #bbb 1px solid; BORDER-LEFT: #bbb 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; WIDTH: 95px; PADDING-RIGHT: 0px; BACKGROUND: #fff; BORDER-TOP: #bbb 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+.wbim_box .wbim_chat_rt {
+	WIDTH: 316px; BACKGROUND: #fff; FLOAT: left; HEIGHT: 364px
+}
+.wbim_box .wbim_chat_up {
+	MARGIN: 1px 1px 0px; HEIGHT: 225px; OVERFLOW: hidden
+}
+.wbim_box .wbim_chat_tips {
+	Z-INDEX: 100; POSITION: absolute; PADDING-BOTTOM: 4px; LINE-HEIGHT: 14px; PADDING-LEFT: 27px; WIDTH: 267px; PADDING-RIGHT: 20px; BACKGROUND: #f4f9fd; PADDING-TOP: 6px
+}
+.wbim_box .wbim_chat_tips .wbim_icon_close_s {
+	POSITION: absolute; RIGHT: 5px; TOP: 6px
+}
+.wbim_box .wbim_chat_tips .wbim_icon_tips {
+	POSITION: absolute; MARGIN-RIGHT: 4px; TOP: 5px; LEFT: 8px
+}
+.wbim_box .wbim_chat_list {
+	POSITION: relative; PADDING-BOTTOM: 0px; OVERFLOW-X: hidden; OVERFLOW-Y: auto; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; HEIGHT: 222px; PADDING-TOP: 0px
+}
+.wbim_box .wbim_chat_list DD {
+	CLEAR: both
+}
+.wbim_box .wbim_chat_list .line {
+	MARGIN: 0px auto; WIDTH: 100%; BACKGROUND: url(img/bg_dot.gif) repeat-x 0px 10px; HEIGHT: 11px; OVERFLOW: hidden; _width: 94%
+}
+.wbim_box .wbim_msgr {
+	MIN-WIDTH: 72px; MAX-WIDTH: 222px; MARGIN-BOTTOM: 1px
+}
+.wbim_box .wbim_msgl {
+	MIN-WIDTH: 72px; MAX-WIDTH: 222px; MARGIN-BOTTOM: 1px
+}
+.wbim_box .wbim_msg_g {
+	MIN-WIDTH: 72px; MAX-WIDTH: 222px; MARGIN-BOTTOM: 1px
+}
+.wbim_box .wbim_msg_err {
+	MIN-WIDTH: 72px; MAX-WIDTH: 222px; MARGIN-BOTTOM: 1px
+}
+.wbim_box .wbim_msgr {
+	DISPLAY: inline; FLOAT: right; MARGIN-RIGHT: 5px
+}
+.wbim_box .wbim_msgl {
+	DISPLAY: inline; FLOAT: left; MARGIN-LEFT: 5px
+}
+.wbim_box .wbim_msg_g {
+	DISPLAY: inline; FLOAT: left; MARGIN-LEFT: 5px
+}
+.wbim_box .wbim_msg_err {
+	DISPLAY: inline; FLOAT: left; MARGIN-LEFT: 5px
+}
+.wbim_box .wbim_msgpos {
+	POSITION: relative; MARGIN: 10px 0px 0px
+}
+.wbim_box .msg_box {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px; PADDING-TOP: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px
+}
+.wbim_box .wbim_msgr .msg_box {
+	BORDER-BOTTOM: #dff0d8 1px solid; BORDER-LEFT: #dff0d8 1px solid; BACKGROUND: #ebfbe3; BORDER-TOP: #dff0d8 1px solid; BORDER-RIGHT: #dff0d8 1px solid
+}
+.wbim_box .wbim_msgl .msg_box {
+	BORDER-BOTTOM: #eaeaea 1px solid; BORDER-LEFT: #eaeaea 1px solid; BACKGROUND: #f3f3f3; BORDER-TOP: #eaeaea 1px solid; BORDER-RIGHT: #eaeaea 1px solid
+}
+.wbim_box .wbim_msg_g .msg_box {
+	BORDER-BOTTOM: #d9edfa 1px solid; BORDER-LEFT: #d9edfa 1px solid; BACKGROUND: #f3f9fd; BORDER-TOP: #d9edfa 1px solid; BORDER-RIGHT: #d9edfa 1px solid
+}
+.wbim_box .wbim_msg_err .msg_box {
+	BORDER-BOTTOM: #e79898 1px solid; BORDER-LEFT: #e79898 1px solid; BACKGROUND: #f0d4d4; BORDER-TOP: #e79898 1px solid; BORDER-RIGHT: #e79898 1px solid
+}
+.wbim_box .msg_box .txt {
+	LINE-HEIGHT: 14px; WORD-WRAP: break-word; WORD-BREAK: break-all
+}
+.wbim_box .wbim_msg_err .msg_box .txt A.a_grey {
+	COLOR: #999; CURSOR: default; TEXT-DECORATION: none
+}
+.wbim_box .wbim_msg_err .msg_box .txt A.a_grey:hover {
+	COLOR: #999; CURSOR: default; TEXT-DECORATION: none
+}
+.wbim_box .msg_box .lr {
+	POSITION: relative; ZOOM: 1; _font-family: "宋体"
+}
+.wbim_box .msg_box .lr .pos {
+	POSITION: absolute; BOTTOM: 0px; COLOR: #999; RIGHT: -2px
+}
+.wbim_box .msg_box .lr .pos A {
+	MARGIN: 0px 2px
+}
+.wbim_box .msg_box .lr .picsbox {
+	TEXT-ALIGN: center; WIDTH: 32px; DISPLAY: inline-block; HEIGHT: 32px; VERTICAL-ALIGN: middle; OVERFLOW: hidden; MARGIN-RIGHT: 5px
+}
+.wbim_box .msg_box .picsbox_n {
+	MAX-WIDTH: 120px; MAX-HEIGHT: 120px
+}
+.wbim_box .msg_box .lr .picsbox I {
+	DISPLAY: inline-block; HEIGHT: 100%; VERTICAL-ALIGN: middle
+}
+.wbim_box .msg_box .lr .picsbox IMG {
+	VERTICAL-ALIGN: middle
+}
+.wbim_box .msg_box .lr .infos {
+	MIN-WIDTH: 113px; LINE-HEIGHT: 18px; DISPLAY: inline-block; MAX-WIDTH: 159px; WORD-WRAP: break-word; VERTICAL-ALIGN: middle; WORD-BREAK: break-all
+}
+.wbim_box .msg_box .line {
+	MARGIN: 5px 0px 8px; WIDTH: 100%; BACKGROUND: url(img/bg_dot.gif) repeat-x; HEIGHT: 1px; OVERFLOW: hidden
+}
+.wbim_box .msg_arr {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .msg_dis .arru {
+	BACKGROUND: url(img/icons.png) no-repeat; _background: url(img/icons.gif) no-repeat
+}
+.wbim_box .msg_arr {
+	Z-INDEX: 1; POSITION: absolute; WIDTH: 6px; HEIGHT: 9px
+}
+.wbim_box .wbim_msgr .msg_arr {
+	BOTTOM: 10px; BACKGROUND-POSITION: -140px -20px; RIGHT: -5px
+}
+.wbim_box .wbim_msgl .msg_arr {
+	BOTTOM: 10px; BACKGROUND-POSITION: -160px -20px; LEFT: -5px; _left: -15px
+}
+.wbim_box .wbim_msg_g .msg_arr {
+	BOTTOM: 10px; BACKGROUND: url(img/bg_g.png) no-repeat 0px -450px; LEFT: -5px; _background: url(img/bg_g.gif) no-repeat 0 -450px; _left: -15px
+}
+.wbim_box .wbim_msg_err .msg_arr {
+	BOTTOM: 10px; BACKGROUND-POSITION: -167px -20px; LEFT: -5px; _left: -15px
+}
+.wbim_box .wbim_msgr .msg_time {
+	TEXT-ALIGN: right; PADDING-RIGHT: 10px
+}
+.wbim_box .wbim_msgl .msg_time {
+	PADDING-LEFT: 10px
+}
+.wbim_box .wbim_msg_g .msg_time {
+	PADDING-LEFT: 10px
+}
+.wbim_box .wbim_msg_err .msg_time {
+	PADDING-LEFT: 10px
+}
+.wbim_box .msg_disbox1 {
+	Z-INDEX: 100; POSITION: absolute
+}
+.wbim_box .msg_disbox1 .msg_dis {
+	Z-INDEX: 4; POSITION: absolute; TOP: 0px; LEFT: 0px
+}
+.wbim_box .msg_disbox1 .msg_dis .arru {
+	Z-INDEX: 4; POSITION: absolute; WIDTH: 19px; BACKGROUND-POSITION: -180px -20px; HEIGHT: 10px; TOP: 0px; LEFT: 25px
+}
+.wbim_box .msg_disbox1 .msg_dis .box_s {
+	Z-INDEX: 4; BORDER-BOTTOM: #f9f2a7 1px solid; POSITION: absolute; BORDER-LEFT: #f9f2a7 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 120px; PADDING-RIGHT: 10px; BACKGROUND: #feffe5; BORDER-TOP: #f9f2a7 1px solid; BORDER-RIGHT: #f9f2a7 1px solid; PADDING-TOP: 10px; TOP: 9px; LEFT: 0px
+}
+.wbim_box .msg_disbox2 {
+	Z-INDEX: 100; POSITION: absolute; RIGHT: 517px; TOP: 79px
+}
+.wbim_box .wbim_chat_toolbar {
+	BORDER-BOTTOM: #ededed 1px solid; MARGIN: 0px 1px; BACKGROUND: #f3f3f3; HEIGHT: 26px
+}
+.wbim_box .wbim_chat_toolbarin {
+	BORDER-BOTTOM: #dfdfdf 1px solid; HEIGHT: 25px
+}
+.wbim_box .wbim_chat_toolbar A.wbim_history {
+	MARGIN: 4px 9px 0px 0px; DISPLAY: block; FLOAT: right; COLOR: #999; CURSOR: pointer; TEXT-DECORATION: none; _margin-top: 0; _display: inline
+}
+.wbim_box .wbim_chat_toolbar A.wbim_history:hover {
+	COLOR: #777
+}
+.wbim_box .wbim_chat_toolbar DIV.wbim_face {
+	Z-INDEX: 100; POSITION: relative; MARGIN: 0px 0px 0px; PADDING-LEFT: 9px; DISPLAY: block; FLOAT: left; COLOR: #0082cd
+}
+.wbim_box .wbim_face A {
+	COLOR: #5a5a5a
+}
+.wbim_box .wbim_chat_toolbar DIV.wbim_face A:hover {
+	COLOR: #838383; TEXT-DECORATION: none
+}
+.wbim_box .wbim_icon_face {
+	WIDTH: 16px; DISPLAY: inline-block; HEIGHT: 16px; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 3px
+}
+.wbim_box .wbim_icon_img {
+	WIDTH: 16px; DISPLAY: inline-block; HEIGHT: 16px; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 3px
+}
+.wbim_box .wbim_icon_doc {
+	WIDTH: 16px; DISPLAY: inline-block; HEIGHT: 16px; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 3px;MARGIN-TOP: 4px
+}
+.wbim_box .wbim_icon_chatdoc {
+	WIDTH: 16px; DISPLAY: inline-block; HEIGHT: 16px; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 3px
+}
+.wbim_box .wbim_icon_face {
+	BACKGROUND-POSITION: -40px -40px; _vertical-align: 0
+}
+.wbim_box .wbim_tool_ctrl:hover .wbim_icon_face {
+	BACKGROUND-POSITION: -60px -40px
+}
+.wbim_box .wbim_icon_img {
+	BACKGROUND-POSITION: -160px -60px
+}
+.wbim_box .wbim_tool_ctrl:hover .wbim_icon_img {
+	BACKGROUND-POSITION: -180px -60px
+}
+.wbim_box A.wbim_icon_img_none {
+	COLOR: #838383; CURSOR: default
+}
+.wbim_box A.wbim_icon_doc_none {
+	COLOR: #838383; CURSOR: default
+}
+.wbim_box .wbim_icon_img_none .wbim_icon_img {
+	BACKGROUND-POSITION: -160px -240px
+}
+.wbim_box .wbim_icon_img_none:hover .wbim_icon_img {
+	BACKGROUND-POSITION: -160px -240px
+}
+.wbim_box .wbim_icon_doc {
+	BACKGROUND-POSITION: -200px -60px
+}
+.wbim_box .wbim_tool_ctrl:hover .wbim_icon_doc {
+	BACKGROUND-POSITION: -220px -60px
+}
+.wbim_box .wbim_icon_doc_none .wbim_icon_doc {
+	BACKGROUND-POSITION: -180px -240px; CURSOR: default
+}
+.wbim_box .wbim_icon_doc_none:hover .wbim_icon_doc {
+	BACKGROUND-POSITION: -180px -240px; CURSOR: default
+}
+.wbim_box .wbim_icon_chatdoc {
+	BACKGROUND-POSITION: -80px -40px; _vertical-align: 0; _margin-top: 5px
+}
+.wbim_box .wbim_history:hover .wbim_icon_chatdoc {
+	BACKGROUND-POSITION: -100px -40px
+}
+.wbim_box .wbim_chat_input {
+	TEXT-ALIGN: center; MARGIN: 0px 1px; WIDTH: 314px; HEIGHT: 85px
+}
+.wbim_box .wbim_chat_input TEXTAREA {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; OVERFLOW-X: hidden; OVERFLOW-Y: auto; MARGIN: 0px 0px 0px 0px; WIDTH: 98%; HEIGHT: 80px; COLOR: #777; FONT-SIZE: 12px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.wbim_box .wbim_chat_input_dis TEXTAREA {
+	HEIGHT: 60px
+}
+.wbim_box .wbim_chat_input_tips {
+	Z-INDEX: 101; POSITION: relative; TEXT-ALIGN: left; BACKGROUND: #f6f6f6; HEIGHT: 20px
+}
+.wbim_box .wbim_chat_input .wbim_chat_input_tips {
+	DISPLAY: none
+}
+.wbim_box .wbim_chat_input_dis .wbim_chat_input_tips {
+	DISPLAY: block
+}
+.wbim_box .wbim_chat_input_tips .fl {
+	POSITION: relative; LINE-HEIGHT: 20px; PADDING-LEFT: 30px; WIDTH: 155px; WORD-WRAP: break-word; FLOAT: left; HEIGHT: 20px; OVERFLOW: hidden; WORD-BREAK: break-all
+}
+.wbim_box .wbim_chat_input_tips .fl .icon_del {
+	POSITION: absolute; WIDTH: 20px; BACKGROUND: url(img/icons.png) no-repeat 2px -238px; HEIGHT: 20px; TOP: 0px; LEFT: 7px; _background: url(img/icons.gif) no-repeat 2px -238px
+}
+.wbim_box .wbim_chat_input_tips .fl .icon_ing {
+	POSITION: absolute; WIDTH: 20px; BACKGROUND: url(img/loading2.gif) no-repeat 2px 2px; HEIGHT: 20px; TOP: 0px; LEFT: 7px
+}
+.wbim_box .wbim_chat_input_tips .fl .txt {
+	COLOR: #999; MARGIN-LEFT: -20px
+}
+.wbim_box .wbim_icon_s_default {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_excel {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_exe {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_music {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_pdf {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_photo {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_ppt {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_rar {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_txt {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_video {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_word {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(img/bg_file.png) no-repeat; HEIGHT: 16px; TOP: 2px; LEFT: 9px
+}
+.wbim_box .wbim_icon_s_default {
+	BACKGROUND-POSITION: 0px 0px
+}
+.wbim_box .wbim_icon_s_excel {
+	BACKGROUND-POSITION: 0px -20px
+}
+.wbim_box .wbim_icon_s_exe {
+	BACKGROUND-POSITION: 0px -40px
+}
+.wbim_box .wbim_icon_s_music {
+	BACKGROUND-POSITION: 0px -60px
+}
+.wbim_box .wbim_icon_s_pdf {
+	BACKGROUND-POSITION: 0px -80px
+}
+.wbim_box .wbim_icon_s_photo {
+	BACKGROUND-POSITION: 0px -100px
+}
+.wbim_box .wbim_icon_s_ppt {
+	BACKGROUND-POSITION: 0px -120px
+}
+.wbim_box .wbim_icon_s_rar {
+	BACKGROUND-POSITION: 0px -140px
+}
+.wbim_box .wbim_icon_s_txt {
+	BACKGROUND-POSITION: 0px -160px
+}
+.wbim_box .wbim_icon_s_video {
+	BACKGROUND-POSITION: 0px -180px
+}
+.wbim_box .wbim_icon_s_word {
+	BACKGROUND-POSITION: 0px -200px
+}
+.wbim_box .wbim_icon_b_default {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_excel {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_exe {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_music {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_pdf {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_photo {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_ppt {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_rar {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_txt {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_video {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_word {
+	WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: url(img/bg_file.png) no-repeat 0px -240px; HEIGHT: 32px
+}
+.wbim_box .wbim_icon_b_default {
+	BACKGROUND-POSITION: 0px -240px
+}
+.wbim_box .wbim_icon_b_excel {
+	BACKGROUND-POSITION: 0px -280px
+}
+.wbim_box .wbim_icon_b_exe {
+	BACKGROUND-POSITION: 0px -320px
+}
+.wbim_box .wbim_icon_b_music {
+	BACKGROUND-POSITION: 0px -360px
+}
+.wbim_box .wbim_icon_b_pdf {
+	BACKGROUND-POSITION: 0px -400px
+}
+.wbim_box .wbim_icon_b_photo {
+	BACKGROUND-POSITION: 0px -440px
+}
+.wbim_box .wbim_icon_b_ppt {
+	BACKGROUND-POSITION: 0px -480px
+}
+.wbim_box .wbim_icon_b_rar {
+	BACKGROUND-POSITION: 0px -520px
+}
+.wbim_box .wbim_icon_b_txt {
+	BACKGROUND-POSITION: 0px -560px
+}
+.wbim_box .wbim_icon_b_video {
+	BACKGROUND-POSITION: 0px -600px
+}
+.wbim_box .wbim_icon_b_word {
+	BACKGROUND-POSITION: 0px -640px
+}
+.wbim_box .msg_box .lr .picsbox_swf.picsbox {
+	POSITION: relative; OVERFLOW: visible
+}
+.wbim_box .wbim_icon_b_swf {
+	POSITION: absolute; WIDTH: 112px; DISPLAY: inline-block; HEIGHT: 33px; TOP: 0px; LEFT: 0px
+}
+.wbim_box .wbim_icon_b_swf OBJECT {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium
+}
+.wbim_box .wbim_icon_b_swf EMBED {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium
+}
+.wbim_box .wbim_chat_input_tips .fr {
+	FLOAT: right
+}
+.wbim_box .wbim_chat_input_tips .fr A.links {
+	MARGIN: 4px 5px 0px; FLOAT: left
+}
+.wbim_box .wbim_chat_input_tips .fr .wbim_icon_close_s {
+	MARGIN: 4px 6px 0px 0px
+}
+.wbim_box .wbim_tips_show {
+	Z-INDEX: 100; POSITION: relative; DISPLAY: block; FLOAT: left
+}
+.wbim_box .wbim_tips_pos {
+	BORDER-BOTTOM: #a0a0a0 1px solid; POSITION: absolute; BORDER-LEFT: #a0a0a0 1px solid; PADDING-BOTTOM: 4px; WIDTH: 199px; BOTTOM: 24px; BACKGROUND: #fff; BORDER-TOP: #a0a0a0 1px solid; RIGHT: -10px; BORDER-RIGHT: #a0a0a0 1px solid
+}
+.wbim_box .wbim_tips_pos_n {
+	Z-INDEX: 200; BORDER-BOTTOM: #a0a0a0 1px solid; POSITION: absolute; BORDER-LEFT: #a0a0a0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; BOTTOM: 24px; PADDING-RIGHT: 2px; BACKGROUND: #fff; BORDER-TOP: #a0a0a0 1px solid; BORDER-RIGHT: #a0a0a0 1px solid; PADDING-TOP: 2px; LEFT: 0px
+}
+.wbim_box .msg_disbox2 .wbim_tips_pos {
+	BOTTOM: auto; RIGHT: auto
+}
+.wbim_box .wbim_tips_tit {
+	HEIGHT: 20px; OVERFLOW: hidden
+}
+.wbim_box .wbim_tips_tit .wbim_face_arr {
+	BOTTOM: -8px; RIGHT: 18px; TOP: auto; LEFT: auto
+}
+.wbim_box .wbim_tips_tit .wbim_icon_down {
+	POSITION: absolute; TOP: 4px; LEFT: 9px
+}
+.wbim_box .wbim_tips_tit .wbim_icon_close_s {
+	POSITION: absolute; MARGIN: 0px; RIGHT: 5px; TOP: 4px
+}
+.wbim_box .wbim_chat_input_tips .fr .wbim_tips_tit .wbim_icon_close_s {
+	POSITION: absolute; MARGIN: 0px; RIGHT: 5px; TOP: 4px
+}
+.wbim_box .wbim_tips_pic {
+	TEXT-ALIGN: center; MARGIN: 0px auto; WIDTH: 191px; BACKGROUND: #f3f3f3; HEIGHT: 127px; OVERFLOW: hidden
+}
+.wbim_box .wbim_tips_pic I {
+	DISPLAY: inline-block; HEIGHT: 100%; VERTICAL-ALIGN: middle
+}
+.wbim_box .wbim_tips_pic IMG {
+	VERTICAL-ALIGN: middle
+}
+.wbim_box .wbim_tips_pic_n {
+	MIN-WIDTH: 30px; TEXT-ALIGN: center; MAX-WIDTH: 120px; MAX-HEIGHT: 120px; OVERFLOW: hidden
+}
+.wbim_box .wbim_tips_pic_n IMG {
+	MAX-WIDTH: 120px
+}
+.wbim_box .wbim_p_arr {
+	POSITION: absolute; WIDTH: 8px; BOTTOM: -5px; DISPLAY: inline-block; BACKGROUND-POSITION: -48px -280px; HEIGHT: 5px; LEFT: 13px; _bottom: -15px
+}
+.wbim_box .wbim_chat_btmin {
+	BACKGROUND: #f3f3f3; HEIGHT: 24px; BORDER-TOP: #d3d3d3 1px solid; _overflow: hidden
+}
+.wbim_box .wbim_chat_btm_lf {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 9px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 5px
+}
+.wbim_box .wbim_chat_btm_rt {
+	FLOAT: right
+}
+.wbim_box .wbim_chat_btm .wbim_tips_char {
+	LINE-HEIGHT: 24px; MARGIN: 0px 10px 0px 0px; FLOAT: left; COLOR: #999
+}
+.wbim_box .wbim_face_box {
+	BORDER-BOTTOM: #a0a0a0 1px solid; POSITION: absolute; BORDER-LEFT: #a0a0a0 1px solid; WIDTH: 452px; BOTTOM: 24px; BACKGROUND: #fff; BORDER-TOP: #a0a0a0 1px solid; BORDER-RIGHT: #a0a0a0 1px solid; LEFT: 0px
+}
+.wbim_box .wbim_face_tit {
+	BORDER-BOTTOM: #d1e0e7 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; BACKGROUND: url(img/bg_rx.png) 0px -210px; HEIGHT: 26px; PADDING-TOP: 0px; _overflow: hidden
+}
+.wbim_box .wbim_face_tit_lf {
+	BORDER-BOTTOM: 0px; POSITION: relative; BORDER-LEFT: #d1e0e7 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; MARGIN-TOP: 4px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; BACKGROUND: #fff; FLOAT: left; BORDER-TOP: #d1e0e7 1px solid; BORDER-RIGHT: #d1e0e7 1px solid; PADDING-TOP: 0px
+}
+.wbim_box .wbim_face_tit .wbim_icon_close {
+	FLOAT: right
+}
+.wbim_box .wbim_face_arr {
+	POSITION: absolute; WIDTH: 16px; BOTTOM: -8px; BACKGROUND-POSITION: -140px -40px; HEIGHT: 8px; OVERFLOW: hidden; LEFT: 8px
+}
+.wbim_box .msg_disbox2 .wbim_face_arr {
+	WIDTH: 8px; BACKGROUND-POSITION: -140px -240px; HEIGHT: 16px; TOP: 25px; LEFT: -8px
+}
+.wbim_box .wbim_face_con {
+	MARGIN: 10px 0px 10px 8px
+}
+.wbim_box .wbim_face_list {
+	ZOOM: 1
+}
+.wbim_box .wbim_face_list:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; OVERFLOW: hidden; CONTENT: ""
+}
+.wbim_box .wbim_face_list LI {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 1px; PADDING-LEFT: 0px; WIDTH: 28px; PADDING-RIGHT: 1px; FLOAT: left; HEIGHT: 28px; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.wbim_box .wbim_face_list LI A {
+	BORDER-BOTTOM: #ededed 1px solid; BORDER-LEFT: #ededed 1px solid; WIDTH: 26px; DISPLAY: block; HEIGHT: 26px; BORDER-TOP: #ededed 1px solid; BORDER-RIGHT: #ededed 1px solid
+}
+.wbim_box .wbim_face_list LI A:hover {
+	BORDER-BOTTOM-COLOR: #fce0c3; BORDER-TOP-COLOR: #fce0c3; BACKGROUND: #fff9ec; BORDER-RIGHT-COLOR: #fce0c3; BORDER-LEFT-COLOR: #fce0c3
+}
+.wbim_box .wbim_confirm_box {
+	Z-INDEX: 1001; BORDER-BOTTOM: #c6c6c6 1px solid; POSITION: absolute; BORDER-LEFT: #c6c6c6 1px solid; WIDTH: 220px; BACKGROUND: #fff; BORDER-TOP: #c6c6c6 1px solid; BORDER-RIGHT: #c6c6c6 1px solid
+}
+.wbim_box .wbim_confirm_info {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; CLEAR: both; PADDING-TOP: 3px
+}
+.wbim_box .wbim_confirm_con .wbim_btn_c {
+	MARGIN: 0px 5px
+}
+.wbim_box .wbim_confirm_p {
+	LINE-HEIGHT: 20px; MARGIN: 10px auto
+}
+.wbim_box .wbim_confirm_p .txt {
+	LINE-HEIGHT: 16px; WIDTH: 168px; DISPLAY: inline-block; VERTICAL-ALIGN: top
+}
+.wbim_box .wbim_confirm_p .wbim_icon_ask {
+	VERTICAL-ALIGN: middle
+}
+.wbim_box .wbim_confirm_p .wbim_icon_tips {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 5px
+}
+.wbim_box .wbim_confirm_btn {
+	TEXT-ALIGN: center
+}
+.wbim_box .wbim_confirm_btn A {
+	MARGIN: 0px 5px
+}
+.wbim_box .wbim_line {
+	HEIGHT: 0px; OVERFLOW: hidden; BORDER-TOP: #ececec 1px solid
+}
+.wbim_box .wbim_min_box_col2 {
+	BORDER-BOTTOM: #c6c6c6 1px solid; BORDER-LEFT: #c6c6c6 1px solid; HEIGHT: 24px; COLOR: #444; BORDER-TOP: #c6c6c6 1px solid; CURSOR: pointer; BORDER-RIGHT: #c6c6c6 1px solid
+}
+.wbim_box .wbim_min_box_col3 {
+	BORDER-BOTTOM: #c6c6c6 1px solid; BORDER-LEFT: #c6c6c6 1px solid; HEIGHT: 24px; COLOR: #444; BORDER-TOP: #c6c6c6 1px solid; CURSOR: pointer; BORDER-RIGHT: #c6c6c6 1px solid
+}
+.wbim_box .wbim_min_box_col3 {
+	WIDTH: 368px
+}
+.wbim_box .wbim_min_box_col2 {
+	WIDTH: 198px
+}
+.wbim_box .wbim_min_box_col2 .wbim_min_linefor3 {
+	DISPLAY: none
+}
+.wbim_box .wbim_min_box_col2 .wbim_min_chat {
+	DISPLAY: none
+}
+.wbim_box .wbim_min_box {
+	BACKGROUND: url("img/bg_rx.png") repeat-x 0px -90px; HEIGHT: 24px
+}
+.wbim_box .wbim_min_box_hover {
+	BACKGROUND: url(img/bg_rx.png) repeat-x 0px -120px
+}
+.wbim_box .wbim_min_status_open {
+	BACKGROUND: url(img/bg_rx.png) repeat-x 0px -180px
+}
+.wbim_box .wbim_min_chat_msg {
+	BACKGROUND: url(img/bg_rx.png) repeat-x 0px -150px; COLOR: #fff
+}
+.wbim_box .wbim_min_chat_msg .wbim_icon_msg {
+	BACKGROUND-POSITION: -20px -40px
+}
+.wbim_box .wbim_min_line {
+	WIDTH: 2px; BACKGROUND-POSITION: -120px -60px; FLOAT: right; HEIGHT: 24px
+}
+.wbim_box .wbim_min_chat {
+	FLOAT: right; HEIGHT: 24px; OVERFLOW: hidden
+}
+.wbim_box .wbim_min_friend {
+	FLOAT: right; HEIGHT: 24px; OVERFLOW: hidden
+}
+.wbim_box .wbim_min_chat {
+	LINE-HEIGHT: 24px; WIDTH: 168px; _font-family: "宋体"
+}
+.wbim_box .wbim_min_friend {
+	LINE-HEIGHT: 26px; WIDTH: 198px
+}
+.wbim_box .wbim_icon_msg {
+	MARGIN: 0px 6px; WIDTH: 16px; DISPLAY: inline-block; BACKGROUND-POSITION: 0px -40px; HEIGHT: 16px
+}
+.wbim_box .wbim_min_chat .line {
+	WIDTH: 10px; DISPLAY: inline-block; HEIGHT: 16px
+}
+.wbim_box .wbim_icon_msg {
+	MARGIN-TOP: 6px; VERTICAL-ALIGN: -5px; _vertical-align: -3px; _margin-top: 4px
+}
+.wbim_box .wbim_min_chat .line {
+	MARGIN-TOP: 6px; VERTICAL-ALIGN: -5px; _vertical-align: -3px; _margin-top: 4px
+}
+.wbim_box .wbim_min_friend .statusbox {
+	MARGIN: 8px 8px 0px 7px; WIDTH: 9px; PADDING-RIGHT: 7px; FLOAT: left; HEIGHT: 9px; BORDER-RIGHT: #cbcbcb 1px solid; _display: inline; _margin-right: 5px
+}
+.wbim_box .wbim_box_pop {
+	POSITION: absolute; FILTER: alpha(opacity=60); BACKGROUND: #777; -moz-opacity: .6; opacity: .6
+}
+.wbim_box .layer_tips {
+	Z-INDEX: 999; POSITION: absolute; LINE-HEIGHT: 17px
+}
+.wbim_box .layer_tips .arrow_down {
+	POSITION: absolute; MARGIN: 7px auto 0px; DISPLAY: block; OVERFLOW: hidden
+}
+.wbim_box .layer_tips_bg {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #feffe5; HEIGHT: 100%; OVERFLOW: hidden; PADDING-TOP: 8px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px
+}
+.wbim_box .layer_tips_version {
+	BORDER-BOTTOM: #e6d4a9 2px solid; BORDER-LEFT: #e6d4a9 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 220px; PADDING-RIGHT: 0px; COLOR: #666; BORDER-TOP: #e6d4a9 1px solid; BORDER-RIGHT: #e6d4a9 1px solid; PADDING-TOP: 0px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px
+}
+.wbim_box .layer_tips_version UL {
+	ZOOM: 1; OVERFLOW: hidden
+}
+.wbim_box .layer_tips_version LI {
+	TEXT-ALIGN: left
+}
+.wbim_box .layer_tips_version LI A {
+	CURSOR: pointer
+}
+.wbim_box .layer_tips_version LI.link_btn {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 7px
+}
+.wbim_box .layer_tips_version LI SPAN.link {
+	COLOR: #e0a20c
+}
+.wbim_box .layer_tips_version LI .wbim_btn_c {
+	MARGIN-LEFT: 5px
+}
+.wbim_box .layer_tips_version .arrow_down {
+	WIDTH: 20px; BOTTOM: -9px; BACKGROUND: url(img/icons.png) no-repeat -201px -21px; HEIGHT: 9px; _background: url(img/icons.gif) no-repeat -201px -21px
+}
+.wbim_box .layer_tips_version .W_btn_tip {
+	LINE-HEIGHT: 19px; DISPLAY: inline-block; BACKGROUND: url(img/layer_tip_newico.png) no-repeat 0px 0px; HEIGHT: 19px
+}
+.wbim_box .layer_tips_version .W_btn_tip EM {
+	LINE-HEIGHT: 19px; DISPLAY: inline-block; BACKGROUND: url(img/layer_tip_newico.png) no-repeat 0px 0px; HEIGHT: 19px
+}
+.wbim_box .layer_tips_version .W_btn_tip_esc {
+	LINE-HEIGHT: 19px; DISPLAY: inline-block; BACKGROUND: url(img/layer_tip_newico.png) no-repeat 0px 0px; HEIGHT: 19px
+}
+.wbim_box .layer_tips_version .W_btn_tip_esc EM {
+	LINE-HEIGHT: 19px; DISPLAY: inline-block; BACKGROUND: url(img/layer_tip_newico.png) no-repeat 0px 0px; HEIGHT: 19px
+}
+.wbim_box .layer_tips_version .W_btn_tip {
+	PADDING-LEFT: 3px
+}
+.wbim_box .layer_tips_version .W_btn_tip_esc {
+	PADDING-LEFT: 3px
+}
+.wbim_box .layer_tips_version .W_btn_tip_esc {
+	BACKGROUND-POSITION: left -48px; MARGIN-LEFT: 10px
+}
+.wbim_box .layer_tips_version .W_btn_tip:hover {
+	TEXT-DECORATION: none
+}
+.wbim_box .layer_tips_version .W_btn_tip_esc:hover {
+	TEXT-DECORATION: none
+}
+.wbim_box .layer_tips_version .W_btn_tip EM {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 5px; CURSOR: pointer; PADDING-TOP: 0px
+}
+.wbim_box .layer_tips_version .W_btn_tip_esc EM {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 5px; CURSOR: pointer; PADDING-TOP: 0px
+}
+.wbim_box .layer_tips_version .W_btn_tip EM {
+	BACKGROUND-POSITION: right -19px; COLOR: #fff
+}
+.wbim_box .layer_tips_version .W_btn_tip_esc EM {
+	BACKGROUND-POSITION: right -67px; COLOR: #666
+}
+.wbim_box .wbim_nmsg {
+	WIDTH: 190px
+}
+.wbim_box .wbim_nmsg .arrow_down {
+	RIGHT: 10px
+}
+.wbim_box .layer_tips_version .wbim_close_color {
+	POSITION: absolute; WIDTH: 7px; DISPLAY: inline-block; BACKGROUND: url(img/layer_tip_newico.png) no-repeat 0px -38px; HEIGHT: 7px; OVERFLOW: hidden; RIGHT: 10px; TOP: 10px
+}
+.wbim_box .wbim_new_tip {
+	WIDTH: 140px
+}
+.wbim_box .wbim_btn_send {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 65px; FLOAT: left; HEIGHT: 25px; RIGHT: 0px; TOP: -1px; _zoom: 1
+}
+.wbim_box .wbim_btn_publish {
+	BACKGROUND: url(img/bg_send.png) no-repeat; CURSOR: pointer
+}
+.wbim_box .wbim_btn_publish:hover {
+	BACKGROUND: url(img/bg_send.png) no-repeat; CURSOR: pointer
+}
+.wbim_box .wbim_btn_choose_a {
+	BACKGROUND: url(img/bg_send.png) no-repeat; CURSOR: pointer
+}
+.wbim_box .wbim_btn_choose_a:hover {
+	BACKGROUND: url(img/bg_send.png) no-repeat; CURSOR: pointer
+}
+.wbim_box .wbim_btn_publish {
+	TEXT-INDENT: -9999px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WIDTH: 51px; FLOAT: left; HEIGHT: 25px; OVERFLOW: hidden
+}
+.wbim_box .wbim_btn_publish:hover {
+	BACKGROUND-POSITION: 0px -30px
+}
+.wbim_box .wbim_btn_choose {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 14px; FLOAT: left; HEIGHT: 25px
+}
+.wbim_box .wbim_btn_choose_a {
+	TEXT-INDENT: -9999px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WIDTH: 14px; BACKGROUND-POSITION: -51px 0px; FLOAT: left; HEIGHT: 25px; OVERFLOW: hidden; CURSOR: pointer
+}
+.wbim_box .wbim_btn_choose_a:hover {
+	BACKGROUND-POSITION: -51px -30px; CURSOR: pointer
+}
+.wbim_box .wbim_btn_choose UL {
+	BORDER-BOTTOM: #a0a0a0 1px solid; POSITION: absolute; BORDER-LEFT: #a0a0a0 1px solid; WIDTH: 171px; DISPLAY: none; BACKGROUND: #fff; HEIGHT: 51px; OVERFLOW: hidden; BORDER-TOP: #a0a0a0 1px solid; BORDER-RIGHT: #a0a0a0 1px solid; TOP: -53px; LEFT: -1px
+}
+.wbim_box .wbim_btn_choose LI {
+	WIDTH: 100%; FLOAT: left; HEIGHT: 25px
+}
+.wbim_box .wbim_btn_choose LI SPAN {
+	WIDTH: 20px; BACKGROUND: #f4f4f4; FLOAT: left; HEIGHT: 25px; BORDER-RIGHT: #a0a0a0 1px solid
+}
+.wbim_box .wbim_btn_choose LI EM {
+	WIDTH: 150px; FLOAT: left; HEIGHT: 25px
+}
+.wbim_box .wbim_btn_choose LI EM A {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 23px; MARGIN: 1px; PADDING-LEFT: 10px; WIDTH: 128px; PADDING-RIGHT: 10px; DISPLAY: block; HEIGHT: 23px; COLOR: #777; PADDING-TOP: 0px
+}
+.wbim_box .wbim_btn_choose LI EM A:hover {
+	BACKGROUND: #dfdfdf; COLOR: #777; TEXT-DECORATION: none
+}
+.wbim_box .wbim_btn_choose LI.line {
+	HEIGHT: 1px; OVERFLOW: hidden
+}
+.wbim_box .wbim_btn_choose LI.line SPAN {
+	HEIGHT: 1px; OVERFLOW: hidden
+}
+.wbim_box .wbim_btn_choose LI.line EM {
+	HEIGHT: 1px; OVERFLOW: hidden
+}
+.wbim_box .wbim_btn_choose LI.line EM {
+	MARGIN: 0px 7px; WIDTH: 136px; BACKGROUND: url(img/bg_dot.gif) repeat-x
+}
+.wbim_box .wbim_btn_choose LI.curr SPAN {
+	BACKGROUND: url(img/bg_send.png) #f4f4f4 no-repeat 4px -90px
+}
+.wbim_box .wbim_btn_send_disable {
+	BACKGROUND: url(img/bg_send.png) 0px -60px
+}
+.wbim_box .wbim_btn_send_disable .wbim_btn_publish {
+	BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: default
+}
+.wbim_box .wbim_btn_send_disable .wbim_btn_publish:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: default
+}
+.wbim_box .wbim_btn_send_disable .wbim_btn_choose_a {
+	BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: default
+}
+.wbim_box .wbim_btn_send_disable .wbim_btn_choose_a:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: default
+}
+.wbim_box .wbim_btn_send_disable .wbim_btn_choose UL {
+	DISPLAY: none
+}
+.wbim_box .wbim_list_box {
+	MARGIN: 3px 0px 2px; BACKGROUND: #fff; HEIGHT: 286px
+}
+.wbim_box .wbim_list_tab UL {
+	MARGIN: 3px 0px 0px; HEIGHT: 22px; OVERFLOW: hidden; BORDER-TOP: #dbdbdb 1px solid
+}
+.wbim_box .wbim_list_tab UL LI {
+	WIDTH: 101px; FLOAT: left
+}
+.wbim_box .wbim_list_tab STRONG {
+	WIDTH: 100px; DISPLAY: block
+}
+.wbim_box .wbim_list_tab .user {
+	PADDING-RIGHT: 1px; BACKGROUND: url(img/bg_tab.png) repeat-x 0px 0px
+}
+.wbim_box .wbim_list_tab .curr .user {
+	BACKGROUND-POSITION: 0px 0px
+}
+.wbim_box .wbim_list_tab .group {
+	WIDTH: 66px; BACKGROUND: url(img/bg_tab.png) repeat-x 0px 0px
+}
+.wbim_box .wbim_list_tab .curr .group {
+	BACKGROUND-POSITION: 0px 0px
+}
+.wbim_box .wbim_list_tab .near {
+	PADDING-LEFT: 1px; BACKGROUND: url(img/bg_tab.png) repeat-x 0px 0px
+}
+.wbim_box .wbim_list_tab .curr .near {
+	BACKGROUND-POSITION: 0px 0px
+}
+.wbim_box .wbim_list_tab A {
+	WIDTH: 100%; DISPLAY: inline-block; BACKGROUND: url(img/bg_tab.png) repeat-x 0px -25px; HEIGHT: 22px; OVERFLOW: hidden; CURSOR: pointer
+}
+.wbim_box .wbim_list_tab A SPAN {
+	WIDTH: 100%; DISPLAY: inline-block; BACKGROUND: url(img/bg_tab.png) repeat-x 0px -25px; HEIGHT: 22px; OVERFLOW: hidden; CURSOR: pointer
+}
+.wbim_box .wbim_list_tab A SPAN {
+	TEXT-ALIGN: center; WIDTH: 100%; BACKGROUND-POSITION: 0px -25px
+}
+.wbim_box .wbim_list_tab A:hover {
+	BACKGROUND-POSITION: 0px -50px; TEXT-DECORATION: none
+}
+.wbim_box .wbim_list_tab A:hover SPAN {
+	BACKGROUND-POSITION: 0px -50px
+}
+.wbim_box .wbim_list_tab .curr A {
+	BACKGROUND-POSITION: 0px -75px
+}
+.wbim_box .wbim_list_tab .curr A:hover {
+	BACKGROUND-POSITION: 0px -75px
+}
+.wbim_box .wbim_list_tab .curr A SPAN {
+	BACKGROUND-POSITION: 0px -75px
+}
+.wbim_box .wbim_list_tab .curr A:hover SPAN {
+	BACKGROUND-POSITION: 0px -75px
+}
+.wbim_box .wbim_tab_user {
+	WIDTH: 20px; DISPLAY: inline-block; BACKGROUND: url(img/bg_g.png) no-repeat; HEIGHT: 22px; _background: url(img/bg_g.gif) no-repeat
+}
+.wbim_box .wbim_tab_group {
+	WIDTH: 20px; DISPLAY: inline-block; BACKGROUND: url(img/bg_g.png) no-repeat; HEIGHT: 22px; _background: url(img/bg_g.gif) no-repeat
+}
+.wbim_box .wbim_tab_near {
+	WIDTH: 20px; DISPLAY: inline-block; BACKGROUND: url(img/bg_g.png) no-repeat; HEIGHT: 22px; _background: url(img/bg_g.gif) no-repeat
+}
+.wbim_box .wbim_tab_user {
+	BACKGROUND-POSITION: 0px -195px
+}
+.wbim_box LI.curr .wbim_tab_user {
+	BACKGROUND-POSITION: 0px -220px
+}
+.wbim_box LI.newmsg .wbim_tab_user {
+	BACKGROUND-POSITION: 0px -245px
+}
+.wbim_box .wbim_tab_group {
+	BACKGROUND-POSITION: 0px -270px
+}
+.wbim_box LI.curr .wbim_tab_group {
+	BACKGROUND-POSITION: 0px -295px
+}
+.wbim_box LI.newmsg .wbim_tab_group {
+	BACKGROUND-POSITION: 0px -320px
+}
+.wbim_box .wbim_tab_near {
+	BACKGROUND-POSITION: 0px -476px
+}
+.wbim_box LI.curr .wbim_tab_near {
+	BACKGROUND-POSITION: 0px -508px
+}
+.wbim_box .wbim_list_friend .wbim_chat_tips {
+	Z-INDEX: auto; POSITION: relative; MARGIN-TOP: -5px; PADDING-LEFT: 4px; WIDTH: auto; PADDING-RIGHT: 16px; ZOOM: 1; OVERFLOW: hidden
+}
+.wbim_box .wbim_list_friend .wbim_chat_tips .wbim_icon_close_s {
+	RIGHT: 2px
+}
+.wbim_box .wbim_chat_up .wbim_top_tips {
+	BORDER-BOTTOM: #ccc 1px dotted; TEXT-ALIGN: center; PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 8px
+}
+.wbim_box .wbim_status_group {
+	DISPLAY: inline-block; BACKGROUND: url(img/bg_g.png) no-repeat; OVERFLOW: hidden; _background: url(img/bg_g.gif) no-repeat
+}
+.wbim_box .wbim_status_stop {
+	DISPLAY: inline-block; BACKGROUND: url(img/bg_g.png) no-repeat; OVERFLOW: hidden; _background: url(img/bg_g.gif) no-repeat
+}
+.wbim_box .wbim_status_group {
+	WIDTH: 9px; BACKGROUND-POSITION: -4px 0px; HEIGHT: 9px
+}
+.wbim_box .wbim_status_stop {
+	WIDTH: 9px; BACKGROUND-POSITION: -4px -58px; HEIGHT: 9px
+}
+.wbim_box .wbim_tit_lf P .wbim_status_group {
+	MARGIN: 7px 0px 0px
+}
+.wbim_box .wbim_tit_lf P .wbim_status_stop {
+	MARGIN: 7px 0px 0px
+}
+.wbim_box .wbim_icon_group {
+	MARGIN: 4px 0px 0px 5px; WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(img/bg_g.png) no-repeat 0px -117px; FLOAT: left; HEIGHT: 16px; _background: url(img/bg_g.gif) no-repeat 0 -117px
+}
+.wbim_box .wbim_icon_stop {
+	MARGIN: 4px 0px 0px 5px; WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(img/bg_g.png) no-repeat 0px -117px; FLOAT: left; HEIGHT: 16px; _background: url(img/bg_g.gif) no-repeat 0 -117px
+}
+.wbim_box .wbim_icon_group:hover {
+	BACKGROUND-POSITION: 0px -142px
+}
+.wbim_box .wbim_icon_stop {
+	BACKGROUND-POSITION: 0px -88px
+}
+.wbim_box .msg_time {
+	PADDING-BOTTOM: 1px
+}
+.wbim_box .msg_time .t {
+	MARGIN: 0px 0px 0px 5px; COLOR: #999; FONT-SIZE: 10px; -webkit-text-size-adjust: none
+}
+.wbim_box .wbim_icon_group_m {
+	MARGIN: 0px 5px 0px 0px; WIDTH: 11px; DISPLAY: inline-block; BACKGROUND: url(img/bg_g.png) no-repeat -3px -18px; HEIGHT: 8px; VERTICAL-ALIGN: middle; _background: url(img/bg_g.gif) no-repeat -3px -18px
+}
+.wbim_box .wbim_icon_group_m2 {
+	MARGIN: 0px 5px 0px 0px; WIDTH: 11px; DISPLAY: inline-block; BACKGROUND: url(img/bg_g.png) no-repeat -3px -18px; HEIGHT: 8px; VERTICAL-ALIGN: middle; _background: url(img/bg_g.gif) no-repeat -3px -18px
+}
+.wbim_box .wbim_icon_group_m2 {
+	BACKGROUND-POSITION: -3px -38px
+}
+.wbim_box .wbim_icon_group_tit {
+	MARGIN: 4px 3px 0px; WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(img/bg_g.png) no-repeat 0px -420px; HEIGHT: 13px; _background: url(img/bg_g.gif) no-repeat 0 -420px
+}
+.wbim_box .wbim_list_friend .wbim_loading {
+	MARGIN: 10px 0px 0px; PADDING-RIGHT: 15px; DISPLAY: inline-block; BACKGROUND: url(img/bingin.gif) no-repeat right center
+}
+.wbim_box .wbim_list_friend .noresult_warn {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; MARGIN: 100px 0px 0px; PADDING-LEFT: 50px; PADDING-RIGHT: 50px; BACKGROUND: url(img/ico_warn.png) no-repeat center top; PADDING-TOP: 50px
+}
+.wbim_box .wbim_list_friend .noresult_links P {
+	MARGIN: 10px 0px 0px
+}
+.wbim_box .wbim_list_friend .noresult_links P.top {
+	PADDING-BOTTOM: 50px
+}
+.wbim_box .wbim_list_friend .noresult_links .wbim_icon_tips {
+	VERTICAL-ALIGN: 15px
+}
+.wbim_box .wbim_list_friend .noresult_links P.top EM {
+	TEXT-ALIGN: left; LINE-HEIGHT: 18px; DISPLAY: inline-block; MARGIN-LEFT: 5px
+}
+.wbim_box .wbim_list_friend .noresult_links SPAN {
+	VERTICAL-ALIGN: -3px
+}
+.wbim_box .wbim_icon_g_c {
+	WIDTH: 14px; DISPLAY: inline-block; BACKGROUND: url(img/bg_g.gif) no-repeat 0px -359px; HEIGHT: 14px; MARGIN-RIGHT: 5px
+}
+.wbim_box .wbim_icon_g_f {
+	WIDTH: 14px; DISPLAY: inline-block; BACKGROUND: url(img/bg_g.gif) no-repeat 0px -359px; HEIGHT: 14px; MARGIN-RIGHT: 5px
+}
+.wbim_box .wbim_icon_g_f {
+	BACKGROUND-POSITION: 0px -390px
+}
+.wbim_box .wbim_list_up {
+	POSITION: relative; HEIGHT: 23px; OVERFLOW: hidden
+}
+.wbim_box .wbim_list_relink {
+	Z-INDEX: 3; BORDER-BOTTOM: #fbe4b7 1px solid; POSITION: absolute; BORDER-LEFT: #fbe4b7 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 21px; MARGIN: 0px 1px; PADDING-LEFT: 5px; WIDTH: 184px; PADDING-RIGHT: 5px; BACKGROUND: #fefceb; HEIGHT: 21px; OVERFLOW: hidden; BORDER-TOP: #fbe4b7 1px solid; BORDER-RIGHT: #fbe4b7 1px solid; PADDING-TOP: 0px; TOP: 0px; LEFT: 0px
+}
+.wbim_box .wbim_list_relink .wbim_loading {
+	PADDING-RIGHT: 15px; BACKGROUND: url(img/bingin.gif) no-repeat right center; MARGIN-RIGHT: 10px
+}
+.wbim_box .wbim_msg_grp {
+	MARGIN: 25px 25px 0px; _zoom: 1
+}
+.wbim_box .wbim_msg_grp .num_info {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 8px; COLOR: #b8b8b8
+}
+.wbim_box .wbim_msg_grp .fd_slt {
+	Z-INDEX: 8; POSITION: relative; HEIGHT: 75px
+}
+.wbim_box .wbim_msg_grp .f_list {
+	BORDER-BOTTOM: #afafaf 1px solid; POSITION: relative; BORDER-LEFT: #afafaf 1px solid; PADDING-BOTTOM: 3px; OVERFLOW-Y: auto; MAX-HEIGHT: 56px; FONT-SIZE: 0px; BORDER-TOP: #afafaf 1px solid; BORDER-RIGHT: #afafaf 1px solid; border-radius: 2px; box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, .15); _zoom: 1; _height: 56px
+}
+.wbim_box .wbim_msg_grp .f_list LI {
+	MARGIN: 3px 0px 0px 3px; DISPLAY: inline-block; VERTICAL-ALIGN: top
+}
+.wbim_box .wbim_msg_grp .f_list A {
+	BORDER-BOTTOM: #b8e4fd 1px solid; POSITION: relative; BORDER-LEFT: #b8e4fd 1px solid; PADDING-RIGHT: 15px; DISPLAY: inline-block; BACKGROUND: #e8f4fc; HEIGHT: 22px; COLOR: #777; FONT-SIZE: 12px; OVERFLOW: hidden; BORDER-TOP: #b8e4fd 1px solid; CURSOR: pointer; BORDER-RIGHT: #b8e4fd 1px solid; box-shadow: inset 0 1px 0 0 #fff; _zoom: 1; _float: left
+}
+.wbim_box .wbim_msg_grp .f_list A:hover {
+	TEXT-DECORATION: none
+}
+.wbim_box .wbim_msg_grp .f_list .txt {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 21px; PADDING-LEFT: 4px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.wbim_box .wbim_msg_grp .f_list .wbim_icon_close_s {
+	POSITION: absolute; RIGHT: 1px; TOP: 5px
+}
+.wbim_box .wbim_msg_grp .f_ipt {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 22px; HEIGHT: 22px; COLOR: #777; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.wbim_box .wbim_msg_grp .main_ta TEXTAREA {
+	BORDER-BOTTOM: #afafaf 1px solid; BORDER-LEFT: #afafaf 1px solid; PADDING-BOTTOM: 5px; OVERFLOW-Y: auto; PADDING-LEFT: 5px; WIDTH: 358px; PADDING-RIGHT: 5px; HEIGHT: 88px; COLOR: #595959; FONT-SIZE: 12px; BORDER-TOP: #afafaf 1px solid; BORDER-RIGHT: #afafaf 1px solid; PADDING-TOP: 5px; border-radius: 2px; box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, .15)
+}
+.wbim_box .msg_btn {
+	TEXT-ALIGN: right; PADDING-TOP: 5px
+}
+.wbim_box .msg_btn A {
+	MARGIN-LEFT: 8px
+}
+.wbim_box .msg_more {
+	PADDING-TOP: 14px; _zoom: 1
+}
+.wbim_box .msg_more .moreslt {
+	BORDER-BOTTOM: #c4c4c4 1px solid; BORDER-LEFT: #c4c4c4 1px solid; PADDING-BOTTOM: 2px; LINE-HEIGHT: 14px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; DISPLAY: inline-block; BACKGROUND: url(img/bg_rx.png) repeat-x 0px -273px; HEIGHT: 14px; COLOR: #666; OVERFLOW: hidden; BORDER-TOP: #c4c4c4 1px solid; BORDER-RIGHT: #c4c4c4 1px solid; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.wbim_box .msg_more .moreslt:hover {
+	BACKGROUND-POSITION: 0px -283px
+}
+.wbim_box .msg_more .arrow_down {
+	WIDTH: 7px; DISPLAY: inline-block; BACKGROUND: url(img/icons.png) -240px -47px; HEIGHT: 4px; MARGIN-LEFT: 3px; FONT-SIZE: 0px; VERTICAL-ALIGN: middle; OVERFLOW: hidden; _background: url(img/icons.gif) -240px -47px
+}
+.wbim_box .msg_more .arrow_up {
+	WIDTH: 7px; DISPLAY: inline-block; BACKGROUND: url(img/icons.png) -240px -47px; HEIGHT: 4px; MARGIN-LEFT: 3px; FONT-SIZE: 0px; VERTICAL-ALIGN: middle; OVERFLOW: hidden; _background: url(img/icons.gif) -240px -47px
+}
+.wbim_box .msg_more .arrow_up {
+	BACKGROUND-POSITION: -225px -47px
+}
+.wbim_box .word_err {
+	COLOR: #da0000
+}
+.wbim_box .wbim_grp_push {
+	BOTTOM: 82px; MARGIN-LEFT: -3px
+}
+.wbim_box .wbim_layer .wbim_msg_push {
+	OVERFLOW-Y: auto; WIDTH: 368px; MAX-HEIGHT: 240px; _height: 240px
+}
+.wbim_box .wbim_layer .wbim_msg_push UL {
+	MARGIN: 5px 1px
+}
+.wbim_box .wbim_layer .wbim_msg_push LI {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; CURSOR: pointer; PADDING-TOP: 4px
+}
+.wbim_box .wbim_layer .wbim_msg_push LI:hover {
+	BACKGROUND: #eee
+}
+.wbim_box .stat_box {
+	HEIGHT: 285px; OVERFLOW: hidden
+}
+.wbim_box .stat_box .txts {
+	TEXT-ALIGN: center; MARGIN-TOP: 100px
+}
+.wbim_box .stat_box .txts SPAN {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 5px
+}
+.wbim_box .stat_box .fd_list {
+	PADDING-TOP: 10px
+}
+.wbim_box .stat_box .fd_list EM {
+	MARGIN-RIGHT: 3px
+}
+.wbim_box .layer_menu_list {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BACKGROUND: #fff; COLOR: #666; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 1px
+}
+.wbim_box .layer_menu_list UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; CLEAR: both; PADDING-TOP: 0px
+}
+.wbim_box .layer_menu_list UL LI {
+	POSITION: static; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; FLOAT: none; PADDING-TOP: 0px
+}
+.wbim_box .layer_menu_list UL LI.title {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; CURSOR: default; PADDING-TOP: 5px
+}
+.wbim_box .layer_menu_list UL LI.suggest_title {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; CURSOR: default; PADDING-TOP: 5px
+}
+.wbim_box .layer_menu_list UL LI A {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; WHITE-SPACE: nowrap; COLOR: #666; PADDING-TOP: 5px
+}
+.wbim_box .layer_menu_list UL LI A:hover {
+	BACKGROUND-COLOR: #eee; TEXT-DECORATION: none
+}
+.wbim_box .layer_menu_list UL LI.cur A {
+	BACKGROUND-COLOR: #eee; TEXT-DECORATION: none
+}
+.wbim_box .layer_menu_list UL LI.cur A:hover {
+	BACKGROUND-COLOR: #eee; TEXT-DECORATION: none
+}
+.wbim_box .wbim_picview_box {
+	BORDER-BOTTOM: #ababab 1px solid; POSITION: absolute; BORDER-LEFT: #ababab 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 383px; PADDING-RIGHT: 2px; HEIGHT: 385px; BORDER-TOP: #ababab 1px solid; BORDER-RIGHT: #ababab 1px solid; PADDING-TOP: 2px; _overflow: hidden
+}
+.wbim_box .wbim_picview_box:hover {
+	BORDER-BOTTOM: #707070 1px solid; BORDER-LEFT: #707070 1px solid; BORDER-TOP: #707070 1px solid; BORDER-RIGHT: #707070 1px solid
+}
+.wbim_box .wbim_pic_zone {
+	POSITION: relative; OVERFLOW-X: hidden; OVERFLOW-Y: auto; WIDTH: 100%; HEIGHT: 385px; TOP: 0px; LEFT: 0px
+}
+.wbim_box .wbim_picview_box .wbim_pic_zone IMG {
+	POSITION: relative; CURSOR: pointer
+}
+.wbim_box .wbim_picview_box .wbim_pic_bar {
+	Z-INDEX: 99; POSITION: absolute; TEXT-ALIGN: center; WIDTH: 383px; DISPLAY: none; BACKGROUND: #000; HEIGHT: 26px; TOP: 2px; LEFT: 2px; _display: block
+}
+.wbim_box .wbim_picview_box:hover .wbim_pic_bar {
+	DISPLAY: block
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl {
+	MARGIN: 4px 0px 0px 16px; FLOAT: left; _display: inline
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl * {
+	VERTICAL-ALIGN: middle
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl A {
+	WIDTH: 10px; DISPLAY: inline-block; HEIGHT: 11px; FONT-SIZE: 0px
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl .wbim_plar {
+	BACKGROUND-POSITION: -72px -280px
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl .wbim_plar:hover {
+	BACKGROUND-POSITION: -132px -280px
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl .wbim_plft {
+	BACKGROUND-POSITION: -92px -280px
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl .wbim_plft:hover {
+	BACKGROUND-POSITION: -152px -280px
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl .wbim_prgt {
+	BACKGROUND-POSITION: -112px -280px
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl .wbim_prgt:hover {
+	BACKGROUND-POSITION: -172px -280px
+}
+.wbim_box .wbim_picview_box .wbim_p_ctrl .wbim_vline {
+	MARGIN: 0px 7px; COLOR: #9b9b9b
+}
+.wbim_box .wbim_picview_box .wbim_ptit {
+	LINE-HEIGHT: 28px; MARGIN: 0px 100px; TEXT-OVERFLOW: ellipsis; WHITE-SPACE: nowrap; COLOR: #fff; OVERFLOW: hidden; _width: 170px
+}
+.wbim_box .wbim_picview_box .wbim_pic_bar_cls {
+	POSITION: absolute; WIDTH: 7px; DISPLAY: inline-block; BACKGROUND-POSITION: -192px -280px; HEIGHT: 7px; FONT-SIZE: 0px; RIGHT: 8px; TOP: 10px
+}
+.wbim_box .wbim_picview_box .wbim_pic_bar_cls:hover {
+	BACKGROUND-POSITION: -209px -280px
+}
+.wbim_box .wbim_picview_box .rotate0 {
+	FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=0); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg)
+}
+.wbim_box .wbim_picview_box .rotate1 {
+	FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg)
+}
+.wbim_box .wbim_picview_box .rotate2 {
+	FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg)
+}
+.wbim_box .wbim_picview_box .rotate3 {
+	FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -o-transform: rotate(270deg)
+}
+.wbim_box .wbim_picview_box .vsidk_m {
+	MARGIN-LEFT: 10px; TEXT-DECORATION: none
+}
+
+.rh_wbim_more {background-color:#feffe5;border:1px #f9f2a7 solid;color:#d4a639;text-align:center;padding:4px 0px;cursor:pointer;}
+.wbim_box .rh_wbim_selfImg {POSITION: absolute;top:-12px;left:5px;border:2px white solid;}

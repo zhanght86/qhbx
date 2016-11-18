@@ -1,0 +1,204 @@
+<div class="tmpl_container" align="center" id="aa">
+	<div style="height:40px"></div>
+	<table style="width:96%">
+		<tr>
+			<td width="120px">&nbsp;</td>
+			<td id="gwheader">
+				<table class='gwHeaderTable' border='0'>
+					<tr><td align='center'  class='gwHeader'><span code="TMPL_TITLE"></span></td></tr>
+				</table>
+			</td>
+			<td width="120px">
+				<table align='center' class='width:100%' border='0'>
+					<tr><td  class='rh-label'>密&nbsp;&nbsp;&nbsp;&nbsp;级</td><td class='rh-item' code="GW_SECRET"></td></tr>
+					<tr><td class='rh-label'>紧急程度</td><td class='rh-item' code="S_EMERGENCY"></td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr style="display:none">
+			<td colspan="3" code="TMPL_MEMO">&nbsp;</td>
+		</tr>
+	</table>
+	<table class='rh-tmpl-tabel'>
+	<tr style="height:0px;min-height:0px;border:0px;">
+		<td width="19%" class="hidden-td"></td>
+		<td width="16%" class="hidden-td"></td>
+		<td width="16%" class="hidden-td"></td>
+		<td width="16%" class="hidden-td"></td>
+		<td width="39%" class="hidden-td"></td>
+	</tr>	
+	<tr style="border:0px;" id="GWCODE-TR">
+		<td class='rh-label' align='center' style="border-top:0px;">文&nbsp;&nbsp;&nbsp;&nbsp;号</td>
+		<td colspan="5"  align='left'  style="border-top:0px;">
+		<table style="width:400px"><tr>
+		<td class='rh-item' code="GW_YEAR_CODE" style="border:0px;width:50%" ></td>
+		<td style="border:0px;width:1%;" id="GW_YEAR-left"><span class='gw-font'>〔</span></td>
+		<td class='rh-item' code="GW_YEAR" style="border:0px;width:18%"></td>
+		<td style="border:0px;width:1%;" id="GW_YEAR-right"><span class='gw-font'>〕</span></td>
+		<td class='rh-item' code="GW_YEAR_NUMBER" style="border:0px;width:20%"></td>
+		<td style="border:0px;width:1%"><span class='gw-font'>号</span></td>
+		</tr></table>
+		</td>
+	</tr>
+	<tr>
+	<td class='rh-label ' align='center'>标&nbsp;&nbsp;&nbsp;&nbsp;题<span style="font-weight:bold;" title="必填">*</span></td>
+	<td class='rh-item'  code='GW_TITLE'  colspan='5' id="comp_fawen_title_td" align='left'></td>
+	</tr>
+	<tr>
+		<td class='rh-label ' align='center' id='S_TNAME-NAME' style="border-top:0px;">拟稿部门</td>
+		<td  align='left' colspan="2" class='rh-item ' code='S_TNAME' id='S_TNAME-CODE' style="border-top:0px;"></td>
+		<td class='rh-label ' align='center'>拟稿时间</td>
+	<td class='rh-item' code='GW_BEGIN_TIME' colspan="2" align='left'></td>
+	</tr>
+	<tr>
+		<td  align='center' class='rh-label ' id='S_USER-NAME' style="border-top:0px;">拟 稿 人</td>
+		<td  align='left' colspan="2" class='rh-item ' code='S_USER' id='S_USER-CODE' style="border-top:0px;"></td>
+		<td class='rh-label ' align='center'>联系电话</td>
+		<td class='rh-item' code='GW_CONTACT_PHONE' colspan="2" align='left'></td>
+	</tr><!-- 
+	<tr id="ISOPEN-TR">
+		<td align='center' id='ISOPEN-NAME'    class='rh-label'> 是否公开</td>
+		<td align='left'   id='ISOPEN-CODE'    class='rh-item rh-fw-select' colspan="2" code="ISOPEN"></td>
+		<td align='center' id='OPEN_TYPE-NAME' class='rh-label' >公开类型</td>
+		<td align='left'   id='OPEN_TYPE-CODE' class='rh-item'              colspan="2" code="OPEN_TYPE"></td>
+		 <td class='rh-label ' rowspan="2"  align='left' valign='top' style='padding-top5px'>
+			主要领导签发<span  class='rh-item' code='_MIND_LEADER_SIGN'></span>	</td>  
+	</tr>-->
+	<!-- <tr>
+		<td class='rh-label ' align='center' ></td>
+		<td  align='left' class='rh-item ' ></td>
+		<td  align='center' class='rh-label ' ></td>
+		<td  align='left' class='rh-item ' ></td>
+	</tr> -->
+	<!-- <tr>
+	<td align='center' class='rh-label '>主办部门处室意见</td>
+	<td class='rh-item' code='_MIND_MAIN_DEPT'  colspan='3' align='left'></td>
+	</tr>
+	<tr>
+		<td class='rh-label ' align='center'>主办部门负责人意见</td>
+		<td class='rh-item'  code='_MIND_MAIN_LEADER' align='left' valign='top' colspan='3'></td>
+		<td class='rh-label '  align='left' valign='top' rowspan='2' style="padding-top5px">
+			分管领导签批
+			<span  class='rh-item' code='_MIND_FGLD'></span> </td>
+	</tr>
+	<tr>
+	<td class='rh-label '  align='center' >会签部门意见</td>
+	<td class='rh-item'  code='_MIND_HUIGAO' colspan='3' align='left'></td>
+	</tr> -->
+	<!--<tr>
+ 	<td class='rh-label ' align='center'>核稿员核稿</td>
+	<td class='rh-item'  code='_MIND_HEGAO' colspan='4' align='left'></td>
+	</tr>
+	<tr>
+	<td class='rh-label ' align='center'>办公室主任核稿</td>
+	<td class='rh-item'  code='_MIND_OFFICE_LEADER'  colspan='4' align='left'></td>
+	</tr> -->
+		<tr>
+            <td class='rh-label ' align='center'>
+                发文类型<span style="font-weight:bold;" title="必填">*</span>
+            </td>
+            <td class='rh-item' id="comp_fawen_GW_FW_TYPE" code='GW_FW_TYPE' colspan='2' align='left'>
+            </td>
+            
+            <td class='rh-label ' align='center'>
+                文&nbsp;&nbsp;种
+            </td>
+            <td class='rh-item' id="comp_fawen_GW_FILE_TYPE" code='GW_FILE_TYPE' colspan='2' align='left'>
+            </td>
+       </tr>
+        <tr>
+			<td class='rh-label ' align='center'>正文打印份数</td>
+			<td class='rh-item'  code='ZW_PRINT_NUM' colspan='2' align="left"></td>
+			<td class='rh-label ' align='center'>办理期限</td>
+			<td class='rh-item'  code='SW_ENDTIME' colspan='2' align="left"></td>
+		</tr>				<tr>			<td class='rh-label ' align='center'>发文字号</td>			<td class='rh-item'  code='FWZH' colspan='2' align="left"></td>			<td class='rh-label ' align='center'>是否发布</td>			<td class='rh-item'  code='ISPUBLISH' colspan='2' align="left"></td>		</tr>		
+	<tr>
+		<td class='rh-label ' align='center'>主&nbsp;&nbsp;&nbsp;&nbsp;送<span style="font-weight:bold;" title="必填">*</span></td>
+		<td colspan='5' align='left'>
+		<div class='rh-item'  code='GW_MAIN_TO_CODE' ></div>
+		<div class='rh-item'  code='GW_MAIN_TO_EXT' style='margin-top:30px' ></div>
+		</td>
+	</tr><!--
+	<tr>
+            <td class='rh-label ' align='center'>
+                抄&nbsp;&nbsp;&nbsp;报&nbsp;
+            </td>
+            <td class='rh-item' code='GW_COPYUP_TO' colspan='5' id="GW_COPYUP_TO" align='left' style="padding-right:2px;"> 
+            </td>
+        </tr>-->
+        <tr>
+            <td class='rh-label ' align='center'>
+                抄&nbsp;&nbsp;&nbsp;送&nbsp;
+            </td>
+            <td class='rh-item' code='GW_COPY_TO' colspan='5' id="GW_COPY_TO" align='left' style="padding-right:2px;"> 
+            </td>
+        </tr>
+	<tr>
+            <td class='rh-label ' align='center'>
+                内部发送
+            </td>
+            <td colspan='5'>
+                <div class='rh-item' code='GW_SEND_TO'>
+                </div>
+            </td>
+        </tr>
+	<tr>
+	<td class='rh-label ' align='center'>会&nbsp;&nbsp;&nbsp;&nbsp;签&nbsp;</td>
+	<td colspan='5'>
+		<div class='rh-item'  code='GW_COSIGN_TO' ></div>
+	</td>
+	</tr>
+
+	<tr>
+	<td class='rh-label ' align='center'>正&nbsp;&nbsp;&nbsp;&nbsp;文&nbsp;</td>
+	<td class='rh-item'  code='ZHENGWEN' colspan='5' align="left"></td>
+	</tr>
+	<tr>
+            <td class='rh-label ' align='center'>
+                附&nbsp;&nbsp;&nbsp;&nbsp;件&nbsp;
+            </td>
+            <td class='rh-item' code='FUJIAN' colspan='5' align="left" >
+            </td>
+        </tr>
+	<tr>
+            <td class='rh-label ' align='center' style="line-height: 35px">
+                办文依据
+            </td>
+         
+            <td colspan='5' align='left'>
+            <div class='rh-item' code='FUJIAN1'>
+                <div class='rh-item' code='GW_RELATE'>
+                </div>
+           	</div>
+            </td>
+        </tr>
+	<!-- <tr>
+	<td class='rh-label ' align='center'>拟稿人校核</td>
+	<td class='rh-item' code='_MIND_NIGAO'  colspan='4' align='left'></td>
+	</tr> -->
+		
+	
+	<tr align="center" >
+	<td class='rh-label wp20' >备&nbsp;&nbsp;&nbsp;&nbsp;注</td>
+	<!-- <td colspan='4' class='rh-item' code='GW_MEMO' align='left'></td>  -->
+	<td colspan="5" class='rh-item' style="padding:5px 0 5px 0;border-top-width: 0px; border-top-style: solid; border-top-color: red;" code='GW_MENO' align='left'></td>
+	</tr>
+	<!-- <tr>
+	<td colspan='5'>
+		<table style="width100%;clearboth;border0px;" border=0>
+			<tr><td class='rh-label' style="border0px;">&nbsp;&nbsp;&nbsp;联系人</td>
+			<td class='rh-item' style="border0px;" code='GW_CONTACT'></td>
+			<td class='rh-label' style="border0px;">&nbsp;&nbsp;联系电话</td>
+			<td class='rh-item' style="border0px;" code='GW_CONTACT_PHONE'></td>
+			<td class='rh-label'style="border0px;">&nbsp;&nbsp;发文日期</td>
+			<td class='rh-item' style="border0px;" code='GW_SIGN_TIME'></td>
+		</table>
+	</td>	
+	</tr> -->
+	
+	</table>
+	<div style="padding-top: 10px;">
+    <a href="#rhCard-title" target="_self" style="padding-top: 5px;text-decoration: none;">返回顶部</a> 
+    </div>
+	<div style="height:20px"></div>	
+</div>

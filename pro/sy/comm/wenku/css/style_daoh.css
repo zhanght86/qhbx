@@ -1,0 +1,386 @@
+
+.friendly_link {
+    border: 1px solid #DFDFDF;
+    color: #000000;
+    margin: 15px auto 0;
+    overflow: hidden;
+    width: 98%;
+}
+.bg_color1 {
+    background: none repeat scroll 0 0 #F7F7F7;
+}
+.friendly_con1 {
+    border-bottom: 1px solid #DFDFDF;
+    overflow: hidden;
+    padding: 1px 0 1px 1px;
+}
+.f_link_tit, .f_link_tit1 {
+    background: none repeat scroll 0 0 #F6F6F6;
+    float: left;
+    font-weight: bold;
+    height: 20px;
+    padding-top: 9px;
+    text-align: center;
+    width: 80px;
+}
+.f_link_tit1 {
+    padding-bottom: 0;
+}
+.friendly_con1 p {
+    color: #3B3B3B;
+    float: left;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+.friendly_con1 p a {
+    color: #3B3B3B;
+    margin: 0 10px;
+}
+.friendly_con1 p a.a1 {
+    color: #16387C;
+}
+#footer {
+    border-top: 1px solid #DFDFDF;
+    clear: both;
+    color: #000000;
+    line-height: 24px;
+    margin: 15px auto 0;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 980px;
+}
+#footer p {
+    color: #AAAAAA;
+    text-align: center;
+}
+#footer address {
+    color: #3B3B3B;
+    font-family: Arial;
+    font-style: normal;
+    text-align: center;
+}
+#footer address a {
+    color: #3B3B3B;
+}
+#footer .pic_div {
+    margin: 10px auto;
+    width: 518px;
+}
+#footer .pic_div a {
+    color: #3B3B3B;
+    float: left;
+}
+#footer .pic_div a:hover {
+    text-decoration: none;
+}
+#footer a.pic1 {
+    background: url("/sy/comm/wenku/img/footer.png") no-repeat scroll 0 -68px transparent;
+    height: 47px;
+    line-height: 20px;
+    margin-right: 22px;
+    padding: 4px 0 0 54px;
+    width: 54px;
+}
+#footer a.pic2 {
+    background: url("/sy/comm/wenku/img/footer.png") no-repeat scroll 0 -142px transparent;
+    height: 42px;
+    line-height: 42px;
+    margin-right: 30px;
+    padding: 0 0 0 44px;
+    width: 48px;
+}
+#footer a.pic3 {
+    background: url("/sy/comm/wenku/img/footer.png") no-repeat scroll 0 -209px transparent;
+    height: 48px;
+    line-height: 42px;
+    padding: 0 0 0 53px;
+    width: 83px;
+}
+#footer a.pic4 {
+    background: url("/sy/comm/wenku/img/footer.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 40px;
+    margin-top: 4px;
+    text-indent: -9999px;
+    width: 112px;
+}
+.nav_contain1 {
+    background-position: 0 -105px;
+    color: #666666;
+    height: 28px;
+    line-height: 28px;
+}
+.nav_contain1_1 {
+    margin: 0 auto;
+    text-align: left;
+    width: 980px;
+}
+.nav_contain1_1 a {
+    color: #666666;
+}
+.nav_contain1_1 span {
+    float: right;
+}
+.nav_contain1_1 b {
+    color: #555555;
+    font-weight: normal;
+}
+.nav_contain1_1 b a {
+    color: #CE0000;
+}
+.header_contain1 {
+    background: url("/sy/comm/wenku/img/bg_header.png") repeat-x scroll 0 0 transparent;
+    color: #666666;
+    height: 134px;
+    overflow: hidden;
+}
+.header_contain1_1 {
+    background-position: 0 0;
+    height: 134px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    width: 980px;
+}
+.header_contain1_1_a1 {
+    left: 0;
+    position: absolute;
+    top: 26px;
+}
+.header_contain1_1_a1 a {
+    display: block;
+    height: 70px;
+    text-indent: -9999px;
+    width: 170px;
+}
+.header_search1 {
+    display: inline;
+    float: left;
+    margin: 46px 0 0 303px;
+    width: 430px;
+}
+.header_search1 span {
+    background-position: -220px -184px;
+    display: inline-block;
+    float: left;
+    height: 35px;
+    vertical-align: middle;
+    width: 38px;
+}
+.header_search1 input {
+    border: 0 none;
+    height: 35px;
+    vertical-align: middle;
+}
+.header_search1 .header_txt1 {
+    background-position: 0 0;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    width: 316px;
+}
+.header_search1 .header_btn1 {
+    background-position: 0 -55px;
+    cursor: pointer;
+    float: left;
+    width: 74px;
+}
+.header_search1 p {
+    clear: both;
+    font-size: 14px;
+    padding-top: 8px;
+    text-indent: -9px;
+}
+.header_search1 p input {
+    height: auto;
+    margin: 0 2px 0 9px;
+    vertical-align: -2px;
+}
+.header_down1 {
+    display: inline;
+    width: 144px;
+}
+.header_down1 a {
+    background-position: 0 0;
+    display: block;
+    height: 48px;
+    text-indent: -9999px;
+    width: 144px;
+}
+.header_down1 p {
+    padding-top: 12px;
+}
+.header_down1 p b {
+    color: #074DAA;
+}
+.nav_contain2 {
+    background-position: 0 -36px;
+    height: 34px;
+}
+.nav_contain2_1 {
+    height: 34px;
+    margin: 0 auto;
+    text-align: left;
+    width: 980px;
+}
+.nav_contain2_1 a {
+    color: #FFFFFF;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin: 4px 36px 0 0;
+    text-align: center;
+    width: 57px;
+}
+.nav_contain2_1 a:hover {
+    text-decoration: none;
+}
+.nav_contain2_1 a.here1, .nav_contain2_1 a.a1here1 {
+    background-position: -290px -166px;
+    color: #1458B0;
+    height: 30px;
+    width: 57px;
+}
+.nav_contain2_1 a.a1here1 {
+    background-position: -290px -135px;
+    width: 78px;
+}
+.nav_contain2_1 a.a1 {
+    width: 78px;
+}
+.nav_contain2_1 h1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.header_contain1_1, .header_search1 span, .nav_contain2_1 a.here1, .nav_contain2_1 a.a1here1, .one_contain1_left1 dt span, .one_contain1_middle1_z, .one_contain1_middle1_img1, .layer_1 li a, .layer_1 li a.here3, .one_contain1_middle1_2 li div, .three_contain1_1 li a, .three_contain1_1 li a.here4, .tit5, .tit5 span a, .four_contain1_1, .four_contain1_1 li, .tit6, .five_contain1_left1_1 li span, .five_contain1_right1_1_1 .span2, .five_contain1_right1_1_1 .span3, .five_contain1_right1_1_2 a, .tit7, .five_contain1_right1_2_3 span, .five_contain1_right1_2_3 span.span4, .layer_3 a, .layer_4 a, .layer_4 a:hover {
+    background-image: url("/sy/comm/wenku/img/bg_new.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.tit6 {
+    background-image: none;
+}
+.header_down1 a, .header_btn1 {
+    background: url("/sy/comm/wenku/img/upload/index.png") no-repeat scroll 0 0 transparent;
+}
+.nav_contain1, .header_search1 .header_txt1, .nav_contain2, .tit4 {
+    background-image: url("/sy/comm/wenku/img/bg_line.png");
+    background-repeat: repeat-x;
+}
+.w101 {
+    background: url("/sy/comm/wenku/img/up.png") repeat-x scroll 0 -394px transparent;
+    height: 24px;
+    padding-top: 4px;
+    width: 98%;
+    margin: 0 auto;
+}
+.posi_1202 {
+    height: 14px;
+    line-height: 14px;
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+}
+.posi_1202 a {
+    color: #1458B0;
+}
+.tanch1 {
+    background: none repeat scroll 0 0 #FDFDFD;
+    border: 1px solid #666666;
+    display: none;
+    height: 34px;
+    left: 50%;
+    line-height: 34px;
+    margin-left: 272px;
+    padding-left: 12px;
+    position: absolute;
+    top: 27px;
+    width: 204px;
+    z-index: 100;
+}
+.tanch1 b {
+    color: #1458B0;
+}
+.tanch1 a {
+    color: #1458B0;
+}
+.tanch1 a.close {
+    background: url("/sy/comm/wenku/img/message.png") no-repeat scroll 0 -67px transparent;
+    float: right;
+    height: 6px;
+    margin: 7px 10px 0 0;
+    width: 6px;
+}
+.tanch6, .tanch7, .tanch7 b, .tanch7 a.close {
+    background: url("/sy/comm/wenku/img/tanc.png") no-repeat scroll 0 0 transparent;
+    display: none;
+}
+.tanch6 {
+    background-position: 0 -39px;
+    color: #CE0000;
+    height: 28px;
+    left: 50%;
+    line-height: 28px;
+    margin-left: -490px;
+    padding: 5px 0 0 7px;
+    position: absolute;
+    top: 29px;
+    width: 160px;
+    z-index: 1000;
+}
+.tanch6 a {
+    color: #1458B0;
+}
+.tanch7 {
+    color: #CE0000;
+    height: 21px;
+    left: 50%;
+    margin-left: 294px;
+    padding: 12px 0 0 7px;
+    position: absolute;
+    top: 29px;
+    width: 147px;
+    z-index: 1000;
+}
+.tanch7 b {
+    background-position: -171px 0;
+    display: inline-block;
+    height: 15px;
+    vertical-align: -3px;
+    width: 14px;
+}
+.tanch7 a.close {
+    background-position: -172px -45px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    height: 6px;
+    margin: 0 6px 0 0;
+    width: 6px;
+}
+a.qq {
+    background: url("/sy/comm/wenku/img/qq.png") no-repeat scroll 0 0 transparent;
+    color: #16387C;
+    display: inline-block;
+    height: 17px;
+    line-height: 17px;
+    padding-left: 16px;
+    vertical-align: -3px;
+}
+.ts20121023 {
+    background: none repeat scroll 0 0 #FFF9D7;
+    border-bottom: 1px solid #E4CB30;
+    bottom: auto;
+    color: #E4CB30;
+    font: 14px/30px Arial;
+    height: 30px;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+}

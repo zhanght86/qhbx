@@ -1,0 +1,69 @@
+/**
+* /sy/comm/infos/jsp/infosMore.jsp 鏍峰紡
+* 渚涘绉嶉鏍艰鐩�
+*/
+.info-wrapper{width:80%;margin:auto;color:#B3942C;}
+.info-wrapper a {text-decoration: none;color:#B3942C;}
+.info-wrapper ul, li {list-style: none;padding: 0;margin: 0;}
+.info-header{height: 35px;border-top: 1px #D50310 solid;margin-top:25px;position:relative;}
+.info-header span{color: #D50310;font-size: 14px;font-weight: bold;font-family: 寰蒋闆呴粦;line-height: 35px;margin-left:30px}
+.info-header-icon{position:absolute;top:-1px;left:55px;width:7px;height:5px;background:url("/sc/img/pt_style/default/front_bg.png") no-repeat scroll -96px -294px transparent;}
+.info-title{width:100%;height:30px;background: #F7EBC0;font-size: 13px;font-weight: bold;font-family: 寰蒋闆呴粦;}
+.info-title>div{float:left;line-height:30px;}
+.news-content {width: 100%;overflow: hidden;}
+.info-elipd{overflow:hidden;auto;display:inline-block;white-space:nowrap;text-overflow:ellipsis}
+
+.news-list-left {margin-top: 20px;float: left;}
+.news-list-left ul li{height:28px;margin-right:30px;margin-bottom:5px;}
+.news-list-left ul li ul li{height:28px;margin-right:30px;margin-bottom:5px;}
+.news-list-left ul li span {font-size: 20px;color: #FFFFFF;}
+.date-list a{display:block;margin-left:65px;line-height:28px;}
+.date-list-li a{display:block;margin-left:65px;line-height:28px;}
+.date-list-li-selected{background:#D50310;}
+.date-list-li-selected a{color: white;text-decoration: none;}
+
+.news-list-right {margin-top: 20px;float: left;}
+.news-list-right ul li{display:block;line-height: 28px;width:98%;margin:auto;}
+.news-list-right ul li:hover .info-icon{background-position:-3px -717px}
+.news-list-right ul li:hover a{color:#459bda;}
+
+.news_list_page {width: 100%;text-align: right;margin-top: 50px;margin-bottom:10px;font-size: 12px;color: #8E8E8E;}
+.news_list_page a,.news_list_page span{display:inline-block}
+.page-list-content{float:right;}
+.list-page-bg{float:left;min-width:25px;height:25px;padding:1px;margin-left:5px;background-color:#f2f2f2;border-radius:5px;line-height: 27px;}
+.list-page-bg:hover{background-color:#CCC;}
+.list-page-bg.selected{color:#b3942c;background-color:#F7EBC0;cursor:pointer;}
+.page-updown{float:left;width:55px;margin-left: 5px;background-color:#f2f2f2;line-height: 27px;}
+.page-updown.disabled{color:#999;background-color: #eeeeee;cursor: not-allowed;} 
+.info-item{overflow:hidden;}
+.info-item:hover{background-color:#F7EBC0;}
+.info-icon{float:left;margin-right:1%;display:block;width:3px;height:3px;margin-top:13px;background:url("/sc/img/dq_bg.png") no-repeat -3px -697px;}
+.info-subject{display:block;float:left;width:64%;overflow:hidden;white-space:nowrap;color:#000;font-size:12px;cursor:pointer;}
+.info-user,.info-time{display:block;float:left;height: 28px;color:#000;font-size:12px;}
+ 
+
+.pageBody_dq_red .info-header{border-top: 1px #d20000 solid;}
+.pageBody_dq_red .info-header-icon{background:url("/sc/img/pt_style/dq_red/front_bg.png") no-repeat scroll -134px -528px transparent;}
+.pageBody_dq_red .info-header span{color:#d20000}
+.pageBody_dq_red .list-page-bg.selected{background-color:#d20000;}
+.pageBody_dq_red .date-list-li-selected{background:#d20000;}
+
+.pageBody_user_red .info-header{border-top: 1px #d20000 solid;}
+.pageBody_user_red .info-header-icon{background:url("/sc/img/pt_user_style/red/front_bg.png") no-repeat scroll -96px -294px transparent;}
+.pageBody_user_red .info-header span{color:#d20000}
+.pageBody_user_red .list-page-bg.selected{background-color:#d20000;}
+.pageBody_user_red .date-list-li-selected{background:#d20000;}
+
+.pageBody_red .info-header{border-top: 1px #d20000 solid;}
+.pageBody_red .info-header-icon{background:url("/sc/img/pt_style/red/front_bg.png") no-repeat scroll -96px -294px transparent;}
+.pageBody_red .info-header span{color:#d20000}
+.pageBody_red .list-page-bg.selected{background-color:#d20000;}
+.pageBody_red .date-list-li-selected{background:#d20000;}
+
+.pageBody_green .info-header{border-top: 1px #65b90f solid;}
+.pageBody_green .info-header-icon{background:url("/sc/img/pt_style/green/front_bg.png") no-repeat scroll -96px -480px transparent;}
+.pageBody_green .info-header span{color:#65b90f}
+.pageBody_green .list-page-bg.selected{background-color:#65b90f;}
+.pageBody_green .date-list-li-selected{background:#65b90f;}
+
+

@@ -1,0 +1,252 @@
+/* CSS Document */
+/* 知道意见反馈CSS */
+.jump-top-box {
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    /*top: -1000px;*/
+    width: 50px;
+    z-index: 999;
+}
+.jump-top-box .jump-top, .jump-top-box .jump-feedback {
+    display: block;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+.jump-top-box .jump-top {
+    margin-bottom: 5px;
+}
+.jump-top-box .jump-top a, .jump-top-box .jump-feedback a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 0;
+    height: 26px;
+    left: 0;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 10px 12px 14px;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    width: 24px;
+    z-index: 2;
+}
+.jump-top-box .jump-feedback a {
+    background: none no-repeat scroll -2px 0px #FFFFFF;
+    border: 1px solid #CACBCC;
+    height: 24px;
+    width: 24px;
+}
+.jump-top-box .jump-feedback a:hover {
+    border: 0 none;
+    height: 26px;
+    width: 26px;
+}
+.jump-top-box .jump-top a:hover, .jump-top-box .jump-feedback a:hover {
+    background: none repeat scroll 0 0 #CDCFD1;
+    font-size: 12px;
+}
+.jump-top-box .s-point-lt, .jump-top-box .s-point-rt, .jump-top-box .s-point-lb, .jump-top-box .s-point-rb {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    z-index: 3;
+}
+.jump-top-box .s-point-lt {
+    left: 0;
+    top: 0;
+}
+.jump-top-box .s-point-rt {
+    right: 0;
+    top: 0;
+}
+.jump-top-box .s-point-lb {
+    bottom: 0;
+    left: 0;
+}
+.jump-top-box .s-point-rb {
+    bottom: 0;
+    right: 0;
+}
+.jump-top-box .jump-feedback a {
+    background-image: url("/sy/comm/zhidao/baidu_style_files/zhidao_feedback_img.png");
+}
+
+
+
+
+/* 点击意见反馈后弹出的提问页面CSS */
+.modal-dialog {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #888888;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.4);
+    margin: auto;
+    position: absolute;
+    text-align: left;
+    width: 420px;
+    z-index: 99;
+}
+.modal-dialog-title {
+    background: none repeat scroll 0 0 #0874C4;
+    border: 1px solid #0D6EB8;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: move;
+    line-height: 14px;
+    padding: 10px 15px;
+    position: relative;
+}
+.modal-dialog.with-button .modal-dialog-content {
+    border-bottom: 0 none;
+    border-radius: 0 0 0 0;
+    font-size: 14px;
+}
+.modal-dialog-content {
+    margin: 17px 0;
+    padding: 0 15px;
+}
+.modal-dialog.with-button .modal-dialog-buttons {
+    border-top: 0 none;
+    display: block;
+    padding: 0 15px;
+}
+
+.modal-dialog-title-text {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+.modal-dialog-title-close {
+    background-position: -60px -53px;
+    cursor: pointer;
+    height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    right: 3px;
+    text-indent: -9999px;
+    top: 50%;
+    width: 30px;
+}
+.icon, .tr-icon, .tr-inline-icon, .goog-option-selected .goog-menuitem-checkbox, .zu-edit-button-icon, .zu-top-live-icon, .zh-global-backtotop, .zh-hovercard-arrow, .modal-dialog-title-close, .icon-external, .zg-icon, .zm-profile-icon, .zm-profile-header-icon, .icon-info, .icon-green-check, .icon-big-arrow-left, .icon-big-arrow-right, .icon-weibo-corner, .icon-big-white-sina, .icon-big-white-mail {
+    background-image: url("/sy/comm/zhidao/zhihu_style_files/sprites-1.8.2.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+.zg-right {
+    float: right;
+}
+.zg-report-title {
+    padding-bottom: 10px;
+}
+
+.zg-gray-darker {
+    color: #666666;
+}
+.zg-report-title .zg-report-msg {
+    color: #A02313;
+}
+
+.zg-form-text-input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    color: #222222;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 8px 10px;
+}
+textarea.zg-form-text-input, .zg-form-text-input > textarea {
+    border: 0 none;
+    color: #222222;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 !important;
+    min-height: 66px;
+    overflow: hidden;
+    padding: 0 !important;
+}
+.zg-editor-input {
+    border: 0 none;
+    font-weight: 400;
+    margin: 0;
+    min-height: 66px;
+    padding: 0;
+    width: 100%;
+}
+.zu-seamless-input-origin-element {
+    overflow: hidden;
+}
+
+textarea {
+    border: 0 none;
+    outline: 0 none;
+    overflow: auto;
+    resize: none;
+}
+.modal-dialog.with-button .modal-dialog-buttons {
+    border-top: 0 none;
+    display: block;
+    padding: 0 15px;
+}
+.modal-dialog-buttons {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    text-align: right;
+}
+button[name="cancel"] {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #225599;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+}
+.zm-command-cancel {
+    cursor: pointer;
+    margin: 0 15px 0 0;
+}
+.zg-link-btn {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #225599;
+    cursor: pointer;
+}
+.zg-btn-blue, .zg-btn-green, .zg-btn-white, a.follow {
+}
+.zg-btn-blue {
+    background: -moz-linear-gradient(center top , #1288D4, #0771C1) repeat-x scroll 0 0 #0E7FCC;
+    border: 1px solid #0D6EB8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.2);
+    color: #FFFFFF !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+.zg-btn-blue, .zg-btn-green, .zg-btn-red, .zg-btn-white, .zg-btn-disabled {
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none !important;
+    vertical-align: middle;
+}
+body, input, textarea, select, button {
+    color: #222222;
+    font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}

@@ -1,0 +1,55 @@
+/*公共_scheduler*/
+.dhx_calendar_click {
+	background-color: #C2D5FC !important;
+}   
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	padding:5px;
+	background: url("/sy/theme/default/images/list/back-white.png") repeat left top transparent;
+}
+#outer {
+	background-color:#C2D5FC;
+	position: relative;
+	float: left;
+	width: 100%;
+	-webkit-box-shadow: 1px 2px 7px black;
+	-moz-box-shadow: 1px 2px 7px #000;
+	box-shadow: 1px 2px 7px black;
+}
+#left_container {
+	width:20%;
+	float:left;
+}
+#mini_calendar {
+	width:100%;
+	height:100%;
+}
+#right_scheduler {
+	width:80%;
+	height:100%;
+	float:left;
+}
+.dhx_cal_data {
+	overflow:hidden;
+}
+
+/*公共_事件样式*/
+/*default*/
+/*event in day or week view*/.dhx_cal_event.event_default div{background-color: gray ;color: red !important;}
+/*multi-day event in month view*/.dhx_cal_event_line.event_default{background-color: gray !important;color: red !important;}
+/*event with fixed time, in month view*/.dhx_cal_event_clear.event_default{ color: gray !important;}
+/*past_event*/
+/*event in day or week view*/.dhx_cal_event.past_event div{//background-color: red ;color: red !important; border:3px solid red;}
+/*multi-day event in month view*/.dhx_cal_event_line.past_event{//background-color: red !important;color: red !important;}
+/*event with fixed time, in month view*/.dhx_cal_event_clear.past_event{ color: red !important;}}
+
+.dhx_scale_holder_now.custom_color, .dhx_scale_holder.custom_color {
+	background-image:url(/sy/comm/calendar/dhtmlx/imgs/hour_bg.png);
+	background-position:0px -252px;
+}
+/*公共_周六日的样式*/
+.dhx_scale_holder_now.weekday, .dhx_scale_holder.weekday {
+	background-image:url(/sy/comm/calendar/dhtmlx/imgs/week_bg.png);
+}

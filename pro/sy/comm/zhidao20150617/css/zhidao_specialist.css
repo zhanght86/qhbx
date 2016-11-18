@@ -1,0 +1,98 @@
+.card{
+	height:217px;
+	width:370px;
+	top:5px;
+	left:13.36%;
+	position:relative;
+	background:url(/sy/comm/zhidao/baidu_style_files/card.png) no-repeat 0 0 transparent;
+}
+.activity{
+	height:214px;
+	width:598px;
+	top:-209px;
+	left:41.5%;
+	position:relative;
+	background-color: rgb(166,166,166);
+	opacity:0.3;
+	filter:alpha(opacity=30); /* IE */
+	-moz-opacity:0.3; /* Moz + FF */
+	opacity: 0.3; /* 支持CSS3的浏览器（FF 1.5也支持）*/
+}
+.activity-font{
+	height:214px;
+	width:598px;
+	top:10px;
+	left:41.5%;
+	position:absolute;
+	z-index:10;
+}
+.activity-line{
+	height:2px;
+	width:598px;
+	background: url("/sy/comm/zhidao/baidu_style_files/left-line-right.png") no-repeat 0 0 transparent;
+	margin-left:50px;
+}
+.activity-top{
+	height:28px;
+	width：auto;
+	margin-left:26px;
+	font-size:14px;
+	color:red;
+	line-height:28px;
+	font-weight: 700;
+}
+.card-left{
+	height:203px;
+	width:135px;
+	float:left;
+}
+.card-left-top{
+	height: 103px;
+    margin-left: 26px;
+    margin-top: 25px;
+    width: 103px;
+}
+.card-left-bottom{
+	width:135px;
+	height:90px;
+	margin-left:10px;
+	/*margin-top:10px;*/
+}
+.card-right{
+	width:210px;
+	height:202px;
+	float:left;
+}
+.card-right-top{
+	width:200px;
+	height:70px;
+	margin-top:30px;
+	font-size:12px;
+	padding-left:5px;
+}
+.card-right-middle{
+	color:rgb(240,126,1);
+	border-bottom:1px solid #000000;
+	padding-left:5px;
+}
+.card-right-bottom{
+	width:200px;
+	height:35px;
+	font-size:12px;
+	color:#000000;
+	margin-top:10px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.card-left-bottom-h4{
+	text-align:center; margin-bottom:5px;
+}
+.card-left-bottom-p{
+	text-align:center;
+}
+.activity-bottom{
+	width:550px;
+	height:160px;
+	margin-left:20px;
+	margin-top:10px;
+}

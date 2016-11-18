@@ -1,0 +1,10 @@
+/** BBS首页 **/
+.portalBody {background-color:#e8eff6;}
+.portal-box {border:1px #ccdded solid;}
+.portal-box-title {background:none;border-bottom:1px #ccc dashed;width:96%;padding:0px;margin:0px 2%;height:40px;color:black;}
+.portal-box-title-label {line-height:40px;font-size:12px;}
+#BBS_NEW_ZHUTI__temp {width:49%;display:inline-block;margin-left:1%;}
+#BBS_NEW_ZHUTI__temp .portal-box {margin-left:0px;margin-bottom:0px;margin-right:0px;}
+#BBS_HOT_HUATI__temp {width:49%;display:inline-block;margin-left:1%;}
+#BBS_HOT_HUATI__temp .portal-box {margin-left:0px;margin-bottom:0px;margin-right:0px;}
+/** BBS首页 **/

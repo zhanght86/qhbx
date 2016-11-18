@@ -1,0 +1,220 @@
+.card{
+	height:217px;
+	width:370px;
+	top:5px;
+	/*left:13.36%;*/
+	position:relative;
+	background:url(/sy/comm/zhidao/baidu_style_files/card.png) no-repeat 0 0 transparent;
+}
+.activity{
+	height:214px;
+	width:598px;
+	top:-209px;
+	left:38.8%;
+	position:relative;
+	background-color: rgb(166,166,166);
+	opacity:0.3;
+	filter:alpha(opacity=30); /* IE */
+	-moz-opacity:0.3; /* Moz + FF */
+	opacity: 0.3; /* 支持CSS3的浏览器（FF 1.5也支持）*/
+}
+.activity-font{
+	height:214px;
+	width:598px;
+	top:10px;
+	left:42%;
+	position:absolute;
+	z-index:10;
+}
+.activity-line{
+	height:2px;
+	width:598px;
+	background: url("/sy/comm/zhidao/baidu_style_files/left-line-right.png") no-repeat 0 0 transparent;
+	margin-left:50px;
+}
+.activity-top{
+	height:28px;
+	width：auto;
+	margin-left:26px;
+	font-size:14px;
+	color:red;
+	line-height:28px;
+	font-weight: 700;
+}
+.card-left{
+	height:203px;
+	width:135px;
+	float:left;
+}
+.card-left-top{
+	height: 103px;
+    margin-left: 26px;
+    margin-top: 25px;
+    width: 103px;
+}
+.card-left-bottom{
+	width:135px;
+	height:90px;
+	margin-left:10px;
+	/*margin-top:10px;*/
+}
+.card-right{
+	width:210px;
+	height:202px;
+	float:left;
+}
+.card-right-top{
+	width:200px;
+	height:70px;
+	margin-top:30px;
+	font-size:12px;
+	padding-left:5px;
+}
+.card-right-middle{
+	color:rgb(240,126,1);
+	border-bottom:1px solid #000000;
+	padding-left:5px;
+}
+.card-right-bottom{
+	width:200px;
+	height:35px;
+	font-size:12px;
+	color:#000000;
+	margin-top:10px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.card-left-bottom-h4{
+	text-align:center; margin-bottom:5px;
+}
+.card-left-bottom-p{
+	text-align:center;
+	font-size:12px;
+}
+.activity-bottom{
+	width:550px;
+	height:160px;
+	margin-left:20px;
+	margin-top:10px;
+}
+.ui-tabs-aside .tabControl .current{
+	background-color: white!important;
+	/*border-top: 1px solid rgb(210,210,210)!important;*/
+	height:34px!important;
+}
+.center-div{
+	width:980px; 
+	/*text-align:center;*/ 
+	margin: 0 auto;
+	padding:0;
+	display:block;
+	overflow:hidden;
+	height:300px;
+}
+.ui-pager {
+    clear: both;
+    color: #999999;
+    line-height: 47px;
+    overflow: hidden;
+    padding-bottom: 20px !important;
+    text-align: center;
+    white-space: nowrap;
+}
+.btn-white {
+    background: -moz-linear-gradient(center top , #F8F8F9, #E6E6E8) repeat-x scroll 0 0 #F1F1F2;
+    border: 1px solid #BBBBBB;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 #FFFFFF inset, 0 1px 0 rgba(0, 0, 0, 0.1);
+    color: #666666 !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: 0 1px 0 #FFFFFF;
+    vertical-align: middle;
+}
+.btn-load-more {
+    display: block;
+    font-size: 13px;
+    height: 22px;
+    margin: 20px 0;
+    padding: 5px 1px;
+}
+.integralTop-dl-css {
+    border-bottom: 1px solid #E8E8E8;
+    margin: 10px;
+    padding-bottom: 10px;
+    width: 225px !important;
+}
+.css-activity-disName{
+	width:370px;float:left;text-align:center;cursor:pointer;
+}
+.css-activity-disName:hover{
+	color:blue;
+}
+.css-activity-font{
+	float:left;font-size:12px;color:#999999;
+}
+.css-activity-img{
+	width:17px;
+	height:15px;
+	float:left;
+	background-image:url(/sy/comm/zhidao/baidu_style_files/yxk_mj_034.gif);
+	background-position:0px 0px;
+	margin-right:3px; 
+	margin-top:4px;
+}
+#ul-div li{
+	height:33px;
+	margin:0px;
+	padding:0px;
+}
+.li-span{
+	font-size:14px;
+	font-family:'Microsoft YaHei';
+	font-weight:700;
+	height:33px;
+	line-height:33px;
+	color:black;
+	text-align: center;
+	cursor:pointer;
+}
+.out-ul{
+	margin:0px;
+	padding:0px;
+	width:276px;
+	height:33px;
+	border-top:2px solid rgb(77,168,5);
+	border-left:1px solid rgb(237,237,237);
+	border-right:1px solid rgb(237,237,237);
+}
+.li-div{
+	float:left;height:32px;border-bottom:1px solid rgb(237,237,237);
+	text-align:center;
+}
+.li-gap{
+	float:left;width:1px;height:33px;border:0px;background-color:rgb(237,237,237);
+}
+.out-ul a{
+	text-decoration: none;
+}
+.out-ul a:hover{
+	text-decoration: none;
+}
+.li-selected{
+	background-color:white;
+	height:33px;
+	border-bottom:0px;
+}
+.spec-page-span{
+	width:auto!important;
+	float:none!important;
+	cursor:pointer!important;
+	border:0px!important;
+}
+.spec-page-span:hover{
+	background-color:#e3e3e3!important;
+}

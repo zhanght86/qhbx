@@ -1,0 +1,203 @@
+<style type="text/css">
+.ui-widget-content a{text-decoration:none;color:blue;}
+.seal_count td{border:1px solid #ccc;}
+</style>
+<div class="item ui-corner-5 seal_count" style="font-size:12px;line-height:40px;border:0;">
+	<div class="fieldsetContainer">
+		<div>
+			<div align="center" style="font-size:24px;color:red;font-weight:bold;margin:4px;">印章使用统计表</div>
+			<div>
+				<table style="width:100%; text-align:center;border:0;" id="table_title">
+					<tr style="background:#F1EFEE;font-weight:bold;">
+						<td rowspan="3">类别</td>
+						<td rowspan="3">印章名称</td>
+						<td colspan="8">用印类型</td>
+						<td colspan="2" rowspan="2">小计</td>
+						<td colspan="2" rowspan="2">合计</td>
+					</tr>
+					<tr style="background:#F1EFEE;">
+						<td colspan="2">公文</td>
+						<td colspan="2">合同</td>
+						<td colspan="2">个人使用</td>
+						<td colspan="2">综合</td>
+					</tr>
+					<tr style="background:#F1EFEE;">
+						<td>实物</td>
+						<td>电子</td>
+						<td>实物</td>
+						<td>电子</td>
+						<td>实物</td>
+						<td>电子</td>
+						<td>实物</td>
+						<td>电子</td>
+						<td>实物</td>
+						<td>电子</td>
+						<td>实物</td>
+						<td>电子</td>
+					</tr>
+					<#list typeList as type>
+					<#if type.sealList?size!=0>
+					<#list type.sealList as seal>
+					<tr>
+						<#if seal_index=0>
+						<td rowspan="${type.sealList?size}">${type.NAME!" "}</td>
+						</#if>
+						<td>${seal.SEAL_NAME}</td>
+						<td code="印章" type="${type.ID}" seal="${seal.SEAL_ID}" way="SEAL_USE_APPLY_GW-1">
+							<#if seal["SEAL_USE_APPLY_GW-1"]??>
+							<a href="javascript:;">${seal["SEAL_USE_APPLY_GW-1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="印章" type="${type.ID}" seal="${seal.SEAL_ID}" way="SEAL_USE_APPLY_GW-2">
+							<#if seal["SEAL_USE_APPLY_GW-2"]??>
+							<a href="javascript:;">${seal["SEAL_USE_APPLY_GW-2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="印章" type="${type.ID}" seal="${seal.SEAL_ID}" way="SEAL_USE_APPLY_HT-1">
+							<#if seal["SEAL_USE_APPLY_HT-1"]??>
+							<a href="javascript:;">${seal["SEAL_USE_APPLY_HT-1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="印章" type="${type.ID}" seal="${seal.SEAL_ID}" way="SEAL_USE_APPLY_HT-2">
+							<#if seal["SEAL_USE_APPLY_HT-2"]??>
+							<a href="javascript:;">${seal["SEAL_USE_APPLY_HT-2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="印章" type="${type.ID}" seal="${seal.SEAL_ID}" way="SEAL_USE_APPLY_GR-1">
+							<#if seal["SEAL_USE_APPLY_GR-1"]??>
+							<a href="javascript:;">${seal["SEAL_USE_APPLY_GR-1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="印章" type="${type.ID}" seal="${seal.SEAL_ID}" way="SEAL_USE_APPLY_GR-2">
+							<#if seal["SEAL_USE_APPLY_GR-2"]??>
+							<a href="javascript:;">${seal["SEAL_USE_APPLY_GR-2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="印章" type="${type.ID}" seal="${seal.SEAL_ID}" way="SEAL_USE_APPLY_ZH-1">
+							<#if seal["SEAL_USE_APPLY_ZH-1"]??>
+							<a href="javascript:;">${seal["SEAL_USE_APPLY_ZH-1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="印章" type="${type.ID}" seal="${seal.SEAL_ID}" way="SEAL_USE_APPLY_ZH-2">
+							<#if seal["SEAL_USE_APPLY_ZH-2"]??>
+							<a href="javascript:;">${seal["SEAL_USE_APPLY_ZH-2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="小计" type="${type.ID}" seal="${seal.SEAL_ID}" way="1">
+							<#if seal["1"]??>
+							<a href="javascript:;">${seal["1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="小计" type="${type.ID}" seal="${seal.SEAL_ID}" way="2">
+							<#if seal["2"]??>
+							<a href="javascript:;">${seal["2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<#if seal_index=0>
+						<td rowspan="${type.sealList?size}" code="合计" type="${type.ID}" way="1">
+							<#if type["1"]??>
+							<a href="javascript:;">${type["1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td rowspan="${type.sealList?size}" code="合计" type="${type.ID}" way="2">
+							<#if type["2"]??>
+							<a href="javascript:;">${type["2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						</#if>
+					</tr>
+					</#list>
+					</#if>
+					</#list>
+					<tr>
+						<td colspan="2">总计</td>
+						<td code="总计" way="SEAL_USE_APPLY_GW-1">
+							<#if total["SEAL_USE_APPLY_GW-1"]??>
+							<a href="javascript:;">${total["SEAL_USE_APPLY_GW-1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总计" way="SEAL_USE_APPLY_GW-2">
+							<#if total["SEAL_USE_APPLY_GW-2"]??>
+							<a href="javascript:;">${total["SEAL_USE_APPLY_GW-2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总计" way="SEAL_USE_APPLY_HT-1">
+							<#if total["SEAL_USE_APPLY_HT-1"]??>
+							<a href="javascript:;">${total["SEAL_USE_APPLY_HT-1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总计" way="SEAL_USE_APPLY_HT-2">
+							<#if total["SEAL_USE_APPLY_HT-2"]??>
+							<a href="javascript:;">${total["SEAL_USE_APPLY_HT-2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总计" way="SEAL_USE_APPLY_GR-1">
+							<#if total["SEAL_USE_APPLY_GR-1"]??>
+							<a href="javascript:;">${total["SEAL_USE_APPLY_GR-1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总计" way="SEAL_USE_APPLY_GR-2">
+							<#if total["SEAL_USE_APPLY_GR-2"]??>
+							<a href="javascript:;">${total["SEAL_USE_APPLY_GR-2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总计" way="SEAL_USE_APPLY_ZH-1">
+							<#if total["SEAL_USE_APPLY_ZH-1"]??>
+							<a href="javascript:;">${total["SEAL_USE_APPLY_ZH-1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总计" way="SEAL_USE_APPLY_ZH-2">
+							<#if total["SEAL_USE_APPLY_ZH-2"]??>
+							<a href="javascript:;">${total["SEAL_USE_APPLY_ZH-2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总合" way="1">
+							<#if total["1"]??>
+							<a href="javascript:;">${total["1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总合" way="2">
+							<#if total["2"]??>
+							<a href="javascript:;">${total["2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总合" way="1">
+							<#if total["1"]??>
+							<a href="javascript:;">${total["1"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+						<td code="总合" way="2">
+							<#if total["2"]??>
+							<a href="javascript:;">${total["2"].COUNT}</a>
+							<#else>&nbsp;
+							</#if>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

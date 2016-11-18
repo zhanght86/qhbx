@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+.wk-bg-icon{
+			background-image:url("/sy/comm/wenku/img/icons_1781dcbe.png"); 
+			background-repeat:no-repeat;
+}
+.wk-h26{
+	height:26px;
+}
+.wk-new{/**新建文件夹**/
+		width:105px;
+	 	background-position:-2px -273px;
+}
+.wk-del{/**删除**/
+	width: 69px;
+	background-position: -243px -323px;
+}
+.wk-del:hover{
+	background-position: -243px -273px;
+}
+.wk-move{/**移动**/
+	width: 70px;
+	background-position: -140px -323px;
+}
+
+.wk-fullScreen{
+	width:14px;
+	height:14px;
+	display:block;
+}
+.wk-fullScreen{
+	background-position: -587px 0;
+}
+.wk-fullScreen:hover{
+	background-position: -587px -60px;
+}
+
+.wk-tab{/*列表 缩略图 切换*/
+	width:28px;
+	height:26px;
+	display:block;
+	float:left;
+}
+.wk-tab-left-left{
+	background-position: -443px -353px;
+}
+.wk-tab-left-right{
+	background-position: -471px -353px;
+}
+.wk-tab-right-right{
+	background-position: -382px -353px;
+}
+.wk-tab-right-left{
+	background-position: -354px -353px;
+}
+
+/***********为显示文档是否为重要文档的标志旗子**************/
+.imp{
+	display:inline-block;
+	margin-left:20px;
+	width:23px;
+	height:17px;
+	background:url("/sy/comm/wenku/img/upload/up_load.png") no-repeat -155px -240px;
+	}

@@ -1,0 +1,159 @@
+div.content {
+	/* The display of content is enabled by a javascript generated style on the page.
+	   This is so that the slideshow1 content won't display unless javascript is enabled. */
+	display: none;
+	float:right;
+	width:550px; 
+}
+div.content a, div.navigation a {
+	text-decoration: none;
+	color: #777;
+}
+div.content  a:focus, div.content  a:hover, div.content  a:active {
+	text-decoration: underline;
+}
+div.controls {
+	margin-top: 5px;
+	height:23px;
+}
+div.controls a {
+	padding: 5px;
+} 
+div.ss-controls {
+	float:left;
+}
+div.nav-controls {
+	float: left;
+}
+div.loader {
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 550px;
+	height: 350px
+}
+div.slideshow1 {
+	clear: both;
+}
+div.slideshow1 span.image-wrapper {
+	float:right;
+}
+div.slideshow1 a.advance-link {
+	padding: 2px;
+	display: block;
+}
+div.slideshow1 img {
+	border: none;
+	display: block;
+}
+div.download {
+	float: right;
+}
+
+div.image-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+div.navigation {
+	/* The navigation style is set by a javascript generated style on the page.
+	   This is so that the javascript specific styles won't be applied unless javascript is enabled. */
+}
+ul.thumbs {
+	clear: both;
+	margin:0px;
+	padding: 0;
+	display:none;
+}
+ul.thumbs li a {
+	display:block;
+	float:left;
+	margin: 2px 2px 0px 2px;
+	list-style: none;
+}
+a.thumb {
+	/*padding: 2px;
+	display: block;
+	width:50px;
+	height:50px;
+	border: 1px solid #ccc;*/
+	display:block;
+	width:162px;
+	float:left;
+	margin-top:2px;
+	height:135px;
+	cursor:pointer;
+	padding-top:30px;
+	padding-left:8px;
+}
+ul.thumbs li.selected a.thumb {
+	display:block;
+	width:170px;
+	float:left;
+	height:140px;
+	cursor:pointer;
+	margin-top:2px;
+	padding-top:30px;
+	background:url(../images/aeonrushHour/text2.jpg) no-repeat;
+}
+a.thumb:focus {
+	outline: none;
+}
+ul.thumbs img {
+	border: none;
+	display: block;
+	width:130px;
+	height:85x;
+}
+div.pagination {
+	clear: both;
+	margin-right: 42px;
+}
+div.navigation div.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+div.navigation div.bottom {
+	margin-top: 12px;
+}
+div.pagination a, div.pagination span.current {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+	border: 1px solid #ccc;
+}
+div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+div.pagination span.current {
+	font-weight: bold;
+	background-color:#999999;
+	border-color: #000;
+	color: #fff;	
+}
+
+#thumbs a,#thumbs a:visited{
+	text-decoration:none;
+	color:#000000;
+}
+#slideshow1{
+	display:block;
+	width:280px;
+	height:210px;
+	border:1px #cccccc solid;
+	float:left;
+	padding:1px;
+}
+#slideshow1 img{	
+	width:276px;
+	height:206px;
+}
+#thumbs{
+	text-align:center;
+}

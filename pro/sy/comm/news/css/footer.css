@@ -1,0 +1,45 @@
+/* foot_begin */
+.footer {
+	line-height: 25px;
+	margin: auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+	width: 95%;
+	height: 80px;
+	clear: both;
+}
+
+.footer a,.footer a:visited {
+	text-decoration: none;
+	color: #42515A;
+}
+
+.footer a:hover {
+	color: red;
+}
+.link{
+	width:100%;
+	border:1px #D8D8D8 solid;
+	margin:10px 0;
+	height:150px;
+	clear: both;
+}
+.link .link_title{
+	background:url("/sy/comm/news/img/box_bg.png")repeat-x;
+	line-height:33px;
+	padding-left:20px;
+}
+.link .link_item{
+	float: left;
+	width: 60px;
+	height: 140xp;
+	margin: 5px 10px;;
+}
+.link .link_item .link_name{
+	margin: 10px;
+}
+.link .link_item .link_img{
+	
+}
+/* foot_end */

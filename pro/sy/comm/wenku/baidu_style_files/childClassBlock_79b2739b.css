@@ -1,0 +1,65 @@
+.catalog {
+	background-color: #e7f2f9;
+	border: 1px solid #acd1eb;
+	margin-bottom: 5px
+}
+
+.catalog .top .tl,.catalog .top .tr {
+	background-image:
+		url("mod-bg_10b173af.png");
+	width: 5px
+}
+
+.catalog .top .tl {
+	top: -1px;
+	left: -1px
+}
+
+.catalog .top .tr {
+	top: -1px;
+	right: -1px
+}
+
+.catalog .bottom {
+	height: 3px
+}
+
+.catalog .hd h2 {
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	margin-left: 12px;
+	color: #014a8f
+}
+
+.catalog .bd {
+	margin: 0 3px;
+	background-color: #fff;
+	padding: 10px
+}
+
+.catalog .bd table td {
+	text-indent: 10px;
+	background: url(icons.gif)
+		-200px -116px no-repeat;
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px
+}
+
+.catalog .bd table td strong {
+	font-weight: normal
+}
+
+.catalog .bd table .classify {
+	background: transparent
+		url(http://img.baidu.com/img/iknow/docshare/icon_classify.gif)
+		no-repeat scroll 0 0
+}
+
+.catalog .bd table .classify img {
+	border: 0 none;
+	height: 13px;
+	vertical-align: middle;
+	width: 13px
+}

@@ -1,0 +1,733 @@
+/*知道首页的CSS*/
+.main-content-css {
+	height: 307px;
+	/*border-bottom: 1px solid #dcdcdc;*/
+}
+
+.top-css {
+	width: 85%;
+	height: 265px;
+	float: left;
+}
+
+.top-title-css {
+	width: 100%;
+	height: 30px;
+	padding-left: 30px;
+}
+
+.top-span-css {
+	font-size: 20px;
+	color: red;
+}
+
+.top-content-css {
+	width: 100%;
+	height: 260px;
+}
+
+.top-content-img-css {
+	width: 18%;
+	height: 260px;
+	float: left;
+}
+.top-content-middle-css{
+	width:8px; 
+	height:14px; 
+	background:url(/sy/comm/zhidao/baidu_style_files/triangle.png);
+	position: absolute;
+	top:65px;
+	left:117px;
+}
+
+.top-content-inside-css {
+	border: 1px solid #46B000;
+	width: 86px;
+	height: 86px;
+}
+
+.content-img {
+	width: 80px;
+	height: 78px;
+	border: 3px solid white;
+}
+
+.top-content-font-css {
+	height: 200px;
+	float: right;
+	background-color: white;
+    border: 1px solid #4BB402;
+    border-radius: 15px 15px 15px 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 75%;
+}
+.top-content-middle-span-css{
+	margin-left:20px;
+	color: #333333;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.top-content-dd {
+  	color: rgb(25,168,27);
+    /*font-family: "Microsoft YaHei";*/
+    font-size: 14px;
+    font-weight: bold;
+}
+.top-content-dt{
+    color: #666666;
+    font-family: SimSun;
+    font-size: 14px;
+    padding-top: 8px;
+    width: 410px;
+}
+
+.img-list-outside {
+	width: 15%;
+	float: right;
+	border-radius:15px 15px 15px 15px;
+	/*border:2px solid #C2EEF1;*/
+	/*background-color: rgb(233,241,237);*/
+	margin-top:-15px;
+}
+
+.img-list-content {
+	height: 70%;
+	margin: auto auto;
+}
+
+.img-list-up {
+	width: 80px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+.img-list-div {
+	height: 45px;
+	margin: 0 auto;
+	width:45px;
+}
+
+.img-list-img {
+	width: 38px;
+	height: 38px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	border:3px solid rgb(236,245,242);
+	opacity:0.4;
+}
+.img-list-img:hover{
+	opacity:0.9;
+}
+.img-list-img-selected{
+	border:3px solid rgb(71,182,2);
+	opacity:1;
+}
+
+.info-left-css {
+	width: 900px;
+	float: left;
+}
+
+#push-login dl {
+	width: 48%;
+	padding-left:1%;
+	padding-right:1%;
+	float:left;
+}
+
+.info-left-content-css {
+	float: left;
+	height: 360px;
+}
+
+.push-login-css {
+	margin-left: 0px;
+	/*width:650px !important;*/
+	margin-bottom:2px !important;
+}
+
+.my-ask-css {
+	width: 100%;
+	padding-left: 10px;
+	margin-top: 15px;
+	height: 300px;
+}
+
+.my-ask-h3-css {
+	color: #333333;
+	font: 500 14px/16px '微软雅黑';
+	border-top: 1px solid #dcdcdc;
+	padding-top: 20px;
+}
+
+.my-ask-dl-css {
+	border-bottom: 1px dashed #EBEBEB;
+	margin-top: 10px;
+}
+
+.my-ask-dd-css {
+	color: #2D64B3;
+	font-size: 14px;
+}
+
+.my-ask-dt-css {
+	font-size: 12px;
+}
+
+.info-right-css {
+	width: 246px;
+	float: right;
+	height: auto;
+	margin-top:2px;
+}
+
+.my-follow-css {
+	width: 100%;
+	margin-bottom: 0px;
+	margin-top: 15px;
+	padding-left: 10px;
+	border-left: 1px solid #dcdcdc;
+	height: 300px;
+}
+
+.my-follow-h3-css {
+	color: #333333;
+	font: 500 14px/16px '微软雅黑';
+	border-top: 1px solid #dcdcdc;
+	padding-top: 20px;
+}
+
+.my-follow-dl-css {
+	border-bottom: 1px dashed #EBEBEB;
+	margin-top: 10px;
+}
+
+.my-follow-dd-css {
+	color: #2D64B3;
+	font-size: 14px;
+}
+
+.bottom-css {
+	width: 100%;
+	height: 700px;
+	float: left;
+	border-top: 1px solid #dcdcdc;
+}
+
+.bottom-item-css {
+	width: 30%;
+	margin-left: 3%;
+	float: left;
+	height: 700px;
+}
+
+.img-show {
+	display: block;
+}
+
+.img-hide {
+	display: none;
+}
+
+.default {
+	width: 170px;
+	height: 22px;
+	/*background-color: rgb(252, 252, 252);*/
+	float: left;
+	border: 1px solid rgb(233, 233, 233);
+	border-bottom:0px;
+	margin: auto 0 !important;
+	text-align: center;
+	padding-top: 2px;
+}
+
+.selected {
+	border-bottom: 0px;
+	background-color: rgb(255, 255, 255);
+	border-top:2px solid rgb(49,132,95);
+}
+
+.zhidao_index_h3 {
+	width: 650px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid rgb(73, 168, 4);
+}
+
+.zhidao_index_ul {
+	height: auto !important;
+}
+.opt-sort {
+    float: right;
+    line-height: 22px;
+    margin-right: 15px;
+    margin-top: 3px;
+    display:inline;
+}
+.sort-default {
+    background-color: #E6E6E6;
+    color: #666666;
+    display: inline-block;
+    line-height: 22px;
+    padding: 0 8px;
+    text-align: center;
+}
+.opt-sort a:link, .opt-sort a:visited {
+    color: #2D64B3;
+    text-decoration: none;
+}
+.btn-refresh {
+    background: url("/sy/comm/zhidao/baidu_style_files/btn_refresh_68883b84.png") repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    width: 49px;
+}
+.sort-ansnum {
+    display: inline-block;
+    line-height: 22px;
+    padding: 0 8px;
+    text-align: center;
+}
+.opt-sort a.sort-normal:hover {
+    background-color: rgb(232,232,232);
+    color: #666666;
+    display: inline-block;
+    line-height: 22px;
+    padding: 0 8px;
+    text-align: center;
+    text-decoration: none;
+}
+.up-css{
+	width:25px; height:13px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:10px;
+	background: url(/sy/comm/zhidao/baidu_style_files/thin_top_arrow_333.png) no-repeat scroll 0 0 transparent;
+	opacity:0.2;
+}
+.up-css:hover{
+	opacity:1;
+}
+.down-css{
+	width:25px; height:13px; 
+	margin-top:10px;
+	background: url(/sy/comm/zhidao/baidu_style_files/thin_bottom_arrow_333.png) no-repeat scroll 0 0 transparent;
+	margin-left:auto;
+	margin-right:auto;
+	opacity:0.2;
+}
+.down-css:hover{
+	opacity:1;
+}
+
+
+
+/*使用知乎首页的个人信息显示的样式*/
+.zm-side-nav-group:first-child {
+    margin-top: -4px;
+}
+.zm-side-nav-group {
+    margin-bottom: 10px;
+}
+
+.zm-side-nav-group + .zm-side-nav-group {
+    border-top: 1px solid #EEEEEE;
+    padding-top: 10px;
+}
+.zm-side-nav-group {
+    margin-bottom: 10px;
+}
+.zm-side-nav {
+    margin-left: 20px !important;
+}
+ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+.zm-side-nav li {
+    position: relative;
+    margin-top:0px !important;
+    width:120px !important;
+    float:left !important;
+}
+.zm-side-nav-li {
+    display: block;
+    list-style: none outside none;
+    margin-bottom: 3px;
+    float:left;
+    width:110px;
+}
+ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+.zm-side-nav-link {
+    color: #666666;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 0 0 10px;
+}
+a {
+    color: #225599;
+    text-decoration: none;
+}
+
+.zm-side-nav-link .zg-icon {
+    height: 14px;
+    margin-right: 2px;
+    vertical-align: -2px;
+    width: 14px;
+}
+.zg-icon-sidenav-draft {
+    background-position: -152px -4px;
+}
+.icon, .tr-icon, .tr-inline-icon, .goog-option-selected .goog-menuitem-checkbox, .zu-edit-button-icon, .zu-top-live-icon, .zh-global-backtotop, .zh-hovercard-arrow, .modal-dialog-title-close, .icon-external, .zg-icon, .zm-profile-icon, .zm-profile-header-icon, .icon-info, .icon-green-check, .icon-big-arrow-left, .icon-big-arrow-right, .icon-weibo-corner, .icon-big-white-sina, .icon-big-white-mail {
+    background-image: url("/sy/comm/zhidao/zhihu_style/files/sprites-1.8.2.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+i, em {
+    font-style: italic;
+}
+.zm-side-nav-link {
+    color: #666666;
+    line-height: 28px;
+}
+.zm-side-nav-li {
+    list-style: none outside none;
+}
+body, input, textarea, select, button {
+    color: #222222;
+    font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    word-wrap: break-word;
+}
+.zg-icon-sidenav-fav {
+    background-position: -167px -4px;
+}
+.zg-icon-sidenav-follow {
+    background-position: -183px -4px;
+}
+.zg-icon-sidenav-invite {
+    background-position: -200px -4px;
+}
+.zg-icon-sidenav-all {
+    background-position: -217px -4px;
+}
+.zg-icon-sidenav-plaza {
+    background-position: -234px -4px;
+}
+.zg-icon-sidenav-debuts {
+    background-position: -287px -4px;
+}
+.zg-icon-sidenav-find {
+    background-position: -251px -4px;
+}
+.zg-icon-sidenav-publicedit {
+    background-position: -269px -4px;
+}
+
+.zm-side-nav-link.active, .zm-side-nav-link:hover {
+    background: none repeat scroll 0 0 white;
+    border-radius: 3px 3px 3px 3px;
+    color: #225599;
+    text-decoration: none;
+}
+div[contentEditable], input, textarea, button, a:link {
+}
+.zm-side-nav-link {
+    color: #666666;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 0 0 10px;
+}
+a {
+    color: #225599;
+    text-decoration: none;
+}
+
+.user-img-css{
+	margin-left:40px !important;
+}
+.user-msg-css{
+	margin-top:10px !important;
+	width:100% !important;
+}
+.recommend-user {
+    height: 200px;
+    margin-top: 18px;
+    width: 470px;
+}
+
+.recommend-user .inner .inner-left {
+    float: left;
+    margin-left: 0px;
+    position: relative;
+    width: 85px;
+}
+.leader-logo {
+    background: url("/sy/comm/zhidao/baidu_style_files/combine_0fa1fdab.png") no-repeat scroll -19px -800px transparent;
+    height: 41px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 42px;
+}
+.leader-logo{
+	background-position:-19px -800px;
+}
+.dept-logo {
+    background: url("/sy/comm/zhidao/baidu_style_files/combine_0fa1fdab.png") no-repeat scroll -61px -864px transparent;
+    height: 41px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 42px;
+}
+.dept-logo{
+	background-position:-61px -864px;
+}
+.busi-logo {
+    background: url("/sy/comm/zhidao/baidu_style_files/combine_0fa1fdab.png") no-repeat scroll -61px -800px transparent;
+    height: 41px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 42px;
+}
+.busi-logo{
+	background-position:-61px -800px;
+}
+.recommend-user .inner .inner-left img {
+    border: 1px solid #D1D1D1;
+    box-shadow: 0 2px 3px #D5D5D5;
+    height: 80px;
+    padding: 2px;
+    width: 80px;
+}
+
+.top-wenda-css{
+	float:left; line-height:20px;
+	color:red; font-size:20px;
+}
+.wen-img-css{
+	background: url("/sy/comm/zhidao/baidu_style_files/combine_0fa1fdab.png") no-repeat scroll 2px -372px transparent;
+	padding-right:5px;
+}
+.da-img-css{
+	background: url("/sy/comm/zhidao/baidu_style_files/combine_0fa1fdab.png") no-repeat scroll 2px -420px transparent;
+	padding-right:5px;
+}
+.content-middle{
+    background: url("/sy/comm/zhidao/baidu_style_files/line.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 180px;
+    margin-top: 45px;
+    width: 2px;
+}
+.left-line-right-css{
+	width:498px; height:2px; margin-left:100px;
+	background:url("/sy/comm/zhidao/baidu_style_files/left-line-right.png") no-repeat scroll 0 0 transparent;
+}
+.red-color{
+	color:#F07E01;
+	font-size:14px;
+	font-weight: normal;
+	font-family: "SimSun";
+}
+.small-font{
+	color: #666666;
+    font-size: 14px;
+    font-family: "SimSun";
+    font-weight: normal;
+}
+
+.zhidao_index_ul span {
+    background: url("/sy/comm/wenku/baidu_style_files/allbg_cd6bd677.png") no-repeat scroll right -128px transparent;
+    padding-left:30px;
+    height: 9px;
+    margin: 7px 0 0 4px;
+    width: 21px;
+}
+.ask_font{
+	float:left; 
+	height:20px; 
+	width:20px; 
+	background:url(/sy/comm/zhidao/baidu_style_files/combine_0fa1fdab.png) 0px -373px transparent;
+}
+.answer_font{
+	float:left; 
+	height:30px;
+	width:20px;
+	background:url(/sy/comm/zhidao/baidu_style_files/combine_0fa1fdab.png) 0px -420px transparent;
+}
+.answer-num-span{
+	display:block; 
+	width:70px; 
+	text-align:right;
+}
+
+/* �״���Ŀ�ĸ��Ի�֪����ҳ */
+.zhidao_index_document_category_img{
+	width:381px;height:130px;background:url(/sy/comm/zhidao/baidu_style_files/zhidao_index_category_img.gif) no-repeat 0 0;
+}
+.zhidao_index_document_category_item{
+	width:85px;height:22px;padding-left:10px;display:block;float:left;font-family:Microsoft YaHei;font-weight:bold;color:white;
+}
+.zhidao_index_my_answer_img{
+	width:120px;height:120px;float:left;background:url(/sy/comm/zhidao/baidu_style_files/zhidao_index_my_answer_img.gif) no-repeat 0 0; margin-right:10px;
+}
+.zhidao_index_myfollow_img{
+	width:250px;height:120px;background:url(/sy/comm/zhidao/baidu_style_files/zhidao_index_myfollow_img.gif);float:left;margin-right:10px;
+}
+.zhidao_index_my_ask_img{
+	width:120px;height:120px;background:url(/sy/comm/zhidao/baidu_style_files/zhidao_index_my_ask_img.gif);float:left;
+}
+.zhidao_index_spec_img{
+	width:250px;height:120px;background:url(/sy/comm/zhidao/baidu_style_files/zhidao_index_spec_img.gif);float:left;margin-right:10px;
+}
+.zhidao_index_center_img{
+	width:250px;height:120px;background:url(/sy/comm/zhidao/baidu_style_files/zhidao_index_center_img.gif);float:left;
+}
+.wenku_index_upload_img{
+	width:249px;height:250px;float:left;
+	/*background:url(/sy/comm/wenku/baidu_style_files/wenku_index_upload_img.gif) no-repeat 0 0;*/
+	background-color:#0070BA;
+}
+#upload_document_counter{
+	width:100%;height:22px;font-size:12px;font-weight:700;font-family:Microsoft YaHei;color:white;display:block;text-align:center;margin-top:70px;
+}
+#upload_document_font{
+	width:212px;height:40px;margin-left:19px;margin-right:19px;display:block;margin-top:15px;
+	background:url(/sy/comm/wenku/baidu_style_files/wenku_index_imgs.png) no-repeat;
+}
+.zhidao_my_want_ask{
+	width:150px;height:35px;margin-left:auto;margin-right:auto;margin-top:20px;display:block;
+	background:url(/sy/comm/zhidao/baidu_style_files/zhidao_bg_imgs.gif) no-repeat;
+	background-position: 0 0;
+}
+.zhidao_my_want_ask:hover{
+	background-position: 0 -36px;
+}
+.zhidao_my_want_answer{
+	width:150px;height:35px;margin-left:auto;margin-right:auto;margin-top:20px;display:block;
+	background:url(/sy/comm/zhidao/baidu_style_files/zhidao_bg_imgs.gif) no-repeat;
+	background-position: 0 -72px;
+}
+.zhidao_my_want_answer:hover{
+	background-position: 0 -108px;
+}
+.wenku_note_img{
+	width:20px;height:20px;background-color:red;display:block;float:left;margin-top:5px;margin-left:5px;
+	background:url(/sy/comm/wenku/baidu_style_files/wenku_index_imgs.png) no-repeat;
+	background-position: 5px -131px;
+}
+.documentCenter{
+	width:auto;border-bottom:3px solid #E2E2E2!important;padding-bottom:0px!important;padding-top:20px;
+}
+.documentCategory{
+	width:auto;border-bottom:3px solid #2A8BD1!important;padding-bottom:0px!important;padding-top:20px;
+}
+.wenku_index_pen{
+	width:30px;height:30px;margin-left:10px;display:block;float:left;
+	background:url(/sy/comm/wenku/baidu_style_files/wenku_index_imgs.png) no-repeat;
+	background-position: 0 -160px;
+}
+.documentCenter_font{
+	font-size:18px;font-weight:900;font-family:Microsoft Yahei In-Bold Font;color:#2A8BD1;height:30px;line-height:30px;display:block;width:132px;text-align:left;padding-left:5px;float:left;
+}
+.documentHotFont{
+	/*background-color: #2A8BD1;*/background-color:white;
+    color: rgb(163,163,163);
+    display: block;
+    float: left;
+    font-family: Microsoft YaHei;
+    font-size: 12px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 113px;
+    cursor: pointer;
+}
+.documentHotFontSelect{
+	color:white!important;
+	background-color:#2A8BD1!important;
+	height:33px!important;
+}
+.categoryTitle{
+	font-size:12px;
+	font-family: Microsoft YaHei;
+	font-weight: 700;
+	color:black;
+}
+.red-mark-a{
+	height:20px;
+	width:20px;
+	background:url(/sy/comm/wenku/baidu_style_files/wenku_index_imgs.png) no-repeat;
+	background-position:-200px -314px;
+}
+.user .tabControl li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("line_21ac31cd.gif") repeat-x scroll left top transparent;
+    border-color: #E6E6E6 #E6E6E6 #D2D2D2;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+}
+.user .tabControl li {
+    height: 26px;
+    line-height: 26px;
+    width: 66px;
+}
+.selectXiaoJianTou{
+	position:relative;
+	width:10px;
+	height:10px;
+	top:3px;
+	left:55px;
+	background:url('/sy/comm/wenku/baidu_style_files/wenku_index_imgs.png');
+	background-position:-205px -298px;
+	display:block;
+}
+.item{
+	border-left:0px!important;
+	border-right:0px!important;
+	border-top:0px!important;
+	width:68px!important;
+	margin:0px;
+	padding:0px;
+	background-color:rgb(250,250,250);
+}
+.gap{
+	width:1px!important;
+	background-color:#E6E6E6!important;
+	border-left:0px!important;
+	border-top:0px!important;
+	border-right:0px!important;
+	margin-left:1px!important;
+	margin-right:1px!important;
+}
+#zhidao_index_font{
+	width:212px;height:40px;margin-left:19px;margin-right:19px;display:block;margin-top:15px;
+	background:url(/sy/comm/zhidao/baidu_style_files/zhidao_index_font.png) no-repeat;
+}

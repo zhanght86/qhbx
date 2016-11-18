@@ -1,0 +1,28 @@
+/* 页头导航栏_begin */
+.menu .menu_daohang {
+	background: url("/sy/comm/news/img/nav_bg.jpg") scroll repeat-x;
+	line-height: 31px;
+	color: white;
+	width: 100%;
+	clear: both;
+}
+
+.menu .menu_daohang a,.menu .menu_daohang a:visited {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.menu .menu_daohang a:hover {
+	color: black;
+}
+
+.menu .menu_logo .query {
+	float: right;
+	line-height: 40px;
+	margin-top: 20px;
+	width: 580px;
+	padding-right: 50px;
+	text-align: right;
+}
+/* 页头导航栏_end */

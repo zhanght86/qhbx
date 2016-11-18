@@ -1,0 +1,581 @@
+/* ----------------------------------
+
+Main CSS file for Qunbbs
+Created by Alice. 20130106
+
+---------------------------------- */
+    * { word-wrap: break-word; }
+    .app_qun_inner {font-family:tahoma, 'Microsoft YaHei', '宋体', sans-serif;}
+    .left { float: left; }
+    .right { float: right; }
+    .cl:before, .cl:after { content: "."; display: block; height: 0; visibility: hidden; }
+    .cl:after { clear: both; }
+    .pipe { color: #CCC; margin: 0 5px; }
+
+    .mn {}
+/*
+    Name:           mod_margin
+    Level:          Global
+    Sample:         class="mtn/mtm/mtw/..."
+    Explain:        内边距样式，作用于元素的上下内边距，上下各具有 n, m, w 三个级别
+    Last Modify:    Alice
+*/
+    .mtn { margin-top: 5px !important; }
+    .mbn { margin-bottom: 5px !important; }
+    .mtm { margin-top: 10px !important; }
+    .mbm { margin-bottom: 10px !important; }
+    .mtw { margin-top: 20px !important; }
+    .mbw { margin-bottom: 20px !important; }
+/*
+    Name:           mod_padding
+    Level:          Global
+    Sample:         class="ptn/ptm/ptw/..."
+    Explain:        内边距样式，作用于元素的上下内边距，上下各具有 n, m, w 三个级别
+    Last Modify:    Alice
+*/
+    .ptn { padding-top: 5px !important; }
+    .pbn { padding-bottom: 5px !important; }
+    .ptm { padding-top: 10px !important; }
+    .pbm { padding-bottom: 10px !important; }
+    .ptw { padding-top: 20px !important; }
+    .pbw { padding-bottom: 20px !important; }
+/*
+    Name:           mod_align
+    Level:          Global
+    Sample:         class="vm/hm"
+    Explain:        纵向及横向对齐方式
+    Last Modify:    Alice
+*/
+    .vm { vertical-align: middle; }
+        .vm * { vertical-align: middle; }
+    .hm { text-align: center; }
+
+/* 必填项 */
+
+    .rq { color: red; }
+
+/*
+    Name:           mod_input[text]_textarea_select
+    Level:          Global
+    Sample:         class="px/pt/ps"
+    Explain:        单行输入框（px）、多行文本框（pt）和选择框(ps/select)
+    Last Modify:    Alice
+*/
+    .px, .pt, .ps, select { border: 1px solid; border-color: #848484 #E0E0E0 #E0E0E0 #848484; background: url(../images/common/px.png) repeat-x 0 0 #FFF; color: #444; }
+        .px, .pt { padding: 2px 4px; line-height: 17px; }
+        .px { height: 17px; }
+            .pxs { width: 30px !important; }
+            .fdiy .tfm .px, .fdiy .tfm .pt { width: auto; }
+            .p_fre { width: auto !important; }
+            .er { border-color: #F66 #FFBDB9 #FFBDB9 #F66; background-color: #FDF4F4; }
+        .pt { overflow-y: auto; }
+            div.pt { height: 100px; line-height: 100px; }
+        .ps, select { padding: 2px 2px 2px 1px; }
+
+        .pts { vertical-align: top; overflow: hidden; }
+        .cmt .pts { width: 60%; }
+
+/* menu_qunbbs */
+    .nvhm, .app_qun_path_share .left em, .page_content_bbs .cross_symbol, .addfriend a.btn:hover .cross_symbol, #p_btn .reply, #p_btn .favor{ background: url(/sy/comm/bbs/topic/app_qun_bbs.png) no-repeat; }
+    .app_qun_inner { margin: 0 auto; width: 960px; }
+    .app_qun_path_share { height: 98px; position: relative; z-index: 2; font-size:14px;overflow:hidden;}
+        .app_qun_path_share a { color:#444 !important; }
+        .app_qun_path_share a:visited { color:#444 !important;}
+        .app_qun_path_share .left a, .app_qun_path_share .left em, .app_qun_path_share .left span { float: left; height: 29px; }
+        .app_qun_path_share .nvhm { background-position:-75px 2px; line-height: 200px; overflow: hidden; width: 16px; height:16px !important; }
+        .app_qun_path_share .left em { background-position:-72px -18px; line-height: 200px; overflow: hidden; width: 20px;}
+        .app_qun_path_share .btn{
+            background-color: #4278AE;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#4C8DC7),to(#4278AE));
+            background-image: -webkit-linear-gradient(top,#4C8DC7,#4278ae);
+            background-image: -moz-linear-gradient(top,#4C8DC7,#4278AE);
+            background-image: -ms-linear-gradient(top,#4C8DC7,#4278AE);
+            background-image: -o-linear-gradient(top,#4C8DC7,#4278AE);
+            background-image: linear-gradient(top,#4C8DC7,#4278AE);
+            FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #4C8DC7, endColorstr = #4278AE);
+            border: 1px solid #6184A4;
+            color: white !important;
+            clear: both;
+            height: 32px;
+            margin: 40px 0 0px;
+            _margin: 40px 0 0px;
+            padding: 0 15px;
+        }
+        .app_qun_path_share .btn:hover{
+            background-color: #3D6C9D;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#4C8CC6),to(#3D6C9D));
+            background-image: -webkit-linear-gradient(top,#4C8CC6,#3D6C9D);
+            background-image: -moz-linear-gradient(top,#4C8CC6,#3D6C9D);
+            background-image: -ms-linear-gradient(top,#4C8CC6,#3D6C9D);
+            background-image: -o-linear-gradient(top,#4C8CC6,#3D6C9D);
+            background-image: linear-gradient(top,#4C8CC6,#3D6C9D);
+            FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #4C8CC6, endColorstr = #3D6C9D);
+        }
+
+            .app_qun_path_share .btn .text{ font-size: 14px; position: relative; color:#FFF; +margin-top:5px;+float:left;+color:#FFF;_margin-top:5px;_float:left;_color:#FFF; }
+            .app_qun_path_share .qun_pt { margin:48px 0 0; }
+            .page_content_bbs .cross_symbol{ background-position: -146px 0; display: inline-block;+float:left;_float:left; height: 21px; line-height: 10; overflow: hidden; padding: 0; position: relative; top: 5px; width: 20px; z-index: 2; }
+
+/* qun_list_content */
+    .addradius { border-radius: 4px; }
+    .qun_list_content { background:#FFF; border:1px solid #F3F3F3; box-shadow: 0 2px 2px rgba(0, 0, 0, .1); padding:0 1px; margin-top:0 !important;}
+    .qun_list_content .th { background-image: -webkit-gradient(linear,left top,left bottom,from(#FFFFFF),to(#F4F4F4)); background-image: -webkit-linear-gradient(top,#FFFFFF,#F4F4F4);background-image: -moz-linear-gradient(center top , #FFFFFF, #F4F4F4);background-image: -ms-linear-gradient(top,#FFFFFF,#F4F4F4);background-image: -o-linear-gradient(top,#FFFFFF,#F4F4F4); background-image: linear-gradient(center top , #FFF, #F4F4F4);FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #FFFFFF, endColorstr = #F4F4F4);border-bottom:1px solid #EAEAEA; +display: inline-block; _display: inline-block; }
+        .qun_list_content .th a { float:left; line-height:38px; height:38px; color:#313131; font-size:14px; margin:7px 5px -1px; padding:0 12px; text-decoration: none; }
+            .qun_list_content .th a:hover { color:#4C8DC7;}
+            .qun_list_content .th a.a {
+                background-color: #4278AE;
+                background-image: -webkit-gradient(linear,left top,left bottom,from(#4C8DC7),to(#4278AE));
+                background-image: -webkit-linear-gradient(top,#4C8DC7,#4278AE);
+                background-image: -moz-linear-gradient(top,#4C8DC7,#4278AE);
+                background-image: -ms-linear-gradient(top,#4C8DC7,#4278AE);
+                background-image: -o-linear-gradient(top,#4C8DC7,#4278AE);
+                background-image: linear-gradient(top,#4C8DC7,#4278AE);
+                FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #4C8DC7, endColorstr = #4278AE);
+                color:#FFF;
+                border-radius: 4px 4px 0 0;
+            }
+            .qun_list_content .th a.a :hover{
+                background-color: #3D6C9D;
+                background-image: -webkit-gradient(linear,left top,left bottom,from(#4C8CC6),to(#3D6C9D));
+                background-image: -webkit-linear-gradient(top,#4C8CC6,#3D6C9D);
+                background-image: -moz-linear-gradient(top,#4C8CC6,#3D6C9D);
+                background-image: -ms-linear-gradient(top,#4C8CC6,#3D6C9D);
+                background-image: -o-linear-gradient(top,#4C8CC6,#3D6C9D);
+                background-image: linear-gradient(top,#4C8CC6,#3D6C9D);
+                FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #4C8CC6, endColorstr = #3D6C9D);
+                color:#FFF;
+            }
+            .qun_list_content .th a:visited { color:#313131;}
+            .qun_list_content .th a.a:visited { color:#FFF;}
+
+    .qun_table_files { background:#FFF; }
+    .qun_table { border-collapse: collapse; border-spacing: 0; margin-bottom: 1px; max-width: 100%; table-layout: fixed; width: 100%; }
+    .qun_table th { border-bottom: 1px solid #FFF; text-align: left; }
+    .tl td { border-bottom: 1px solid #FFF; text-align: left; }
+    .tl th, .qun_table td { height: 78px; vertical-align: left; }
+        .tl td.avt { width:86px; }
+        .tl td.avt span{ background:#FFF; display:block; padding:4px; border-radius: 4px; border:1px solid #CCC; width:48px; height:48px;box-shadow: 1px 1px 1px #CCC; margin: 0 15px;}
+        .tl td.avt img { border-radius: 4px;border-radius: 4px;}
+        .tl th.new {padding-right:10px;}
+        .tl th.new .xst a { font-size:16px !important; color:#313131; }
+        .tl th.new .xst a:hover { color:#4C8DC7 !important; }
+        .tl th.new .xst a:visited { color:#515151 !important; }
+        .tl th.new img{ margin-bottom: 5px; }
+        .tl td.che { padding-left: 5px; text-align: left; width: 35px; }
+        .tl td.by { line-height: 14px; width: 150px; }
+        .tl td.by cite { display:block; }
+        .tl td.by cite a { color:#444; }
+        .tl td.by .ct a { color:#A8A8A8 !important; }
+        .tl td em, .tl td em a { color: #A8A8A8 !important; }
+        .tl td em, .tl td em a:visited { color:#A8A8A8 !important; }
+    .xg1, .xg1 a { color: #A8A8A8 !important; }
+    .xg1 .ct em { color: #F26C4F; }
+    table tr.qun_stripe_even { background-color: #F7F7F7; border-bottom: 1px solid #FFF; }
+    .qun_table_files tbody tr:hover { background-color: #E8E8E8; }
+
+/* 主题分页 */
+    .tps { white-space: nowrap; }
+        .tps a { padding: 2px 4px; color: #444; }
+            .tps a:hover { background-color: #F2F2F2; color: #007CD5; }
+
+/*
+    Name:           mod_user_interaction
+    Level:          Function
+    Explain:        帖子左侧用户互动操作
+    Last Modify:    Alice
+*/
+    .plc, .pls { vertical-align: top; }
+    .pls {  width: 130px; overflow: hidden; background:white;}
+        .ad .pls {padding: 0; height: 4px; background:none;}
+        .ad .plc { background:none;}
+        .pls, .ad .pls, .ad .plc { border-right: none;}
+        .pls p, .pls .pil, .pls .o { margin: 5px 0; }
+        .pls .avatar, #f_pst .avatar { margin: 0 13px 0 0px; }
+            .pls .avatar img { padding: 0; width: 100px; background: none; }
+            .pls .avatar img, .bui, .bui .m img { border-radius: 5px; }
+            .addfriend a.btn{ background-color: #f2f2f2; border: 1px solid #DADADA; color: #545454; display:block; height: 23px; margin: 10px 0; width:98px;position: relative; border-radius: 4px;}
+            .addfriend a.btn:hover{ background-color: #f2f2f2;color:#4BACE0;}
+                .addfriend .btn .text{ font-size: 12px; line-height:23px;padding:0 0 0 30px;}
+                .addfriend .cross_symbol{ background-position: -108px -21px; display: inline-block; height: 11px; line-height: 11; overflow: hidden; padding: 0; position: absolute; top: 6px; left:10px; width: 11px; z-index: 2; }
+                .addfriend a.btn:hover .cross_symbol { background-position: -108px -21px; }
+            .user_info .authi{ text-align:center; width:100px; font-size:14px; margin:5px 0; }
+            .user_info .authi .xw1 { margin-right:5px; }
+            .user_info .admin_edit { text-align:center; width:100px; }
+            .user_info .admin_edit a { color:#545454; }
+
+    .plc { padding: 0 20px; background-color: #F5F5F5; -moz-transition: box-shadow 0.5s ease 0s;border: 1px solid #D4D7D9;border-radius: 4px 4px 4px 4px;box-shadow: 1px 1px 2px rgba(121, 121, 121, 0.2);position: relative;}
+    .ad .plc { padding: 5px 0;background-color:none; border:0px; box-shadow:none !important; }
+    .plc .arrow_l { background: url(/sy/comm/bbs/topic/app_qun_bbs.png) no-repeat -169px 0; width:9px; height:18px; overflow:hidden; position: absolute; left:-9px; top:15px; _left:-29px;}
+    #f_pst .plc .arrow_l { _left:-19px;}
+    .bbda { border-bottom: 1px solid #DFDFDF; +margin-top:5px;+margin-top:0px !important;+padding-bottom:5px !important;_margin-top:0px !important;_padding-bottom:5px !important;}
+    a.onlyauthor { color:#444 !important; }
+    a.onlyauthor:hover { color:#4C8DC7;}
+    a.onlyauthor:visited { color:#444 !important; }
+    .ts { font-size: 18px; }
+    .t_fsz, .pcbs { min-height: 60px; }
+
+/* 帖子作者、时间、楼层等一些属性所在区块 */
+    .pi { overflow: hidden; margin-bottom: 10px;+margin-top:5px !important;_margin-top:0px !important; padding: 10px 0;+padding:5px;_padding:5px; height: 16px;}
+        .pi strong a,.pi strong em { float: right; margin-top: -6px; padding: 4px 6px; border: 0px solid #C0C0C0; font-weight: 400; font-size:16px;}
+        .pi strong a { float: right; margin-top: -6px; padding: 4px 6px; border: 0px solid #C0C0C0; font-weight: 400; font-size:16px;}
+            .pi strong a:hover { border-color: #C0C0C0; }
+        .pls .pi { padding-left: 15px; }
+            .authicn { cursor: pointer; }
+
+/* 帖子正文区块 */
+    .pcb { clear: left; margin-right: 0px; }
+        .ie6 .pcbs table, .ie6 .t_fsz table { width: auto; }
+        .pcb h1, .pcb h2 { margin: 8px 0; font-size: 1.17em; }
+            .pcb h1 a { font-weight: 400; }
+            .pcb h2 em { float: right; font-size: 12px; font-weight: 400; }
+            #ph { padding: 17px 0 0; }
+                #ph h1 { font-size: 20px; }
+            #fj { margin-left: 5px; }
+                #fj label, #fj input { margin-right: 4px; padding: 0; height: 16px; line-height: 16px; }
+        .pcb .jammer { font-size: 10px; color: #545454; }
+
+        .pcb strong { font-weight: 700; }
+        .pcb em { color: #A8A8A8; }
+        .pcb span.t_tag { cursor: pointer; border-bottom: 1px solid red; white-space: nowrap; }
+            .pcb span.t_tag:hover { border-bottom: 1px solid #D4D7D9; }
+        .pct { padding-bottom: 1em; }
+        .t_fsz { min-height: 100px; }
+            * html .t_fsz { height: 100px; overflow: visible; }
+        .t_f, .t_f td { font-size: 14px; line-height:160%; }
+            .t_f a { color: #4C8DC7; text-decoration: underline; }
+        .t_f ul { margin-left: 14px; }
+            .t_f li { margin-left: 2em; }
+            .t_f ul li { list-style-type: disc; }
+                ul.litype_1 li { list-style-type: decimal; }
+                ul.litype_2 li { list-style-type: lower-alpha; }
+                ul.litype_3 li { list-style-type: upper-alpha; }
+        .t_f i { font-style: italic; }
+        .t_f img { max-width: 660px; _width: expression(this.width > 660 && this.width>=this.height ? 660 : true); vertical-align: top; margin:5px 0;}
+        .t_f { word-wrap:break-word; overflow:hidden; }
+
+
+                #p_btn a:hover { text-decoration: none; }
+                #p_btn i { display: block; padding-right: 8px; font-style: normal; cursor: pointer; }
+                    #p_btn span { padding-left: 2px; color: #545454; }
+                    #p_btn a i { padding: 0 8px;  background: none; color:#545454; margin-top: 6px;}
+                    #p_btn img { float: left;margin-top: -2px;}
+            #f_pst .plc { padding: 10px;_padding:5px 10px 10px; }
+            .qun_pst { }
+            #full_editor { background:#FFF;}
+            .pnpost .pn {
+                background-color: #4278AE;
+                background-image: -webkit-gradient(linear,left top,left bottom,from(#4C8DC7),to(#4278AE));
+                background-image: -webkit-linear-gradient(top,#4C8DC7,#4278AE);
+                background-image: -moz-linear-gradient(top,#4C8DC7,#4278AE);
+                background-image: -ms-linear-gradient(top,#4C8DC7,#4278AE);
+                background-image: -o-linear-gradient(top,#4C8DC7,#4278AE);
+                background-image: linear-gradient(top,#4C8DC7,#4278AE);
+                FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #4C8DC7, endColorstr = #4278AE);
+                height: 26px;
+                border-radius: 5px 5px 5px 5px;
+                vertical-align: middle;
+                border: 1px solid #6184A4;
+                color: white !important;
+                padding:0 5px;
+            }
+            .pnpost .pn:hover {
+                background-color: #3D6C9D;
+                background-image: -webkit-gradient(linear,left top,left bottom,from(#4C8CC6),to(#3D6C9D));
+                background-image: -webkit-linear-gradient(top,#4C8CC6,#3D6C9D);
+                background-image: -moz-linear-gradient(top,#4C8CC6,#3D6C9D);
+                background-image: -ms-linear-gradient(top,#4C8CC6,#3D6C9D);
+                background-image: -o-linear-gradient(top,#4C8CC6,#3D6C9D);
+                background-image: linear-gradient(top,#4C8CC6,#3D6C9D);
+                FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #4C8CC6, endColorstr = #3D6C9D);
+            }
+
+/* 贴子编辑 */
+    .po { height: 28px; visibility: hidden;}
+    *html .po { visibility: visible;} 
+        *+html .po { visibility: hidden;}
+        .plc .po, .disp .po{ visibility: visible; }
+        .po .y { margin: 8px 0 0 5px; }
+        .po p { float: right; }
+            .po p a, .po p label { margin-right: 6px; color:#545454 !important; }
+    .pob { line-height: 36px; }
+        .pob em { float: left;}
+            .pob em a { padding: 5px 10px 5px 25px; }
+    .pl table { table-layout: fixed; width: 100%; }
+            .pl .dt { width: 100%; }
+
+/* 弹出窗口 */
+    #mdly { background: #FFF; height: 100px; line-height: 32px; margin-top: -16px; overflow: hidden; margin: 0px 25px; position: absolute; right: 0; width: 250px; border:1px solid #C0C0C0;box-shadow: 1px 1px 1px #CCC;border-radius: 4px; }
+        #mdly a { color: #4C8DC7; }
+        #mdly .cp { height: 32px; line-height: 100px; overflow: hidden; position: absolute; right: 10px; top: 10px; width: 35px; }
+        #mdly label { position: absolute; right: 10px; top: 0px; }
+        #mdly label input { margin-right:6px; }
+        #mdly h6 { background:#F3F3F3; line-height: 32px; padding-left:10px; }
+            #mdly h6 strong { color: #F66B8C; margin: 0 3px; }
+        #mdly.cpd { background-position: 0 -128px; border: medium none; height: 32px; margin-right: -3px; margin-top: 4px; padding: 0; width: 35px; }
+        .medit { margin:10px; }
+        .pr, .pc { margin: 0 5px 1px 0; padding: 0; vertical-align: middle; }
+
+    .cmen { overflow: hidden; width: 63px; }
+    .cmen a { overflow: hidden; float:left; width: 20px; height: 20px; }
+    .tpmh { height: 200px; }
+        .tpmh .thby { margin: 5px 0 15px; }
+            .tpmh .tah_body select { width: 217px; }
+    .tplw { margin-bottom: 1em; }
+        .tplw table { width: 100%; }
+        .tplw td { padding: 0 5px; }
+        .tplw .txt { width: 100px; }
+            .tplw .wide .txt { width: 50px; }
+        .llst li{ padding: 4px 0; border-bottom: 1px solid #DDD; }
+    .tm_c { background: #FFF; }
+    .tm_c .o { background: #EEE; }
+    .tpclg { padding: 8px 0 4px; }
+        .tpclg h4 { font-weight: 400; width: 222px; }
+        .tpclg h4 span { float: left; }
+        .tpclg h4 .dpbtn { border-width: 1px; }
+        .dpbtn{ background: url(../images/common/newarow.gif) no-repeat 100% 0 #FFF;border-color: #848484 #E0E0E0 #E0E0E0 #848484;border-style: solid;  border-width: 1px 1px 1px 0; float: left; height: 21px; overflow: hidden; text-indent: -9999px; width: 21px; }
+
+        .tpclg .pt { margin: 5px 0; width: 212px; overflow: hidden; }
+            .tpcl { margin: 10px 0; border-top: 1px solid #DDD; }
+                .tpcl li { *overflow:hidden; *margin-bottom: -2px; height: 28px; line-height: 18px; border-top: 1px solid #FFF; border-bottom: 1px solid #DDD; zoom: 1; }
+                .tpcl .copt { height: auto; }
+                .dopt { visibility: hidden; overflow: hidden; white-space: nowrap; }
+                .dopt a {}
+                .copt .dopt { visibility: visible; }
+                    .dopt p .px, .hasd .px { width: 100px; float: left; }
+                    .dopt span .crl { width: 21px; height: 21px; border-style: solid; border-color: #707070 #CECECE #CECECE #ABABAB; border-width: 1px 0 1px 1px; }
+
+                .tpcl table { width: 100%; }
+                    .tpcl td { vertical-align: top; padding: 5px; }
+                .tpcl .labeltxt { display: block; cursor: pointer; width: 100%; background: url(../images/common/arrwd.gif) no-repeat 100% 8px; }
+                    .copt .labeltxt { float: left; cursor: default; width: 45px; background: none; color: #09C; }
+                .tpcl .pc { margin: 3px; }
+                    .ie7 .tpcl .pc { margin-top: -2px; }
+                .tpcl img { vertical-align: middle; }
+        .tahfx { overflow: hidden; white-space: nowrap; width: 217px; *border-right: 1px solid #DDD; }
+            .tahfx select { width: 160px; *width: expression(this.offsetWidth > 180 ? 'auto':'180'); }
+
+/*
+    Name:           mod_BIUC
+    Level:          Global
+    Explain:        模块中编辑单条数据BIU、颜色选择器其中 colorwd 要配合 pn 使用（不要合并 colorwd 的 background，因为其他配色会受影响）
+    Last Modify:    Alice
+*/
+    .ss em { display: block; float: left; margin-right: 2px; padding-left: 7px; width: 16px; line-height: 23px; background: #EEE; cursor: pointer; }
+        .ss em.a { background: #09F; color: #FFF; }
+    .dopt a { float: left; margin-right: 3px; width: 21px !important; height: 21px; line-height: 21px; text-align: center; }
+        .dopt_b, .dopt_i, .dopt_l { border: 1px solid #F1F5FA; outline: none; }
+        .dopt .cnt { border: 1px solid #999; background-color: #FFF; }
+    .colorwd { margin-left: 3px; width: 23px !important; background-color: #F2F2F2; background-image: url(../images/common/pn_color.png) !important; background-repeat: no-repeat; background-position: 0 0; }
+        .colorwd:active { background-position: 0 0; }
+        .ie6 .colorwd, .ie7 .colorwd { background-position: -1px -1px; }
+        .ie6 a.colorwd, .ie7 a.colorwd { background-position: 0 0; }
+    .colorpx { margin: 0 -3px 0 3px; border-right: none; }
+
+/* dropdownbtn 下拉菜单 */
+    .hasd {}
+        .hasd input { float: left; width: 121px; }
+            .hasd input.crl { padding: 0; width: 20px; height: 20px; background: none; border-style: solid; border-color: #848484 #E0E0E0 #E0E0E0 #848484; border-width: 1px 0 1px 1px; }
+        .hasd .spmediuminput { width: 115px; }
+        .dpbtn { float: left; overflow: hidden; text-indent: -9999px; width: 21px; height: 21px; border-width: 1px 1px 1px 0; border-style: solid; border-color: #848484 #E0E0E0 #E0E0E0 #848484; background: #FFF url(../images/common/newarow.gif) no-repeat 100% 0; }
+            .dpbtn:hover { background-position: 100% -23px; }
+        .hasd label { float: left; }
+            .tpclg h4 a.dpbtn { float: right; border-width: 1px; }
+            .tpclg h4 { font-weight: 400; }
+            .tpclg .pt { margin: 5px 0; width: 212px; overflow: hidden; }
+            /* 下面两行为评分时用到的 */
+            .mark .dt, .mark .tpclg h4 { width: 270px; }
+            .mark .tpclg .pt { width: 260px; }
+        #postbox dd.hasd input { width: 99px; margin-right: 0; }
+
+/*弹窗 编辑器 颜色框 colorbox*/
+    .colorbox{ width: 130px !important; }
+    .colorbox input { float: left; margin: 2px; padding: 0; width: 12px; height: 12px; border: 0; cursor: pointer; }
+
+/*Popup Calendar*/
+    #calendar { padding: 5px; text-align: left; border: 1px solid #DDD; background: #FFF; margin-bottom: 0.8em; }
+        #calendar td { padding: 2px; font-weight: 700; }
+        #calendar_week td { height: 2em; line-height: 2em; border-bottom: 1px solid #DDD;}
+            #calendar_week a { color: #4C8DC7; }
+        #hourminute td {padding: 2px 2px; border-top: 1px solid #DDD;}
+            .calendar_expire, .calendar_expire a:link, .calendar_expire a:visited { color: #444; font-weight: normal; }
+            .calendar_default, .calendar_default a:link, .calendar_default a:visited { color: #4C8DC7; }
+            .calendar_checked, .calendar_checked a:link, .calendar_checked a:visited { color: #444; font-weight: bold; }
+            td.calendar_checked, span.calendar_checked{ background: #F2F2F2;}
+            .calendar_today, .calendar_today a:link, .calendar_today a:visited { color: #444; font-weight: bold; }
+        #calendar_header td{ width: 30px; height: 20px; border-bottom: 1px solid #DDD; font-weight: normal; }
+        #calendar_year { display: none; line-height: 130%; background: #FFF; position: absolute; z-index: 10; }
+            #calendar_year .col { float: left; background: #FFF; margin-left: 1px; border: 1px solid #DDD; padding: 4px; }
+        #calendar_month { display: none; background: #FFF; line-height: 130%; border: 1px solid #DDD; padding: 4px; position: absolute; z-index: 11; }
+
+/* 弹窗共用 */
+    .w_box { background: #FFF; line-height: 31px; line-height: 21px;\9\0; overflow: hidden; width: 250px; border:1px solid #C0C0C0; box-shadow: 1px 1px 1px #CCC; border-radius: 4px; }
+        .w_box h2 { background:#F3F3F3; border-bottom:1px solid #F6F6F6; margin-top:1px; line-height:31px; }
+        .w_bm_h { overflow: hidden; white-space: nowrap; }
+        .w_bm_h h2 { padding-left:10px; }
+        .w_bm_h .right { margin-right:10px; }
+        .w_bm_h a.close {  background: url(/sy/comm/bbs/topic/app_qun_bbs.png) no-repeat -89px 2px; width:19px; height:19px; overflow:hidden; margin-top:5px; cursor:pointer;line-height: 99px;}
+        .w_bm_h a.close:hover {  background: url(/sy/comm/bbs/topic/app_qun_bbs.png) no-repeat -89px -17px; width:19px; height:19px; overflow:hidden; }
+        .w_bm_h .red { font-weight:700; margin:0 3px; color:red; }
+        .w_bm_c { padding:20px; }
+        .w_bm_c_t10 { padding:10px 10px; }
+        .w_box .t_c { text-align:center; }
+        .w_b_pn { background:#F3F3F3; text-align:right; padding:5px 10px;_padding:5px 10px; }
+        .w_pn {
+            border-radius: 5px 5px 5px 5px;
+            vertical-align: middle;
+            background-color: #51ADE5;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#59BBF5),to(#489ED3));
+            background-image: -webkit-linear-gradient(top,#59BBF5,#489ED3);
+            background-image: -moz-linear-gradient(top,#59BBF5,#489ED3);
+            background-image: -ms-linear-gradient(top,#59BBF5,#489ED3);
+            background-image: -o-linear-gradient(top,#59BBF5,#489ED3);
+            background-image: linear-gradient(top,#59BBF5,#489ED3);
+            FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #59BBF5, endColorstr = #489ED3);
+            border: 1px solid #569FCE;
+            color: white !important;
+            padding:0px 10px; height:23px;*line-height:21px;
+        }
+        .w_pn:hover {
+            background-color: #51ADE5;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#51B6EF),to(#4298CC));
+            background-image: -webkit-linear-gradient(top,#51B6EF,#4298CC);
+            background-image: -moz-linear-gradient(top,#51B6EF,#4298CC);
+            background-image: -ms-linear-gradient(top,#51B6EF,#4298CC);
+            background-image: -o-linear-gradient(top,#51B6EF,#4298CC);
+            background-image: linear-gradient(top,#51B6EF,#4298CC);
+            FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #51B6EF, endColorstr = #4298CC);
+         }
+
+        .w_pn_cancel{ border-radius: 5px 5px 5px 5px;vertical-align: middle;background-color: #F0EFF0; background-image: -moz-linear-gradient(center top , #F3F3F3, #DFDEDE); FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #F3F3F3, endColorstr = #DFDEDE); border: 1px solid #B4B4B4; color: #545454 !important; padding:0px 10px; height:23px;line-height:21px;vertical-align: middle; position: relative; margin-left:5px;}
+        .w_pn_cancel:hover {background-color: #F0EFF0; background-image: -moz-linear-gradient(center top , #F1F1F1, #D5D5D5); FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr = #F1F1F1, endColorstr = #D5D5D5);}
+        .w_pn strong,.w_pn_cancel strong { line-height: 21px; padding: 0 10px; font-weight:700; }
+        .w_pn strong,.w_pn_cancel strong {*line-height: 19px; +padding: 0 5px; +line-height: 18px;}
+        .w_pn,.w_pn_cancel { _overflow-x: visible; _width: 0;}
+/* 弹出菜单、弹出层及弹出窗口 */
+    .p_pop, .p_pof, .sllt { background: #FEFEFE; border: 1px solid #DDD; box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3); min-width: 60px; padding: 4px;  min-width: 60px; width:100px; }
+        .ie6 .p_pop { width: 100px; }
+        .p_pof .p_pop { padding: 0; border: none; box-shadow: none; }
+        .p_pof { width: 500px; }
+        .p_opt { padding: 10px; }
+        .p_pop li { display: inline; }
+        .p_pop a { display: block; padding: 3px 5px; border-bottom: 1px solid #DDD; white-space: nowrap; }
+            .p_pop li:last-child a { border: none; }
+            .ie6 .p_pop a { position: relative; }
+            .p_pop a:hover, .p_pop a.a, #sctype_menu .sca { background-color: #FFF; color: #4C8DC7; text-decoration: none; }
+        /* .blk -> block 内容较为复杂的弹出层使用 .blk 的 class，内部的 a 标签重新定义 */
+        .blk a, .inlinelist a { display: inline; padding: 0; border: none; }
+            .blk a:hover { background: none; color: #444; text-shadow: none; text-decoration: underline; }
+        .inlinelist { padding: 5px; }
+            .inlinelist a { float: left; width: 5em; height: 2em; overflow: hidden; text-align: center; line-height: 2em; }
+    .h_pop { min-width: 120px; border-top: none; }
+
+/* page */
+    .qun_page_nav { text-align: center; padding:30px 0; }
+    .qun_page_nav span { padding:0 5px;}
+    .mod_pagenav_main .current { padding:0 3px;}
+
+/* path */
+    #path { margin-bottom: 10px; padding: 10px; border: 1px solid #E4E8F1; border-top: none; background: #FFF; -moz-box-shadow: 0px 1px 2px #CCC; filter : progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color="#CCCCCC"); }
+        #path em { color: #CCC; }
+        #path a { color: #999; }
+
+/* alert */
+.alert { margin: 50px auto; width: 550px; border: 5px solid #E7E7E7; background: #F7F7F7; font-size: 14px; }
+    .alert p { line-height: 22px; }
+    .alert a { font-size: 12px; color: #999; text-decoration: underline; }
+    .alert .info { padding: 24px 14px 24px 70px; border: 1px solid #CCC; background: url(../images/info.gif) no-repeat 20px 26px;  }
+    .alert .error { padding: 24px 14px 24px 70px; border: 1px solid #CCC; background: url(../images/error.gif) no-repeat 20px 26px; }
+    .alert .success { padding: 24px 14px 24px 70px; border: 1px solid #CCC; background: url(../images/right.gif) no-repeat 20px 26px; }
+
+/* editor */
+    .editorbox { background:#F5F5F5; border:1px solid #DFDFDF; box-shadow: 0 2px 2px rgba(0, 0, 0, .1); -webkit-box-shadow: 1px 1px 1px #F2F2F2; -moz-box-shadow: 1px 1px 1px #F2F2F2; padding:0 1px; border-radius: 4px;}
+    .editorbox h2 { line-height:38px; height:38px;
+        background-image: -webkit-gradient(linear,left top,left bottom,from(#FFFFFF),to(#F4F4F4));
+        background-image: -webkit-linear-gradient(top,#FFFFFF,#F4F4F4);
+        background-image: -moz-linear-gradient(top,#FFFFFF,#F4F4F4);
+        background-image: -ms-linear-gradient(top,#FFFFFF,#F4F4F4);
+        background-image: -o-linear-gradient(top,#FFFFFF,#F4F4F4);
+        background-image: linear-gradient(top,#FFFFFF,#F4F4F4);
+        FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#F4F4F4);
+        border-bottom:1px solid #DFDFDF;
+        line-height:38px;
+        font-size:14px;
+        padding:0 0 0 10px;
+        text-shadow: 0 1px 1px #FFF;
+    }
+     #postbox { padding:0px 10px; }
+
+/* ajax */
+    #ajaxwaitid { display: none; position: absolute; right: 0; top: 0; z-index: 999; padding: 0 5px; background: #D00; color: #000; }
+
+/* 隐藏 */
+    .hide { display: none; }
+
+    #full_editor { background:#FFF;border:1px solid #eee; width:100%; }
+/* 拖动鼠标样式 */
+    .ui-draggable { cursor: move; }
+
+    /*  forum::forumdisplay,forum::viewthread */
+    .quote { overflow: hidden; margin: 10px 0; padding-left: 16px; background: url(../images/qa.gif) no-repeat 0 0; color: #666; }
+    .quote blockquote { display: inline; margin: 0; padding-right: 16px; background: url(../images/qz.gif) no-repeat 100% 100%; }
+    .m_c .quote { width: 585px; }
+    .blockcode { overflow: hidden; margin: 10px 0; padding: 5px 10px; background: #F7F7F7; color: #666; }
+    .blockcode code { font-family: Monaco, Consolas, 'Lucida Console', 'Courier New', serif; font-size: 12px; line-height: 1.8em; }
+    * html .blockcode code { font-family: 'Courier New', serif; }
+    /*  mod_thread_code_quote */
+    .pl .quote, .pl .blockcode { margin: 10px 0; padding: 10px 10px 10px 65px; zoom: 1; }
+    .pl .quote { padding-bottom: 5px; background: url(/sy/comm/bbs/topic/icon_quote_s.gif) no-repeat 20px 6px; }
+    .pl .quote blockquote { display: inline-block; margin: 0;width:100%; padding: 0 0 12px 0; background: url(/sy/comm/bbs/topic/icon_quote_e.gif) no-repeat 100% 100%; line-height: 1.6; zoom: 1; }
+    .ie6 .pl .quote blockquote, .ie7 .pl .quote blockquote { display: inline }
+
+    .pl .blockcode { padding: 10px 0 5px 10px; border: 1px solid #D6D6D6; background: #F7F7F7 url(../images/codebg.gif) repeat-y 0 0; overflow: hidden; }
+    .pl .blockcode ol { margin: 0 0 0 10px !important; padding: 0 !important; }
+    .pl .blockcode ol li { padding-left: 10px; list-style-type: decimal-leading-zero; font-family: Monaco,Consolas,'Lucida Console','Courier New',serif; font-size: 12px; line-height: 1.8em; }
+    .pl .blockcode ol li:hover { background: #FFF; color: #4C8DC7; }
+    * html .pl .blockcode ol li { font-family: 'Courier New',serif; }
+    *       .pl .blockcode em { margin-left: 43px; color: #4C8DC7 !important; font-size: 12px; cursor: pointer; }
+
+    .simplepopupcon {
+        z-index:10;
+    }
+
+	#full_editor_toolbar { position: relative;}
+	#mini_editor_toolbar_warp .veToolbarContainer, #full_editor_toolbar_warp .veToolbarContainer, #ajax_editor_toolbar_warp .veToolbarContainer { _height:30px; _width:100%}
+	
+#more,#nomore{
+	background: white;
+	height: 30px;
+	font-size: 16px;
+	text-align: center;
+	margin: 15px 0;
+	padding:10px 0;
+	color: #4A89C2;	
+	width: 100%;
+	cursor: pointer;
+	border: 1px #ccc solid;
+	border-left: none;
+}
+#more:hover{
+	text-decoration: underline;
+}
+
+.quote{
+	border: 1px #ccc solid;
+}
+.top{
+	float: right;
+}
+.top a,.top a:visited{
+	color: gray;
+	text-decoration: none;
+	font-size: 13px;
+}
+.top a:hover{
+	text-decoration: underline;
+}
+.top .modify{
+	margin: 5px;
+}
+.top .delete{
+	
+}

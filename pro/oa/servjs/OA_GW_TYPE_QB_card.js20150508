@@ -1,0 +1,57 @@
+var _viewer = this;
+var titleDiv = jQuery("<div></div>").css({"width":"90%","margin":"10px 20px"});
+var table = jQuery("<table width='100%'></table>").appendTo(titleDiv);
+var tr1 = jQuery("<tr></tr>").appendTo(table);
+var tr2 = jQuery("<tr></tr>").appendTo(table); //公文编号
+var td11 = jQuery("<td width='20%'></td>").appendTo(tr1);
+var td12 = jQuery("<td width='60%' align='center'></td>").appendTo(tr1);
+var td13 = jQuery("<td width='20%' align='left'></td>").appendTo(tr1);
+var td21 = jQuery("<td width='100%' colspan=3 align='center'></td>").appendTo(tr2);
+var title1 = jQuery("<font style='color: #FF0000;font-family: 方正小标宋简体;font-size: 24px;'></font>").appendTo(td12);
+_viewer.form.getItem("GW_SECRET").getContainer().css({"width":"100%","margin":"0px"}).appendTo(td13);
+_viewer.form.getItem("GW_SECRET_PERIOD").getContainer().css({"width":"100%","margin":"0px"}).appendTo(td13);
+_viewer.form.getItem("GW_EMERGENCY").getContainer().css({"width":"100%","margin":"0px"}).appendTo(td13);
+//设置机关代字
+var yearCode = _viewer.form.getItem("GW_YEAR_CODE");
+_viewer.form.getItem("GW_YEAR_CODE").getContainer().remove();
+yearCode.obj.css({"float":"none","display":"inline-block"}).appendTo(td21);
+var gwCode = jQuery("<span></span>").appendTo(td21);
+jQuery("<font>（</font>").appendTo(gwCode);
+_viewer.form.getItem("GW_YEAR").getContainer().remove();
+_viewer.form.getItem("GW_YEAR").obj.css({"float":"none"}).appendTo(gwCode);
+jQuery("<font>）</font>").appendTo(gwCode);
+_viewer.form.getItem("GW_YEAR_NUMBER").getContainer().remove();
+_viewer.form.getItem("GW_YEAR_NUMBER").obj.css({"float":"none"}).appendTo(gwCode);
+jQuery("<font>号</font>").appendTo(gwCode);
+
+_viewer.form.obj.find("fieldset").first().prepend(titleDiv);
+
+//获取公文模版信息
+var tmpl = FireFly.doAct(this.servId, "getTmpl", {"GW_YEAR_CODE":"true"}, false);
+title1.html(tmpl["TMPL_TITLE"]); //设置公文标题
+yearCode.addOptions(tmpl["GW_YEAR_CODES"]); //将动态获取的机关代字设入下拉框
+if (_viewer.getByIdData("GW_YEAR_CODE") != "") {
+	yearCode.setValue(_viewer.byIdData["GW_YEAR_CODE"]); //设置保存的机关代字
+}
+
+yearCode.obj.bind("change", function(event) { 	//机关代字选择事件
+	getMaxCode();
+});
+_viewer.form.getItem("GW_YEAR").obj.bind("change", function(event) { //年度修改事件
+	getMaxCode();
+});
+
+function getMaxCode() { //获取机关代字最大值
+	var param = {};
+	param["GW_YEAR_CODE"] = yearCode.getValue();
+	param["GW_YEAR"] = _viewer.form.getItem("GW_YEAR").getValue();
+	var yearNumber;
+	if ((param["GW_YEAR_CODE"] == _viewer.getByIdData("GW_YEAR_CODE")) 
+			&& (param["GW_YEAR"] == _viewer.getByIdData("GW_YEAR"))) { //机关代字修改时，选中缺省的代字和年度，保留存储的编号
+		yearNumber = _viewer.getByIdData("GW_YEAR_NUMBER");
+	} else {
+		var tmpl = FireFly.doAct(_viewer.servId, "getMaxCode", param, false);
+		yearNumber = tmpl["GW_YEAR_NUMBER"];
+	}
+	_viewer.form.getItem("GW_YEAR_NUMBER").setValue(yearNumber);
+}

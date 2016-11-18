@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xdoc version="9.3.5.1">
+  <meta id="3d57078721b547f0b163b89e327406f9" view="table" modifyDate="2013-10-15 18:25:10" createDate="2013-03-13 17:51:10"/>
+  <paper width="792" height="1124"/>
+  <params>
+    <param name="dept_code"/>
+    <param name="dept_name"/>
+    <param name="before_date"/>
+    <param name="after_date"/>
+    <param name="jdbc_name"/>
+    <param name="jdbc_driver"/>
+    <param name="jdbc_url"/>
+    <param name="jdbc_user"/>
+    <param name="jdbc_pwd"/>
+    <param name="fullName"/>
+  </params>
+  <conns>
+    <conn name="jdbc/rh" driver="oracle.jdbc.driver.OracleDriver" url="jdbc:oracle:thin:@65.0.1.21:1521:noadb" user="rhoa" password="ruaho1234oa"/>
+  </conns>
+  <rowsets>
+    <rowset name="data" conn="{%$p.jdbc_name%}"><![CDATA[select tt.dept_name bm,
+       tt.office_name yp,
+       office_price dj,
+       count sl,
+       office_price * count je
+  from (select r.quotation_id,
+               r.office_name,
+               r.dept_code,
+               r.dept_name,
+               r.office_price,
+               r.dept_sort,
+               decode(r.count2, null, '', r.count2) count
+          from (select a.dept_code,
+                       a.dept_name,
+                       a.dept_sort,
+                       b.quotation_id,
+                       b.office_name,
+                       b.office_price,
+                       (select count(*)
+                          from oa_off_outstorage t
+                         where t.get_dept = a.dept_code
+                           and t.office_id = b.quotation_id
+                           and substr(t.get_date, 1, 7) between '{%$p.beforeDate%}' and '{%$p.afterDate%}'
+                         group by t.get_dept, t.office_id) count2
+                  from (select xx.*
+                          from sy_org_dept xx
+                         where xx.dept_code = '{%$p.dept_code%}') a,
+                       oa_off_quotation b) r) tt
+ order by tt.quotation_id, tt.dept_sort]]></rowset>
+  </rowsets>
+  <body>
+    <para>
+      <table cols="112,96,112,112" height="159" name="表1" sizeType="autosize" width="432" rows="60,24,24,24,27">
+        <cell col="1" colSpan="4" name="x19420" row="1" color="">
+          <para lineSpacing="18" align="center" heading="1">
+            <text fontStyle="bold" valign="center" fontSize="26">{%$p.fullName%} </text>
+          </para>
+        </cell>
+        <cell col="1" colSpan="2" name="x14933" rowSpan="2" strokeWidth="1.0" align="center" row="2">
+          <para align="center">
+            <text fontName="宋体" fontStyle="bold">种类及报价</text>
+          </para>
+        </cell>
+        <cell col="1" name="用品" sizeType="autowidth" strokeWidth="1.0" align="bottom" row="4" sql="select distinct 用品 from $s.data">
+          <para>
+            <text fontName="宋体">{%yp.yp%}</text>
+          </para>
+        </cell>
+        <cell col="1" colSpan="2" name="x16783" strokeWidth="1.0" align="center" row="5">
+          <para align="center">
+            <text fontName="宋体" fontStyle="bold">合计</text>
+          </para>
+        </cell>
+        <cell col="3" direction="h" name="x74512" sizeType="autowidth" strokeWidth="1.0" row="5">
+          <para align="right">
+            <text fontName="宋体">{%(select sum(sl) from $s.data)%}</text>
+          </para>
+        </cell>
+        <cell col="4" name="x15355" rowSpan="2" strokeWidth="1.0" align="center" row="2">
+          <para align="center">
+            <text fontName="宋体" fontStyle="bold">总计（元）</text>
+          </para>
+        </cell>
+        <cell col="4" name="x16097" sizeType="autoheight" strokeWidth="1.0" align="bottom" row="4">
+          <para align="right">
+            <text fontName="宋体" format="c">{%(select sum(je) from $s.data where yp=yp.yp)%}</text>
+          </para>
+        </cell>
+        <cell col="4" direction="h" name="金额" sizeType="autowidth" strokeWidth="1.0" row="5">
+          <para align="right">
+            <text fontName="宋体" format="c">{%(select sum(je) from $s.data)%}</text>
+          </para>
+        </cell>
+        <cell col="3" name="x15108" rowSpan="2" strokeWidth="1.0" align="center" row="2">
+          <para align="center">
+            <text fontStyle="bold">数量</text>
+          </para>
+        </cell>
+        <cell col="2" name="x26692" sizeType="autoheight" strokeWidth="1.0" align="bottom" row="4">
+          <para align="right">
+            <text fontName="宋体" format="c">{%(select dj from $s.data where yp=yp.yp)%}</text>
+          </para>
+        </cell>
+        <cell col="3" direction="h" name="数量" sizeType="autoheight" strokeWidth="1.0" align="bottom" row="4">
+          <para align="right">
+            <text fontName="宋体">{%(select sl from $s.data where yp=yp.yp)%}</text>
+          </para>
+        </cell>
+      </table>
+    </para>
+    <para/>
+  </body>
+</xdoc>

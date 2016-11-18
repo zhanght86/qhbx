@@ -1,0 +1,882 @@
+*{
+	padding:0; 
+	margin:0 auto;
+	font-size:12px;
+	
+}  
+ul li{
+list-style-type:none;
+}
+
+img{
+	border:0px;
+}
+body{
+	text-align:center;
+	background:#FFF;
+	background:url(../images/common/allhtmltop.jpg) no-repeat; 
+	background-color:white;
+}
+#summitbg{
+	text-align:center;
+	background:#FFF;
+	height:800px;
+	background:url(../images/aeonsummit/summitbg.jpg) no-repeat; 
+	background-position:top;
+}
+#AllHtml{
+	width:1005px;
+	text-align:center;
+	height:100%;
+}
+#agentbg{
+	text-align:center;
+	background:#FFF;
+	background:url(../images/denotation/agentbg3.jpg) no-repeat; 
+	background-position:top;
+}
+#agentheader{
+	width:1005px;
+    text-align:center;
+    height:340px;
+    padding-top:2px;
+}
+.agentlogo{
+	 width:982px;
+	 height:46px;
+	 padding-right:23px;
+	 background:url(../images/aeonsummit/TOP.jpg) no-repeat; 
+	 background-position:top;
+}
+.agentflash{
+	 width:982px;
+	 height:294px;
+	 background:url(../images/aeonsummit/BOTTOM.jpg) no-repeat;
+	 background-position:top; 
+}
+.agentflash2{
+	 width:980px;
+	 height:294px;
+	 background:url(../images/aeonsummit/BOTTOM.jpg) no-repeat;
+	 background-position:top; 
+}
+.agentflash4{
+	 width:980px;
+	 height:294px;
+	 background-position:top; 
+}
+.agentnav{
+	 width:1005px;
+	 height:69px;
+	 background:url(../images/denotation/agentnav2.jpg) no-repeat; 
+	 background-position:top;
+}
+#user{
+	width:80px;
+	height:26px;
+	float:right;
+	z-index:1;
+	position:relative;
+}
+.useropen2{
+	float:right;
+	display:none;
+	width:73px;
+	height:40px;
+	position:absolute;
+	top:36px;
+	right:3px;
+	text-align:center;
+	padding-top:3px;
+	line-height:12px;
+	background:url(../images/common/userbg1.jpg) repeat-y;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+}
+a.usera{
+    width:73px;
+    height:18px;
+	display:block;
+	line-height:18px;
+	text-decoration:none;
+    background:url(../images/common/personal1.jpg) no-repeat;
+	color:red;
+ }
+a.usera:hover{
+    width:73px;
+    height:18px;
+    line-height:18px;
+	display:block;
+	text-decoration:none;
+	background:url(../images/common/personal2.jpg) no-repeat;
+	color:black;
+ }
+a.userg{
+    width:73px;
+    height:18px;
+	display:block;
+	line-height:18px;
+	text-decoration:none;
+    background:url(../images/common/group1.jpg) no-repeat;
+	color:red;
+ }
+a.userg:hover{
+    width:73px;
+    height:18px;
+    line-height:18px;
+	display:block;
+	text-decoration:none;
+	background:url(../images/common/group2.jpg) no-repeat;
+	color:black;
+ }
+#maincontent{
+	width:983px;
+	display:block;
+	text-align:center;
+}
+#maintop{
+	display:block;
+	height:21px;
+	color:white;
+	padding-top:17px;
+	font-weight:bolder;
+	text-align:left;
+	padding-left:30px;
+	background:url(../images/aeonsummit/maintop.jpg) no-repeat; 
+	margin-left:13px;
+}
+#maintop2{
+	display:block;
+	height:21px;
+	color:white;
+	padding-top:17px;
+	font-weight:bolder;
+	text-align:left;
+	padding-left:30px;
+	background:url(../images/aeonsummit/maintop2.jpg) no-repeat; 
+	margin-left:13px;
+}
+#maintop4{
+	display:block;
+	height:21px;
+	color:white;
+	padding-top:17px;
+	font-weight:bolder;
+	text-align:left;
+	padding-left:30px;
+	background:url(../images/aeonsummit/maintop4.jpg) no-repeat; 
+	margin-left:13px;
+}
+#mainbody{
+	display:block;
+	width:960px;
+	min-height:540px;
+    height:100%;
+    _height:540px;
+  /* sets min-height for IE */
+    _height:expression(this.scrollHeight < 540 ? "570px" : "auto");
+    overflow:hidden;
+	background:url(../images/aeonsummit/mainbody.jpg) repeat-y; 
+	margin-left:14px;
+}
+#mainbottom{
+	display:block;
+	background:url(../images/aeonsummit/mainbottom.jpg) no-repeat; 
+	margin-left:14px;
+	height:12px;
+}
+.partone{
+	display:block;
+	height:335px;
+	width:931px;
+	margin-left:12px;
+	padding-bottom:0px;
+	background:url(../images/aeonsummit/summitline.jpg) no-repeat; 
+	background-position:bottom;
+}
+.imgshow1{
+	display:block;
+	height:305px;
+	width:510px;
+	float:left;
+	margin-top:10px;
+}
+.picAll{
+	background-color:#c7c9c6;
+	width:510px;
+	height:302px;
+}
+.picLeft{
+	float:left;
+	width:405px;
+	height:302px;
+}
+.picRight{
+	float:left;
+	width:100px;
+	height:290px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#picDet{
+	margin-top:5px;
+	margin-bottom:5px;
+	height:290px;
+	width:398px;
+	float:right;
+	border:1px solid white;
+}
+.picSmlA{
+	margin-top:3px;
+	display:block;
+	padding-left:10px;
+	width:94px;
+	height:56px;
+	background:url(../images/aeonsummit/picback1.jpg) no-repeat;
+	background-position:14px 0px;
+}
+.picSmlASelected{
+	margin-top:3px;
+	display:block;
+	padding-left:10px;
+	width:94px;
+	height:56px;
+	background:url(../images/aeonsummit/picback.jpg) no-repeat;
+	background-position:6px 0px;
+}
+.picImg{
+	margin-top:1px;
+	margin-left:1px;
+	width:82px;
+	height:54px;
+	border:0px;
+
+}
+.partonetext{
+	display:block;
+	margin-top:10px;
+	float:left;
+	height:305px;
+	width:380px;
+}
+.show1line{
+    display:block;
+	height:305px;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	width:11px;
+	float:left;
+	background:url(../images/aeonsummit/show1line.jpg) no-repeat; 
+}
+.summittext{
+	display:block;
+	border-bottom:1px #cccccc solid;
+	width:380px;
+	text-align:left;
+	line-height:22px;
+	padding-bottom:5px;
+}
+.summittext2{
+	display:block;
+	width:380px;
+	text-align:left;
+	padding-top:10px;
+	line-height:22px;
+}
+.parttwo{
+	display:block;
+	height:310px;
+	width:955px;
+	padding-bottom:15px;
+	margin-top:10px;
+	margin-left:1px;
+	background:url(../images/aeonsummit/summitlinetwo.jpg) no-repeat; 
+	background-position:bottom;
+}
+#scenepart{
+	display:block;
+	height:308px;
+	width:699px;
+	float:left;
+	background:url(../images/aeonsummit/scenebg.jpg) no-repeat; 
+}
+.scenetitle{
+	display:block;
+	text-align:left;
+	color:#cc0000;
+	font-weight:bolder;
+	padding-top:12px;
+	height:18px;
+	padding-left:15px;
+	width:678px;
+	float:left;
+}
+.imgshow2{
+	display:block;
+	height:239px;
+	width:295px;
+	margin-top:15px;
+	padding-left:13px;
+	float:left;
+}
+.scenetext{
+	display:block;
+	margin-top:15px;
+	float:left;
+	margin-left:30px;
+	width:345px;
+	height:239px;
+}
+.wordsscene{
+	display:block;
+	border-bottom:1px #cccccc solid;
+	width:345px;
+	text-align:left;
+	line-height:22px;
+	padding-bottom:5px;
+}
+.wordsscene2{
+	display:block;
+	width:345px;
+	text-align:left;
+	padding-top:10px;
+	line-height:22px;
+	background:url(../images/aeonsummit/sceneline.jpg) no-repeat;
+	background-position:bottom; 
+}
+.speechpart{
+	display:block;
+	height:305px;
+	width:237px;
+	float:left;
+	tex-align:center;
+	margin-left:8px;
+	background:url(../images/aeonsummit/speechbg.jpg) no-repeat;
+}
+.speechtitle{
+	display:block;
+	text-align:left;
+	color:#cc0000;
+	font-weight:bolder;
+	padding-top:12px;
+	height:18px;
+	width:190px;
+	float:left;
+	padding-left:15px;
+}
+.speechlist{
+	display:block;
+	float:left;
+	width:220px;
+	margin-left:5px;
+	margin-top:10px;
+	text-align:left;
+	line-height:22px;
+	margin-top:10px;
+}
+.speechlist ul li{
+	line-height:15px;
+	padding-bottom:5px;
+	padding-top:10px;
+	background:url(../images/aeonsummit/speechline.jpg) no-repeat;
+	background-position:bottom; 
+}
+.partthreeinclude{
+	display:block;
+	height:195px;
+	width:954px;
+	margin-top:10px;
+	margin-left:1px;
+	padding-bottom:15px;
+	background:url(../images/aeonsummit/summitlinetwo.jpg) no-repeat; 
+	background-position:bottom;
+	
+}
+.partthree {
+    display:block;
+	height:190px;
+	width:954px;
+	margin-left:1px;
+	background:url(../images/aeonsummit/namelistbg.jpg) no-repeat; 
+	background-position:bottom;
+}
+.partthreeL {
+    display:block;
+    float:left;
+	height:190px;
+	width:309px;
+	margin-left:1px;
+	background:url(../images/aeonsummit/namelistbgL.jpg) no-repeat; 
+	background-position:bottom;
+}
+.partthreeR {
+	background-color:red;
+    display:block;
+    float:right;
+	height:190px;
+	width:634px;
+	margin-left:1px;
+	background:url(../images/aeonsummit/namelistbgR.jpg) no-repeat; 
+	background-position:bottom;
+}
+.nametitle{
+	color:#cc0000;
+	font-weight:bolder;
+	text-align:left;
+	display:block;
+	padding-left:15px;
+	padding-top:13px;
+	width:900px;
+	float:left;
+	height:12px;
+}
+.nametitle1{
+	color:#cc0000;
+	font-weight:bolder;
+	text-align:left;
+	display:block;
+	padding-left:15px;
+	padding-top:13px;
+	width:600px;
+	float:left;
+	height:12px;
+}
+.nametitle2{
+	color:#cc0000;
+	font-weight:bolder;
+	text-align:left;
+	display:block;
+	padding-left:15px;
+	padding-top:13px;
+	width:290px;
+	float:left;
+	height:12px;
+}
+.namedetail{
+	display:block;
+	width:110px;
+	float:left;
+	color:#666666;
+	margin-top:5px;
+	margin-left:10px;
+	margin-right:12px;
+	text-align:left;
+	padding-top:10px;
+	line-height:22px;
+	 
+}
+.namedetail ul li {
+	line-height:15px;
+	padding-bottom:5px;
+	padding-top:8px;
+	background:url(../images/aeonsummit/sceneline.jpg) no-repeat;
+	background-position:bottom;
+}
+.namedetail1{
+	display:block;
+	width:93px;
+	float:left;
+	color:#666666;
+	margin-top:5px;
+	margin-left:10px;
+	margin-right:12px;
+	text-align:left;
+	padding-top:10px;
+	line-height:22px;
+	 
+}
+.namedetail1 ul li {
+	line-height:15px;
+	padding-bottom:5px;
+	padding-top:8px;
+	background:url(../images/aeonsummit/sceneline.jpg) no-repeat;
+	background-position:bottom;
+}
+.namedetail2{
+	display:block;
+	width:270px;
+	float:left;
+	color:#666666;
+	margin-top:5px;
+	margin-left:10px;
+	margin-right:12px;
+	text-align:left;
+	padding-top:10px;
+	line-height:22px;
+	 
+}
+.namedetail2 ul li {
+	line-height:15px;
+	padding-bottom:5px;
+	padding-top:8px;
+	background:url(../images/aeonsummit/sceneline.jpg) no-repeat;
+	background-position:bottom;
+}
+
+.namedetail1{
+	display:block;
+	width:100px;
+	float:left;
+	color:#666666;
+	margin-top:5px;
+	margin-left:10px;
+	margin-right:12px;
+	text-align:left;
+	padding-top:10px;
+	line-height:22px;
+	 
+}
+.namedetail1 ul li {
+	line-height:15px;
+	padding-bottom:5px;
+	padding-top:8px;
+	background:url(../images/aeonsummit/sceneline.jpg) no-repeat;
+	background-position:bottom;
+}
+.more{
+	color:#666666;
+	text-align:right;
+	display:block;
+	padding-top:12px;
+	height:15px;
+	padding-right:15px;
+	width:900px;
+	float:right;
+}
+.more1{
+	color:#666666;
+	text-align:right;
+	display:block;
+	padding-top:12px;
+	height:15px;
+	padding-right:15px;
+	width:600px;
+	float:right;
+}
+.morelist{
+	color:#666666;
+	text-align:right;
+	display:block;
+	padding-top:12px;
+	height:15px;
+	padding-right:15px;
+	width:900px;
+	float:right;
+}
+.partfour{
+	display:block;
+	width:955px;
+	height:355px;
+	padding-bottom:15px;
+	margin-left:1px;
+	margin-top:10px;
+	background:url(../images/aeonsummit/elitebg.jpg) no-repeat; 
+	background-position:top;
+}
+.elittitle{
+	color:#cc0000;
+	font-weight:bolder;
+	text-align:left;
+	display:block;
+	padding-left:15px;
+	padding-top:11px;
+	width:155px;
+	float:left;
+	height:12px;
+}
+.elittab{
+	display:block;
+	width:730px;
+	height:35px;
+	float:left;
+	margin-top:7px;
+}
+.elittab ul li {
+	width:88px;
+	height:35px;
+	float:left;
+	line-height:29px;
+}
+.elittab ul li a{
+	width:88px;
+	height:35px;
+	float:left;
+	text-decoration:none;
+	color:#666666;
+	background:url(../images/aeonsummit/tabbg2.jpg) no-repeat; 
+}
+
+.elittab ul li a:hover{
+	width:88px;
+	height:35px;
+	float:left;
+	color:#cc0000;
+	background:url(../images/aeonsummit/tabbg5.jpg) no-repeat; 
+}
+.elittabhold{
+	width:88px;
+	height:35px;
+	float:left;
+	color:#cc0000;
+	background:url(../images/aeonsummit/tabbg5.jpg) no-repeat; 
+}
+.elittabover1{
+	width:88px;
+	height:35px;
+	float:left;
+	text-decoration:none;
+	color:#666666;
+	background:url(../images/aeonsummit/tabbg2.jpg) no-repeat; 
+}
+.elittabover2{
+	width:88px;
+	height:35px;
+	float:left;
+	text-decoration:none;
+	color:#666666;
+	background:url(../images/aeonsummit/tabbg2.jpg) no-repeat; 
+}
+.elitelist{
+	display:block;
+	width:920px;
+}
+.elitelistHidden{
+	display:none;
+	width:920px;
+}
+.elitelistHidden ul li {
+	display:block;
+	height:212px;
+	width:190px;
+	float:left;
+	color:#666666;
+	text-align:left;
+	margin-right:20px;
+	margin-left:15px;
+}
+.elitelist ul li {
+	display:block;
+	height:212px;
+	width:190px;
+	float:left;
+	color:#666666;
+	text-align:left;
+	margin-right:20px;
+	margin-left:15px;
+}
+.elitelistbg{
+	display:block;
+	height:212px;
+	width:190px;
+	float:left;
+	color:#666666;
+	text-align:left;
+	margin-right:20px;
+	margin-left:15px;
+	background:url(../images/aeonsummit/elitelistbg.jpg) no-repeat;
+}
+.elitelistbgimg{
+	width:147px;
+	height:155px;
+	display:block;
+	maigin-left:10px;
+	maigin-right:10px;
+	margin-top:28px;
+	background:red;
+}
+.sampletitle{
+	width:900px;
+	height:25px;
+	text-align:left;
+	color:#666666;
+	font-weight:bolder;
+	font-size:14px;
+	display:block;
+	clear:both;
+	background:url(../images/productcenter/productline.jpg) no-repeat;	
+	background-position:bottom;
+}
+.elitelistname{
+	font-weight:bolder;
+	padding-bottom:5px;
+	width:175px;
+	background:url(../images/aeonsummit/sceneline.jpg) no-repeat;
+	background-position:bottom;
+}
+.newstitle{
+	display:block;
+	text-align:center;
+	width:900px;
+	display:block;
+	color:#666666;
+	padding-top:10px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	line-height:35px;
+	height:auto;
+	background:url(../images/template/template_news_mid.jpg) no-repeat;
+	background-position:bottom;
+}
+.newsmaintext{
+	display:block;
+	text-align:left;
+	color:#666666;
+	width:900px;
+	margin-top:10px;
+	text-indent:2em;
+	line-height:22px;
+}
+.newsmaintext1{
+	display:block;
+	text-align:left;
+	color:#666666;
+	width:618px;
+	float:left;
+	margin-top:10px;
+	padding-left:20px;
+	text-indent:2em;
+	line-height:22px;
+}
+.newsmaintextlast{
+	display:block;
+	text-align:right;
+	color:#666666;
+	width:900px;
+	float:left;
+	margin-top:10px;
+	padding-left:20px;
+	text-indent:2em;
+	line-height:22px;
+}
+.table_Show111{
+	border: 0px solid #29a46d;
+	border-collapse:collapse; 
+/*	background:#d2d2d2;*/
+}
+.td_style3_head{
+	text-align:center;
+	font-size:12px;
+	color:#333333;
+	font-weight:bold;
+ 	vertical-align:middle;
+}
+.td_style3_td3{
+	text-align:left;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-right:1px dashed #cccccc; 
+	border-top:1px dashed #cccccc; 
+	border-bottom:1px dashed #cccccc; 
+}
+.td_style3_td1{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-left:1px dashed #cccccc;
+	border-right:1px dashed #cccccc; 
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td7{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-left:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td8{
+	text-align:left;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#ffffff;
+ 	vertical-align:middle;
+	border-right:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td9{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#ffffff;
+ 	vertical-align:middle;
+	border-left:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td4{
+	text-align:left;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-right:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td2{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-left:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+#copyright{
+	clear:both;
+	width:980px;
+	height:115px;
+	color:black;
+	margin-left:12px;
+	margin-right:14px;
+	margin-top:15px;
+	line-height:20px;
+	font-size:12px;
+}
+
+a.copyright_a,a.copyright_a:visited{
+	color:#2c558b;
+	font-size:12px;
+	height:12px;
+	text-decoration:none;
+}
+a.copyright_a:hover{
+	color:#2c558b;
+	font-size:12px;
+	text-decoration:underline;
+}
+.copyright_span{
+	color:#FFF;
+	display:block;
+	height:43px;
+	text-align:left;
+    padding-top:3px;
+    background:url(../images/aeonsummit/summitfooter.jpg) no-repeat; 
+    background-position:top;
+}
+
+#copyright a,#copyright a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+#copyright a:hover{
+	text-decoration:none;
+}

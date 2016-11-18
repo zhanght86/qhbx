@@ -1,0 +1,666 @@
+*{
+	padding:0; 
+	margin:0 auto;
+	font-size:12px;
+}  
+ul li{
+list-style-type:none;
+}
+img{
+	border:0px;
+}
+body{
+	text-align:center;
+	background:#FFF;
+	background:url(../images/common/allhtmltop.jpg) no-repeat; 
+	background-color:white;
+}
+#summitbg{
+	text-align:center;
+	background:#FFF;
+	height:800px;
+	background:url(../images/aeonrushHour/summitbg2.jpg) no-repeat; 
+	background-position:top;
+}
+#AllHtml{
+	width:1005px;
+	text-align:center;
+	height:100%;
+}
+#agentheader{
+	width:1005px;
+    text-align:center;
+    height:400px;
+    padding-top:2px;
+}
+.agentlogo{
+	 display:block;
+	 width:982px;
+	 height:46px;
+	 padding-right:23px;
+	 background:url(../images/aeonrushHour/TOP.jpg) no-repeat; 
+	 background-position:top;
+}
+.agentflash{
+	 display:block;
+	 width:982px;
+	 height:251px;
+	 clear:both;
+	 background:url(../images/aeonrushHour/BOTTOM2.jpg) no-repeat; 
+	 background-position:top;
+}
+.agentnav{
+	 display:block;
+	 clear:both;
+	 width:982px;
+	 height:101px;
+	 background:url(../images/aeonrushHour/rushHournav.jpg) no-repeat; 
+	 background-position:top;
+}
+#user{
+	width:80px;
+	height:26px;
+	float:right;
+	z-index:1;
+	position:relative;
+}
+.useropen2{
+	float:right;
+	display:none;
+	width:73px;
+	height:40px;
+	position:absolute;
+	top:32px;
+	right:3px;
+	text-align:center;
+	padding-top:3px;
+	line-height:12px;
+	background:url(../images/common/userbg1.jpg) repeat-y;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+}
+a.usera{
+    width:73px;
+    height:18px;
+	display:block;
+	line-height:18px;
+	text-decoration:none;
+    background:url(../images/common/personal1.jpg) no-repeat;
+	color:red;
+ }
+a.usera:hover{
+    width:73px;
+    height:18px;
+    line-height:18px;
+	display:block;
+	text-decoration:none;
+	background:url(../images/common/personal2.jpg) no-repeat;
+	color:black;
+ }
+a.userg{
+    width:73px;
+    height:18px;
+	display:block;
+	line-height:18px;
+	text-decoration:none;
+    background:url(../images/common/group1.jpg) no-repeat;
+	color:red;
+ }
+a.userg:hover{
+    width:73px;
+    height:18px;
+    line-height:18px;
+	display:block;
+	text-decoration:none;
+	background:url(../images/common/group2.jpg) no-repeat;
+	color:black;
+ }
+#maincontent{
+	width:982px;
+	clear:both;
+	display:block;
+	padding-bottom:30px;
+	background:url(../images/customernew/customerbottom.jpg) no-repeat;
+	background-position:bottom; 
+}
+.sidenav{
+	display:block;
+	width:690px;
+	height:30px;
+	margin-top:45px;
+	margin-bottom:26px;
+	float:right;
+}
+.Snav{
+	display:block;
+	width:169px;
+	height:30px;
+	float:left;
+	color:#666666;
+	font-weight:bolder;
+	background:url(../images/aeonrushHour/sideon.jpg) no-repeat;
+}
+.Snav a{
+	display:block;
+	width:169px;
+	height:30px;
+	float:left;
+	color:#666666;
+	text-decoration:none;
+	font-weight:bolder;
+	line-height:30px;
+}
+.Snav a:hover{
+	display:block;
+	width:169px;
+	height:30px;
+	float:left;
+	color:white;
+	text-decoration:none;
+	font-weight:bolder;
+	background:url(../images/aeonrushHour/sidehover.jpg) no-repeat;
+}
+.Snavhold a{
+	display:block;
+	width:169px;
+	height:30px;
+	float:left;
+	color:white;
+	line-height:30px;
+	text-decoration:none;
+	font-weight:bolder;
+}
+.Snavhold{
+	display:block;
+	width:169px;
+	height:30px;
+	float:left;
+	color:white;
+	text-decoration:none;
+	font-weight:bolder;
+	background:url(../images/aeonrushHour/sidehover.jpg) no-repeat;
+}
+
+.Tnav{
+	display:block;
+	width:169px;
+	height:30px;
+	float:left;
+	color:#666666;
+	font-weight:bolder;
+	background:url(../images/aeonrushHour/sideTon.jpg) no-repeat;
+}
+.Tnav a{
+	display:block;
+	width:169px;
+	height:30px;
+	float:left;
+	color:#666666;
+	text-decoration:none;
+	font-weight:bolder;
+	line-height:30px;
+}
+.Tnav a:hover{
+	display:block;
+	width:169px;
+	height:30px;
+	float:left;
+	color:white;
+	text-decoration:none;
+	font-weight:bolder;
+	background:url(../images/aeonrushHour/sideThover.jpg) no-repeat;
+}
+.Tnavhold{
+	display:block;
+	width:169px;
+	height:30px;
+	float:left;
+	color:white;
+	text-decoration:none;
+	font-weight:bolder;
+	background:url(../images/aeonrushHour/sideThover.jpg) no-repeat;
+}
+.detailcontent2{
+	display:block;
+	clear:both;
+	width:923px;
+	min-height:310px;
+    height:100%;
+    _height:310px;
+  /* sets min-height for IE */
+    _height:expression(this.scrollHeight < 310 ? "360px" : "auto");
+    overflow:hidden;
+}
+.detailcontent{
+	display:block;
+	clear:both;
+	width:923px;
+	min-height:310px;
+    height:100%;
+    _height:310px;
+  /* sets min-height for IE */
+    _height:expression(this.scrollHeight < 310 ? "360px" : "auto");
+    overflow:hidden;
+	background:url(../images/aeonrushHour/dnavbgbo3.jpg) repeat-y;
+}
+.Dcontent{
+	display:block;
+	clear:both;
+	width:923px;
+	min-height:310px;
+    height:100%;
+    _height:310px;
+  /* sets min-height for IE */
+    _height:expression(this.scrollHeight < 310 ? "360px" : "auto");
+    overflow:hidden;
+	background:url(../images/aeonrushHour/dnavbgbo3.jpg) repeat-y;
+}
+.Dnav{
+	display:block;
+	width:923px;
+	height:30px;
+	clear:both;
+	background:url(../images/aeonrushHour/dnavbg.jpg) no-repeat;
+}
+.Ccontent{
+	display:block;
+	clear:both;
+	width:923px;
+	min-height:310px;
+    height:100%;
+    _height:310px;
+  /* sets min-height for IE */
+    _height:expression(this.scrollHeight < 310 ? "360px" : "auto");
+    overflow:hidden;
+}
+.DcontentBottom{
+	display:block;
+	width:923px;
+	height:50px;
+	background:url(../images/aeonrushHour/dnavbgbottom.jpg) no-repeat;
+}
+.thumbox{
+	display:block;
+	width:903px;
+	height:240px;
+	clear:both;
+	padding-top:15px;
+	padding-left:20px;
+}
+.libox{
+	display:block;
+	width:903px;
+	margin-top:10px;
+	height:155px;
+	padding-left:10px;
+	padding-right:10px;
+	background:url(../images/aeonrushHour/liboxbg.jpg) repeat-x;
+	packground-position:bottom;
+}
+.showT{
+	display:block;
+	width:903px;
+	height:200px;
+	clear:both;
+	margin-top:10px;
+	margin-bottom:0px;
+	padding-left:20px;
+}
+#content_image1{
+	display:block;
+	width:903px;
+	float:left;
+	height:170px;
+	padding-top:10px;
+}
+#slideshow1{
+	display:block;
+	width:280px;
+	height:166px;
+	border:1px #cccccc solid;
+	float:left;
+	padding:1px;
+}
+#caption{
+	display:block;
+	width:480px;
+	height:174px;
+	float:left;
+	margin-left:55px;
+	padding-left:55px;
+	color:#666666;
+	line-height:20px;
+	border-left:2px dotted #999999;
+}
+#embox{
+	float:left;
+	border:1px solid red;
+}
+.content_n2 ul li{
+	display:block;
+	float:left;
+}
+.content_n2{
+	float:left;
+	display:block;
+	width:903px;
+	height:165px;
+	padding-left:10px;
+	padding-right:10px;
+	background:url(../images/aeonrushHour/liboxbg2.jpg) no-repeat ;
+	background-position: 0px 24px;
+}
+#caption_t{
+	width:250px;
+	height:260px;
+	display:block;
+	line-height:19px;
+	color:#a90000;
+	float:left;
+}
+.crestablank{
+	display:block;
+	height:9px;
+	width:924px;
+	background:url(../images/aeonrushHour/dotidli.jpg) repeat-x; 
+	background-position:bottom;
+}
+.crestaspeah{
+	display:block;
+	height:225px;
+	margin-top:5px;
+	width:923px;
+}
+.speachone{
+	float:left;
+	display:block;
+	width:444px;
+	height:215px;
+	background:url(../images/aeonrushHour/speachbg.jpg) no-repeat; 
+}
+.speachtwo{
+	float:right;
+	display:block;
+	width:444px;
+	height:215px;
+	background:url(../images/aeonrushHour/speachbg.jpg) no-repeat; 
+}
+.crestapic{
+	display:block;
+	height:151px;
+	width:923px;
+}
+.crestapictitle{
+	display:block;
+	height:35px;
+	width:923px;
+	background:url(../images/aeonrushHour/picbg2.jpg) no-repeat; 
+}
+.picAll{
+	float:left;
+	width:923px;
+	height:110px;
+	margin-top:5px;
+	display:block;
+}
+.picChannel{
+	display:block;
+	width:923px;
+	height:110px;
+	background:url(../images/aeonrushHour/picshowbg.jpg) repeat;	
+}
+
+.crestatext{
+	display:block;
+	height:143px;
+	width:928px;
+	margin-top:7px;
+	margin-left:27px;
+	background:url(../images/aeonrushHour/textbg.jpg) no-repeat;
+}
+a.LeftBotton{
+	margin-top:40px;
+	background:url(../images/aeonNews/news/leftButton.jpg) no-repeat;	
+	background-position:top;
+	width:15px;
+	height:25px;
+	display:block;
+	float:left;
+	margin-left:1px;
+}
+a.LeftBotton:hover{
+	margin-top:40px;
+	background:url(../images/aeonNews/news/leftButton.jpg) no-repeat;	
+	background-position:bottom;
+	width:15px;
+	height:25px;
+	display:block;
+	float:left;
+	margin-left:1px;
+}
+a.RightBotton{
+	margin-top:40px;
+	background:url(../images/aeonNews/news/rightButton.jpg) no-repeat;	
+	background-position:top right;
+	width:15px;
+	height:25px;
+	display:block;
+	float:right;
+	margin-right:1px;
+}
+a.RightBotton:hover{
+	margin-top:40px;
+	background:url(../images/aeonNews/news/rightButton.jpg) no-repeat;	
+	background-position:bottom right;
+	width:15px;
+	height:25px;
+	display:block;
+	float:right;
+	margin-right:1px;
+}
+.picMiddle{
+	overflow:hidden;
+	width:890px;
+	float:left;
+	margin-top:15px;
+	height:75px;
+	display:block;
+}
+.ScrCont {
+	width:92766px;
+	height:75px;
+	zoom:1;
+}
+#List1_1{
+	float:left;
+}
+.pl img {
+	display:block;
+	width:100px;
+	height:68px;
+	cursor:pointer;
+	border:1px solid #cccccc;
+	padding:1px;
+	margin-top:3px;
+}
+.pl a  img:hover{
+	display:block;
+	width:100px;
+	height:68px;
+	cursor:pointer;
+	border:1px solid #cc0000;
+	padding:1px;
+	margin-top:3px;
+}
+.pl {
+	width:115px;
+	height:110px;
+	float:left;
+	padding-right:12px;
+	text-align:center;
+	display:block;
+}
+#caption-inter{
+	text-align:left;
+	float:right;
+	display:block;
+	width:330px;
+	margin-left:10px;
+	line-height:25px;
+	border-left:2px dotted #999999;
+	height:260px;
+}
+.table_Show111{
+	border: 0px solid #29a46d;
+	border-collapse:collapse; 
+/*	background:#d2d2d2;*/
+}
+.td_style3_head{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	font-size:14px;
+	margin-bottom:10px;
+	font-weight:bold;
+ 	vertical-align:middle;
+}
+.td_style3_td3{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-right:1px dashed #cccccc; 
+	border-top:1px dashed #cccccc; 
+	border-bottom:1px dashed #cccccc; 
+}
+.td_style3_td1{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-left:1px dashed #cccccc;
+	border-right:1px dashed #cccccc; 
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td7{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-left:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td8{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#ffffff;
+ 	vertical-align:middle;
+	border-right:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td9{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#ffffff;
+ 	vertical-align:middle;
+	border-left:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td4{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-right:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+.td_style3_td2{
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	line-height:20px;
+	background:#F6F6F6;
+ 	vertical-align:middle;
+	border-left:1px dashed #cccccc;
+	border-top:1px dashed #cccccc;
+	border-bottom:1px dashed #cccccc;
+}
+a.close,a.close:visited{
+	display:block;
+	width:112px;
+	height:37px;
+	background:url(../images/aeonrushHour/btn_close2.jpg) no-repeat; 
+}
+.interviewpara{
+	color:#666666;
+	text-align:left;
+	width:700px;
+	margin-top:15px;
+	text-indent:2em;
+	line-height:20px;
+}
+.Crestainter{
+	display:block;
+	width:923px;
+	height:80px;
+	clear:both;
+	background:url(../images/aeonrushHour/creatainterbg.jpg) no-repeat; 
+	background-position:bottom;
+}
+#copyright{
+	clear:both;
+	width:980px;
+	height:115px;
+	color:black;
+	margin-left:12px;
+	margin-right:14px;
+	margin-top:15px;
+	line-height:20px;
+	font-size:12px;
+}
+a.copyright_a,a.copyright_a:visited{
+	color:#2c558b;
+	font-size:12px;
+	height:12px;
+	text-decoration:none;
+}
+a.copyright_a:hover{
+	color:#2c558b;
+	font-size:12px;
+	text-decoration:underline;
+}
+.copyright_span{
+	color:#FFF;
+	display:block;
+	height:43px;
+	text-align:left;
+    padding-top:3px;
+    background:url(../images/aeonsummit/summitfooter.jpg) no-repeat; 
+    background-position:top;
+}
+
+#copyright a,#copyright a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+#copyright a:hover{
+	text-decoration:none;
+}

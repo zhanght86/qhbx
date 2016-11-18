@@ -1,0 +1,25 @@
+<style>
+.portal-box-title-top{position:absolute;top:8px;left:7px;width:7px;height:18px;background:url("/sc/img/pt_style/default/ddsb.png") transparent;}
+.portal-box-title-bottom-line{left:0px;margin-left:-3px;border-bottom: 2px #d20000 solid;top: 0px;position:relative;}
+</style>
+<div id='EXTEND_LINK' class='portal-box ${boxTheme}'  style='min-height:203px'>
+<div class='portal-box-title' style='position:relative;'>
+	<span class='portal-box-title-icon icon_portal_links'></span>
+	<span class='portal-box-title-top'></span>
+	<span class="portal-box-title-label" style="background-color:white;margin-left:-3px;padding-left:20px;padding-right:10px;">${title}</span>
+	<div class="portal-box-title-bottom-line" style="width:${picWidth};"></div>
+	<span class="portal-box-hideBtn conHeanderTitle-expand"></span>
+</div>
+<div class='portal-box-con'>
+<table width="100%">
+<#if (_DATA_?size == 0)>
+<tr><td align="center">${message}</td></tr>
+ </#if>
+ <#list _DATA_ as links>
+<tr>
+    <td>&#8226;&nbsp;&nbsp;<a href="${links.LINK_ADDRESS}" target="_blank">${links.LINK_NAME}</a></td>
+</tr>
+</#list>	
+</table>
+</div>
+</div>

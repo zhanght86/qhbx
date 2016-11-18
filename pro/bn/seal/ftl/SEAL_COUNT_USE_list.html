@@ -1,0 +1,36 @@
+<style type="text/css">
+td {border:1px solid #CCCCCC;}
+</style>
+<div class="ui-form-default seal_count">
+	<div align="center" style="font-size:24px;color:red;font-weight:bold;padding:10px;background:white;">印章使用统计表</div>
+	<div id="" class="item ui-corner-5">
+		<div class="fieldsetContainer">
+			<fieldset><div class="formContent">
+				<table style="text-align:center;border:0;line-height:24px;">
+					<tr style="background:#F1EFEE;line-height:40px;">
+						<td style="width:30%;">申请单标题</td>
+						<td style="width:10%;">申请单类型</td>
+						<td style="width:10%;">用印文件名称</td>
+						<td style="width:10%;">所属系统</td>
+						<td style="width:10%;">用印方式</td>
+						<td style="width:10%;">用印人</td>
+						<td style="width:10%;">用印部门</td>
+						<td style="width:10%;">用印机构</td>
+					</tr>
+					<#list list as seal>
+					<tr>
+						<td style="width:20%;">${seal.APPLY_TITLE}</td>
+						<td style="width:10%;">${seal.APPLY_TYPE__NAME!seal.APPLY_TYPE}</td>
+						<td style="width:10%;">${seal.FILE_NAME}</td>
+						<td style="width:10%;">${seal.BELONG_SYSTEM__NAME!seal.BELONG_SYSTEM}</td>
+						<td style="width:10%;">${seal.USE_WAY}</td>
+						<td style="width:10%;">${seal.USE_USERNAME}</td>
+						<td style="width:10%;">${seal.USE_TDEPTNAME}</td>
+						<td style="width:10%;">${seal.USE_ORGNAME}</td>
+					</tr>
+					</#list>
+				</table>
+			</div></fieldset>
+		</div>
+	</div>
+</div>

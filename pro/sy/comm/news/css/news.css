@@ -1,0 +1,179 @@
+html,body{background: white;}
+/* news_begin */
+
+.news_container {
+	font-size: 14px;
+	font-family: "宋体";
+	color: #333333;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.news_container .news_weizhi {
+	height: 27px;
+}
+
+.news_container a:visited,.news_container a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.news_container a:hover {
+	text-decoration: underline;
+	color: red;
+}
+
+.news_container .news_box {
+	border: 1px solid #BBBBBB;
+	border-top: 2px solid black;
+	padding: 11px 20px 15px;
+}
+
+.news_container .news_box>p,.news_container .news_box>div{
+	font-size:14px;
+	
+	
+}
+.news_container .news_box .news_title {
+	color: #000000;
+	font-family: "微软雅黑", "黑体";
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 35px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.news_container .news_box .news_info {
+	border-bottom: 1px solid #CCCCCC;
+	color: #999999;
+	padding: 10px 0;
+	position: relative;
+	text-align: center;
+}
+
+.news_container .news_box .news_content {
+	margin-top: 0px;
+}
+
+.news_container .news_box .news_tag {
+	background:
+		url("/sy/comm/news/img/ent_zxh_0816_01v3.png")
+		no-repeat scroll -15px -544px #F7F7F7;
+	border: 1px solid #CCCCCC;
+	color: #333333;
+	margin: 27px 20px;
+	padding: 4px 4px 4px 50px;
+}
+
+.news_container .news_box .news_attach {
+	border-top: 1px #ccc solid;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.news_container .news_box .news_vote {
+	border-top: 1px #ccc solid;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.news_container .news_box .news_imgs{
+	border-top: 1px #ccc solid;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.news_container .news_box .news_imgs .title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 10px;
+}
+.news_container .news_comment {
+	margin-top: 20px;
+}
+
+.news_container .news_comment .comment_box {
+	line-height: 142px;
+	background: url("/sy/comm/news/img/comment_bg.bmp") repeat-x;
+	height: 142px;
+	border: 1px #BBBBBB solid;
+	border-top: none;
+}
+
+.news_container .news_comment .comment_box .area {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1) inset;
+	float: left;
+	font-size: 14px;
+	line-height: 24px;
+	overflow: auto;
+	padding: 4px 10px;
+	width: 92%;
+	min-width:92%;
+	max-width:92%;
+	height: 70px;
+	min-height:70px;
+	max-height:70px;
+	margin: 20px 20px 10px 20px;
+}
+
+.news_container .news_comment .comment_box .submit {
+	background:
+		url("/sy/comm/news/img/ent_zxh_0816_02v13.png")
+		no-repeat scroll -150px -400px transparent;
+	border: medium none;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline;
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	height: 24px;
+	margin: 0 20px 0 8px;
+	width: 58px;
+}
+.news_container .news_comment .comment_box .submit:hover {
+	background:
+		url("/sy/comm/news/img/ent_zxh_0816_02v13.png")
+		no-repeat scroll -150px -425px transparent;
+}
+.news_container .news_comment .comment_title {
+	background: #F3F3F3;
+	height: 50px;
+	border: 1px #CCCCCC solid;
+}
+
+.news_container .news_comment .comment_title .comment{
+	border-right: 1px solid #CCCCCC;
+	float: left;
+	font-family: "微软雅黑", "黑体";
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	width: 120px;
+	height: 50px;
+	cursor: pointer;
+	background: white;
+	border-bottom: 1px white solid;
+}
+
+.news_container .news_comment .comment_item {
+	padding: 14px;
+	cursor: pointer;
+	border-left: 1px #cccccc solid;
+	border-right: 1px #cccccc solid;
+}
+
+.news_container .news_comment .comment_more {
+	background: #EDEDED;
+	height: 30px;
+	border: 1px solid #CCCCCC;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 15px;
+	color: #ccc;
+}
+/* news_end */

@@ -1,0 +1,399 @@
+/*知道分享的CSS，在用到分享的页面引入*/
+
+.modal-dialog {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #888888;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.4);
+    margin: auto;
+    position: absolute;
+    text-align: left;
+    width: 420px;
+    z-index: 99;
+}
+.modal-dialog, div[contentEditable] {
+    outline: 0 none;
+}
+.modal-dialog-title {
+    background: none repeat scroll 0 0 #0874C4;
+    border: 1px solid #0D6EB8;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: move;
+    line-height: 14px;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.modal-dialog-content {
+    margin: 17px 0;
+    padding: 0 15px;
+}
+.modal-dialog-buttons {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    text-align: right;
+}
+
+.modal-dialog-title-text {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+.modal-dialog-title-close {
+    background-position: -60px -53px;
+    cursor: pointer;
+    height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    right: 3px;
+    text-indent: -9999px;
+    top: 50%;
+    width: 30px;
+}
+.icon, .tr-icon, .tr-inline-icon, .goog-option-selected .goog-menuitem-checkbox, .zu-edit-button-icon, .zu-top-live-icon, .zh-global-backtotop, .zh-hovercard-arrow, .modal-dialog-title-close, .icon-external, .zg-icon, .zm-profile-icon, .zm-profile-header-icon, .icon-info, .icon-green-check, .icon-big-arrow-left, .icon-big-arrow-right, .icon-weibo-corner, .icon-big-white-sina, .icon-big-white-mail {
+    background-image: url("/static/img/sprites-1.8.2.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+
+.zg-clear:before, .zg-clear:after {
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.zg-clear:after {
+    clear: both;
+}
+.zg-clear:before, .zg-clear:after {
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.zm-common-nav-bar {
+    border-bottom: 1px solid #BFBFBF;
+    list-style: none outside none;
+    margin: 0 0 10px;
+    min-height: 30px;
+    padding: 0;
+}
+.zg-clear {
+    height: 1%;
+}
+ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+}
+.zm-common-nav-bar-item {
+    float: left;
+    margin: 0 10px 0 0;
+    position: relative;
+    text-align: center;
+}
+ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+}
+.zm-common-nav-bar-item {
+    float: left;
+    margin: 0 10px 0 0;
+    position: relative;
+    text-align: center;
+}
+ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+}
+div[contentEditable], input, textarea, button, a:link {
+}
+.zm-common-nav-bar-link {
+    border-radius: 2px 2px 0 0;
+    color: #225599;
+    display: block;
+    float: left;
+    height: 27px;
+    line-height: 28px;
+    min-width: 45px;
+    padding: 1px 10px;
+    position: relative;
+    text-decoration: none;
+    top: 1px;
+    width: auto !important;
+}
+a {
+    color: #225599;
+    text-decoration: none;
+}
+
+div[contentEditable], input, textarea, button, a:link {
+}
+.zm-common-nav-bar-current, html.no-touch .zm-common-nav-bar-current:hover, .zm-common-nav-bar-current-light, html.no-touch .zm-common-nav-bar-current-light:hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #BFBFBF #BFBFBF -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    color: #666666 !important;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 9px 1px;
+}
+.zm-common-nav-bar-link {
+    border-radius: 2px 2px 0 0;
+    color: #225599;
+    display: block;
+    float: left;
+    height: 27px;
+    line-height: 28px;
+    min-width: 45px;
+    padding: 1px 10px;
+    position: relative;
+    text-decoration: none;
+    top: 1px;
+    width: auto !important;
+}
+a {
+    color: #225599;
+    text-decoration: none;
+}
+.zm-form-table {
+    margin: 0;
+    width: 100%;
+}
+
+.zg-clear:before, .zg-clear:after {
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.zg-clear:after {
+    clear: both;
+}
+.zg-clear:before, .zg-clear:after {
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.modal-dialog .zm-command {
+    padding: 20px 0 0;
+}
+.zm-pm-wrap .zm-command {
+    line-height: 33px;
+}
+.zm-command {
+    padding: 10px 0;
+    text-align: right;
+}
+.zg-clear {
+    height: 1%;
+}
+.zm-form-table-medium > .zm-form-table-head {
+    clear: both;
+    width: 60px;
+}
+.zm-form-table-head-align-middle {
+    margin: 5px 0 0;
+}
+.zm-form-table-head {
+    float: left;
+    text-align: right;
+    width: 43px;
+}
+.zm-form-table-medium > .zm-form-table-field {
+    margin: 0 0 0 61px;
+}
+.zm-form-table-field {
+    margin: 0 0 0 53px;
+    padding: 0 0 10px;
+    vertical-align: top;
+}
+
+.zm-form-table-medium > .zm-form-table-head {
+    clear: both;
+    width: 60px;
+}
+.zm-form-table-head-align-middle {
+    margin: 5px 0 0;
+}
+.zm-form-table-head {
+    float: left;
+    text-align: right;
+    width: 43px;
+}
+.zm-form-table-medium > .zm-form-table-field {
+    margin: 0 0 0 61px;
+}
+.zm-form-table-field-last {
+    padding: 0;
+}
+.zm-form-table-field {
+    margin: 0 0 0 53px;
+    padding: 0 0 10px;
+    vertical-align: top;
+}
+.zg-medium-gray {
+    color: #999999;
+    font-size: 13px;
+}
+
+.zh-webshare-dialog .zg-form-text-input {
+    width: 90%;
+}
+input[type="text"], input[type="password"]:focus {
+}
+.label-input-label {
+    color: #777777 !important;
+}
+.zg-form-text-input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    color: #222222;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 8px 10px;
+}
+body, input, textarea, select, button {
+    color: #222222;
+    font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+div[contentEditable], input, textarea, button, a:link {
+}
+.zg-medium-gray {
+    color: #999999;
+    font-size: 13px;
+}
+.zh-webshare-dialog .zg-form-text-input {
+    width: 90%;
+}
+.zg-form-text-input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    color: #222222;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 8px 10px;
+}
+.zg-editor-simple-wrap {
+    border: 1px solid #999999;
+    padding: 4px 4px 0;
+}
+
+element.style {
+    font-weight: normal;
+    white-space: pre;
+}
+textarea.zg-form-text-input, .zg-form-text-input > textarea {
+    border: 0 none;
+    color: #222222;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 !important;
+    min-height: 66px;
+    overflow: hidden;
+    padding: 0 !important;
+}
+.zg-editor-input {
+    border: 0 none;
+    font-weight: 400;
+    margin: 0;
+    min-height: 66px;
+    padding: 0;
+    width: 100%;
+}
+.zu-seamless-input-origin-element {
+    overflow: hidden;
+}
+body, input, textarea, select, button {
+    color: #222222;
+    font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+textarea {
+    border: 0 none;
+    outline: 0 none;
+    overflow: auto;
+    resize: none;
+}
+div[contentEditable], input, textarea, button, a:link {
+}
+
+element.style {
+    margin: 0 0 0 57px;
+}
+.zm-item-meta {
+    color: #999999;
+    margin: 5px 0;
+    position: relative;
+}
+.zg-left {
+    float: left;
+}
+div[contentEditable], input, textarea, button, a:link {
+}
+.zm-command-cancel {
+    cursor: pointer;
+    margin: 0 15px 0 0;
+}
+a {
+    color: #225599;
+    text-decoration: none;
+}
+
+.zm-command > .zg-btn-blue, .zm-command > .zg-btn-green, .zm-command > .zg-btn-white, .zm-command > .zg-btn-disabled {
+    vertical-align: baseline;
+}
+div[contentEditable], input, textarea, button, a:link {
+}
+.zg-btn-blue, .zg-btn-green, .zg-btn-white, a.follow {
+}
+.zg-btn-blue {
+    background: -moz-linear-gradient(center top , #1288D4, #0771C1) repeat-x scroll 0 0 #0E7FCC;
+    border: 1px solid #0D6EB8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.2);
+    color: #FFFFFF !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+.zg-btn-blue, .zg-btn-green, .zg-btn-red, .zg-btn-white, .zg-btn-disabled {
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none !important;
+    vertical-align: middle;
+}
+.zg-r3px {
+    border-radius: 3px 3px 3px 3px;
+}
+a {
+    color: #225599;
+    text-decoration: none;
+}

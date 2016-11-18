@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--文件标题为老审批单服务ID-->
+<root>
+	<!--根节点下的一级节点为新审批单服务ID-->
+	<OA_YY_YYSPD_RELATE>
+		<!--起草关联服务的扩展类，如果有特殊情况满足不了要求，则可以开发扩展类。不配置则使用默认类-->
+		<EXTEND_CLS>com.rh.oa.zh.serv.ToYyspdRelatedAppServCreator</EXTEND_CLS>
+		<!--字段映射，标签名为新服务字段名，标签的内容可以是老审批单的字段、系统变量、常量以及他们的组合值。-->
+		<ITEM_MAP>
+			<!--老服务字段名前后要加上#号，否则被认为是普通字符-->
+			<YY_TITLE>#GW_TITLE#</YY_TITLE>
+			<YY_TYPE>1</YY_TYPE>
+			<YY_ODEPT>@ODEPT_CODE@</YY_ODEPT>
+			<YY_PRINTUSER_ODEPT>#S_ODEPT#</YY_PRINTUSER_ODEPT>
+			<!--
+			<YY_SEALS>#GW_TITLE#</YY_SEALS>
+			<YY_SEALS_NAME>#GW_TITLE#</YY_SEALS_NAME>
+			<YY_DESCRIBE>##</YY_DESCRIBE>
+			<YY_MEMO>##</YY_MEMO>
+			<S_EMERGENCY>##</S_EMERGENCY>
+			-->
+		</ITEM_MAP>
+		<!--是否只复制文件条目信息，而不复制真实的文件，新条目信息的实体文件关联到老文件上。默认为即复制条目又复制文件-->
+		<COPY_FILE_LINK>true</COPY_FILE_LINK>
+		<!--文件类型映射，即老审批单的文件，到新审批单之后，变成什么类型。如果没有此项设置，则老审批单的文件类型不做更改地复制到新审批单中-->
+		<FILE_TYPE_MAP>
+			<!--标签名为老服务的文件类型名，大类型（FILE_CAT）和小类型(ITEM_CODE)用点分隔；标签值为新审批单类型，
+			大类型（FILE_CAT）和小类型(ITEM_CODE)用点分隔，没有小类型直接写大类-->
+			<!--<ZHENGWEN.ZHENGWEN>YY_PRI_FILE</ZHENGWEN.ZHENGWEN>-->
+			<FUJIAN>YY_PRI_FILE</FUJIAN>
+		</FILE_TYPE_MAP>
+		<!--哪些类型的文件允许，或不允许复制到新审批单中-->
+		<REQUIRED_FILE_TYPE>
+			<!--需要复制的文件类型名：大类型（FILE_CAT）和小类型(ITEM_CODE)用点分隔，多个类型之间使用英文逗号分隔；-->
+			<!--<INCLUDE>FUJIAN,ZHENGWEN.ZHENGWEN</INCLUDE> -->
+			<INCLUDE>FUJIAN</INCLUDE>
+			<!--<EXCLUDE>RELATE</EXCLUDE>-->
+		</REQUIRED_FILE_TYPE>
+	</OA_YY_YYSPD_RELATE>
+	
+	<!--根节点下的一级节点为新审批单服务ID-->
+	<OA_YY_YYSPD_SW_RELATE>
+		<!--起草关联服务的扩展类，如果有特殊情况满足不了要求，则可以开发扩展类。不配置则使用默认类-->
+		<EXTEND_CLS>com.rh.oa.zh.serv.ToYyspdRelatedAppServCreator</EXTEND_CLS>
+		<!--字段映射，标签名为新服务字段名，标签的内容可以是老审批单的字段、系统变量、常量以及他们的组合值。-->
+		<ITEM_MAP>
+			<!--老服务字段名前后要加上#号，否则被认为是普通字符-->
+			<YY_TITLE>#GW_TITLE#</YY_TITLE>
+			<YY_TYPE>2</YY_TYPE>
+			<YY_ODEPT>@ODEPT_CODE@</YY_ODEPT>
+			<YY_PRINTUSER_ODEPT>#S_ODEPT#</YY_PRINTUSER_ODEPT>
+			<!--
+			<YY_SEALS>#GW_TITLE#</YY_SEALS>
+			<YY_SEALS_NAME>#GW_TITLE#</YY_SEALS_NAME>
+			<YY_DESCRIBE>##</YY_DESCRIBE>
+			<YY_MEMO>##</YY_MEMO>
+			<S_EMERGENCY>##</S_EMERGENCY>
+			-->
+		</ITEM_MAP>
+		<!--是否只复制文件条目信息，而不复制真实的文件，新条目信息的实体文件关联到老文件上。默认为即复制条目又复制文件-->
+		<COPY_FILE_LINK>true</COPY_FILE_LINK>
+		<!--文件类型映射，即老审批单的文件，到新审批单之后，变成什么类型。如果没有此项设置，则老审批单的文件类型不做更改地复制到新审批单中-->
+		<FILE_TYPE_MAP>
+			<!--标签名为老服务的文件类型名，大类型（FILE_CAT）和小类型(ITEM_CODE)用点分隔；标签值为新审批单类型，
+			大类型（FILE_CAT）和小类型(ITEM_CODE)用点分隔，没有小类型直接写大类-->
+			<!--<ZHENGWEN.ZHENGWEN>YY_PRI_FILE</ZHENGWEN.ZHENGWEN>-->
+			<FUJIAN>FUJIAN</FUJIAN>
+		</FILE_TYPE_MAP>
+		<!--哪些类型的文件允许，或不允许复制到新审批单中-->
+		<REQUIRED_FILE_TYPE>
+			<!--需要复制的文件类型名：大类型（FILE_CAT）和小类型(ITEM_CODE)用点分隔，多个类型之间使用英文逗号分隔；-->
+			<!--<INCLUDE>FUJIAN,ZHENGWEN.ZHENGWEN</INCLUDE> -->
+			<INCLUDE>FUJIAN</INCLUDE>
+			<!--<EXCLUDE>RELATE</EXCLUDE>-->
+		</REQUIRED_FILE_TYPE>
+	</OA_YY_YYSPD_SW_RELATE>
+</root>

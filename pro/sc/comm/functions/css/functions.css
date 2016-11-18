@@ -1,0 +1,28 @@
+/* function.css */
+.functions-wrapper a{color:#08c;text-decoration:none}
+.functions-wrapper a:hover,.functions-wrapper a:focus{color:#005580;text-decoration:underline}
+.functions-wrapper{position:relative;width:100%;background-color:#fff}
+.functions-header{padding:2px 15px;border-bottom:1px solid #eee}
+.functions-header .title{display:block;padding:2px 15px;line-height:40px;font-weight:bold;font-size:18px}
+.functions-content{position:absolute;top:50%;left:50%;width:260px;height:100px;margin-top:-50px;margin-left:-130px;background-color:#fff}
+.functions-content .functions-item{float:left;text-align:center;margin:7px;position:relative;}
+.functions-content .functions-item span{display:block;max-width:70px;color:#9da0a4;overflow:hidden;white-space:nowrap;text-overflow:clip}
+.functions-content .functions-item span:hover{color:#333}
+.functions-thumbnail{display:block;text-align:center}
+a.functions-thumbnail:hover,
+a.functions-thumbnail:focus{text-decoration:none;}
+.functions-thumbnail img{padding:6px;background-color:#fff;}
+.functions-thumbnail img:hover,.functions-thumbnail img:focus{filter: alpha(opacity=50);opacity: .5;}
+.functions-thumbnail span{display:block;color:#9da0a4}
+.new-icon{
+	display: block;
+	width: 13px;
+	height:13px;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	background-color: #F00;
+	border-radius: 15px;
+	border: 3px solid #FFF;
+	cursor: pointer;
+}

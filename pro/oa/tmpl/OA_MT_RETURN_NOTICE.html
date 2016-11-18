@@ -1,0 +1,36 @@
+<style>
+	.mt_return_table td,.mt_return_title_table td{  padding: 3px 6px 3px 5px;}
+	.mt_return_table{ border:2px #FF0000 solid; width:100%;}
+	.mt_return_title_table{margin-bottom: 20px;}
+	.mt_return_left_td,.mt_return_right_td{ border:1px #FF0000 solid; color:#FF0000;}
+	.mt_return_left_td{ text-align:center;}
+	#mt_return_memo{ height:56px;}
+</style>
+<div class="tmpl_container" align="center">
+		<div style="margin: 0px 70px 0px 70px">
+			<table class="gwHeaderTable">
+			  <tr>
+	    		<td colspan="2" class='gwHeader rh-item-redHead' code="title" align="center"></td>
+	  		  </tr>
+			</table>
+			<table class="mt_return_table" cellspacing="0">
+			  <tr>
+				<td width="10%" class="mt_return_left_td"><p>本&nbsp;&nbsp;&nbsp;&nbsp;人</p><p>是否参加</p></td>
+				<td width="90%" class="rh-item" code='STATUS' align="left"></td>
+		  	  </tr>
+			  <tr>
+			    <td class="mt_return_left_td">会议名称</td>
+			    <td class="mt_return_right_td rh-item" code="MEETING_ID"></td>
+			  </tr>
+			  <tr>
+			    <td class="mt_return_left_td"><p>邀请其他</p><p>与会人员</p></td>
+			    <td class="mt_return_right_td rh-item" code="USER_CODES"></td>
+			  </tr>
+			  <tr>
+			    <td class="mt_return_left_td" id="mt_return_memo">说&nbsp;&nbsp;&nbsp;&nbsp;明</td>
+			    <td class="mt_return_right_td rh-item" code="MEMO"></td>
+			  </tr>
+			</table>
+		</div>
+	<div style="height:40px"></div>
+</div>

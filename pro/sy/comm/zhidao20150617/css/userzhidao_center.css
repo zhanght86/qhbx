@@ -1,0 +1,926 @@
+
+body{
+	padding-top: 48px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+ 
+body, input, textarea, select, button {
+	font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+	line-height: 1.7;
+	font-size: 13px;
+	padding: 0;
+	margin: 0;
+	color: #222;
+	word-wrap: break-word;
+	background-color: #FFF;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: 700;
+	font-size: 14px;
+	outline: 0;
+	margin: 0
+}
+i, em {
+	font-style: italic
+}
+ 
+a {
+	color: #259;
+	text-decoration: none
+}
+ 
+.placeholder-hilight::-webkit-input-placeholder, 
+.placeholder-hilight::-moz-input-placeholder .placeholder-hilight::input-placeholder {
+	color:#A02313!important
+}
+a:link {
+	-webkit-tap-highlight-color: rgba(225,225,225,.5)
+}
+a:hover {
+	text-decoration: underline
+}
+html.touch a:hover {
+	text-decoration: none
+}
+a:active {
+	outline: 0
+}
+a.external {
+	margin: 0 4px 0 0;
+	white-space: nowrap
+}
+a.external.wrap {
+	white-space: normal
+}
+a.external>.icon-external {
+	margin-left: 4px
+}
+a>.ellipsis:after {
+	content: '...'
+}
+a>.invisible {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0
+}
+small {
+	font-size: 12px
+}
+input[type=text]:focus, 
+input[type=password]:focus, 
+textarea:focus {
+	outline: 0
+}
+input[type=text], 
+input[type=password]:focus {
+	-webkit-appearance: none
+}
+textarea {
+	border: 0;
+	border: 0;
+	-moz-outline: 0;
+	outline: 0;
+	overflow: auto;
+	resize: none;
+	-webkit-appearance: none
+}
+img {
+	border: 0 none
+}
+.modal-dialog, div[contentEditable] {
+	outline: 0;
+	-moz-outline: 0
+}
+ul, ol, li, p {
+	padding: 0;
+	margin: 0
+}
+/***************************************/
+.zd-wrapper {
+	width: 960px;
+	margin: 20px auto;
+	
+}
+.zd-content{
+	float: left;
+	width: 100%;
+}
+.zd-main-content-inner {
+	margin: 0 328px 0 0;
+}
+.zd-profile-header {
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	box-shadow: 0 1px 0 #F2F4F5;
+	color: #666;
+}
+.zd-profile-header .zd-profile-header-user-describe .item .topic-link:hover {
+	color: #259;
+}
+.zd-profile-header .zd-profile-header-user-describe .item .topic-link {
+	color: #666;
+}
+.zd-profile-header-main {
+	padding: 12px 18px;
+}
+.zd-profile-header-name{
+	font-size: 18px;
+	padding: 0;
+	margin-bottom: 10px;
+	height: 31px;
+	font-weight: 700;
+	color: #222;
+}
+.zd-profile-header-img-wrapper{
+	float: left;
+	position: relative;
+}
+ 
+.zd-profile-header-img {
+	border-radius: 4px;
+	vertical-align: middle;
+}
+.zd-avatar-big {
+	width: 100px;
+	height: 100px;
+	border: 0 none;
+	border-radius: 4px;
+}
+.zd-profile-header-info{
+	margin-left: 115px;
+}
+.zd-profile-header-user-describe{
+
+}
+.zd-profile-header .items {
+	position: relative;
+	min-height: 22px;
+}
+.zd-icon,.zd-profile-header-icon,.zd-profile-section-more-btn{
+	width: 16px;
+	height: 16px;
+	background-image: url("/sy/comm/zhidao/zhihu_style_files/sprites-1.8.2.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+}
+.zd-profile-header .zd-profile-header-user-describe .item .zd-icon.location {
+	background-position: -60px -110px;
+	width: 10px;
+	height: 13px;
+	margin-left: 3px;
+	margin-right: 7px;
+	vertical-align: -1px;
+}
+.zd-profile-header .editable-group .info-wrap .item+.item {
+	border-left: 1px solid #EEE;
+	margin-left: 6px;
+	padding-left: 10px;
+}
+.zd-profile-header .zd-profile-header-user-describe .item+.item {
+	margin-top: 6px;
+}
+.zd-profile-header .zd-profile-header-user-describe .item .zd-icon.male {
+	background-position: -145px -111px;
+	width: 12px;
+	height: 12px;
+	vertical-align: -2px;
+	margin-left: 2px;
+}
+.zd-profile-header .zd-profile-header-user-describe .item .zd-icon.female {
+	background-position: -130px -110px;
+	width: 10px;
+	height: 14px;
+	vertical-align: -2px;
+	margin-left: 3px;
+}
+.zd-profile-header .zd-profile-header-user-describe .item .zd-icon.education {
+	background-position: -111px -112px;
+	width: 16px;
+	height: 12px;
+	margin-right: 4px;
+	vertical-align: -2px;
+}
+.zd-profile-header-user-describe a:hover {
+	color: #259;
+	text-decoration: none;
+}
+.zd-profile-header .zd-profile-header-user-detail {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.zd-profile-header-user-detail .zd-profile-header-icon {
+	background-position: -160px -110px;
+}
+.zd-link-litblue, .zd-link-litblue-normal {
+	color: #698EBF;
+	font-weight: 400;
+}
+
+.zd-profile-header-description {
+	overflow: hidden;
+	position: relative;
+	padding: 12px 15px 0 0;
+	border-top: 1px dotted #EEE;
+	margin: 10px -18px 0 0;
+}
+
+.zd-profile-header-operation {
+	padding: 12px 18px;
+	border-top: 1px dotted #EEE;
+}
+.zd-profile-header-operation .zd-profile-header-info-list {
+	padding-top: 3px;
+}
+.zd-profile-header-info-list {
+	float: left;
+}
+.zd-profile-header-info-title {
+	margin-right: 5px;
+}
+
+.zd-profile-header-user-agree {
+	margin-right: 5px;
+}
+.zd-profile-header-icon {
+	vertical-align: -2px;
+	width: 15px;
+	height: 14px;
+	margin-right: 2px;
+}
+.zd-profile-header-user-agree .zd-profile-header-icon {
+	background-position: -123px -148px;
+}
+
+.zd-profile-header-user-thanks .zd-profile-header-icon {
+	background-position: -140px -146px;
+}
+.zd-profile-header-user-share .zd-profile-header-icon {
+	background-position: -155px -146px;
+}
+.zd-profile-header-info-list .zd-profile-header-icon {
+	margin-right: 6px;
+}
+.zd-profile-header .zd-profile-header-op-btns {
+	float: right;
+}
+
+.zd-profile-header .zd-profile-header-op-btns a {
+	display: inline-block;
+	float: left;
+}
+.zd-rich-follow-btn {
+	height: 20px;
+	padding: 4px 5px 1px;
+	font-size: 13px;
+	white-space: nowrap;
+}
+.zd-btn-follow {
+	background: #8AB923;
+	background-color: #9DCC4A;
+	background-image: -moz-linear-gradient(top,#ADDA4D,#86B846);
+	background-image: -ms-linear-gradient(top,#ADDA4D,#86B846);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#ADDA4D),to(#86B846));
+	background-image: -webkit-linear-gradient(top,#ADDA4D,#86B846);
+	background-image: -o-linear-gradient(top,#ADDA4D,#86B846);
+	background-image: linear-gradient(top,#ADDA4D,#86B846);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#adda4d', endColorstr='#86b846', GradientType=0);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+	border: 1px solid #6D8F29;
+	color: #3E5E00!important;
+	min-width: 56px;
+	width: auto;
+	_width: 56px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset,0 1px 0 rgba(0, 0, 0, .2);
+}
+.zd-btn {
+	display: block;
+	text-align: center;
+	min-width: 56px;
+	font-size: 12px;
+	text-decoration: none!important;
+	padding: 1px;
+	font-weight: 400;
+	line-height: 18px;
+	border-radius: 3px;
+}
+.zd-btn-unfollow, .zd-btn-disabled {
+	background: #EEE;
+	color: #888;
+	border: 1px solid #DDD;
+}
+.zd-profile-header .zd-profile-header-op-btns a {
+	display: inline-block;
+	float: left;
+}
+.zd-btn-white {
+	background: #F8F8F9;
+	background-color: #F1F1F2;
+	background-image: -moz-linear-gradient(top,#F8F8F9,#E6E6E8);
+	background-image: -ms-linear-gradient(top,#F8F8F9,#E6E6E8);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#F8F8F9),to(#E6E6E8));
+	background-image: -webkit-linear-gradient(top,#F8F8F9,#E6E6E8);
+	background-image: -o-linear-gradient(top,#F8F8F9,#E6E6E8);
+	background-image: linear-gradient(top,#F8F8F9,#E6E6E8);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f9', endColorstr='#e6e6e8', GradientType=0);
+	text-shadow: 0 1px 0 #FFF;
+	border: 1px solid #BBB;
+	color: #666!important;
+	box-shadow: 0 1px 0 #FFF inset,0 1px 0 rgba(0, 0, 0, .1);
+}
+.zd-btn-white {
+	font-size: 14px;
+	line-height: 1.7;
+	text-decoration: none!important;
+	vertical-align: middle;
+	display: inline-block;
+	_display: inline!important;
+	text-align: center;
+	padding: 4px 10px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.zd-profile-header .navbar {
+	background-color: #FCFCFC;
+	border-top: 1px solid #DDD;
+	-webkit-box-shadow: 0 2px 2px #F0F0F0 inset;
+	-moz-box-shadow: 0 2px 2px #f0f0f0 inset;
+	-o-box-shadow: 0 2px 2px #f0f0f0 inset;
+	box-shadow: 0 2px 2px #F0F0F0 inset;
+	border-radius: 0 0 4px 4px;
+}
+.zd-profile-header .navbar .item.active {
+	color: #222;
+	background-color: #F7F7F7;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+	box-shadow: 0 2px 2px #F0F0F0 inset;
+}
+
+.zd-profile-header .navbar .item {
+	float: left;
+	font-weight: 700;
+	color: #666;
+	text-align: center;
+	font-size: 14px;
+	padding: 12px 24px;
+	text-decoration: none;
+	min-width: 30px;
+	line-height: 22px;
+}
+
+.skilled-topics {
+	overflow: hidden;
+}
+
+.zd-profile-section-wrap {
+	margin-top: 25px;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	box-shadow: 0 1px 0 #F2F4F5;
+}
+.zd-profile-section-head {
+	padding: 0;
+}
+.zd-profile-section-head {
+	overflow: hidden;
+	padding: 7px 14px;
+	border-bottom: 1px solid #EEE;
+}
+.zd-profile-section-title {
+	overflow: hidden;
+	display: block;
+	text-decoration: none;
+	padding: 7px 14px;
+}
+.zd-profile-section-name {
+	float: left;
+	font-size: 14px;
+	font-weight: 700;
+	color: #666;
+}
+.skilled-topics .inner {
+	margin: 0 -10px -1px 0;
+	overflow: hidden;
+}
+
+.skilled-topics .zd-profile-section-list {
+	padding: 0;
+}
+
+.zd-profile-section-wrap.skilled-topics .item {
+	text-decoration: none;
+	cursor: pointer;
+}
+.skilled-topics .item .avatar {
+	float: left;
+	padding: 4px;
+	border: 1px solid #DDD;
+	border-radius: 36px;
+	height: 50px;
+	width: 50px;
+	background: #FFF;
+}
+.skilled-topics .item {
+	min-height: 60px;
+	width: 275px;
+	float: left;
+	padding: 12px 20px;
+	border-right: 1px dotted #DDD;
+	border-bottom: 1px dotted #DDD;
+}
+.skilled-topics .item .avatar img {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+.skilled-topics .item .arrow {
+	background-position: -266px -164px;
+	width: 9px;
+	height: 13px;
+	position: absolute;
+	right: 14px;
+	top: 50%;
+	margin-top: -7px;
+	text-indent: -9999px;
+	display: none;
+}
+.skilled-topics .item .content {
+	margin-left: 74px;
+	height: 61px;
+	display: table;
+}
+.skilled-topics .item .content .content-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+.zd-profile-section-wrap.skilled-topics .item {
+	cursor: pointer;
+}
+.skilled-topics .item .content .content-inner h3, 
+.skilled-topics .item .content .content-inner p, 
+{
+	line-height: 20px;
+}
+.skilled-topics .item .content .meta {
+	color: #999;
+}
+.skilled-topics .item .content .meta .zd-icon.vote {
+	background-position: -125px -148px;
+	width: 11px;
+	height: 12px;
+	vertical-align: 0;
+}
+.skilled-topics .item .content .meta .zd-icon.comment {
+	background-position: -77px -111px;
+	width: 10px;
+	height: 11px;
+}
+.skilled-topics .item .content .meta .zd-icon {
+	width: 13px;
+	height: 13px;
+	margin-right: 5px;
+}
+.skilled-topics .item .content .meta span+span{
+	margin-left: 6px;
+}
+
+.zd-profile-section-wrap {
+	margin-top: 25px;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	box-shadow: 0 1px 0 #F2F4F5;
+}
+.zd-profile-section-head {
+	padding: 0;
+}
+.zd-profile-section-title:hover .zd-profile-section-name {
+	color: #259;
+}
+.zd-profile-section-title:hover .zd-profile-section-more-btn {
+	background-position: -260px -184px;
+}
+.zd-profile-section-title {
+	overflow: hidden;
+	display: block;
+	text-decoration: none;
+	padding: 7px 14px;
+}
+
+.zd-profile-section-name {
+	float: left;
+	font-size: 14px;
+	font-weight: 700;
+	color: #666;
+}
+.zd-profile-section-more-btn {
+	width: 15px;
+	height: 15px;
+	margin: 3px 0 5px 5px;
+	background-position: -260px -162px;
+}
+
+.zd-right {
+	float: right;
+}
+.zd-prev, .zd-next{
+	color:#DDD;
+	font-size: 24px;
+	font-weight:bold;
+	line-height: 25px;
+	text-align: center;
+	text-decoration: none;
+}
+.zd-prev:hover, .zd-next:hover{
+	color:#888;
+}
+.zd-disabled:hover{
+	color:#DDDDDD;
+}
+.zd-prev{
+	margin-right:10px;
+	display:none;
+}
+
+.zd-profile-section-list {
+	padding: 0 14px;
+}
+.zd-profile-section-item {
+	position: relative;
+	padding: 12px 0;
+}
+.zd-item-meta>a {
+	color: #999;
+	display: inline-block;
+}
+.meta-item:hover {
+	color: #698EBF;
+}
+.zd-profile-vote-count {
+	float: left;
+	color: #259;
+	text-decoration: none;
+	text-align: center;
+	height: 38px;
+	width: 46px;
+	line-height: 20px;
+	font-size: 12px;
+	font-weight: 700;
+	border-radius: 4px;
+	background: #E7F3F9;
+	font-size: 13px;
+	-webkit-text-size-adjust: none;
+	padding: 2px;
+}
+.zd-profile-vote-num {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1;
+	padding: 2px 0 4px;
+}
+.zd-profile-vote-type {
+	line-height: 1;
+	font-weight: 400;
+	font-size: 12px;
+}	
+.zd-profile-section-main {
+	margin-left: 60px;
+}
+.zd-profile-ask-wrap .zd-profile-vote-count {
+	background-color: #DDD;
+	color: #666;
+}
+.zd-profile-ask-wrap .zd-profile-vote-count {
+	color: #666;
+}
+.zd-gray {
+	color: #999;
+	font-size: 12px;
+	font-weight: 400;
+}
+.zd-follow {
+	color: #698EBF;
+}
+.zd-unfollow {
+	color: #999;
+}
+.zd-follow:hover {
+	color: #259;
+}
+.zd-unfollow>.z-icon-follow {
+	display: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.z-icon-follow {
+	width: 8px;
+	height: 9px;
+	background-position: -97px -23px;
+}
+i[class^=z-icon-]{
+	display: inline-block;
+	line-height: 10px;
+	vertical-align: 0;
+	background-image: url("/sy/comm/zhidao/zhihu_style_files/sprites-1.8.2.png");
+	background-repeat: no-repeat;
+	margin-right: 5px;
+}
+.z-icon-fold {
+	width: 8px;
+	height: 9px;
+	background-position: -135px -22px;
+}
+.meta-item:hover .z-icon-follow {
+	background-position: -97px -38px;
+}
+.meta-item:hover .z-icon-fold {
+	background-position: -135px -37px;
+}
+.meta-item:hover {
+	color: #698EBF;
+}
+.zd-item-meta .collapse {
+	display: none;
+	float: right;
+}
+.zd-item-expanded a.collapse {
+	display: block;
+}
+.zd-full-content{
+	display:none;
+}
+.zd-item-expanded .zd-full-content{
+	display:block;
+}
+.zd-item-expanded .zd-summary{
+	display:none;
+}
+.zd-profile-section-main.zd-profile-section-activity-main {
+	margin: 0;
+	color: #999;
+}
+.zd-profile-section-main.zd-profile-section-activity-main .zd-link {
+	color: #999;
+}
+.zd-link {
+	cursor: pointer;
+	text-decoration: none;
+}
+.zd-profile-section-main.zd-profile-section-activity-main .question_link {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+}
+.zd-profile-section-main.zd-profile-section-activity-main .category_link {
+	display: inline;
+	font-size: 14px;
+	font-weight: 700;
+}
+.zd-profile-section-main.zd-profile-section-activity-main .pic{
+	margin-right: 5px;
+	border-radius: 2px;
+	vertical-align: -7px;
+	height: 25px;
+	width: 25px;
+	border: 0 none;
+	border-radius: 2px;
+}
+.zd-item-answer .zd-item-vote{
+	display: block;
+}
+.zd-profile-section-main.zd-profile-section-activity-main {
+	margin: 0;
+	color: #999;
+} 
+.zd-profile-activity-page-item-main+.zd-item-answer {
+	padding-top: 5px;
+}
+.zd-profile-section-item+.zd-profile-section-item {
+	border-top: 1px dotted #EEE;
+}
+.zd-profile-section-list .zd-item {
+	padding: 10px 0;
+}
+.zd-item-answer, .zd-item {
+	position: relative;
+	padding: 0;
+	outline: 0;
+}
+.zd-item-answer {
+	margin-left: 32px;
+}
+.zd-item-vote {
+	position: absolute;
+	left: -32px;
+}
+.zd-item-answer .zd-item-vote{
+	display: block;
+}
+.zd-item-vote-count:hover {
+	text-decoration: none;
+	background: #698EBF;
+	color: #FFF;
+}
+.zd-item-vote-count {
+	display: block;
+	color: #698EBF;
+	height: 22px;
+	width: 22px;
+	border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+	background: #E7F3F9;
+	font-weight: 700;
+	font-weight: 500;
+	line-height: 22px;
+	text-align: center;
+	text-decoration: none;
+	overflow: hidden;
+	font-size: 11px;
+	-webkit-text-size-adjust: none;
+}
+.zd-item-answer .answer-head {
+	min-height: 25px;
+}
+.zd-item-answer-author-wrap {
+	margin: 0 0 1px;
+	font-size: 13px;
+}
+.zd-profile-section-item .zd-item-link-avatar {
+	float: left;
+}
+
+.zd-list-avatar {
+	float: left;
+	height: 25px;
+	width: 25px;
+	border: 0 none;
+	border-radius: 2px;
+}
+
+.zd-item-answer-author-wrap {
+	margin: 0 0 1px;
+	font-size: 13px;
+}
+.zd-item-answer-author-wrap {
+	font-size: 13px;
+}
+
+
+.zd-btn-more {
+	display: block;
+	font-size: 13px;
+	margin: 20px 0;
+	padding: 5px 1px;
+	height: 22px;
+}
+.zd-btn-more-disabled{
+	background: none;
+	color: #666!important;
+	border:none;
+	box-shadow:none;
+}
+/*************************************/
+.zd-main-sidebar {
+	float: left;
+	margin: 0 0 0 -270px;
+	width: 270px;
+}
+
+.zd-profile-side-following {
+	border-bottom: 1px solid #EEE;
+	margin-bottom: 15px;
+}
+
+.zd-profile-side-following .item {
+	float: left;
+	text-decoration: none;
+	padding: 2px 30px 8px 0;
+}
+.zd-profile-side-following .item strong {
+	font-size: 16px;
+	font-weight: 700;
+	color: #666;
+}
+.zd-profile-side-following .item+.item {
+	padding-left: 20px;
+	border-left: 1px solid #EEE;
+}
+.zd-profile-side-following .item:hover span,
+.zd-profile-side-following .item:hover strong, 
+.zd-profile-side-following .item:hover label {
+	color: #259!important;
+}
+.zd-gray-normal {
+	color: #999;
+	font-weight: 400;
+}
+
+.zd-profile-side-section {
+	padding: 2px 0;
+}
+.zd-profile-side-section-title {
+	font-size: 14px;
+	font-weight: 700;
+	color: #666;
+	padding-bottom: 10px;
+	padding-top: 0;
+	line-height: 1;
+	white-space: nowrap;
+	display: inline-block;
+}
+.zd-profile-side-section-title .zd-link-litblue {
+	font-size: 14px;
+}
+
+.zd-profile-side-section-title .zd-link-litblue {
+	font-size: 14px;
+}
+
+.zd-list-avatar-link {
+	float: left;
+	margin-right:15px;
+	color:#888;
+}
+.zd-list-avatar-medium.zd-profile-side-topic-avatar {
+	height: 34px;
+	width: 34px;
+	margin: 0 4px 0 0;
+	border-radius: 3px;
+}
+
+.zd-profile-side-section+.zd-profile-side-section {
+	padding-top: 15px;
+	margin-top: 15px;
+	border-top: 1px solid #EEE;
+}
+
+.zd-user{
+	cursor: pointer;
+}
+.clearfix:before,
+.clearfix:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after{
+  clear: both;
+}
+.clearfix{
+  zoom: 1;
+}
+
+.zm-profile-section-more-btn {
+    background-position: -260px -162px;
+    height: 15px;
+    margin: 3px 0 5px 5px;
+    width: 15px;
+}
+.icon, .tr-icon, .tr-inline-icon, .goog-option-selected .goog-menuitem-checkbox, .zu-edit-button-icon, .zu-top-live-icon, .zh-global-backtotop, .zh-hovercard-arrow, .modal-dialog-title-close, .icon-external, .zg-icon, .zm-profile-icon, .zm-profile-header-icon, .icon-info, .icon-green-check, .icon-big-arrow-left, .icon-big-arrow-right, .icon-weibo-corner, .icon-big-white-sina, .icon-big-white-mail {
+    background-image: url("/sy/comm/zhidao/zhihu_style_files/sprites-1.8.2.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+.zg-right {
+    float: right;
+}
+i, em {
+    font-style: italic;
+}
+.zm-profile-section-title:hover {
+    background-position: -260px -184px;
+}
+.li-css{
+	display:inline-block; 
+	width:85px;
+	/*width:auto;
+	margin-right:10px;*/
+}
+.css-follow-user-img{
+	float: left;
+    height: 25px;
+    margin: 3px 25px 0 0;
+    width: 25px;
+}
+.css-follow-user{
+	border-radius: 2px 2px 2px 2px;
+    height: 25px;
+    width: 25px;
+}

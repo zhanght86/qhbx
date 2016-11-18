@@ -1,0 +1,92 @@
+<style type="text/css">
+table td{font-size:15px;line-height:40px;border:1px solid #ccc;padding:0 10px;}
+</style>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	<#list list as seal>
+	var imgArr = "${seal.SEAL_IMG_MODEL}".split(",");
+	var img = jQuery("#${seal.SEAL_ID} .seal_img");
+	if (imgArr.join(",")) {
+		img.attr("src","/file/"+imgArr[0]);
+		img.parent("td").width(img.width()).height(img.height());
+	}
+	if (img.height() == 0) {
+		img.parent("td").css({"height":"160px","width":"0"});
+	}
+	</#list>
+	
+	jQuery(".page").each(function(i,n){
+		if (i > 0) {
+			jQuery(n).css({"page-break-before":"always"});
+		}
+		jQuery(n).find("div._blank").height((842-jQuery(n).find("table:first").height())/2);
+	});
+});
+</script>
+<#list list as seal>
+<div class="page">
+<div style="height:80px;background:white;" class="_blank"></div>
+<table style="background:white;width:100%;" id="${seal.SEAL_ID}">
+	<tr>
+		<td class="seal_title" width="100%" height="60" colspan="2" style="text-align:center;font-size:26px;font-weight:bold;">实物印章交接单</td>
+	</tr>
+	<tr>
+		<td width="50%">
+			印章交出单位：${oDeptName}
+		</td>
+		<td width="50%">
+			印章接收单位：${seal.OWN_ODEPT_CODE__NAME}
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" colspan="2">
+			交接时间：${time}
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" colspan="2">
+			印章名称：${seal.SEAL_TRUE_NAME}
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0;" colspan="2">
+			<table style="width:100%;border:0;padding:0;">
+				<tr>
+					<td style="padding:0;border:0">
+						<div style="height:1px;border-bottom:1px dashed #aaa;"></div>
+					</td>
+					<td style="padding:0;border:0;">
+						<img class="seal_img" style="max-height:200px;">
+					</td>
+					<td style="padding:0;border:0">
+						<div style="height:1px;border-bottom:1px dashed #aaa;"></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="seal_title" width="100%" height="60" colspan="2" style="text-align:center;font-size:26px;font-weight:bold;">实物印章交接单</td>
+	</tr>
+	<tr>
+		<td width="50%">
+			印章交出单位：${oDeptName}
+		</td>
+		<td width="50%">
+			印章接收单位：${seal.OWN_ODEPT_CODE__NAME}
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" colspan="2">
+			交接时间：${time}
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" colspan="2">
+			印章名称：${seal.SEAL_TRUE_NAME}
+		</td>
+	</tr>
+</table>
+<div style="height:80px;background:white;" class="_blank"></div>
+</div>
+</#list>

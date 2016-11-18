@@ -1,0 +1,117 @@
+.doc {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 1px transparent;
+    width: 40px;
+    height: :40px;
+}
+.docx {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 1px transparent;
+}
+.ppt {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -79px transparent;
+}
+.pptx {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -79px transparent;
+}
+.xls {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -159px transparent;
+}
+.xlsx {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -159px transparent;
+}
+.vsd {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -239px transparent;
+}
+.pot {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -319px transparent;
+}
+.pps {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -399px transparent;
+}
+.rtf {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -479px transparent;
+}
+.wps {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -559px transparent;
+}
+.et {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -639px transparent;
+}
+.dps {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -719px transparent;
+}
+.pdf {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -799px transparent;
+}
+.txt {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -879px transparent;
+}
+.epub {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -960px transparent;
+}
+.mp3{
+	 background: url("/sy/comm/wenku/img/b_2.png") no-repeat scroll 0 -123px transparent;
+}
+.flv{
+	background: url("/sy/comm/wenku/img/b_2.png") no-repeat scroll 0 -281px transparent;
+}
+
+.container{
+	margin:10px auto;
+	width:80%;
+}
+.container .box{
+	border:1px #CBDFD6 solid;
+	height:216px;
+}
+.box .title{
+	background:#E9F7F1;
+	height:42px;
+	vertical-align:middle;
+	padding:20px 0 0 20px;
+	border-bottom:1px #A2BEB2 solid;
+	font-weight:bold;
+}
+.box .left{
+	float:left;
+	width:70%;
+	height:102px;
+	vertical-align:middle;
+	padding-top:50px;
+}
+.box .left div.img{
+	width:211px;
+	height:45px;
+	margin:0 auto;
+	background:url(/sy/comm/wenku/img/upload_1.jpg) no-repeat;
+	cursor:pointer;
+}
+.box .left div.img:hover{
+	background:url(/sy/comm/wenku/img/upload_2.jpg) no-repeat;
+}
+.box .right{
+	float:left;
+	width:30%;
+	height:132px;
+	background:#FAFDFC;
+	font-size:14px;
+	padding-top:20px;
+}
+.box .right div{
+	margin-left:20px;
+}
+.container .know{
+	color:#999;
+}
+.know ul li{
+	list-style:square;
+	font-size:15px;
+	margin-bottom:10px;
+}
+.know ul li ul li{
+	list-style:none;
+}
+.know .title{
+	font-weight:bold;
+	margin-top:10px;
+	font-size:14px;
+}

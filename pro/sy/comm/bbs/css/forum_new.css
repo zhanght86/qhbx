@@ -1,0 +1,237 @@
+.stretch,
+.clear {
+    clear:both; 
+    height:1px; 
+    margin:0; 
+    padding:0; 
+    font-size: 15px;
+    line-height: 1px;
+}
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearfix {display: inline-table;}
+* html .clearfix {
+    height:1%;
+}
+*+html .clearfix {
+    height:1%;
+}
+.clearfix {
+    display:block;
+}
+
+
+
+
+body {
+  text-align: left;
+  font-family: Helvetica, Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: black;
+}
+
+img {
+  border: 0;
+}
+
+
+strong, b {
+  font-weight: bold;
+}
+
+dl {
+  margin: 0 0 1.5em 0;
+  padding: 0;
+  line-height: 1.4em;
+}
+dl dt {
+  margin: 0.25em 0 0.25em 0;
+  padding: 0;
+}
+dl dd {
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+td {
+  font-size: 1em;
+}
+
+div#content {
+  position: relative;
+  z-index: 0;
+  width: 701px;
+  margin: 35px auto 20px auto;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+html,body{background: #e8eff7;}
+div#page {
+  width: 98%;
+  margin:  0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+div#header {
+  padding: 0;
+  margin: 0;
+  color: white;
+  background-color: white;
+}
+
+div#content {
+
+}
+
+a {
+    color: #006699;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+a.underline, .underline a { text-decoration: underline; }
+
+.bbs_fath{ padding:1px;}
+.bbs_fath .con{display:block; *display:inline-block; padding:15px 0 10px 12px; _padding:15px 0 10px 6px;}
+.bbs_fath .con:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.bbs_fath h2{height:34px; margin:0; padding:0 10px; color:#666; font-size:14px; line-height:34px;font-weight:bold;}
+.bbs_fath h2 span{height: 34px; display: inline-block;}
+.bbs_fath h2 img{vertical-align:baseline;}
+.bbs_fath h2 .title{margin:0 20px 0 0;}
+.bbs_fath h2 .amount{float:right; _margin:9px 0 0 0; font-size:12px; font-weight:normal;color:#005e96;}
+.bbs_fath h2 .amount  img{margin:0 0 0 10px; vertical-align:middle;}
+.bbs_fath h2 .last_topic{font-size:12px; font-weight:normal;}
+.bbs_fath h2 .last_topic a{ text-decoration:underline;}
+.bbs_fath .bbs_son{float:left; width:215px; height:57px; overflow:hidden; margin:5px 8px 9px 6px; border:solid 1px #d8e6f0; background:#fff;}
+.bbs_fath .bbs_son:after{}
+.bbs_fath .bbs_son.active,
+.bbs_fath .bbs_son:hover{width:215px; height:57px; overflow:hidden; margin:0 3px 4px 1px; padding:6px; border:none; background:url(/sy/comm/bbs/img/bbs_hover_bg.png) no-repeat 0 0; cursor:pointer;}
+.bbs_fath .bbs_son:hover a {color: #BC2A4D;}
+.bbs_fath .bbs_son dt{float:left; width:32px; height:32px; overflow:hidden; margin:0; padding:10px;}
+.bbs_fath .bbs_son dt img{width:32px; height:32px;}
+.bbs_fath .bbs_son dd{float:left; width:150px; overflow:hidden; margin:0; padding:8px 10px 8px 0; color:#666; line-height:20px;}
+.bbs_fath .bbs_son dd strong{display:block; font-size:14px;}
+
+.bbs_fath .tags{clear:both; padding:0 10px;}
+.bbs_fath .tags a{margin:0 20px 0 0; text-decoration:underline;}
+.bbs_fath .tags a.active{color: #FF6600; font-weight: bold;}
+.bbs_fath .bbs_son.active a {color: #FF6600;}
+.postbody #topic_tags {display: inline-block; width: 790px;}
+.postbody #topic_tags a,
+.bbs_fath h2 a.last_post {text-decoration: none;}
+#forum_action a {margin-right: 10px;}
+
+.current-page{
+	line-height: 25px;
+	float:left;
+	font-weight: bold;
+	color: #fff;
+	border:1px #5a82bd solid;
+	padding: 0 8px;
+	display: inline;
+	background: #a0bedb url(/sy/comm/bbs/img/pagination_bg_current.png) no-repeat 100% 100%;
+	white-space: nowrap;
+	webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.normal-page{
+	line-height: 25px;
+	float:left;
+	margin-left:3px;
+	font-weight: bold;
+	color: #3767af;
+	border:1px #fff solid;
+	padding: 0 8px;
+	display: inline;
+	background: #fff url(/sy/comm/bbs/img/pagination_bg.png) no-repeat 100% 100%;
+	white-space: nowrap;
+	webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.normal-page:hover{
+	border:1px #5a82bd solid;
+	text-decoration: none;
+}
+.current-page:hover{
+	border:1px #5a82bd solid;
+	text-decoration: none;
+}
+.page-span{
+
+	line-height: 25px;
+	float: left;
+	display: inline;
+	margin-left: 4px;
+	background: #fff url(/sy/comm/bbs/img/pagination_bg.png) no-repeat 100% 100%;
+	white-space: nowrap;
+	border-radius: 3px;
+	box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+	border: 1px solid #ccc;
+	
+}
+.page-span a{
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-left: 1px solid #ccc;
+	width: 28px;
+	text-align: center;
+	color: #666;
+	background:url(/sy/comm/bbs/img/page_jumper.png) repeat-x;
+	text-shadow: 0 1px 0 #fff;
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+	
+}
+.page-span:hover{
+	border:1px #5a82bd solid;
+	text-decoration: none;
+}
+.page-input{
+	float: left;
+	width: 35px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	padding: 0;
+	border: 1px #b4b4b4;
+	background: transparent;
+
+}
+
+table{
+	text-align:center;
+}
+table .t{
+	background:#efefef;
+    color: #666666;
+    font-size: 14px;
+	font-weight:bold;
+    height: 34px;
+    line-height: 34px;
+	text-align:center;
+}
+table tbody tr td{
+	border-bottom:1px #ccc solid;
+	height:40px;
+	vertical-align:middle;
+}

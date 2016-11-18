@@ -1,0 +1,245 @@
+.aside {
+	width: 250px;
+	margin-left: 40px
+}
+
+.ui-nav {
+	background: 0
+}
+
+.nav-wrap {
+	margin-bottom: 0 !important
+}
+
+.ui-nav .first {
+	width: 102px
+}
+
+.ui-nav .first {
+	background-position: -2px -170px
+}
+
+.ui-nav .first a {
+	padding-left: 0
+}
+
+.ui-nav .current .fst,.ui-nav .current .fst:hover {
+	background-position: 0 -238px;
+	margin-left: -3px;
+	padding-left: 3px
+}
+
+.pass_login_err {
+	display: none
+}
+
+.ui-nav .new-tip {
+	left: 780px
+}
+
+#no search css
+#body {
+#	background:
+#		url(bg_fcca09b4.gif)
+#		repeat-x left 0px
+#}
+
+body {
+	background:
+		url(bg_fcca09b4.gif)
+		repeat-x left 80px
+}
+
+
+
+.bannerTop {
+	/*
+	background:
+		url(img-01_2343e7a2.gif)
+		no-repeat 0px 34px;
+		*/
+	height: 245px
+}
+
+.bannerTop .updoc {
+	float: right;
+	width: 240px;
+	margin: 13px 0 0 0;
+	display: inline;
+	text-align: center
+}
+
+.bannerTop .updoc span {
+	color: #999;
+	font-size: 12px
+}
+
+.bannerTop .updoc b {
+	color: #e87301;
+	font-weight: bold;
+	margin: 0 5px;
+	font-size: 16px;
+	font-family: verdana, arial, sans-serif;
+	word-spacing: 15px
+}
+
+.bannerTop .updoc a {
+	display: inline-block;
+	margin-top: 2px;
+	width: 145px;
+	height: 32px;
+	background:
+		url(allbg_cd6bd677.png)
+		no-repeat left -48px
+}
+
+.bannerTop .updoc a:hover {
+	background:
+		url(allbg_cd6bd677.png)
+		no-repeat left -83px
+}
+
+.bannerTop li {
+	color: #666;
+	width: 192px;
+	float: left;
+	line-height: 22px;
+	margin-top: -11px
+}
+
+.bannerTop li a {
+	width: 87px;
+	height: 21px;
+	font-size: 0;
+	line-height: 21px;
+	display: block;
+	background:
+		url(allbg_cd6bd677.png)
+		no-repeat left top
+}
+
+.bannerTop li a.hotS,.bannerTop li a.hotT,.bannerTop li a.hotL,.bannerTop li a.hotC
+	{
+	background: 0;
+	display: inline-block;
+	width: 214px;
+	height: 113px;
+	_margin-right: -50px
+}
+
+.bannerTop li.f {
+	margin-right: 64px;
+	margin-top: -15px;
+	padding-top: 0px;
+}
+
+.bannerTop li.f a {
+
+	background-position: left -304px
+}
+
+.bannerTop li.s {
+	margin-right: 76px
+}
+
+.bannerTop li.s a {
+
+	background-position: left -332px
+}
+
+.bannerTop li.t {
+	margin-right: 72px
+}
+
+.bannerTop li.t a {
+
+	background-position: left -363px
+}
+
+.bannerTop li.l a {
+
+	background-position: left -391px
+}
+
+.bannerTop li p {
+	line-height: 18px;
+	color: #666;
+	margin-top: 6px
+}
+
+.bannerTop span.pending {
+	position: relative;
+	top: -41px;
+	left: -20px;
+	font-size: 14px
+}
+
+.org {
+	padding: 32px 20px 20px 20px;
+	background-color: #fcfcfc;
+	border: 1px #ededed solid;
+	border-top: 0
+}
+
+.org .hd h3 {
+	float: left
+}
+
+.org .hd a {
+	float: right;
+	color: #999
+}
+
+.org div {
+	text-align: center
+}
+
+.org div p {
+	padding-top: 6px
+}
+
+.org div img {
+	width: 148px;
+	height: 48px;
+	display: block;
+	margin: 13px auto 8px
+}
+
+.org div a {
+	color: #2968c9
+}
+
+.img-border {
+	border: 1px solid #000;
+	opacity: .2;
+	filter: alpha(opacity = 20);
+	position: relative
+}
+
+a:hover .img-border {
+	opacity: .4;
+	filter: alpha(opacity = 40)
+}
+
+.org .img-border {
+	height: 46px;
+	margin-top: -56px;
+	margin-left: 30px;
+	_margin-left: 0;
+	width: 146px
+}
+
+.grownup-task-tips {
+	position: absolute;
+	top: 245px;
+	left: 30px;
+	width: 96px;
+	height: 38px;
+	background:
+		url(http://static.wenku.bdimg.com/static/core/index/grownupTaskTips_ae9d35e4.png)
+		no-repeat;
+	z-index: 99;
+	padding: 32px 10px 10px 90px;
+	color: #666;
+	line-height: 20px
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xdoc version="9.7.0">
+  <meta id="38f6781ff52e4aeea97cc95ba5bf8eac" view="table" modifyDate="2014-02-20 16:08:30" createDate="2013-03-13 14:50:47"/>
+  <params>
+    <param name="jdbc_name"/>
+    <param name="fullName"/>
+    <param name="sql"/>
+  </params>
+  <rowsets>
+    <rowset name="data" conn="{%$p.jdbc_name%}"><![CDATA[{%$p.sql%}]]></rowset>
+  </rowsets>
+  <body sizeType="autosize">
+    <para>
+      <table cols="96,96,112,104" height="158" name="表1" sizeType="autosize" width="408" rows="60,24,24,24,26">
+        <cell col="1" colSpan="4" name="x20458" sizeType="autoheight" align="center" row="1" color="">
+          <para align="center">
+            <text fontStyle="bold" valign="center" fontSize="26">{%$p.fullName%}</text>
+          </para>
+        </cell>
+        <cell col="1" colSpan="2" name="x14933" rowSpan="2" align="center" row="2">
+          <para align="center">
+            <text fontStyle="bold">种类及报价</text>
+          </para>
+        </cell>
+        <cell col="1" name="用品" sizeType="autoheight" align="center" row="4" sql="select distinct 用品 from $s.data">
+          <para>
+            <text>{%用品.用品%}</text>
+          </para>
+        </cell>
+        <cell col="1" colSpan="2" name="x16789" align="center" row="5">
+          <para align="center">
+            <text fontStyle="bold">合计</text>
+          </para>
+        </cell>
+        <cell col="4" name="x15355" rowSpan="2" align="center" row="2">
+          <para align="center">
+            <text fontStyle="bold">总计（元）</text>
+          </para>
+        </cell>
+        <cell col="3" direction="h" name="金额" sizeType="autoheight" align="center" row="5">
+          <para align="right">
+            <text format="n:￥###,###,###,##0.00">{%(select sum(金额) from $s.data where 部门=部门.部门)%}</text>
+          </para>
+        </cell>
+        <cell col="4" name="x16097" sizeType="autoheight" align="center" row="4">
+          <para align="right">
+            <text format="n:￥###,###,###,##0.00">{%(select sum(金额) from $s.data where 用品=用品.用品)%}</text>
+          </para>
+        </cell>
+        <cell col="4" name="x74512" sizeType="autoheight" align="center" row="5">
+          <para align="right">
+            <text format="n:￥###,###,###,##0.00">{%(select sum(金额) from $s.data)%}</text>
+          </para>
+        </cell>
+        <cell col="3" name="x15108" align="center" row="2">
+          <para align="center">
+            <text fontStyle="bold">部门</text>
+          </para>
+        </cell>
+        <cell col="2" name="x26692" sizeType="autoheight" align="center" row="4">
+          <para align="right">
+            <text format="n:￥###,###,###,##0.00">{%(select 单价 from $s.data where 用品=用品.用品)%}</text>
+          </para>
+        </cell>
+        <cell col="3" direction="h" name="数量" sizeType="autoheight" align="center" row="4">
+          <para align="right">
+            <text format="n">{%(select 数量 from $s.data where 用品=用品.用品 and 部门=部门.部门)%}</text>
+          </para>
+        </cell>
+        <cell col="3" direction="h" name="部门" sizeType="autoheight" align="center" row="3" sql="select distinct 部门 from $s.data">
+          <para align="center">
+            <text>{%部门.部门%}</text>
+          </para>
+        </cell>
+      </table>
+    </para>
+    <para/>
+  </body>
+</xdoc>

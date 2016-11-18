@@ -1,0 +1,93 @@
+/*日程_用户列表*/
+#belongUserTree_container {
+	position:relative;
+	top:2px;
+	width:99%;
+	border: 1px solid #CECECE;
+	box-shadow: 2px 2px 5px #888;
+	background-color: #FFFFFF;
+}
+#shareUserTree_container {
+	position:relative;
+	top:2px;
+	width:99%;
+	border: 1px solid #CECECE;
+	box-shadow: 2px 2px 5px #888;
+	background-color: #FFFFFF;
+}
+.SY_COMM_CAL_userTree_headDiv {
+	width:100%;
+	height:30px;
+	background-color: #CECECE;
+}
+.SY_COMM_CAL_userTree_headSpan {
+	height:30px;
+	line-height:30px;
+	padding-left:5px;
+	font-weight: bold;
+	font-family: arial;
+	white-space:nowrap;
+}
+.SY_COMM_CAL_userTree_bodyDiv {
+	width:100%;
+	height:200px;
+	*min-height:200px;
+	*height:auto;
+	overflow-x:auto;
+	overflow-y:auto;
+}
+.SY_COMM_CAL_userTree_ul {
+	width:100%;
+}
+
+.SY_COMM_CAL_userTree_li {
+	position:relative;
+	display:block;
+	min-height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.SY_COMM_CAL_userTree_li:hover {
+	position:relative;
+	display:block;
+	min-height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	background-color: #C2D5FC;
+	cursor: pointer;
+}
+.SY_COMM_CAL_userTree_uimgSpan {
+	position:absolute;
+	left:10px;
+	top:0;
+	width: 30px;
+	height: 30px;
+	line-height: 20px;
+	display:inline;
+	background: url("/sy/comm/calendar/dhtmlx/imgs_dhx_terrace/custom_user.png") no-repeat left center transparent;
+}
+.SY_COMM_CAL_userTree_userSpan {
+	padding-left:20px;
+	width:60px;
+	height:30px;
+	min-height: 30px;
+	line-height: 30px;
+	white-space:nowrap;
+	display:inline-block;
+}
+.SY_COMM_CAL_userTree_dimgSpan {
+	position:absolute;
+	left:100px;
+	top:0;
+	width: 30px;
+	height: 30px;
+	line-height: 20px;
+	display:inline;
+	background: url("/sy/comm/calendar/dhtmlx/imgs_dhx_terrace/custom_dept.png") no-repeat left center transparent;
+}
+.SY_COMM_CAL_userTree_deptSpan {
+	padding-left:30px;
+	min-height: 30px;
+	line-height: 30px;
+	display:inline;
+}

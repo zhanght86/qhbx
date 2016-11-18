@@ -1,0 +1,55 @@
+<div class="tmpl_container" align="center">
+	<div style="height:40px"></div>
+	<table style="width:98%;>
+		<tr>
+			<td width="120px">&nbsp;</td>
+			<td id="gwheader">
+				<table class='gwHeaderTable' border='0'>
+					<tr><td align='center'  class='gwHeader'><span code="TMPL_TITLE"></span></td></tr>
+				</table>
+			</td>
+			<td width="120px">
+				<table align='center' class='width:100%' border='0'>
+					<tr><td class='rh-label'>密&nbsp;&nbsp;&nbsp;&nbsp;级：</td><td class='rh-item' code="GW_SECRET"></td></tr>
+					<tr><td class='rh-label'>紧急程度：</td><td class='rh-item' code="S_EMERGENCY"></td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr style="display:none">
+			<td colspan="3" code="TMPL_MEMO">&nbsp;</td>
+		</tr>
+	</table>
+	<table class='rh-tmpl-tabel'>
+	<tr style="height:32px">
+		<td class='rh-label' width="10%" align='center'>来文单位：</td>
+		<td width="90%" class='rh-item' colspan="3" code="GW_SW_CNAME"></td>
+	</tr>
+	<tr>
+	  <td class='rh-label' align='center' width="10%">来文编号：</td>
+	  <td class='rh-item' code='GW_CODE' width="40%"></td>
+	  <td class='rh-label' width="10%">发文时间：</td>
+	  <td class='rh-item' width="40%" code='GW_SIGN_TIME'></td>
+	  </tr>
+	<tr>
+	  <td class='rh-label ' align='center'>来文类别：</td>
+	  <td colspan="3" class='rh-item' code='GW_SW_TYPE'></td>
+	  </tr>
+	<tr>
+	<td class='rh-label ' align='center'>标&nbsp;&nbsp;&nbsp;&nbsp;题：<span style="font-weight:bold;" title="必填">*</span></td>
+	<td colspan="3" class='rh-item' code='GW_TITLE'></td>
+	</tr>
+	<tr>
+	<td class='rh-label ' align='center'>正&nbsp;&nbsp;&nbsp;&nbsp;文：&nbsp;</td>
+	<td colspan="3" align="left" class='rh-item'  code='ZHENGWEN'></td>
+	</tr>
+	<tr>
+	<td class='rh-label ' align='center'>附&nbsp;&nbsp;&nbsp;&nbsp;件：&nbsp;</td>
+	<td colspan="3" align="left" class='rh-item'  code='FUJIAN'>        	
+	</tr>
+	<tr>
+	<td class='rh-label ' align='center'>备&nbsp;&nbsp;&nbsp;&nbsp;注：&nbsp;</td>
+	<td colspan="3" class='rh-item'  code='GW_MEMO'></td>
+	</tr>
+	</table>
+	<div style="height:40px"></div>	
+</div>

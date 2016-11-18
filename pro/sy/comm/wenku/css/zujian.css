@@ -1,0 +1,527 @@
+html,body{
+	word-wrap:break-word;
+}
+/** 文库-焦点 **/
+.jdt {
+    background: #F8E6A7;
+    height: 250px;
+    overflow: hidden;
+}
+.jdt .l {
+    display: none;
+    float: left;
+    height: 210px;
+    overflow: hidden;
+    padding: 32px 0 0 30px;
+    position: relative;
+    width: 540px;
+}
+.jdt .l .tj {
+    height: 62px;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    width: 94px;
+}
+.jdt .ll {
+}
+.jdt .lll {
+}
+.jdt .l .imgl {
+    float: left;
+    width: 138px;
+}
+.jdt .l .imgl img {
+	border:1px #E8811C solid;
+}
+.jdt .l .imgl img:hover {
+	outline:2px #E8811C solid;
+}
+.jdt .l .textr {
+    float: right;
+    padding-right: 20px;
+    width: 363px;
+}
+.jdt .l .textr .t {
+    color: #6C4909;
+    font: 20px/24px Microsoft Yahei;
+}
+.jdt .l .textr .t a {
+    color: #6C4909;
+}
+.jdt .l .textr .t1 {
+    color: #663D26;
+    font-size: 14px;
+    line-height: 24px;
+}
+.jdt .l .textr .t1 a {
+    color: #663D26;
+}
+.jdt .l .textr p {
+    color: #957E4E;
+    line-height: 18px;
+    padding-top: 18px;
+    text-indent: 24px;
+}
+.jdt .r {
+    float: right;
+    height: 252px;
+    overflow: hidden;
+    padding: 1px 1px 0 0;
+    width: 167px;
+	background:#FFFBEA;
+}
+.jdt .r li {
+    height: 73px;
+    margin-bottom: 1px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 167px;	
+}
+.jdt .r li span {
+    display: block;
+    height: 71px;
+    padding: 8px 0 0 10px;
+}
+.jdt .r li span .imgl1 {
+    float: left;
+    width: 44px;
+}
+.jdt .r li span .imgl1 img {
+    border: 1px solid #A78C5E;
+}
+.jdt .r li span .textr1 {
+    float: right;
+    line-height: 18px;
+    width: 107px;
+}
+.jdt .r li span.here {
+    background: none repeat scroll 0 0 #FDF4D6;
+}
+.jdt .r li span.here .imgl1 img {
+    border: 1px solid #E77608;
+}
+.jdt .r li span.here .textr1 a {
+    text-decoration: underline;
+}
+.jdt .r li.li1 span.here {
+    background: none repeat scroll 0 0 #FDF4D6;
+}
+/** 文库-焦点 **/
+
+/** 文库-栏目展示 **/
+	
+.cont3 p a {
+    color: #1237A1;
+    text-decoration: none;
+}
+.cont3 p a:hover {
+    text-decoration: underline;
+}		
+.cont3 {
+	width:100%;
+    height: 180px;
+    padding: 18px 0 0 4px;
+}
+.cont3 .l {
+    float: left;
+    padding: 42px 10px 0 10px;
+    width: 11px;
+}
+.cont3 .l a {
+    background: url("/sy/comm/wenku/img/bg.png") no-repeat scroll -264px -406px transparent;
+    display: block;
+    height: 41px;
+    width: 11px;
+}
+.cont3 .l a:hover {
+    background: url("/sy/comm/wenku/img/bg.png") no-repeat scroll -320px -406px transparent;
+}
+.cont3 .l .none {
+    background: url("/sy/comm/wenku/img/bg.png") no-repeat scroll -374px -406px transparent;
+    display: block;
+    height: 41px;
+    width: 11px;
+}
+.cont3 .c {
+    padding-left: 14px;
+    width: 86%;
+    float: left;
+}
+.cont3 .c li {
+    float: left;
+    width:20%;
+}
+.cont3 .c li .h113 {
+    background: url("/sy/comm/wenku/img/bg.png") no-repeat scroll -112px -335px transparent;
+    height: 120px;
+    position: relative;
+    width: 93px;
+    z-index: 0;
+	margin:0 auto;
+}
+#ul1{
+	height: 160px;
+}
+.cont3 .c li .h114 {
+    background: url("/sy/comm/wenku/img/bg.png") no-repeat scroll 0 -335px transparent;
+    height: 120px;
+    position: relative;
+    width: 93px;
+    z-index: 1;
+}
+.cont3 .c li .b1 {
+    height: 113px;
+    left: 0;
+    padding: 7px 0 0 2px;
+    position: absolute;
+    top: 0;
+    width: 91px;
+    z-index: 0;
+}
+.cont3 .c li .page {
+    background: url("/sy/comm/wenku/img/bg.png") no-repeat scroll -108px 0 transparent;
+    color: #9F8760;
+    height: 11px;
+    left: 45px;
+    padding: 4px 0 0 11px;
+    position: absolute;
+    top: 94px;
+    width: 39px;
+    z-index: 2;
+}
+.cont3 .c li .title {
+    background: url("/sy/comm/wenku/img/bg.png") no-repeat scroll 0 -84px transparent;
+    color: #6E5E4A;
+    height: 88px;
+    left: 72px;
+    line-height: 16px;
+    padding: 7px 10px 0 28px;
+    position: absolute;
+    top: 30px;
+    width: 143px;
+    z-index: 3;
+    word-wrap:break-word;
+}
+.cont3 .c li .title a {
+    color: #6E5E4A;
+}
+.cont3 .c li p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 8px;
+    width: 80%;
+    word-break: normal;
+    word-wrap: break-word;
+	margin:0 auto;
+}
+.cont3 .c li.li0 {
+    padding: 0;
+}
+.cont3 .r {
+    float: right;
+    padding-top: 46px;
+    width: 11px;
+	padding-right: 20px;
+}
+.cont3 .r a {
+    background: url("/sy/comm/wenku/img/bg.png") no-repeat scroll -291px -406px transparent;
+    display: block;
+    height: 41px;
+    width: 11px;
+}
+.cont3 .r a:hover {
+    background: url("/sy/comm/wenku/img/bg.png") no-repeat scroll -348px -406px transparent;
+}
+.cont3 .r .none {
+    background: url("/sy/comm/wenku/img/bg.png") no-repeat scroll -397px -406px transparent;
+    display: block;
+    height: 41px;
+    width: 11px;
+}
+/*********************************************/
+.bor1 .unknown {
+	position:absolute;bottom:8px;right:10px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/unkonwn.png") no-repeat scroll 0 0 transparent;
+}
+.bor1 .mp3 {
+	position:absolute;bottom:8px;right:10px;
+	height:18px; width:24px;
+	background: url("/sy/comm/wenku/img/mp3.png") no-repeat;
+}
+.bor1 .flv {
+	position:absolute;bottom:8px;right:10px;
+	height:18px; width:24px;
+	background: url("/sy/comm/wenku/img/film.png") no-repeat;
+}
+.bor1 .doc {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 1px transparent;
+}
+.bor1 .docx {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 1px transparent;
+}
+.bor1 .ppt {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -79px transparent;
+}
+.bor1 .pptx {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -79px transparent;
+}
+.bor1 .xls {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -159px transparent;
+}
+.bor1 .xlsx {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -159px transparent;
+}
+.bor1 .vsd {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -239px transparent;
+}
+.bor1 .pot {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -319px transparent;
+}
+.bor1 .pps {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -399px transparent;
+}
+.bor1 .rtf {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -479px transparent;
+}
+.bor1 .wps {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -559px transparent;
+}
+.bor1 .et {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -639px transparent;
+}
+.bor1 .dps {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -719px transparent;
+}
+.bor1 .pdf{
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -799px transparent;
+}
+.bor1 .txt {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -879px transparent;
+}
+.bor1 .epub {
+	position:absolute;bottom:5px;right:5px;
+	height:18px; width:24px;
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -959px transparent;
+}
+/** 文库-栏目展示 **/
+
+/** 文库-排行 **/
+.list3 {
+    padding: 2px 0 0 5px;
+}
+.list3 li a {
+	text-decoration:none;
+}
+.list3 li a:hover {
+	text-decoration:underline;
+}
+.list3 li {
+    color: #818181;
+    line-height: 18px;
+    padding-left: 20px;
+    padding-top: 7px;
+}
+.list3 li.unknown{
+    background: url("/sy/comm/wenku/img/b_2.png") no-repeat scroll 0 -32px transparent;
+}
+.list3 li.mp3{
+    background: url("/sy/comm/wenku/img/b_2.png") no-repeat scroll 0 -114px transparent;
+}
+.list3 li.flv{
+    background: url("/sy/comm/wenku/img/b_2.png") no-repeat scroll 0 -272px transparent;
+}
+.list3 li.doc {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 8px transparent;
+}
+.list3 li.docx {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 8px transparent;
+}
+.list3 li.ppt {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -72px transparent;
+}
+.list3 li.pptx {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -72px transparent;
+}
+.list3 li.xls {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -152px transparent;
+}
+.list3 li.xlsx {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -152px transparent;
+}
+.list3 li.vsd {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -232px transparent;
+}
+.list3 li.pot {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -312px transparent;
+}
+.list3 li.pps {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -392px transparent;
+}
+.list3 li.rtf {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -472px transparent;
+}
+.list3 li.wps {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -552px transparent;
+}
+.list3 li.et {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -632px transparent;
+}
+.list3 li.dps {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -712px transparent;
+}
+.list3 li.pdf {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -792px transparent;
+}
+.list3 li.txt {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -872px transparent;
+}
+.list3 li.epub {
+    background: url("/sy/comm/wenku/img/b.png") no-repeat scroll 0 -952px transparent;
+}
+
+/***********************************************************************************/
+.tabs-portal .portal-box-title {}
+.tabs-portal .portal-box-title ul{padding-left:5px;}
+.tabs-portal .portal-box-title li {
+	line-height:29px;padding:0px 20px;text-align: center;float: left; cursor:pointer;
+}
+.tabs-portal .tab-ul {padding:8px;}
+.tabs-portal .tab-ul li {
+    color:black;
+    line-height:29px;
+}
+.tabs-portal .tab-ul li a {color:black;}
+.tabs-portal .tab-ul-none {display:none;}
+.tabs-portal .tab-portal-box-a {text-decoration: none;font-size:14px;}
+.tabs-portal .tab-portal-box-a:hover {text-decoration: underline;color:red;}
+/** 文库-排行 **/
+
+/** 文库-导航 **/
+ol, ul {
+    list-style: none outside none;
+}
+.ui-nav,.ui-nav .inner,.ui-nav li,.ui-nav .current a,.ui-nav a:hover,.ui-nav a:active{
+	background: white;
+	border: 1px #ccc solid;
+	width:100%;
+}
+.ui-nav {
+	background-position: right -34px;
+	height: 34px;
+	padding: 0 2px 0 0;
+	position: relative;
+	z-index: 10
+}
+
+.ui-nav .inner {
+	background-position: 0 0;
+	background-repeat: repeat-x
+}
+
+.ui-nav li {
+	float: left;
+	height: 34px;
+	line-height: 34px;
+	z-index: 100;
+	background-position: -2px -170px;
+	text-align: center
+}
+
+.ui-nav .first {
+	width: 111px;
+	background-position: 0 -68px
+}
+
+.ui-nav .first a {
+	padding-left: 10px
+}
+
+.ui-nav .first a:hover {
+	background-position: 0 -102px;
+	margin-left: 0;
+	padding-left: 10px
+}
+
+.ui-nav .first a:active,.ui-nav .current .fst,.ui-nav .current .fst:hover
+	{
+	background-position: 0 -136px;
+	margin-left: 0;
+	padding-left: 10px
+}
+
+.ui-nav a,.ui-nav a:link,.ui-nav a:visited {
+	text-decoration: none;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: blue;
+	zoom: 1
+}
+
+.ui-nav a:active,.ui-nav a:hover,.ui-nav .current a {
+	background-position: 0 -204px;
+	margin-left: -3px;
+	padding-left: 3px;
+	position: relative;
+	color: blue;
+}
+
+.ui-nav a:active {
+	background-position: 0 -238px
+}
+
+.ui-nav .current a,.ui-nav .current a:hover {
+	background-position: 0 -238px
+}
+
+.ui-nav .four {
+	width: 102px
+}
+
+.ui-nav .two {
+	width: 102px;
+	text-indent: -6px
+}
+
+.ui-nav .four-last {
+	width: 99px
+}
+
+.ui-nav li span {
+	position: relative; +
+	top: 1px
+}
+/** 文库-导航 **/
+

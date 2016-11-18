@@ -1,0 +1,209 @@
+.direct-ask{width:67px;height:26px;outline:0;display:inline-block;background-position:0 -650px}
+.direct-ask:hover{background-position:0 -680px}
+.subnav{margin-top:15px;font-size:12px}
+.expert-intro-head{width:980px;height:227px;position:relative;background:url('http://img.baidu.com/img/iknow/expertAbout_banner.png') no-repeat 0 0 transparent}.expert-intro-head a{width:175px;height:44px;position:absolute;top:131px;background:url('http://img.baidu.com/img/iknow/expertAbout.png') no-repeat 0 0 transparent}.expert-intro-head a.expert-apply-org{left:543px;background-position:0 0}.expert-intro-head a.expert-apply-org:hover{background-position:-180px 0}.expert-intro-head a.expert-apply-user{left:738px;background-position:-360px 0}.expert-intro-head a.expert-apply-user:hover{background-position:-540px 0}#introNav{height:54px}#introNav span{height:51px;float:left;border-top:3px solid #7f7f7f;border-bottom:1px solid #d4d4d4;background-image:url('http://img.baidu.com/img/iknow/expertAbout.png')}
+#introNav span em{width:100%;height:52px;display:block;margin-left:-1px;border-right:1px solid #d4d4d4;cursor:pointer}
+#introNav span.current{border-bottom:0}
+#introNav #nav_3 em{border-right:0}
+#introBody{height:600px}
+#introBody .intro-content{padding:25px 30px 0 38px;font:14px/22px 'Microsoft YaHei','����';display:none}
+#introBody .intro-content img{margin-top:25px}
+#introBody .intro-content h5,#introBody .intro-content dl.about-require dt{font-weight:bold;margin:0;padding:0}
+#introBody .intro-content dd{margin:0 0 23px 23px}
+#introBody .current{display:block}
+#introBody .no-text{padding:25px 0 0;text-align:center}
+#introBody .id2em{text-indent:2em}
+#nav_0{width:244px;background-position:0 -50px}
+#nav_0.current{border-top:3px solid #44ab00;background-position:0 -380px}
+#nav_1{width:245px;background-position:-245px -50px}
+#nav_1.current{border-top:3px solid #44ab00;background-position:-245px -380px}
+#nav_2{width:245px;background-position:-490px -50px}
+#nav_2.current{border-top:3px solid #44ab00;background-position:-490px -380px}
+#nav_3{width:244px;background-position:-735px -50px}
+#nav_3.current{border-top:3px solid #44ab00;background-position:-735px -380px}
+#expertApplyForm{border:1px solid #dadada;margin-top:9px;padding:5px 25px 15px 23px}
+#expertApplyForm h3{height:42px;border-bottom:1px solid #d5d5d5;position:relative;margin-bottom:20px}
+#expertApplyForm h3 strong{height:42px;position:absolute;left:0;bottom:-1px;padding-right:50px;color:#666;font:16px/42px 'Microsoft YaHei',Arial,'����';border-bottom:1px solid #6d9451}
+#expertApplyForm h3 .h3-tips{line-height:44px;font-size:12px;color:#ccc;font-weight:normal;margin-left:68px}
+#expertApplyForm div.form-row{width:100%;font:14px/36px Tahoma,'Microsoft YaHei','����',Arial;color:#000;position:relative;margin-bottom:12px}
+#expertApplyForm div.form-row label{width:105px;text-align:right;margin-right:15px;zoom:1;float:left}
+#expertApplyForm div.form-row .form-row-input{display:inline-block;zoom:1}
+#expertApplyForm div.form-row .form-row-input .txt-input{width:235px;height:30px;line-height:32px\9;padding:2px 5px;outline:0;margin-right:10px;vertical-align:top;border:1px solid #ddd;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;-khtml-border-radius:2px}
+#expertApplyForm div.form-row .form-row-input .btn-input{width:100px;height:36px;vertical-align:top;font:16px/32px 'Microsoft YaHei','����';cursor:pointer;border:1px solid #ddd;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;-khtml-border-radius:2px;background-color:#f6f6f6;background-image:-webkit-gradient(linear,0% 0,0% 100%,from(#f9f9f9),to(#eaeaea))}
+#expertApplyForm div.form-row .form-row-input .btn-input:hover{background-color:#f9f9f9;background-image:-webkit-gradient(linear,0% 0,0% 100%,from(#f6f6f6),to(#f9f9f9))}
+#expertApplyForm div.form-row .form-row-input .txt-select{width:247px;height:36px;border:1px solid #ddd;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;-khtml-border-radius:2px;padding:8px;outline:0}
+#expertApplyForm div.form-row .form-row-input textarea{overflow:auto}
+#expertApplyForm div.form-row .form-row-input .focus-input{border-color:#58a823}
+#expertApplyForm div.form-row .form-row-tips{display:inline-block;zoom:1;height:34px;border:1px solid #f1e562;border-left:none;background-color:#feffdd;font:12px/34px "����";color:#737872;padding:0 11px 0 40px;position:absolute;left:390px;top:0;*top:1px;_top:1px}
+#expertApplyForm div.form-row .form-row-tips em{width:38px;height:36px;position:absolute;top:-1px;left:0;background:url(http://img.baidu.com/img/iknow/expert/expert-apply.png) no-repeat -130px -40px}
+#expertApplyForm div.form-row .form-row-tips span{display:inline-block}
+#expertApplyForm div.form-row .tips-error{color:#d96201;background-color:#fff0dd;border-color:#f1a262;white-space:nowrap}
+#expertApplyForm div.form-row .tips-error em{background-position:-130px -1px}
+#expertApplyForm div.form-row .tips-ok{background:0;border:0;padding-right:50px;background-color:#fff}
+#expertApplyForm div.form-row .tips-ok em{background-position:-596px -1px}
+#expertApplyForm div.form-row .tips-ok span{display:none}
+#expertApplyForm div.form-row .l780{left:780px}
+#expertApplyForm div.form-row .att-upload{position:absolute;top:0;left:215px}
+#expertApplyForm #expertTitle{*height:auto;_margin-top:8px}
+#expertApplyForm div.form-portrait{min-height:150px}
+#expertApplyForm div.form-portrait .form-row-input{width:500px}
+#expertApplyForm div.form-portrait .form-row-tips{left:630px;top:84px}
+#expertApplyForm div.form-portrait .tips-avatar{width:170px;height:84px;display:block;line-height:20px;padding:6px 5px 0 126px}
+#expertApplyForm div.form-portrait .tips-avatar em{width:120px;height:92px;background-position:0 -1px}
+#expertApplyForm div.form-textarea .form-row-input .txt-input{height:96px;padding:5px;resize:none;line-height:20px}
+#expertApplyForm div.form-smscode .form-row-input .txt-input{width:86px}
+#expertApplyForm div.form-smscode .form-row-input .disabled{width:135px;color:#999;cursor;background-image:none}
+#expertApplyForm div.form-smscode .form-row-input .disabled:hover{background-image:none}
+#expertApplyForm .submit-btn{width:94px;height:33px;display:inline-block;text-align:center;border:1px solid #ddd;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;-khtml-border-radius:2px;border:0;background-color:#6db60d;background-image:-webkit-gradient(linear,0% 0,0% 100%,from(#6db60d),to(#5ea104));text-decoration:none;color:#fff;cursor:pointer;font:14px/32px 'Microsoft YaHei','����'}
+#expertApplyForm .btn-upload{background:url(http://img.baidu.com/img/iknow/expert/expert-apply.png) -368px -59px no-repeat}
+#expertApplyForm #avatar-display{display:none}#expertApplyForm #avatar-display.uploaded{display:block}
+#expertApplyForm #avatar-upload-container{margin-bottom:12px}
+.cate-sel-1,.cate-sel-2,.cate-sel-3{height:250px;margin-right:2px;outline:0;border:1px solid #ccc;padding:2px}
+#expertSubmitForm{padding-top:18px;text-align:center}.expert-single-cms{width:100%;border-top:1px solid #ebebeb;font:12px/22px '����';float:right}
+.expert-block-title{display:inline-block;padding:18px 18px 5px;font-size:14px;color:#404040;font-weight:bold}
+.expert-block-content{padding:0 18px;display:block}.expert-block-content p{color:#666;font:12px/20px '����'}
+.expert-block-content ul{width:100%;margin:10px auto;text-align:center}
+.expert-block-content ul li{width:50px;float:left;padding-right:14px;margin-right:14px;border-right:1px dotted #ebebeb;line-height:16px;color:#999}
+.expert-block-content ul li.last{margin-right:0;border-right:0;padding-right:0}
+.expert-block-content ul li a{color:#999;text-decoration:none}
+.expert-block-content ul li img{width:50px;height:50px;display:block;margin-bottom:5px}
+.expert-join{width:123px;height:24px;display:inline-block;background-position:0 -250px;margin-top:15px}
+.blank_bottom{width:100%;height:280px;display:block}
+.expert-cms-banner{width:980px;height:230px;display:block;margin-top:15px;position:relative}
+.expert-join-us{width:213px;height:180px;padding:30px 21px 0 16px;position:absolute;right:0;top:0;background:#f5f7f4;_background:#f5f7f4;zoom:1;z-index:11;opacity:.9}
+.expert-join-us h3{width:213px;height:20px;display:block;overflow:hidden;text-indent:-10000em;background-position:center top;background-repeat:no-repeat;margin-bottom:15px}
+.expert-join-us p{font:16px Verdana,Tahoma,'Microsoft YaHei','����';color:#ffa92f;margin-bottom:12px}
+.expert-join-us p span{font-size:14px;color:#666;margin-right:10px}
+.expert-join-us a{width:213px;height:34px;display:block;margin-top:20px;text-indent:-10000em;background-repeat:no-repeat;background-position:0 -30px}
+.expert-join-us a:hover{background-position:0 -65px}
+#expertBanner{width:980px;height:230px;float:left;overflow:hidden;position:absolute;z-index:5}
+#expertBanner img{width:980px;height:230px}
+#expertBanner .tang-carousel-element{width:980px;height:230px;margin-left:0}
+#expertBanner .tang-carousel-container{width:980px;height:230px;float:left;overflow:hidden;position:absolute;z-index:0}
+#expertBanner .btn-line{position:absolute;left:50%;top:200px;z-index:10;display:inline-block;zoom:1}
+#expertBanner .pagination{ text-align: center;}
+#expertBanner .pagination a{background-image: url('/sy/comm/zhidao/baidu_style_files/exp-index_06d06aa5.png');width: 8px;height: 8px;margin: 0 5px 0 0;display: inline-block;background-position: -9px -72px;}
+#expertBanner .pagination .selected{background-position:0 -72px}
+#expertBanner .pagination a span{display: none;}
+#expertBanner .tang-carousel-item{display:inline}
+.expert-cms-focus{width:700px;padding-right:30px;float:left;margin-top:25px;position:relative}
+.expert-cms-focus-page{display:inline-block;position:absolute;top:5px;right:25px;color:#999;font:12px/12px Arial;font-style:normal}
+.expert-cms-focus-page em{color:#f90}
+.expert-cms-focus-page i{width:15px;height:15px;display:inline-block;background-repeat:no-repeat;cursor:pointer;margin:0 5px;vertical-align:bottom}
+.expert-cms-focus-page i.focus-left{background-position:0 -50px}.expert-cms-focus-page i.focus-right{background-position:-14px -50px}
+.expert-cms-focus-content{width:100%;display:inline-block;margin-top:8px}.expert-cms-focus-content ul{width:100%;float:left;height:82px;overflow:hidden}
+.expert-cms-focus-content li{width:100%;float:left;display:none}.expert-cms-focus-content li.first{display:block}
+.expert-cms-focus-content span{border:1px solid #ccc;float:left;margin-right:20px}
+.expert-cms-focus-content span img{width:150px;height:80px;display:block}
+.expert-cms-focus-content h3{font:14px/20px '����';font-weight:bold}
+.expert-cms-focus-content h3 a{color:#333!important}
+.expert-cms-focus-content p{font:12px/20px '����';color:#666;word-wrap:break-word}
+.expert-cms-notice{width:234px;_width:226px;padding-left:16px;float:right;text-align:left;margin-top:25px}
+.expert-cms-notice-content{font:12px/24px '����'}
+.expert-cms-notice-content li{background-position:0 11px;background-repeat:no-repeat;padding-left:8px;float:left;width:100%}
+.expert-cms-notice-content li a{color:#2d64b3;float:left}
+.expert-cms-notice-content li a.highlight{color:#090}
+.expert-cms-notice-content li span{width:21px;height:9px;float:left;overflow:hidden;background:url(http://img.baidu.com/img/iknow/unify_new.png) no-repeat;margin:7px 0 0 5px}
+.expert-cms-slider{width:948px;padding:15px 15px 20px;float:left;border:1px solid #ebebeb;position:relative;margin-top:25px}
+.expert-cms-slider span.more{position:absolute;right:12px;top:15px}
+.expert-cms-slider span.more a{font:12px/20px '����';color:#878787}
+#expertSlider{width:948px;float:left;margin-top:8px}
+#expertSlider li{padding:0 25px;border-right:1px solid #fafafa;float:left;text-align:center}
+#expertSlider li.first{padding-left:12px}
+#expertSlider li.last{padding-right:12px;border:0}
+#expertSlider li p{line-height:20px;color:#999}
+#expertSlider li p a{color:#2d64b3}
+#expertSlider li span{width:100px;height:100px;display:inline-block;padding:2px;border:1px solid #eee;margin-bottom:6px}
+#expertSlider li img{width:100px;height:100px}
+#expertSlider .tang-carousel-container{width:916px;float:left;overflow:hidden}
+#expertSlider .tang-carousel-element{float:left;margin-left:-12px}
+#expertSlider .tang-carousel-btn{float:left;margin-top:42px;width:14px;height:26px;background-repeat:no-repeat}
+#expertSlider .tang-carousel-btn-prev{background-position:0 -21px}
+#expertSlider .tang-carousel-btn-prev:hover{background-position:0 -82px}
+#expertSlider .tang-carousel-btn-next{background-position:-14px -21px}
+#expertSlider .tang-carousel-btn-next:hover{background-position:-14px -82px}
+#expertSlider .tang-carousel-btn-prev.disabled{background-position:0 -107px !important}
+#expertSlider .tang-carousel-btn-next.disabled{background-position:-14px -107px !important}
+.expert-category{margin-top:25px;font-size:14px}
+.expert-category h4{color:#333!important;font-size:14px;font-family:'Microsoft YaHei','����';padding-bottom:8px}
+.expert-category dl dt{margin-top:10px}.expert-category dl dt a{color:#2d64b3;background-color:#fff}
+.expert-category dl dt span{font-size:12px;color:#999}
+.expert-category dl dd a.category-level2{color:#888;font-size:12px;margin-right:3px;font-family:'����';line-height:21px;display:inline-block;*display:inline;zoom:1}
+.expert-category dl a.current{color:#fff!important;background-color:#2f64b2}
+#expertPager{padding-bottom:0}
+.expert-category-user{margin-top:25px}
+.expert-category-user h4{width:468px;padding-left:15px;padding-right:15px;border-left:1px solid #f4f4f4;border-right:1px solid #f4f4f4;float:left;color:#333!important;font-size:14px;font-family:'Microsoft YaHei','����';padding-bottom:20px}.expert-category-user h4 span{color:#999;font-size:12px;font-family:Arial;font-weight:normal;margin-left:5px}
+.expert-category-user ul{padding-left:15px;padding-right:15px;border-left:1px solid #f4f4f4;border-right:1px solid #f4f4f4;float:left;width:468px;}
+.expert-category-user ul li{position:relative;width:100%;float:left;padding:20px 0 0 0;font:12px/24px Arial,'����';color:#666;border-bottom:1px dotted #ebebeb}
+.expert-category-user ul li div{height:auto;float:left;text-align:center;margin-right:21px;overflow:hidden}
+.expert-category-user ul li div span{width:80px;height:80px;display:block;overflow:hidden;padding:2px;margin-bottom:11px;border:1px solid #ebebeb}
+.expert-category-user ul li div span a{width:80px;height:80px;display:block;overflow:hidden}
+.expert-category-user ul li h3{font:14px/24px '����';color:#2d64b3}
+.expert-view-bottom{background:url(/static/widget/expert/expert-single-answer/img/aside-bg_970b3566.png) repeat-y 730px 0;display:inline-block;border-bottom:1px solid #ebebeb}
+.expert-tab{height:36px;border-bottom:1px solid #e6e6e6;width:100%;position:relative}
+.expert-tab li{display:inline-block;cursor:pointer}
+.expert-tab ol{position:absolute;left:0;bottom:-1px}
+.expert-tab li{border:1px solid #e6e6e6;padding:3px 20px;text-align:center;margin-right:10px;background-color:#fafafa;line-height:29px;color:#666;float:left}
+.expert-tab li.current{color:#999;font-weight:bold;border-bottom-color:#fff;background-color:#fff}
+.expert-tab li em{color:#999;font-size:12px}
+.expert-data-list div{width:100%;display:none;float:left}
+.expert-data-list div.current{display:block}
+.expert-data-list div ul{width:100%;float:left;padding:10px 0;font-size:14px;line-height:22px}
+.expert-data-list div li{width:100%;float:left;border-bottom:1px dotted #ebebeb;padding:17px 0 10px}
+.expert-data-list div li dt{background-repeat:no-repeat;background-position:0 -497px;padding-left:30px}
+.expert-data-list div li dt span{font-size:12px;color:#999;margin-left:10px}
+.expert-data-list div li dd{background-repeat:no-repeat;background-position:0 -550px;padding:5px 10px 6px 30px;font-size:12px;color:#666;word-wrap:break-word}
+.expert-single-card{height:227px;padding:19px 20px 0;border:1px solid #ebebeb;position:relative;font-size:12px;background-repeat:repeat-x;background-position:0 0}
+.expert-single-editor{background-position:-114px -280px;position:absolute;display:inline-block;background-repeat:no-repeat;left:518px;top:20px;padding-left:14px}
+.expert-single-quali{width:114px;height:70px;position:absolute;display:inline-block;background-repeat:no-repeat;top:-1px;right:28px;background-position:0 -404px}.expert-single-quali p{margin-top:20px;text-align:center}
+.expert-single-quali p strong{color:#fff;font:14px/20px '΢���ź�','Microsoft YaHei','����'}
+.expert-single-org{width:300px;position:absolute;display:inline-block;background-repeat:no-repeat;top:66px;right:25px;border-left:1px solid #ebebeb;padding-left:25px;color:#666;line-height:20px}
+.expert-single-org p{word-wrap:break-word;overflow:hidden}
+.expert-single-org p img{margin-top:8px}
+.expert-single-data{width:460px;float:left;border-top:1px dotted #ebebeb;margin-top:7px;padding-top:18px;line-height:18px}
+.expert-single-data dt{font-size:12px;float:left;margin-right:5px;border-left:1px solid #e0e0e0;padding-left:15px;color:#999}
+.expert-single-data dt.first{border-left:none;padding-left:0}
+.expert-single-data dd{float:left;font-size:18px;color:#ff7800;padding-right:15px;font-family:Arial}
+.expert-single-info{width:470px;color:#666}.expert-single-info h3{font-size:14px}
+.expert-single-info h5{margin-top:1px;margin-bottom:10px;font-weight:normal}
+.expert-single-input p{width:100%;float:left}
+.expert-single-input p span{float:left;position:relative;outline:0;margin-bottom:6px}
+.expert-single-input p span i{display:none}
+.expert-single-input em{font-style:normal}
+.expert-single-input strong{color:#aaa}
+.expert-single-input input{width:170px;height:18px;padding:2px 5px;line-height:16px;margin-top:-2px;_margin-top:-4px;font-family:Tahoma,Verdana,'Microsoft YaHei',Arial;border:0;background-color:none;outline:0;resize:none;color:#666}.expert-single-input textarea{width:430px;height:60px;overflow:hidden;font:12px/20px '����';border:0;background-color:none;outline:0;resize:none;color:#666}.expert-single-input .expert-single-submit{padding-top:5px}
+.expert-single-input .expert-single-submit .expert-info-submit{width:43px;height:20px;border:0;background-repeat:no-repeat;background-position:-25px -285px;text-indent:-1000em;cursor:pointer}
+.expert-single-input .expert-single-submit strong{float:right;margin-right:30px;font-weight:normal}
+.expert-single-input .expert-single-submit a{display:inline-block;margin:2px 0 0 15px;color:#666;text-decoration:none}
+.expert-single-enable p span{border:1px solid #d8d8d8;background:url(/static/widget/expert/expert-single-card-info/img/input_bg_d86b0a7c.png) repeat-x 0 0;_background-attachment:fixed;width:36px;padding:2px 36px 0 5px;display:inline;line-height:20px;margin-right:6px;outline:0}
+.expert-single-enable p span i{width:19px;height:20px;background-position:0 -286px;position:absolute;right:0;top:2px;display:inline-block;cursor:pointer}
+.expert-single-enable p span b{width:77px;border:1px solid #d8d8d8;background:#fff;position:absolute;left:-1px;top:22px;font-weight:normal;overflow:hidden;padding-bottom:2px}
+.expert-single-enable p span b i{width:100%;position:relative;padding:2px 5px 0;font-style:normal;cursor:pointer}
+.expert-single-enable p span b i:hover{background:#d8d8d8}
+.expert-single-enable input{border:1px solid #d8d8d8;background:url(/static/widget/expert/expert-single-card-info/img/input_bg_d86b0a7c.png) repeat-x 0 0;_background-attachment:fixed;padding:2px 5px;line-height:18px;margin-top:0;vertical-align:middle;*margin-top:-1px}
+.expert-single-enable textarea{border:1px solid #d8d8d8;background:url(/static/widget/expert/expert-single-card-info/img/input_bg_d86b0a7c.png) repeat-x 0 0;_background-attachment:fixed;height:60px;padding:2px 5px;*margin-top:3px}
+.expert-single-port{width:106px;margin-right:20px;text-align:center}
+.expert-single-port div{width:100px;height:100px;padding:2px;border:1px solid #eaeaea;position:relative;display:inline-block;margin-bottom:16px}
+.expert-single-port div em{width:100px;height:100px;display:inline-block;overflow:hidden}
+.expert-single-port div i{width:106px;height:5px;background-repeat:no-repeat;background-position:-3px -480px;position:absolute;left:-1px;bottom:-6px;cursor:pointer;overflow:hidden}
+.expert-single-port div abbr{width:100px;color:#fff;position:absolute;bottom:3px;left:2px;z-index:1}
+.expert-single-port div abbr a{color:#fff;text-decoration:none}
+.expert-single-port div abbr b{width:10px;height:10px;display:inline-block;margin-right:4px;vertical-align:middle;_vertical-align:top;_margin-top:1px;background:url(http://img.baidu.com/img/iknow/recomReplierBgFix.png) no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.baidu.com/img/iknow/recomReplierBgFix.png')}
+.expert-single-port div span{width:100px;height:20px;background:#000;opacity:.5;filter:alpha(opacity=50);position:absolute;left:2px;bottom:2px}
+.w160{width:160px}.w800{width:500px}.mr20{margin-right:20px}.w703{width:703px}.w250{width:250px}.mr27{margin-right:27px}
+.tips-hide{display:none!important}
+.expert-body{line-height:1.5}.expert-main{margin-top:10px}
+.expert-top-main{margin-bottom:20px}
+.expert-bottom-left{float:left}
+.expert-bottom-right{float:left;}
+.expert-index-bottom{float:left;border-bottom:1px solid #ebebeb;padding-bottom:25px;margin-bottom:20px}
+.expert-intro-bottom{float:left;border:1px solid #d4d4d4;border-top:0;margin-top:-20px;margin-bottom:20px}
+.expert-cms-title{font:14px/24px '΢���ź�','Microsoft YaHei';margin-bottom:3px}
+.expert-menu-bg{background:url(/static/expert/ui/css-ui/mod/img/exp-index-bg_a411a4ff.jpg) repeat-x center 95px}
+.expert-j-icons{background:url('/static/expert/ui/css-ui/mod/img/exp-join-us_9497c633.png') no-repeat;_background:url('/static/expert/ui/css-ui/mod/img/exp-join-us-ie6_b624f5c4.png') no-repeat}
+.expert-i-icons{background-image:url('/sy/comm/zhidao/baidu_style_files/exp-index_06d06aa5.png')}
+.expert-icons{background-image:url('/sy/comm/zhidao/baidu_style_files/exp-card_66c828f5.png')}
+.pager{width:100%;text-align:center;padding:25px 0 35px;float:left}
+.pager span{display:inline-block;line-height:22px;padding:0 8px;vertical-align:middle;margin-right:4px}
+.pager a{margin:5px}
+.clickPageClass{background:rgb(226, 226, 226);} 

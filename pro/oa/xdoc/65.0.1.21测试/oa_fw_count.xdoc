@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xdoc version="9.3.5.1">
+  <meta id="e9db6c7a65a54f76b493927cb17d4197" modifyDate="2013-11-04 11:27:11" view="table" createDate="2013-11-04 10:03:22"/>
+  <conns>
+    <conn name="jdbc/rh" driver="oracle.jdbc.driver.OracleDriver" url="jdbc:oracle:thin:@65.0.1.21:1521:noadb" user="rhoa" password="ruaho1234oa"/>
+  </conns>
+  <rowsets>
+    <rowset name="data" conn="jdbc/rh"><![CDATA[SELECT b.DEPT_NAME 部门,
+       a.GW_YEAR_CODE 文件,
+       CASE S_WF_STATE
+         WHEN 1 THEN
+          '未结'
+         WHEN 2 THEN
+          '已结'
+         ELSE
+          '其它'
+       END 状态,
+       GW_NUM 数量
+  FROM (SELECT S_TDEPT, GW_YEAR_CODE, S_WF_STATE, COUNT(GW_ID) GW_NUM
+          FROM OA_GW_GONGWEN
+         WHERE S_ODEPT = '00000001'
+           AND TMPL_TYPE_CODE = 'OA_GW_TYPE_FW'
+           AND S_FLAG = 1
+           AND GW_YEAR_CODE IS NOT NULL
+           AND GW_BEGIN_TIME >= '2013-08-01'
+           AND GW_BEGIN_TIME < '2013-09-01'
+         GROUP BY GW_YEAR_CODE, S_TDEPT, S_WF_STATE) a,
+       SY_ORG_DEPT b
+ WHERE a.S_TDEPT = b.DEPT_CODE
+ ORDER BY B.DEPT_SORT]]></rowset>
+  </rowsets>
+  <body>
+    <para>
+      <table cols="96,96,96,96" height="144" name="表1" sizeType="autoheight" width="384" rows="24,24,24,24,24,24">
+        <cell col="1" name="x87564" rowSpan="2" align="center" row="3">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">部门/编号</text>
+          </para>
+        </cell>
+        <cell col="1" name="部门" sizeType="autoheight" row="5" sql="select distinct 部门 from $s.data">
+          <para>
+            <text>{%部门.部门%}</text>
+          </para>
+        </cell>
+        <cell col="1" name="x87893" align="center" row="6">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">合计</text>
+          </para>
+        </cell>
+        <cell col="3" name="x87983" align="center" row="6">
+          <para align="center">
+            <text format="n">{%(select sum(数量) from $s.data where 文件=文件.文件 and 状态=已结)%}</text>
+          </para>
+        </cell>
+        <cell col="3" name="x87811" sizeType="autoheight" align="center" row="5">
+          <para align="center">
+            <text format="n">{%(select 数量 from $s.data where 部门=部门.部门 and 文件=文件.文件 and 状态=已结)%}</text>
+          </para>
+        </cell>
+        <cell col="2" name="x87790" sizeType="autoheight" align="center" row="5">
+          <para align="center">
+            <text format="n">{%(select 数量 from $s.data where 部门=部门.部门 and 文件=文件.文件 and 状态=未结)%}</text>
+          </para>
+        </cell>
+        <cell col="4" name="x87856" rowSpan="2" align="center" row="3">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">合计</text>
+          </para>
+        </cell>
+        <cell col="2" name="x87942" align="center" row="6">
+          <para align="center">
+            <text format="n">{%(select sum(数量) from $s.data where 文件=文件.文件 and 状态=未结)%}</text>
+          </para>
+        </cell>
+        <cell col="2" direction="h" colSpan="2" name="文件" sizeType="autoheight" align="center" row="3" sql="select distinct 文件 from $s.data">
+          <para align="center">
+            <text>{%文件.文件%}</text>
+          </para>
+        </cell>
+        <cell col="4" name="x88080" align="center" row="5">
+          <para align="right">
+            <text format="n">{%(select sum(数量) from $s.data where 部门=部门.部门)%}</text>
+          </para>
+        </cell>
+        <cell col="3" name="x110930" rowSpan="2" align="center" row="1">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">中华财险发文统计</text>
+          </para>
+        </cell>
+        <cell col="4" name="x88171" align="center" row="6">
+          <para align="right">
+            <text format="n">{%(select sum(数量) from $s.data)%}</text>
+          </para>
+        </cell>
+        <cell col="2" name="未结" align="center" row="4">
+          <para align="center">
+            <text fontSize="16">未结</text>
+          </para>
+        </cell>
+        <cell col="3" name="已结" align="center" row="4">
+          <para align="center">
+            <text fontSize="16">已结</text>
+          </para>
+        </cell>
+      </table>
+    </para>
+    <para/>
+  </body>
+</xdoc>

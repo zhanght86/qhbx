@@ -1,0 +1,17 @@
+var _viewer = this;
+
+/**
+ * 批量打印
+ */
+var printDaGdInfoObj = _viewer.wfCard._getBtn('printDaGdInfo');
+
+if (printDaGdInfoObj) {
+	// 动态装载意见代码
+	Load.scriptJS("/oa/zh/batch-print.js");
+	new rh.oa.batchPrint({
+		"parHandler": _viewer,
+		"actObj":printDaGdInfoObj,
+		"printPic":true,
+		"printAudit":true
+	});
+}

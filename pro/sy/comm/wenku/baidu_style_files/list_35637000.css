@@ -1,0 +1,104 @@
+.body .main {
+	width: 746px;
+	float:left;
+}
+
+.body .aside {
+	width: 228px;
+	margin-left: 0;
+	float:right;
+	background: #fafafa;
+	border: 1px solid #e5e5e5;
+}
+.rank {
+	background: url("/sy/comm/wenku/baidu_style_files/rank-bar.png")
+		no-repeat 0 0;
+	text-indent: 25px;
+	line-height: 25px;
+}
+.skin-default .inner {
+	padding: 5px 12px;
+}
+.skin-default .hd {
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.skin-default .cd {
+	margin: 0 3px;
+	text-align: left;
+	line-height: 180%;
+	zoom: 1;
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 15px;
+}
+
+.body .aside .tousuBox {
+	margin-top: 4px;
+	border: 1px solid #acd1eb;
+	padding: 3px;
+	background: #e7f2f9;
+	_zoom: 1
+}
+
+.body .aside .tousuBox .bd {
+	background-color: #fff;
+	padding: 10px
+}
+
+.icon {
+	background: url(icons.gif)
+		-1000px -1000px no-repeat;
+	padding: 2px 10px;
+	zoom: 1;
+	font-size: 12px;
+	cursor: default;
+	position: relative;
+	top: -1px
+}
+
+.rg {
+	border: 1px solid #acd1eb;
+	_zoom: 1;
+	padding-bottom: 1px;
+	background: #e7f2f9;
+	clear: both;
+	width:745px;
+}
+
+.rg .top-search-box .s_ipt_wr {
+	width: 550px
+}
+
+.rg .tl,.rg .tr,.rg .bl,.rg .br {
+	background-image:
+		url(bottomSearchBg_05cd6ca9.png);
+	background-repeat: no-repeat;
+	width: 5px;
+	height: 5px
+}
+
+.rg .tl,.rg .tr {
+	top: -1px
+}
+
+.rg .bl,.rg .br {
+	bottom: -1px;
+	margin-top: -4px
+}
+
+.rg .tl,.rg .bl {
+	left: -1px
+}
+
+.rg .tr,.rg .br {
+	right: -1px
+}
+
+.rg .top-search-box .s_ipt {
+	width: 540px
+}
+
+.rg .bd {
+	padding: 25px 0 20px 25px
+}

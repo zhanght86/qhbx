@@ -1,0 +1,52 @@
+table.gwHeaderTable {
+	width: 780px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+.gwHeader {
+	font-family: 方正小标宋简体;
+	font-size: 32px;
+	color: #000000
+}
+
+.gwfw-span {
+	float: left;
+	margin-top: 10px;
+}
+
+.gw-item {
+	display: inline-block;
+	max-width: 200px;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	margin-right: 20px;
+}
+
+.gw-max-button {
+	margin-left: 10px;
+	width: 80px;
+	height: 32px;
+	text-align: center;
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.gw-year-code {
+	display: inline-block;
+	max-width: 200px;
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.gw-font {
+	font-size:14px;
+}
+
+.gw-year {
+	height: 18px;
+	line-height: 18px;
+}

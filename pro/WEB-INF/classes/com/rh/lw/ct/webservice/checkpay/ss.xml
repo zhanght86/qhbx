@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platforminfo>
+	<baseinfo>
+		<BATCHNO>20131014097533</BATCHNO>
+		<RESPONSE>2013-10-14 00:00:53</RESPONSE>
+		<TOTALNUM>1</TOTALNUM>
+		<FAILNUM>0</FAILNUM>
+	</baseinfo>
+	<recordinfos>
+		<recordinfo>
+			<DATASTATUS>1</DATASTATUS>
+			<ERRDESCRIPTION></ERRDESCRIPTION>
+			<C_ID>EM23120145060335000909-1-16</C_ID>
+		</recordinfo>
+	</recordinfos>
+</platforminfo>

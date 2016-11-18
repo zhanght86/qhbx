@@ -1,0 +1,706 @@
+.task-info {
+	padding: 10px 20px;
+	line-height: 22px;
+	border: 1px solid #f2f2f2
+}
+
+.ic-ie {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -488px;
+	width: 17px;
+	height: 17px
+}
+
+.ic-firefox {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -508px
+}
+
+.ic-chrome {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -527px
+}
+
+.ic-multi {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -407px;
+	height: 18px
+}
+
+.ic-private {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -427px;
+	height: 17px
+}
+
+.ic-upload-ok {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -187px;
+	display: none
+}
+
+.upload-type-info dt {
+	font-weight: bold
+}
+
+.upload-type-info dd {
+	padding: 5px 0
+}
+
+.upload-type-info .media {
+	padding: 30px;
+	width: 285px;
+	height: 115px;
+	background: #fafdfc
+}
+
+.flash-upload-wrap {
+	width: 210px;
+	height: 44px;
+	margin: 63px auto;
+	text-align: center
+}
+
+.upload-notice dt {
+	font-weight: bold
+}
+
+.upload-notice dt,.upload-notice dd {
+	padding: 5px 0
+}
+
+.upload-notice dd .ic {
+	width: 5px;
+	height: 5px;
+	vertical-align: middle;
+	background: #999
+}
+
+.upload-notice td {
+	line-height: 24px
+}
+
+.upload-notice .txtR {
+	width: 105px;
+	padding-right: 10px
+}
+
+.item-progress {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height: 3px;
+	width: 195px;
+	background: #dcdcdc;
+	border-top: 1px solid #a3a3a3;
+	border-left: 1px solid #b2b2b2;
+	border-right: 1px solid #bcbcbc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 2px;
+	position: relative
+}
+
+.item-progress-inner {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height: 4px;
+	width: 0;
+	background: #40a87b;
+	background-image: linear-gradient(bottom, #39976e 21%, #39976e 20%, #43af80 80%);
+	background-image: -o-linear-gradient(bottom, #39976e 21%, #39976e 20%, #43af80 80%);
+	background-image: -moz-linear-gradient(bottom, #39976e 21%, #39976e 20%, #43af80 80%);
+	background-image: -webkit-linear-gradient(bottom, #39976e 21%, #39976e 20%, #43af80 80%);
+	background-image: -ms-linear-gradient(bottom, #39976e 21%, #39976e 20%, #43af80 80%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 0
+}
+
+.item-progress-text {
+	margin-left: 10px;
+	font-weight: bold;
+	color: #245c45
+}
+
+.mod-upload .hd {
+	border: 1px solid #d8e8e1;
+	border-bottom-color: #a2beb2;
+	height: 48px;
+	line-height: 48px;
+	background: #e9f7f1
+}
+
+.mod-upload .hd .item-message-all-ok {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 12px;
+	padding-left: 30px
+}
+
+.mod-upload .hd .item-message-all-notic {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -87px;
+	padding-left: 30px
+}
+
+.mod-upload .hd .item-message-all-err {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -138px;
+	padding-left: 30px
+}
+
+.mod-upload .hd .item-message-all-uploading {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -36px;
+	padding-left: 30px
+}
+
+.mod-upload .hd h3 a,.mod-upload .hd .btn-cancel-update,.mod-upload .hd .btn-edit-all
+	{
+	font-weight: normal;
+	text-decoration: underline
+}
+
+.mod-upload .hd .item-message-all b {
+	font-weight: bold;
+	color: #e67201
+}
+
+.mod-upload .hd .act {
+	line-height: 26px;
+	margin-top: 20px
+}
+
+.mod-upload .edit-all-head {
+	height: 64px;
+	position: relative
+}
+
+.mod-upload .edit-all-head .item-progress-wrap {
+	line-height: 11px;
+	position: absolute;
+	bottom: 10px;
+	left: 50px
+}
+
+.mod-upload .edit-all-head .item-progress {
+	width: 350px;
+	height: 10px;
+	border-radius: 5px
+}
+
+.mod-upload .edit-all-head .item-progress-inner {
+	height: 11px;
+	border-radius: 4px
+}
+
+.mod-upload .bd {
+	border: 1px solid #cbdfd6;
+	border-top: 0
+}
+
+.mod-upload .ft {
+	border: 1px solid #cbdfd6;
+	border-top: 0;
+	padding: 10px 20px;
+	line-height: 24px
+}
+
+.mod-upload .upload-item {
+	z-index: 1;
+	border: 1px solid #e0e0e0
+}
+
+.mod-upload .upload-item .item-hd {
+	background: #f7f7f7;
+	padding: 10px 10px 0 30px;
+	position: relative;
+	height: 58px
+}
+
+.mod-upload .upload-item .item-hd .item-ctrl {
+	position: absolute;
+	bottom: 8px;
+	right: 15px;
+	color: #333
+}
+
+.mod-upload .upload-item .item-hd .ui-imgBtn-delete {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -310px;
+	width: 14px;
+	height: 14px
+}
+
+.mod-upload .upload-item .item-hd .ui-imgBtn-delete:hover {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -330px
+}
+
+.mod-upload .upload-item .item-hd-hover {
+	background: #f0f0f0
+}
+
+.mod-upload .upload-item .item-bd {
+	padding: 20px 30px 30px 30px;
+	background: #fcfcfc;
+	position: relative;
+	z-index: 3
+}
+
+.mod-upload .upload-item .item-l {
+	float: left;
+	width: 555px
+}
+
+.mod-upload .upload-item .item-r {
+	float: right;
+	width: 250px
+}
+
+.mod-upload .upload-item strong {
+	font-weight: bold;
+	line-height: 24px
+}
+
+.mod-upload .upload-item strong i {
+	color: red
+}
+
+.mod-upload .upload-item .item-title-input,.mod-upload .upload-item .item-keyword-input,.mod-upload .upload-item textarea
+	{
+	width: 543px;
+	height: 16px;
+	line-height: 16px;
+	background: #fff
+		url(/sy/comm/wenku/img/upload/bg_input_dedad155.png)
+		no-repeat;
+	border: 1px solid #ccc;
+	padding: 5px;
+	outline: 0
+}
+
+.mod-upload .upload-item .inp-on {
+	border: 1px solid #1ea06a
+}
+
+.mod-upload .upload-item .item-title-fix input {
+	display: none
+}
+
+.mod-upload .upload-item .item-title-ext {
+	line-height: 30px
+}
+
+.mod-upload .upload-item .item-title-fix-sub input {
+	width: 95%
+}
+
+.mod-upload .upload-item .item-title-fix-sub .media {
+	float: right;
+	margin-left: 10px;
+	margin-right: 0
+}
+
+.mod-upload .upload-item .item-title-fix-main input {
+	width: 95%;
+	float: right
+}
+
+.mod-upload .upload-item textarea {
+	height: 50px;
+	resize: vertical
+}
+
+.mod-upload .upload-item .item-privacy p {
+	_padding: 2px 0
+}
+
+.mod-upload .upload-item .item-privacy p label {
+	font-weight: normal
+}
+
+.mod-upload .upload-item .item-privacy .item-privacy-radio {
+	*vertical-align: baseline;
+	_width: 14px;
+	_height: 14px
+}
+
+.mod-upload .upload-item .item-submit {
+	position: absolute;
+	bottom: 30px;
+	right: 30px
+}
+
+.mod-upload .upload-item .item-tag {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	line-height: 24px;
+	background: #eff8f4;
+	border: 1px solid #d4e4e1;
+	padding: 0 10px;
+	margin: 0 10px 5px 0;
+	cursor: pointer
+}
+
+.mod-upload .upload-item .tag-on {
+	border: 1px solid #aacac3;
+	background: #d5e9e5
+}
+
+.mod-upload .upload-item .item-tag-click {
+	color: #999
+}
+
+.mod-upload .upload-item .item-submit {
+	color: #999
+}
+
+.mod-upload .upload-item .btn-price,.mod-upload .upload-item .btn-category,.mod-upload .upload-item .btn-favorites
+	{
+	background:
+		url(/sy/comm/wenku/img/upload/btn_rx_3e2ffb74.png)
+		repeat-x;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height: 18px;
+	line-height: 18px;
+	padding: 5px 10px;
+	border: 1px solid #e1e1e1;
+	cursor: pointer;
+	outline: 0;
+}
+
+.mod-upload .upload-item .category-text,.mod-upload .upload-item .price-text,.mod-upload .upload-item .favorites-text
+	{
+	_position: relative;
+	_top: 2px
+}
+
+.mod-upload .upload-item .ic-btn {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -267px
+}
+
+.mod-upload .upload-item .btn-on {
+	border: 1px solid #aaa
+}
+
+.mod-upload .upload-item .btn-on .ic-btn {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -286px
+}
+
+.mod-upload .upload-item .item-msg {
+	padding: 1px 0 1px 20px;
+	font-weight: bold
+}
+
+.mod-upload .upload-item .msg-ok {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -187px;
+	color: #47990d
+}
+
+.mod-upload .upload-item .msg-notice {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -207px;
+	color: #3d90b7
+}
+
+.mod-upload .upload-item .msg-error {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -227px;
+	color: #da1111
+}
+
+.mod-upload .upload-item .msg-disabled {
+	background:
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 0 -247px;
+	color: #999;
+	font-weight: normal
+}
+
+.mod-upload .upload-item .item-privacy input {
+	margin-right: 5px
+}
+
+.mod-upload .upload-item .item-favorites {
+	z-index: 4
+}
+
+.mod-upload .upload-item .item-price {
+	z-index: 5;
+	position: relative
+}
+
+.mod-upload .upload-item .price-select-wrap,.mod-upload .upload-item .category-select-wrap,.mod-upload .upload-item .favorites-select-wrap
+	{
+	position: relative;
+	z-index: 3
+}
+
+.mod-upload .upload-item .category-panel,.mod-upload .upload-item .price-panel,.mod-upload .upload-item .favorites-panel
+	{
+	position: absolute;
+	top: 29px;
+	left: 0;
+	z-index: 2;
+	outline: 0;
+	border: 1px solid #aaa;
+	background: #fff
+}
+
+.mod-upload .upload-item .price-panel {
+	width: 105px;
+	background: #fbfbfb;
+	line-height: 24px;
+	padding: 5px 0;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1)
+}
+
+.mod-upload .upload-item .price-panel .selected {
+	color: white;
+	background: #316ac5
+}
+
+.mod-upload .upload-item .price-panel .selected span {
+	color: white
+}
+
+.mod-upload .upload-item .price-item {
+	padding: 0 10px;
+	zoom: 1;
+	cursor: default
+}
+
+.mod-upload .upload-item .price-item span {
+	margin-right: 5px
+}
+
+.mod-upload .upload-item .price-item-hover {
+	background: #dcefea
+}
+
+.mod-upload .upload-item .category-panel {
+	position: absolute;
+	top: 29px;
+	left: 0;
+	z-index: 2;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1)
+}
+
+.mod-upload .upload-item .category-panel .ui-category {
+	_display: inline
+}
+
+.mod-upload .upload-item .category-panel .ui-category li {
+	margin-right: 0;
+	width: 138px;
+	border: 0
+}
+
+.mod-upload .upload-item .category-panel p.hover {
+	background: #dcefea
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 100px -380px
+}
+
+.mod-upload .upload-item .category-panel p.selected {
+	background: #316ac5
+		url(/sy/comm/wenku/img/upload/spr_upload_e112e563.png)
+		no-repeat 100px -350px
+}
+
+.mod-upload .upload-item .category-panel p.last {
+	background-image: none
+}
+
+.mod-upload .upload-item-hide .item-bd {
+	display: none
+}
+
+.mod-upload .upload-item-disabled .item-progress-wrap,.mod-upload .upload-item-disabled .item-ctrl
+	{
+	display: none
+}
+
+.mod-upload .upload-item-public .item-hd .item-ctrl {
+	color: #999;
+	cursor: default;
+	text-decoration: none
+}
+
+.mod-upload .upload-item-public .item-hd .item-ctrl .gbma-u {
+	border-bottom-color: #999
+}
+
+.mod-upload .item-disabled .item-title-input,.mod-upload .item-disabled .item-keyword-input,.mod-upload .item-disabled textarea
+	{
+	background: #ebebe4
+}
+
+.mod-upload .item-disabled .btn-price,.mod-upload .item-disabled .btn-category,.mod-upload .item-disabled .btn-favorites
+	{
+	background: #ebebe4;
+	border-color: #CCC;
+	cursor: default
+}
+
+.mod-upload .item-disabled .item-tag {
+	color: #999;
+	cursor: default
+}
+
+.mod-upload .item-disabled .tag-on {
+	background: #eff8f4;
+	border: 1px solid #d4e4e1
+}
+
+.mod-upload .item-disabled label {
+	cursor: default
+}
+
+.mod-upload .upload-all .upload-item {
+	border-color: #fff
+}
+
+.mod-upload .upload-all .upload-item .item-hd {
+	background: #fff;
+	height: 15px;
+	padding-top: 0
+}
+
+.mod-upload .upload-all .upload-item .item-hd .act,.mod-upload .upload-all .upload-item .item-hd h3,.mod-upload .upload-all .upload-item .item-hd .item-progress-wrap,.mod-upload .upload-all .upload-item .item-hd .item-ctrl
+	{
+	display: none
+}
+
+.mod-upload .upload-all .upload-item .item-bd {
+	background: #fff;
+	padding-top: 15px
+}
+
+.mod-upload-no-edia-all .btn-edit-all,.mod-upload-no-edia-all .upload-all
+	{
+	display: none
+}
+
+.upload-widget {
+	position: relative;
+	*zoom: 1
+}
+
+.upload-widget .upload-flash-container {
+	z-index: 1;
+	position: absolute;
+	top: 113px;
+	left: 207px;
+	_left: 204px;
+	width: 210px;
+	height: 44px;
+	background: #fd9526
+}
+
+.upload-widget-edit .upload-flash-container {
+	top: 20px;
+	right: 143px;
+	left: auto;
+	height: 26px;
+	width: 104px;
+	background: #eaf9f1
+}
+
+.upload-widget-edit .btn-cancel-update {
+	display: none
+}
+
+.upload-widget-update .upload-flash-container {
+	top: 12px;
+	right: 20px;
+	left: auto;
+	height: 26px;
+	width: 119px;
+	background: #eaf9f1
+}
+
+.upload-widget-update .edit-all-head .item-progress-wrap,.upload-widget-update .edit-all-head .ui-btn,.upload-widget-update .btn-edit-all,.upload-widget-update .btn-cancel-update,.upload-widget-update .ui-imgBtn-delete,.upload-widget-update .item-ctrl
+	{
+	display: none
+}
+
+.upload-widget-update .edit-all-head {
+	height: 48px
+}
+
+.upload-widget-update .edit-all-head .act {
+	margin-top: 11px
+}
+
+.upload-widget-update .flash-occupying {
+	width: 119px
+}
+
+.flash-occupying {
+	line-height: 26px;
+	height: 26px;
+	width: 104px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	text-align: center
+}
+
+.input-wrap .box .content {
+	_left: 0
+}
+
+.item-summary-tips,.item-keyword-tips {
+	display: none
+}
+
+.show-tips .tips-wrap {
+	position: relative;
+	z-index: 2
+}
+
+.show-tips .tips-wrap .item-summary-tips,.show-tips .tips-wrap .item-keyword-tips
+	{
+	display: inline;
+	position: absolute;
+	cursor: text;
+	top: 7px;
+	left: 7px;
+	color: #999
+}
+
+.upload-ext-info-container {
+	background: #feffe2;
+	border: 1px solid #ddd
+}
+
+.upload-ext-info-container th {
+	font-weight: bold
+}
+

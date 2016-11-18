@@ -1,0 +1,29 @@
+/** BBS栏目 **/
+ .con{display:block; *display:inline-block; padding:15px 0 10px 12px; _padding:15px 0 10px 6px;}
+ .con:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+ h2 span{height: 34px; display: inline-block;}
+ h2 img{vertical-align:baseline;}
+ h2 .title{margin:0 20px 0 0;}
+ h2 .amount{float:right; _margin:9px 0 0 0; font-size:12px; font-weight:normal;}
+ h2 .amount  img{margin:0 0 0 10px; vertical-align:middle;}
+ h2 .last_topic{font-size:12px; font-weight:normal;}
+ h2 .last_topic a{ text-decoration:underline;}
+ .bbs_son{float:left; width:215px; height:57px; overflow:hidden; margin:5px 8px 9px 6px; border:solid 1px #d8e6f0; background:#fff;}
+ .bbs_son:after{}
+ .bbs_son.active,
+ .bbs_son:hover{width:215px; height:57px; overflow:hidden; margin:0 3px 4px 1px; padding:6px; border:none; background:url(/sy/comm/bbs/img/bbs_hover_bg.png) no-repeat 0 0; cursor:pointer;}
+ .bbs_son:hover a {color: #BC2A4D;}
+ .bbs_son a{font-weight:bold;text-decoration:none;color:#006699;}
+ .bbs_son dt{float:left; width:32px; height:32px; overflow:hidden; margin:0; padding:10px;}
+ .bbs_son dt img{width:32px; height:32px;}
+ .bbs_son dd{float:left; width:150px; overflow:hidden; margin:0; padding:8px 10px 8px 0; color:#666; line-height:20px;}
+ .bbs_son dd strong{display:block; font-size:14px;}
+
+ .tags{clear:both; padding:0 10px;}
+ .tags a{margin:0 20px 0 0; text-decoration:underline;}
+ .tags a.active{color: #FF6600; font-weight: bold;}
+ .bbs_son.active a {color: #FF6600;}
+.postbody #topic_tags {display: inline-block; width: 790px;}
+.postbody #topic_tags a,
+ h2 a.last_post {text-decoration: none;}
+/** BBS栏目 **/

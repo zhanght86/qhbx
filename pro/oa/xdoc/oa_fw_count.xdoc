@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xdoc version="9.7.0">
+  <meta id="b4a6947e18044be1bc9853028e054313" modifyDate="2014-02-20 16:07:58" view="table" createDate="2013-11-04 10:24:39"/>
+  <params>
+    <param name="jdbc_name"/>
+    <param name="fullName"/>
+    <param name="sql"/>
+  </params>
+  <rowsets>
+    <rowset name="data" conn="{%$p.jdbc_name%}"><![CDATA[{%$p.sql%}]]></rowset>
+  </rowsets>
+  <body>
+    <para>
+      <table cols="96,96,96,96" height="144" name="表1" sizeType="autoheight" width="384" rows="24,24,24,24,24,24">
+        <cell col="1" colSpan="2" name="x118372" align="center" row="3">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">部门/文件状态</text>
+          </para>
+        </cell>
+        <cell col="1" name="部门" rowSpan="2" sizeType="autoheight" align="center" row="4" sql="select distinct 部门 from $s.data">
+          <para align="center">
+            <text>{%部门.部门%}</text>
+          </para>
+        </cell>
+        <cell col="1" colSpan="2" name="x131439" align="center" row="6">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">合计</text>
+          </para>
+        </cell>
+        <cell col="3" name="x131474" sizeType="autoheight" align="center" row="6">
+          <para align="center">
+            <text>{%(select sum(数量) from $s.data where 文件=文件.文件)%}</text>
+          </para>
+        </cell>
+        <cell col="3" name="x118766" sizeType="autoheight" align="center" row="5">
+          <para align="center">
+            <text>{%(select 数量 from $s.data where 部门=部门.部门 and 文件=文件.文件 and 状态=未结)%}</text>
+          </para>
+        </cell>
+        <cell col="4" name="x131377" align="center" row="3">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">合计</text>
+          </para>
+        </cell>
+        <cell col="2" name="未结" align="center" row="5">
+          <para align="center">
+            <text>未结</text>
+          </para>
+        </cell>
+        <cell col="4" name="x131777" sizeType="autoheight" align="center" row="4">
+          <para align="right">
+            <text>{%(select sum(数量) from $s.data where 部门=部门.部门 and 状态=已结)%}</text>
+          </para>
+        </cell>
+        <cell col="4" name="x131806" align="center" row="5">
+          <para align="right">
+            <text>{%(select sum(数量) from $s.data where 部门=部门.部门  and 状态=未结)%}</text>
+          </para>
+        </cell>
+        <cell col="3" name="x153414" rowSpan="2" align="center" row="1">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">{%$p.fullName%}</text>
+          </para>
+        </cell>
+        <cell col="2" name="已结" row="4">
+          <para align="center">
+            <text>已结</text>
+          </para>
+        </cell>
+        <cell col="4" name="x131680" sizeType="autoheight" align="center" row="6">
+          <para align="right">
+            <text>{%(select sum(数量) from $s.data)%}</text>
+          </para>
+        </cell>
+        <cell col="3" name="x118659" sizeType="autoheight" align="center" row="4">
+          <para align="center">
+            <text>{%(select 数量 from $s.data where 部门=部门.部门 and 文件=文件.文件 and 状态=已结)%}</text>
+          </para>
+        </cell>
+        <cell col="3" direction="h" name="文件" sizeType="autoheight" align="center" row="3" sql="select distinct 文件 from $s.data">
+          <para align="center">
+            <text>{%文件.文件%}</text>
+          </para>
+        </cell>
+      </table>
+    </para>
+    <para/>
+  </body>
+</xdoc>

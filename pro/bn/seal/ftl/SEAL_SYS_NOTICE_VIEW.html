@@ -1,0 +1,45 @@
+<script type="text/javascript" >
+	function openOne(id,tTitle){
+		var opts = {"url":"SEAL_SYS_NOTICE_VIEW.card.do?pkCode="+id, "tTitle":tTitle, "menuFlag":4};
+		Tab.open(opts);
+	}
+	function openMore(){
+		var opts = {"url":"SEAL_SYS_NOTICE_VIEW.list.do", "tTitle":"${title}", "menuFlag":4};
+		Tab.open(opts);
+	}
+</script>
+<style type="text/css">
+.portal-box-title-icon{display:inline-block;margin-left:0px;}
+</style>
+<div id='SY_COMM_TODO' class='portal-box ${boxTheme}' style='height:370px'>
+	<div class='portal-box-title ${titleBar}'>
+		<span class='portal-box-title-icon ${icon}'></span>
+		<span class="portal-box-title-label">${title}</span>
+		<span class="portal-box-hideBtn  conHeanderTitle-expand"></span>
+		<span class="portal-box-more">
+			<a href="#" onclick="openMore();"></a>
+		</span>
+	</div>
+	<div class='portal-box-con'>
+		<table width="100%">
+			<#if (_DATA_?size == 0)>
+			<tr>
+				<td align=center id='haha'>没有通知！</td>
+			</tr>
+			</#if>
+			<#list _DATA_ as content>
+			<tr>
+				<td align="left" style="padding-left: 20px;" width="100%">
+					<a href="javascript:void(0);" onclick="openOne('${content.N_ID}','${content.N_TITLE}');" title="${content.N_TITLE}">
+						<#if (content.N_TITLE?length > 10)>
+							${content.N_TITLE?substring(0,10)}...
+							<#else>${content.N_TITLE}
+						</#if>
+						${content.S_ATIME}
+					</a>
+				</td>
+			</tr>
+			</#list>
+		</table>
+	</div>
+</div>

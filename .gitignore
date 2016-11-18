@@ -1,0 +1,12 @@
+.svn
+*.class
+*.log
+.settings
+*.bak
+*bak
+db
+*.txt
+pro\WEB-INF\work
+pro\WEB-INF\update
+pro\WEB-INF\tmp
+pro\WEB-INF\doc\SY_COMM_MENU

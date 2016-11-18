@@ -1,0 +1,80 @@
+/**
+* 鏂囨。涓績澶撮儴瀵艰埅CSS
+* 寮犻噾浼� 2013-04-28 鎶芥彁
+* 鑱旂郴鏂瑰紡 15801579215
+**/
+.nav-wrap {margin-bottom: 0 !important}
+.ui-nav {background-position: right -34px;height: 34px;padding: 0 2px 0 0;position: relative;z-index: 10;}
+.ui-nav .current .fst,.ui-nav .current .fst:hover {background-position: 0 -238px;margin-left: -3px;padding-left: 3px}
+.ui-nav,.ui-nav .inner,.ui-nav li,.ui-nav .current a,.ui-nav a:hover,.ui-nav a:active
+{background: #1e9866 url(spr_nav_v2_f4ee7bac.png) no-repeat 0 0}
+.ui-nav .inner {background-position: 0 0;background-repeat: repeat-x}
+.ui-nav li {float: left;height: 34px;line-height: 34px;z-index: 100;background-position: -2px -170px;text-align: center}
+.ui-nav .first {width: 111px;background-position: 0 -68px}
+.ui-nav .first a {padding-left: 10px}
+.ui-nav .first a:hover {background-position: 0 -102px;margin-left: 0;padding-left: 10px}
+.ui-nav .first a:active,.ui-nav .current .fst,.ui-nav .current .fst:hover
+{background-position: 0 -136px;margin-left: 0;padding-left: 10px}
+.ui-nav a,.ui-nav a:link,.ui-nav a:visited 
+{text-decoration: none;display: block;font-size: 14px;font-weight: bold;color: #fff;zoom: 1}
+.ui-nav .ac:active,.ui-nav .ac:hover,.ui-nav .current a 
+{background-position: 0 -204px;margin-left: -3px;padding-left: 3px;position: relative;color: #fff}
+.ui-nav .ac:active {background-position: 0 -238px}
+.ui-nav .current a,.ui-nav .current a:hover {background-position: 0 -238px}
+.ui-nav .four {width: 102px}
+.ui-nav .two {width: 102px;text-indent: -6px}
+.ui-nav .four-last {width: 99px}
+.ui-nav li span {position: relative; +top: 1px}
+
+.outside{
+    width: 100%;
+	height: 42px;
+    margin-left:0px;
+    margin-bottom:20px;
+	background-clip: border-box;
+    background-color: transparent;
+    background-image: url("/sy/comm/wenku/baidu_style_files/wenku_index_imgs.png");
+    background-origin: padding-box;
+    background-position: 0 -190px;
+    background-size: auto auto;
+    font-size: 12px;
+}
+.insideUpload{
+	width:160px;
+	height:23px;
+	margin-top:5px;
+	background:url(/sy/comm/zhidao/baidu_style_files/zhidao_bg_imgs.gif);
+	background-position: 0 -96px;
+	background-repeat: no-repeat;
+	float:right;
+	display:block;
+	padding-right:0px;
+	padding-left:0px;
+}
+#uploadA:hover{
+	background-position: 0 -120px;
+}
+.fontA{
+	color:black;
+}
+.fontA:hover{
+	text-decoration:none;
+}
+.floatCategory{
+	background: none repeat scroll 0 0 black;
+    min-height: 30px;
+    left: 140px;
+    position: absolute;
+    top: 6px;
+    max-width: 700px;
+    z-index:700;
+    opacity:0.8;
+}
+.leftFloat{
+	float:left;
+	text-align:center;
+	line-height:30px;
+	height:30px;
+	padding-left:10px;padding-right:10px;
+	color:black;
+}

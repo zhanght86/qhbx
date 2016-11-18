@@ -1,0 +1,22 @@
+.mbSearch-container {padding-top:0px;}
+.mbSearch-input {width:48%;display:none;}
+.mbTopBar-blueBtn {float:right;margin-right:10px;}
+.doc_nav {height:42px;width:100%;border-top:1px #d7d7d7 solid;border-bottom:1px #d7d7d7 solid;list-style:none;background-color:rgb(246, 246, 246);}
+.doc_nav li {display:list-item;width:25%;text-align:center;line-height:42px;vertical-align:baseline;float:left;}
+.doc_nav li a {color:black;text-decoration:none;font-size:16px;}
+.doc_nav .doc_nav_li--on a {color:#496b9b;}
+.doc_nav_line {height:3px;width:25%;position: absolute;bottom:0px;left:0%;}
+.doc_nav_line b {height:3px;display:block;width:40px;margin:0px auto;background-color:#496b9b;}
+.mbGrid-td-left {width:46px;padding-left:5px;}
+.mbGrid-td-right {}
+.mbGrid-td-span {font-size:12px;}
+.mbGrid-doc-img {display:block;width:45px;height:51px;}
+.doc_doc,.doc_docx {background:url(docs.png) 0px -156px no-repeat;background-size:49px 652px;}
+.doc_pdf {background:url(docs.png) 0px -300px no-repeat;background-size:49px 652px;}
+.doc_ppt,
+.doc_pptx {background:url(docs.png) 0px -374px no-repeat;background-size:49px 652px;}
+.doc_txt {background:url(docs.png) 0px -445px no-repeat;background-size:49px 652px;}
+.doc_unknown {background:url(docs.png) 0px -517px no-repeat;background-size:49px 652px;}
+.doc_xls,.doc_xlsx {background:url(docs.png) 0px -590px no-repeat;background-size:49px 652px;}
+.doc_epub {background:url(docs.png) 0px -228px no-repeat;background-size:49px 652px;}
+.mbGrid-catalog {height:30px;padding-left:12px;border-top:1px white solid;border-bottom:1px #d7d7d7 solid;background-color:rgb(246, 246, 246);}

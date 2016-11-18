@@ -1,0 +1,212 @@
+/* -------------项目工程级覆盖系统的样式设定文件---------------*/
+/* @group 覆盖字典和查询选择类的弹出框，开始---------------*/
+.ui-widget-header {background:url(blue/i-window-top-back.png) left -2px repeat-x;position: relative;border:0px red solid;}
+/*.ui-dialog { position: absolute;overflow: hidden;border-radius:8px 8px;}*/
+.ui-dialog .ui-dialog-titlebar {color:black;padding: 0px; position: relative;height:38px;line-height:38px;text-align:center;border-radius:0px 0px;background-color:#CDD8E4;}
+.ui-dialog .ui-dialog-title {margin: 2px 16px 2px 0; font-size:14px;text-shadow:0 0px 0px white;font-family:黑体;} 
+.ui-dialog .ui-dialog-titlebar-close {text-decoration:none;cursor:pointer;background:none;background:url("blue/i-window-close.png") no-repeat left top;position:absolute;right:10px;top:5px;width:54px;height:27px;border:none;}
+.ui-dialog .ui-dialog-titlebar-close span.ui-icon {background:none;display: block;width: 54px;height: 27px;color:black;text-indent:0px;line-height:27px;font-family:黑体;}
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {font-weight:bold;border:none;background:url("blue/i-window-close-active.png") no-repeat left top;}
+.ui-dialog .ui-dialog-buttonpane {background:url("blue/i-window-bottom-back.png") repeat left -7px;text-align: left;  margin: 0 0 0 0; height:39px;line-height:39px;}
+.ui-dialog .ui-dialog-titlebar .rh-select-top-liActive{background-color: #91bdea;}
+.rh-small-dialog .ui-dialog-content {border-left: 6px #CDD8E4 solid;border-right: 5px #CDD8E4 solid;}
+.rh-small-dialog .ui-widget-content {box-shadow: 0px 2px 3px rgba(1,2,3,0.2) inset;}
+.ui-dialog-buttonpane button {text-shadow:0 0px 0px white;width:140px;height:31px;border:none;color:black;line-height:31px;font-family:黑体;font-size:14px;}
+.ui-dialog-buttonpane button{background:url(blue/i-window-btn-right.png) no-repeat 0px top;}
+.ui-dialog-buttonpane button:hover {background:url(blue/i-window-btn-right-active.png) no-repeat right top;}
+.ui-dialog-buttonpane button:first-child {background:url(blue/i-window-btn-left.png) no-repeat 0px top;}
+.ui-dialog-buttonpane button:first-child:hover {background:url(blue/i-window-btn-left-active.png) no-repeat right top;}
+/* @group 覆盖字典和查询选择类的弹出框，结束---------------*/
+/*----------------兼岗弹出框主题风格---------开始---------------*/
+.left-topBar-jian-list {line-height:22px;text-align:left;padding:30px 4px 4px 4px;display:none;border-radius:3px 3px;
+background:#CDD8E4 url(blue/i-window-top-back.png) repeat-x left -2px;z-index:99999;border:0px #eeeeee solid;min-width:160px;min-height:30px;position:absolute;top:35px;}
+.left-top-jian-list--title{color: black;}
+/*----------------兼岗弹出框主题风格---------开始---------------*/
+/* ===================设定红色风格为默认风格，开始===================*/
+/* 覆盖系统背景，列表区外层背景，左侧菜单，列表头，卡片头---------------*/
+.pageBody__default {background-color:#fef8f1;}
+.bodyBack__default {background-color:white;}
+.pageBody__default .ui-state-default {background: url("red/menu__default.png") repeat scroll 0 0 transparent;border-bottom:#E7A28E 1px solid;border-top:#F9F7F6 1px solid;color:#383B38;}
+.pageBody__default .ui-state-hover,
+.pageBody__default .ui-state-active {background:url("red/menu_active__default.png") repeat scroll 0 0 transparent;color:white;border-bottom:1px #E7A28E solid;}
+.pageBody__default .leftMenu-title:hover {background-color:#E66C48;color:white;}
+.pageBody__default .leftMenu-ulTitleExtend-show {border-top:1px #F9F7F6 solid;background:url("red/menu_active__default.png") repeat scroll 0 0 transparent;}
+.conHeader .conHeaderTitle__default {background: url("red/column-header-bg.gif") repeat scroll 0 0 transparent;}
+.rhCard-tabs .conHeaderTitle__default {background: url("red/column-header-bg.gif") repeat scroll 0 0 transparent;}
+.pageBody__default .rh-head-icons {background:url("red/rh-head-icons.png") -5px bottom;}
+.pageBody__default .rh-head-close {background:url("red/rh-head-icons.png") no-repeat -35px 3px;}
+.pageBody__default .rh-head-expand {background:url("red/rh-head-icons.png") no-repeat -60px 3px;}
+/* tab颜色覆盖---------------*/
+.pageBody__default .left-homeMenu-homeTabs .ui-tabs-nav .redLi {background:none ;}
+.pageBody__default .left-homeMenu-homeTabs .ui-tabs-nav .redA {background:none ;}
+.pageBody__default .left-homeMenu-homeTabs .ui-tabs-nav .ui-tabs-selected {background:url(red/head_tabs_red_right.png) repeat-x left top;border-radius:0px;}
+.pageBody__default .left-homeMenu-homeTabs .ui-tabs-nav .ui-tabs-selected a {background:url(red/head_tabs_red_right.png) repeat-x left top;}
+/* portal样式覆盖---------------*/
+.pageBody__default .portal-box {border:1px #f7ccab solid;}
+.pageBody__default .tab-ul-con{background:url(red/portal-box-title.png) left top repeat-x;}
+.pageBody__default .portal-box-title{border-bottom:1px #f7ccab solid !important;color:#FF7B36;background:url(red/portal-box-title.png) left top repeat-x;}
+.pageBody__default .portal-box-title li {margin-top:2px;}
+.pageBody__default .portal-box-title li.ui-tabs-selected {background:url(red/head_tabs_white_right.png) no-repeat right top;}
+.pageBody__default .portal-box-title li.ui-tabs-selected a {background:url(red/head_tabs_white_left.png) no-repeat left top;}
+.pageBody__default .portal-box-title li a {color:#FF7B36;}
+.pageBody__default .portal-box-border {border:1px #f7ccab solid;}
+.pageBody__default .portal-box-tab .portal-box-title li.ui-tabs-selected a {color:white;}
+.pageBody__default .publish_count {color:white;}
+
+/* 覆盖Tab条背景---------------*/
+.pageBody__default #homeTabs .ui-widget-header {background:url(red/rh-head-menu.png) left top repeat-x;}
+/* 覆盖banner的区域---------------*/
+/*.pageBody-lightBlue #banner {background:url(blue/head_bg_zhbx.gif) left top;}*/
+.pageBody__default #banner {background:#ffd58f;}
+/* 覆盖banner的背景---------------*/
+.pageBody__default .banner-logo {background:url(red/head_logo_zhbx.gif) left top no-repeat;}
+/* 覆盖banner右侧搜索框------------*/
+.pageBody__default .rh-head-sea-input {border:1px #ffd58f solid;box-shadow:1px 2px 3px #446996 inset;background-color:#ffd58f;padding:0px 0px 0px 3px;height:25px;line-height:28px;color:#d0efff;width:174px;}
+/* 覆盖按钮---------------*/
+.pageBody__default .rh-icon {background:url(red/rh-btn-hover.png) no-repeat;}
+.pageBody__default .rh-icon-inner {background:url(red/rh-btn-hover.png) no-repeat;background-position:right -26px;}
+.pageBody__default .rh-icon-img {}
+.pageBody__default .rh-icon:hover {background:url(red/rh-btn-hover.png) no-repeat;background-position:left -52px;}
+.pageBody__default .rh-icon:hover .rh-icon-inner{background:url(red/rh-btn-hover.png) no-repeat;background-position:right -78px;color:white;}
+.pageBody__default .rh-icon:hover .rh-icon-groupCon .rh-icon:hover{background-color:#d73413 !important;}
+.pageBody__default .rh-icon:hover .rh-icon-groupCon .rh-icon{background:#EE9572 !important;}
+.pageBody__default .rh-icon:hover .rh-icon-inner:active {}
+.pageBody__default .rhSearch-button {background:url(red/rh-btn-hover.png) no-repeat;background-position:left -52px;}
+.pageBody__default .rhSearch-inner {background:url(red/rh-btn-hover.png) no-repeat;background-position:right -78px;}
+/* 覆盖分页样式*/
+.pageBody__default .rhGrid-page a {border:#e66247 1px solid;color:#000;}
+.pageBody__default .rhGrid-page a:hover {background-color:#e66247;}
+.pageBody__default .rhGrid-page a:active {background-color:#e66247;}
+.pageBody__default .rhGrid-page span.current {border:#e66247 1px solid;color:white;background-color:#e66247;}
+.pageBody__default .rhGrid-page input.toPageNum {width:20px;border:#e66247 1px solid;margin:0 2px 0 2px;}
+.pageBody__default .rhGrid-page input.toPageBtn {width:30px;margin:0 2px 0 0;}
+.pageBody__default .leftMenu-li {background-color:#ffffed;border-top:1px #f8f7f7 solid;border-bottom:1px #fdfae8 solid;}
+.pageBody__default .leftMenu-li:hover {background-color:#fff1ca;}
+.pageBody__default .leftMenu-li a{font-weight: bold;}
+.pageBody__default .leftMenu-li-leafli a{font-weight: normal;}
+.pageBody__default .leftMenu-nodeUl-hide li a{font-weight: normal;}
+/* 覆盖风格设定*/
+.pageBody__default .rh-slideStyle-allRed{background:url(red/red.jpg) no-repeat;}
+.pageBody__default .rh-head-per-tip {color:black;}
+.pageBody__default .rh-head-per--rate{color:black;}
+
+/* ===================设定红色风格为默认风格，结束===================*/
+
+/* ===================蓝色风格，开始================*/
+/* 覆盖系统背景，列表区外层背景，左侧菜单，列表头，卡片头---------------*/
+.pageBody-lightBlue .ui-state-default {background: url("blue/menu__default.png") repeat scroll 0 0 transparent;background-color:#CAE5FC;border-bottom:#E6E6E6 1px solid;border-top:#E9ECEF 1px solid;color:#47525D;}
+.pageBody-lightBlue .ui-state-hover,
+.pageBody-lightBlue .ui-state-active {background:url("blue/menu_active__bndefault.png") repeat scroll 0 0 transparent;background-color:#5D8BB3;border-bottom:#2C5D87 0px solid;color:#47525D;}
+.pageBody-lightBlue .leftMenu-title:hover {background-color:#5D8BB3;color:white;}
+.pageBody-lightBlue .leftMenu-ulTitleExtend-show{border-top:1px #F6F9FE solid;background-color:#5D8BB3;background:url("blue/menu_active__default.png") repeat scroll 0 0 transparent;}
+.pageBody-lightBlue .conHeader .conHeaderTitle-blue {background: url("blue/column-header-bg.gif") repeat scroll 0 0 transparent;}
+.pageBody-lightBlue .rhCard-tabs .conHeaderTitle-blue {background: url("blue/column-header-bg.gif") repeat scroll 0 0 transparent;}
+.pageBody-lightBlue .rh-head-icons {background:url("blue/rh-head-icons.png") -5px bottom;}
+.pageBody-lightBlue .rh-head-close {background:url("blue/rh-head-icons.png") no-repeat -35px 3px;}
+.pageBody-lightBlue .rh-head-expand {background:url("blue/rh-head-icons.png") no-repeat -60px 3px;}
+/* tab颜色覆盖---------------*/
+.pageBody-lightBlue .left-homeMenu-homeTabs .ui-tabs-nav .redLi {background:none ;}
+.pageBody-lightBlue .left-homeMenu-homeTabs .ui-tabs-nav .redA {background:none ;color:white;}
+.pageBody-lightBlue .left-homeMenu-homeTabs .ui-tabs-nav .ui-tabs-selected {background:url(blue/head_tabs_lightBlue_right.png) repeat-x left top;border-radius:0px;}
+.pageBody-lightBlue .left-homeMenu-homeTabs .ui-tabs-nav .ui-tabs-selected a {background:url(blue/head_tabs_lightBlue_right.png) repeat-x left top;color:black;}
+/* portal样式覆盖---------------*/
+.pageBody-lightBlue .portal-box {border:1px #E6E6E6 solid;}
+.pageBody-lightBlue .tab-ul-con{background:url(blue/menu__default.png) left top repeat-x;}
+.pageBody-lightBlue .portal-box-title{border-bottom:1px #74b0ef solid !important;color:#74b0ef;background:url(blue/portal-box-title.png) left top repeat-x;}
+.pageBody-lightBlue .portal-box-title li {margin-top:2px;}
+.pageBody-lightBlue .portal-box-title li.ui-tabs-selected {background:url(blue/head_tabs_white_right.png) no-repeat right top;}
+.pageBody-lightBlue .portal-box-title li.ui-tabs-selected a {background:url(images/header/head_tabs_white_left.png) no-repeat left top;background-color:#fff;}
+.pageBody-lightBlue .portal-box-title li a {color:#74b0ef;}
+.pageBody-lightBlue .portal-box-border {border:1px #74b0ef solid;}
+.pageBody-lightBlue .portal-box-tab .portal-box-title li.ui-tabs-selected a {color:#7C4849;}
+.pageBody-lightBlue .publish_count {color:white;}
+/* 覆盖Tab条背景---------------*/
+.pageBody-lightBlue #homeTabs .ui-widget-header {background:url(blue/bg.png) left bottom repeat-x;}
+/* 覆盖banner的区域---------------*/
+.pageBody-lightBlue #banner {background:url(/bn/style/images/OA-banner-white.jpg) left top;}
+/*.pageBody-lightBlue #banner {background:#5ea2e6;}*/
+/* 覆盖banner的背景---------------
+.pageBody-lightBlue .banner-logo {background:url(blue/head_logo_zhbx.gif) left top no-repeat;}*/
+/* 覆盖banner右侧搜索框------------*/
+.pageBody-lightBlue .rh-head-sea-input {border:1px #F5F5F5 solid;box-shadow:1px 2px 3px #fff inset;padding:0px 0px 0px 3px;height:25px;line-height:28px;color:#000000;width:174px;}
+/* 覆盖按钮---------------*/
+.pageBody-lightBlue .rh-icon {background:url(blue/rh-btn-hover.png) no-repeat;}
+.pageBody-lightBlue .rh-icon-inner {background:url(blue/rh-btn-hover.png) no-repeat;background-position:right -26px;}
+.pageBody-lightBlue .rh-icon-img {}
+.pageBody-lightBlue .rh-icon:hover {background:url(blue/rh-btn-hover.png) no-repeat;background-position:left -52px;}
+.pageBody-lightBlue .rh-icon:hover .rh-icon-inner{background:url(blue/rh-btn-hover.png) no-repeat;background-position:right -78px;color:white;}
+.pageBody-lightBlue .rh-icon:hover .rh-icon-groupCon .rh-icon:hover{background-color:#1D7EDC !important;}
+.pageBody-lightBlue .rh-icon:hover .rh-icon-groupCon .rh-icon{background:#BCD2EE !important;}
+.pageBody-lightBlue .rh-icon:hover .rh-icon-inner:active {}
+.pageBody-lightBlue .rhSearch-button {background:url(blue/rh-btn-hover.png) no-repeat;background-position:left -52px;}
+.pageBody-lightBlue .rhSearch-inner {background:url(blue/rh-btn-hover.png) no-repeat;background-position:right -78px;}
+/* 覆盖分页样式*/
+.pageBody-lightBlue .rhGrid-page a {border:#F7EBC0 1px solid;color:#000;}
+.pageBody-lightBlue .rhGrid-page a:hover {background-color:#F7EBC0;}
+.pageBody-lightBlue .rhGrid-page a:active {background-color:#F7EBC0;}
+.pageBody-lightBlue .rhGrid-page span.current {border:#F7EBC0 1px solid;color:#000;background-color:#E3CA75;}
+.pageBody-lightBlue .leftMenu-li {background-color:#fbfcfe;border-top:0px #f7f7f6 solid;border-bottom:1px #f7f7f6 solid;}
+.pageBody-lightBlue .leftMenu-li a{font-weight: bold;}
+.pageBody-lightBlue .leftMenu-li-leafli a{font-weight: normal;}
+.pageBody-lightBlue .leftMenu-nodeUl-hide li a{font-weight: normal;}
+
+/* ==================蓝色风格，结束=================*/
+/* ===================绛红色风格，开始================*/
+/* 覆盖系统背景，列表区外层背景，左侧菜单，列表头，卡片头---------------*/
+.pageBody-darkRed .ui-state-default {background: url("darkRed/menu__default.png") repeat scroll 0 0 transparent;background-color:#feffed;border-bottom:#E7A28E 1px solid;border-top:#F9F7F6 1px solid;color:#383B38;}
+.pageBody-darkRed .ui-state-hover,
+.pageBody-darkRed .ui-state-active {background:url("darkRed/menu_active__default.png") repeat scroll 0 0 transparent;background-color:#fff1c8;color:white;border-bottom:1px #E7A28E solid;}
+.pageBody-darkRed .leftMenu-title:hover {background-color:#5D8BB3;color:white;}
+.pageBody-darkRed .leftMenu-ulTitleExtend-show{border-top:1px #F6F9FE solid;background-color:#5D8BB3;background:url("darkRed/menu_active__default.png") repeat scroll 0 0 transparent;}
+.pageBody-darkRed .conHeader .conHeaderTitle-darkRed {background: url("darkRed/column-header-bg.gif") repeat scroll 0 0 transparent;}
+.pageBody-darkRed .rhCard-tabs .conHeaderTitle-darkRed {background: url("darkRed/column-header-bg.gif") repeat scroll 0 0 transparent;}
+.pageBody-darkRed .rh-head-icons {background:url("darkRed/rh-head-icons.png") -5px bottom;}
+.pageBody-darkRed .rh-head-close {background:url("darkRed/rh-head-icons.png") no-repeat -35px 3px;}
+.pageBody-darkRed .rh-head-expand {background:url("darkRed/rh-head-icons.png") no-repeat -60px 3px;}
+/* tab颜色覆盖---------------*/
+.pageBody-darkRed .left-homeMenu-homeTabs .ui-tabs-nav .redLi {background:none ;}
+.pageBody-darkRed .left-homeMenu-homeTabs .ui-tabs-nav .redA {background:none ;}
+.pageBody-darkRed .left-homeMenu-homeTabs .ui-tabs-nav .ui-tabs-selected {background:url(darkRed/head_tabs_darkRed_right.png) repeat-x left top;border-radius:0px;}
+.pageBody-darkRed .left-homeMenu-homeTabs .ui-tabs-nav .ui-tabs-selected a {background:url(darkRed/head_tabs_darkRed_right.png) repeat-x left top;}
+/* portal样式覆盖---------------*/
+.pageBody-darkRed .portal-box {border:1px #ccc solid;}
+.pageBody-darkRed .tab-ul-con{background:url(darkRed/portal-box-title.png) left top repeat-x;}
+.pageBody-darkRed .portal-box-title{border-bottom:1px #f8d5b8 solid !important;color:#e0100e;background:url(darkRed/portal-box-title.png) left top repeat-x;}
+.pageBody-darkRed .portal-box-title li {margin-top:2px;}
+.pageBody-darkRed .portal-box-title li.ui-tabs-selected {background:url(darkRed/head_tabs_white_right.png) no-repeat right top;}
+.pageBody-darkRed .portal-box-title li.ui-tabs-selected a {background:url(darkRed/head_tabs_white_left.png) no-repeat left top;}
+.pageBody-darkRed .portal-box-title li a {color:#FF7B36;}
+.pageBody-darkRed .portal-box-border {border:1px #f8d5b8 solid;}
+.pageBody-darkRed .portal-box-tab .portal-box-title li.ui-tabs-selected a {color:white;}
+.pageBody-darkRed .publish_count {color:white;}
+/* 覆盖Tab条背景---------------*/
+.pageBody-darkRed #homeTabs .ui-widget-header {background:red url(darkRed/rh-head-menu.png) left top repeat-x;}
+/* 覆盖banner的区域---------------*/
+.pageBody-darkRed #banner {background:url(darkRed/head_bg_zhbx.gif) left top;}
+/* 覆盖banner的背景---------------*/
+.pageBody-darkRed .banner-logo {background:url(darkRed/head_logo_zhbx.gif) left top no-repeat;}
+/* 覆盖banner右侧搜索框------------*/
+.pageBody-darkRed .rh-head-sea-input {border:1px #e55b40 solid;box-shadow:1px 2px 3px #e55b40 inset;background-color:#e55b40;padding:0px 0px 0px 3px;height:25px;line-height:28px;color:#d0efff;width:174px;}
+/* 覆盖按钮---------------*/
+.pageBody-darkRed .rh-icon {background:url(darkRed/rh-btn-hover.png) no-repeat;}
+.pageBody-darkRed .rh-icon-inner {background:url(darkRed/rh-btn-hover.png) no-repeat;background-position:right -26px;}
+.pageBody-darkRed .rh-icon-img {}
+.pageBody-darkRed .rh-icon:hover {background:url(darkRed/rh-btn-hover.png) no-repeat;background-position:left -52px;}
+.pageBody-darkRed .rh-icon:hover .rh-icon-inner{background:url(darkRed/rh-btn-hover.png) no-repeat;background-position:right -78px;color:white;}
+.pageBody-darkRed .rh-icon:hover .rh-icon-groupCon .rh-icon:hover{background-color:#1D7EDC !important;}
+.pageBody-darkRed .rh-icon:hover .rh-icon-groupCon .rh-icon{background:#BCD2EE !important;}
+.pageBody-darkRed .rh-icon:hover .rh-icon-inner:active {}
+.pageBody-darkRed .rhSearch-button {background:url(darkRed/rh-btn-hover.png) no-repeat;background-position:left -52px;}
+.pageBody-darkRed .rhSearch-inner {background:url(darkRed/rh-btn-hover.png) no-repeat;background-position:right -78px;}
+/* 覆盖分页样式*/
+.pageBody-darkRed .rhGrid-page a {border:#f8d5b8 1px solid;color:#000;}
+.pageBody-darkRed .rhGrid-page a:hover {background-color:#f8d5b8;}
+.pageBody-darkRed .rhGrid-page a:active {background-color:#f8d5b8;}
+.pageBody-darkRed .rhGrid-page span.current {border:#f8d5b8 1px solid;color:white;background-color:#e55b40;}
+.pageBody-darkRed .leftMenu-li {background-color:#ffffed;border-top:1px #fdffeb solid;border-bottom:1px #fdfae8 solid;}
+.pageBody-darkRed .leftMenu-li:hover {background-color:#fff1ca;}
+.pageBody-darkRed .leftMenu-li a{font-weight: bold;}
+.pageBody-darkRed .leftMenu-li-leafli a{font-weight: normal;}
+.pageBody-darkRed .leftMenu-nodeUl-hide li a{font-weight: normal;}
+/* ==================绛红色风格，结束=================*/
+

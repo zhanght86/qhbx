@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xdoc version="9.7.0">
+  <meta id="b4a6947e18044be1bc9853028e054313" modifyDate="2014-02-20 16:08:45" view="table" createDate="2013-11-04 10:24:39"/>
+  <params>
+    <param name="jdbc_name"/>
+    <param name="fullName"/>
+    <param name="sql"/>
+  </params>
+  <rowsets>
+    <rowset name="data" conn="{%$p.jdbc_name%}"><![CDATA[{%$p.sql%}]]></rowset>
+  </rowsets>
+  <body>
+    <para>
+      <table cols="96,187,117,204" height="120" name="表1" sizeType="autoheight" width="604" rows="24,24,24,24,24">
+        <cell col="1" colSpan="4" name="x1501" rowSpan="2" sizeType="autoheight" align="center" row="1">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">{%$p.fullName%}</text>
+          </para>
+        </cell>
+        <cell col="1" name="x118372" align="center" row="3">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">部门</text>
+          </para>
+        </cell>
+        <cell col="1" name="部门" sizeType="autoheight" align="center" row="4" sql="select distinct 部门 from $s.data">
+          <para align="center">
+            <text>{%部门.部门%}</text>
+          </para>
+        </cell>
+        <cell col="1" name="x131439" align="center" row="5">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">总计</text>
+          </para>
+        </cell>
+        <cell col="3" name="流转次数和" sizeType="autoheight" align="center" row="5">
+          <para align="right">
+            <text>{%(select sum(流转次数) from $s.data)%}</text>
+          </para>
+        </cell>
+        <cell col="4" name="x1719" sizeType="autoheight" align="center" row="3">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">平均办理时间（小时）</text>
+          </para>
+        </cell>
+        <cell col="2" name="停留时间和" sizeType="autoheight" align="center" row="5">
+          <para align="right">
+            <text>{%(select sum(停留时间) from $s.data)%}</text>
+          </para>
+        </cell>
+        <cell col="4" name="x1828" sizeType="autoheight" align="center" row="4">
+          <para align="right">
+            <text>{%(select 办理时间 from $s.data where 部门=部门.部门)%}</text>
+          </para>
+        </cell>
+        <cell col="4" name="x1926" sizeType="autoheight" align="center" row="5">
+          <para align="right">
+            <text>{%(select round(sum(停留时间)/sum(流转次数),1) from $s.data)%}</text>
+          </para>
+        </cell>
+        <cell col="2" name="x387" align="center" row="3">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">总停留时间（小时）</text>
+          </para>
+        </cell>
+        <cell col="2" name="x118659" sizeType="autoheight" align="center" row="4">
+          <para align="right">
+            <text>{%(select 停留时间 from $s.data where 部门=部门.部门)%}</text>
+          </para>
+        </cell>
+        <cell col="3" name="x1089" row="4">
+          <para align="right">
+            <text>{%(select 流转次数 from $s.data where 部门=部门.部门)%}</text>
+          </para>
+        </cell>
+        <cell col="3" name="x571" sizeType="autoheight" align="center" row="3">
+          <para align="center">
+            <text fontStyle="bold" fontSize="16">文件流转次数</text>
+          </para>
+        </cell>
+      </table>
+    </para>
+    <para/>
+  </body>
+</xdoc>

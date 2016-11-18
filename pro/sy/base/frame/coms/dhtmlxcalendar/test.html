@@ -1,0 +1,40 @@
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="/test111/dhtmlxcalendar.css"></link>
+		<link rel="stylesheet" type="text/css" href="/test111/skins/dhtmlxcalendar_dhx_terrace.css"></link>
+		<script src="/test111/dhtmlxcalendar.js"></script>
+		<script>
+			var myCalendar;
+			function doOnLoad() {
+				myCalendar = new dhtmlXCalendarObject("calendarHere","dhx_terrace");
+				
+				dhtmlXCalendarObject.prototype.langData["ru"] = {
+					dateformat: '%d.%m.%Y',
+					monthesFNames: ["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+					monthesSNames: ["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+					daysFNames: ["周日","周一","周二","周三","周四","周五","周六"],
+					daysSNames: ["日","一","二","三","四","五","六"],
+					weekstart: 1
+				}
+				myCalendar.loadUserLanguage("ru");
+				myCalendar.show();
+			}	
+		</script>	
+		<style>
+			.dhtmlxcalendar_container{
+				zoom:1.5;
+				-moz-transform-origin:top left;
+				-moz-transform:scale(1.5);
+				-o-transform-origin:top left;
+				-o-transform:scale(1.5);
+				-transform-origin:top left;
+				-transform:scale(1.5);
+			}
+			
+		</style>
+	</head>
+	<body  onload="doOnLoad();">
+		<div id="calendarHere"></div>
+	</body>
+</html>

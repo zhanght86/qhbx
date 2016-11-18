@@ -1,0 +1,20 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin: 0;padding: 0}
+body{background-color:white !important}
+table {border-collapse: collapse;border-spacing: 0}
+fieldset,img { border: 0 }
+address,caption,cite,code,dfn,em,strong,th,var,b { font-style: normal; font-weight: normal }
+ol,ul { list-style: none }
+caption,th { text-align: left }
+h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: normal}
+a:focus { #outline: thin dotted }
+a:hover,a:active { outline: 0;text-decoration: underline }
+.zoom{zoom:1}
+.page{width: 980px;margin: auto;}
+h1,.h1 {font-size: 20px;font-family: 'Œ¢»Ì—≈∫⁄', '∫⁄ÃÂ', arial;font-weight: normal;color: #333}
+h2,.h2 {font-size: 16px;font-family: arial, 'ÀŒÃÂ', sans-serif;font-weight: bold;color: #333}
+h3,.h3 {font-size: 14px;font-family: arial, 'ÀŒÃÂ', sans-serif;font-weight: bold;color: #333}
+h4,.h4 {font-size: 14px;font-family: arial, 'ÀŒÃÂ', sans-serif;font-weight: normal;color: #333}
+h5,.h5 {font-size: 12px;font-family: arial, 'ÀŒÃÂ', sans-serif;font-weight: bold;color: #333}
+h6,.h6 {font-size: 11px;font-family: arial, 'ÀŒÃÂ', sans-serif;font-weight: normal;color: #333}
+.clearfix{}
+.clearfix:before,.clearfix:after{content: "";display: table}

@@ -1,0 +1,155 @@
+<div class="tmpl_container" align="center">
+	<div style="height:40px"></div>
+	<table style="width: 96%;">
+		<tr>
+			<td width="120px">&nbsp;</td>
+			<td id="gwheader">
+				<table class='gwHeaderTable' border='0'>
+					<tr><td align='center'  class='gwHeader'><span code="TMPL_TITLE"></span></td></tr>
+				</table>
+			</td>
+			<td width="120px">
+				<table align='center' class='width:100%' border='0'>
+					<tr><td class='rh-label'>密&nbsp;&nbsp;&nbsp;&nbsp;级</td><td class='rh-item' code="GW_SECRET"></td></tr>
+					<tr><td class='rh-label'>紧急程度</td><td class='rh-item' code="S_EMERGENCY"></td></tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<table align="left"  style="width:455px;margin-left:30px;margin-bottom:8px;"><tr>
+		<td class='rh-label wp20'>收文编号：</td>
+		<td class='rh-item' code="GW_YEAR_CODE" style="border:0px;width:50%" ></td>
+		<td style="border:0px;width:1%;" id="GW_YEAR-left"><span class='gw-font'>〔</span></td>
+		<td class='rh-item' code="GW_YEAR" style="border:0px;width:18%"></td>
+		<td style="border:0px;width:1%;" id="GW_YEAR-right"><span class='gw-font'>〕</span></td>
+		<td class='rh-item' code="GW_YEAR_NUMBER" style="border:0px;width:20%"></td>
+		<td style="border:0px;width:1%"><span class='gw-font'>号</span></td>
+		</tr>
+	</table>
+	<table class='rh-tmpl-tabel' style="margin-bottom:0px;">
+	
+	
+	<tr align="center">
+	<td class='rh-label wp20'>收文人员</td>
+	<td class='rh-item' code='S_USER' align='left'></td>
+	<td class='rh-label wp20'>收文时间</td>
+	<td class='rh-item' code='GW_BEGIN_TIME' align='left'></td>
+	
+	</tr>
+	<tr align="center">
+	<td class='rh-label wp20'>登记部门</td>
+	<td class='rh-item' code='S_DEPT' align='left'></td>
+	<td class='rh-label'>收文员电话</td>
+	<td class='rh-item' code='GW_CONTACT_PHONE' id="comp_shouwen_GW_CONTACT_PHONE" align='left'></td>
+	</tr>
+	<!--<tr align="center">
+		<td class='rh-label wp20'>收文编号</td>
+		<td colspan="3" align='left'>
+		<table style="width:400px"><tr>
+		<td class='rh-item' code="GW_YEAR_CODE" style="border:0px;width:50%" ></td>
+		<td style="border:0px;width:1%;" id="GW_YEAR-left"><span class='gw-font'>〔</span></td>
+		<td class='rh-item' code="GW_YEAR" style="border:0px;width:18%"></td>
+		<td style="border:0px;width:1%;" id="GW_YEAR-right"><span class='gw-font'>〕</span></td>
+		<td class='rh-item' code="GW_YEAR_NUMBER" style="border:0px;width:20%"></td>
+		<td style="border:0px;width:1%"><span class='gw-font'>号</span></td>
+		</tr></table>
+		</td>
+	</tr>-->
+	<tr align="center">
+	<td class='rh-label wp20'>文件标题<span style="font-weight:bold;" title="必填">*</span></td>
+	<td colspan='3' class='rh-item' code='GW_TITLE' id="comp_shouwen_GW_TITLE" align='left'></td>
+	</tr>
+	<tr align="center">
+	<td class='rh-label wp20'>文件主要内容</td>
+	<td colspan='3' class='rh-item' code='SW_MAINCONTENT' id="comp_shouwen_SW_MAINCONTENT" align='left'></td>
+	</tr>
+	<tr align="center">
+	
+	<td class='rh-label wp20'>来文编号</td>
+	<td class='rh-item' code='LW_CODE' align='left'></td>
+	<td class='rh-label wp20'>来文单位</td>
+	<td class='rh-item' code='GW_SW_CNAME' align='left'></td>
+	</tr>
+	
+	<tr align="center">
+	<td class='rh-label wp20'>来文途径</td>
+	<td class='rh-item' code='LW_WAY' align='left'></td>
+	<td class='rh-label wp20'>来文类型</td>
+	<td class='rh-item' code='ISORIGINAL' id="comp_shouwen_ISORIGINAL" align='left'></td>
+	</tr>
+	<tr align="center">
+	<td class='rh-label wp20'>文件页数</td>
+	<td class='rh-item' code='GW_PAGE' align='left'></td>
+	<td class='rh-label wp20'>文件份数</td>
+	<td class='rh-item' code='GW_COPIES' id="comp_shouwen_GW_COPIES" align='left'></td>
+	</tr>
+	<tr align="center">
+	<td class='rh-label wp20'>办文类型</td>
+	<td class='rh-item' code='SW_FILETYPE' align='left'></td>
+	<td class='rh-label wp20'>办理时限</td>
+	<td class='rh-item' code='GW_EXPIRE_TIME' align='left'></td>
+	</tr>
+	
+	<!-- <tr align="center">
+	<td class='rh-label wp20'>其他时限说明</td>
+	<td colspan='3' class='rh-item' code='SW_OTHERTIME' id="comp_shouwen_SW_OTHERTIME" align='left'></td>
+	</tr>
+	<tr align="center" style="line-height: 35px">
+	<td class='rh-label wp20'>拟办意见</td>
+	<td colspan='3' class='rh-item' code='_MIND_NB' align='left'></td>
+	</tr>
+	<tr style="line-height: 35px" align="center">
+	<td class='rh-label wp20'>主要领导意见</td>
+	<td colspan='3' class='rh-item' code='_MIND_LEADER' align='left'></td>
+	</tr>
+	添加字段开始
+	<tr style="line-height: 35px" align="center">
+	<td class='rh-label wp20'>分管领导意见</td>
+	<td colspan='3' class='rh-item' code='_MIND_FGLD' align='left'></td>
+	</tr>
+	添加字段结束
+	<tr style="line-height: 35px" align="center">
+	<td class='rh-label wp20'>主办部门负责人意见</td>
+	<td colspan='3' class='rh-item' code='_MIND_ZBMIND' align='left'></td>
+	</tr>
+	添加字段开始
+	<tr style="line-height: 35px" align="center">
+	<td class='rh-label wp20'>相关部门意见</td>
+	<td colspan='3' class='rh-item' code='_MIND_XGBM' align='left'></td>
+	</tr> -->
+	<!-- 添加字段结束 -->
+	<!-- 添加字段开始 -->
+	<!-- <tr style="line-height: 35px" align="center">
+	<td class='rh-label wp20'>办理情况</td>
+	<td colspan='3' class='rh-item' code='_MIND_MANAGE' align='left'></td>
+	</tr> -->
+	<!-- 添加字段结束 -->
+	<!-- <tr>
+	<td class='rh-label wp20'>附&nbsp;&nbsp;&nbsp;&nbsp;注</td>
+	<td colspan='3' class='rh-item' code='GW_MEMO' id="comp_shouwen_GW_MEMO"></td>
+	</tr> -->
+	<tr align="center">
+	<td class='rh-label wp20' style="line-height: 35px">正&nbsp;&nbsp;&nbsp;&nbsp;文</td>
+	<td colspan='3' class='rh-item' code='ZHENGWEN' align="left"></td>
+	</tr>
+	<tr align="center">
+	<td class='rh-label wp20' style="line-height: 35px">附&nbsp;&nbsp;&nbsp;&nbsp;件</td>
+	<td colspan='3' class='rh-item' code='FUJIAN' align="left"></td>
+	</tr>
+	<tr>
+	<td class='rh-label ' style="line-height: 35px" align='center' >关联相关文件:</td>
+	<td class='rh-item'  code='XGWJ' colspan='3' align='left'></td>
+	</tr>
+	<!--<tr align="center">
+	<td class='rh-label wp20'>备&nbsp;&nbsp;&nbsp;&nbsp;注</td>
+	<td colspan='3' class='rh-item' code='GW_MEMO' id="comp_shouwen_GW_MEMO" align='left'></td>
+	</tr>-->
+	</table>
+	<div style="font-size:14px;font-weight:bold;margin-left:20px;text-align:left;margin:20px 20px 40px 20px;">
+		<p style="line-height:2;">注:公司文件管理员负责收文登记，经公司领导批示后送主办部门办理，主办部门负责人可根据具体情况同时送多个部门协助办理，文件最终由公司文件管理员办结。</p>
+	</div>
+	<div style="padding-top: 10px;">
+    <a href="#rhCard-title" target="_self" style="padding-top: 5px;text-decoration: none;">返回顶部</a> 
+    </div>
+	<div style="height:20px"></div>	
+</div>

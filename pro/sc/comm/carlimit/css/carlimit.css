@@ -1,0 +1,16 @@
+.carlimit-wrapper{padding-top:10px;}
+.clearfix:before,.clearfix:after{content:'';display:table}
+.clearfix:after{clear:both;overflow:hidden}
+.clearfix{zoom:1;}
+.carlimit-today,.carlimit-tomorrow{position:relative;width:48%}
+.carlimit-line{display:block;width:1px;height:70px;margin-top:-5px;margin-left:1%;margin-right:1%;background-color:#cecece}
+.carlimit-today,.carlimit-tomorrow,.carlimit-line{float:left;text-align:center}
+.carlimit-title{padding-left:8px;font-size:14px;color:#999696;line-height:115%}
+.carlimit-num{padding:9px 0 0 8px;color:#333;font-size:30px;line-height:30px}
+.carlimit-title,.carlimit-num{font-weight:bold;font-family:arial}
+.carlimit-num span{padding:3px;color:#999;font-size:24px}
+.carlimit-seperator{height:30px;background-color:#f8f8f8;color:#9c9c9c;font-size:12px;font-family:"宋体";line-height:30px;text-align:center}
+.carlimit-item{float:left;width:20%;font-size:12px;text-align:center}
+.carlimit-item>.title{margin-bottom:3px;color:#999696;line-height:20px}
+.carlimit-item>.num{font-weight:bold}
+.carlimit-item.today>.title,.carlimit-item.today>.num{color:#e98686;font-weight:bold}

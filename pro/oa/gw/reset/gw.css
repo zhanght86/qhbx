@@ -1,0 +1,59 @@
+.ui-serv-file-default {margin-left:5px;}
+.ui-staticText-default {margin-left:5px;}
+.ui-date-default {border:0px;margin-left:5px;}
+.ui-textarea-default {border:1px solid #BBB;background:none; margin-left:5px;}
+.ui-dict-default2,.ui-query-default2 {border:1px solid #DDD;background:white none repeat scroll 0% 0%;margin-left:5px}
+.rh-temp-tabel .ui-textarea-default {background:white none repeat scroll 0% 0%;}
+.ui-text-default {border:1px solid #BBB;width:90%;}
+/*.rh-tmpl-tabel .ui-text-default {background:white none repeat scroll 0% 0%;}
+.rh-tmpl-tabel .blank{width:100%}*/
+.rh-tmpl-tabel {border:2px solid #FF0000;width:96%;margin-bottom:50px;table-layout:fixed;word-wrap: break-word;word-break: break-all;}
+.rh-tmpl-tabel tr {min-height:30px;border:none;}
+.rh-tmpl-tabel td {border:1px solid #FF0000;empty-cells:show;}
+.rh-item span div input {width:100%;border:1px #CCC solid;margin-left:0px}
+.rh-item span div.errorbox {border:1px dashed red; margin-right: 5px;background-color:#FFFFAA;}
+.ui-form-default .errorbox span.disabled,.ui-form-default .errorbox span.disabled input{background-color:#FFFFAA;}
+.rh-label {color:#FF0000;font-family:宋体; font-size:12px;}
+
+.tmpl_container{
+	box-shadow:6px 6px 4px rgba(1,2,3,0.6);margin-top:40px;margin-bottom:40px;
+	margin-left:auto;margin-right:auto;width:98%;background-color:#FFFFFF;
+}
+
+/****覆盖背景样式**/
+.ui-dialog .cardDialog{background-color:#CCC}
+.rhCard-tabs {background-color:#CCC}
+.form-container{background-color:#CCC}
+.ui-form-default{background-color:#CCC}
+.rhCard-btnBar{background-color:#CCC}
+
+
+/****/
+.gwHeaderTable {width:100%}
+.gwHeader {color:#FF0000;font-family: 方正小标宋简体;font-size:30px;height:80px}
+/*.gwfw-span {margin-top: 10px;color: red;}*/
+/*.gw-item {display : inline-block;max-width : 200px;width : 80px;height: 20px;line-height: 20px;margin-right: 20px;}*/
+.gw-max-button {margin-left:10px;width:80px;float:left;background-color:#ddd;cursor:pointer;}
+.gw-year-code{float : left;display : inline-block;max-width : 200px;width : 100px;height: 20px;line-height: 20px;}
+.gw-font {color: red;font-size:14px}
+.gw-year {height: 18px;line-height: 18px;}
+.gw-mind-content{
+	margin-left:auto;margin-right:auto;width:100%;
+	background-color:#FFFFFF;display: inline-block;
+}
+
+/* @group 相关文件样式的扩展 ---- */
+.rh-vi-gwExtCardView-relate-label {font-size: 15px;margin: 10px;}
+.rh-vi-gwExtCardView-relate-input {margin-top: 5px;margin-bottom: 8px;margin-right: 5px;}
+.rh-vi-gwExtCardView-relate-text {text-align: center;font-size: 16px;background-color: #E9E9E9;padding-bottom: 6px;padding-top: 6px;font-weight: bold;}
+.rh-vi-gwExtCardView-relate-table {width: 300px;}
+.rh-vi-gwExtCardView-relate-a {margin-top: 6px;background-color: #C8CDE6;}
+.rh-linkselect-table {width:100%;}
+.rh-tmpl-tabel .rh-linkselect-table {border:none;}
+.rh-tmpl-tabel .rh-linkselect-table td{border:none;}
+.rh-tmpl-tabel .rh-linkselect-table .ui-linkselect-default-delete {text-align:left}
+
+select.ui-select-default{padding:0px;border:1px solid #BBB;height:22px}
+.ui-form-default span.disabled,.ui-form-default input.disabled,.ui-form-default div.disabled{background-color:#FFF;color:#000}
+.ui-form-default div.inner {margin-top:0px;float:left;height:100%}
+.ui-form-default div.blank {border:0px;}
