@@ -85,11 +85,11 @@ $(function(){
 <input type="hidden" id="rhDevIndex" value="true"/>
 <input type="hidden" id="jumpTo" value="<%=jumpTo%>"/>
 
-<div class="mb-link">
+<!--div class="mb-link">
 	<img id="mb-link-img" src='' width='150px' height='150px'></img>
 	<div class="mb-link-title">扫描二维码进入手机登录</div>
 </div>
-
+ -->
 <div class="rh-browser-container">
 	<div id="rh-browser-check" class="rh-browser-check"><a style='font-size:14px;color:green;' href="javascript:Tools.redirect('/sy/comm/index/activeTest.jsp');">系统插件测试页</a></div>
 </div>

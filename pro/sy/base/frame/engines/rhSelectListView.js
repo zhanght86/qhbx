@@ -318,7 +318,6 @@ rh.vi.rhSelectListView.prototype._act = function(aId,aObj) {
 	switch(aId) {
 		case "selectOK"://确定选择
 			taObj.bind("click",function() {
-								debugger;
 			   if (_self.configs) {
 	               _self._backWriteItemConfigs();
 	           } else {

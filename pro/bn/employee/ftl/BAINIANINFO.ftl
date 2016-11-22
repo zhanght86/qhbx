@@ -20,7 +20,7 @@ function newsView(id){
 <div class="content" style="position:relative; z-index:2;">
         <div class="sub_main">
         	<div class="f_l sub_left">
-	<h2>关于百年</h2>
+	<h2>关于前海再保险</h2>
 	<ul class="sub_lflist">
 		
 		<li onclick="changeEmpBox(this)"><a href="javascript:void(0);"  title="${_DATA_0.CHNL_NAME}" target="_self">${_DATA_0.CHNL_NAME}</a></li>
@@ -44,7 +44,7 @@ function newsView(id){
             	<h2>
                 	<strong id="chnlName">公司股东</strong>
                     <div class="lu" style="font-weight:normal;">
-                        <a href="/">首页</a> &gt; <a href="javascript:void(0);">关于百年</a> &gt; <a href="#">公司股东</a> 
+                        <a href="/">首页</a> &gt; <a href="javascript:void(0);">关于前海再保险</a> &gt; <a href="#">公司股东</a> 
                     </div>
                 </h2>
 				<div class="cl ht10"></div>
@@ -118,7 +118,7 @@ jQuery(document).ready(function(jQuery) {
 function changeEmpBox(obj){
 	var MsgInx = $(obj).index();
 	$("#chnlName").html($(obj).children().attr("title"));
-	$(".lu").html("<a href='/'>首页</a> &gt; <a href='javascript:void(0);'>关于百年</a> &gt; <a href='#'>"+$(obj).children().attr('title')+"</a>");
+	$(".lu").html("<a href='/'>首页</a> &gt; <a href='javascript:void(0);'>关于前海再保险</a> &gt; <a href='#'>"+$(obj).children().attr('title')+"</a>");
 	$(obj).addClass("first");
 	$(obj).siblings().removeClass("first");
 	$(obj).parent().parent().siblings(".f_l").children(".newslists").children().removeClass("block");

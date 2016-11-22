@@ -23,7 +23,7 @@ function openDateListMoreByChnl(chnl_id,chnl_name) {
 	params["ZT"]="1";
 	params["CUR_DATE"] = year;
 	var where = " and CHNL_ID = '" +chnl_id+"'";
-	var tabOpt = {"url":"SY_COMM_INFOS.getDateMoreInfos.do","params":params,"menuFlag":3,"tTitle":"百年人寿",'nohex':'true'};
+	var tabOpt = {"url":"SY_COMM_INFOS.getDateMoreInfos.do","params":params,"menuFlag":3,"tTitle":"前海再保险",'nohex':'true'};
 	var opts = {"tTitle":chnl_name,"url":"SY_COMM_INFOS.getDateMoreInfos.do?CHNL_ID="+chnl_id+"&CHNL_NAME="+chnl_name+"&CUR_DATE="+year,"menuFlag":3};
 	var tabP = jQuery.toJSON(opts);
 	tabP = tabP.replace(/\"/g,"'");

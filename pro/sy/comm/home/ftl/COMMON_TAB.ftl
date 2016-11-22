@@ -87,7 +87,7 @@ JSON配置说明
 		background-color:#F0FFFF;
 	}
 	.home_tab_pic{background:url(/sc/img/pt_style/default/ddsb.png) no-repeat 0px 0px transparent;float:left;width:35px;}	.title-top-pic{position:absolute;top:8px;left:7px;width:7px;height:18px;background:url("/sc/img/pt_style/default/ddsb.png") transparent;z-index:10;}
-	.title-top-line{left:0px;width:100%;border-bottom: 2px #d20000 solid;top: 0px;position:absolute;}
+	.title-top-line{left:0px;width:100%;border-bottom: 2px #136098 solid;top: 0px;position:absolute;}
 	.tabA {font-weight:bolder;}
 	.list_table {width:100%;table-layout:fixed;white-space:nowrap;}
 	.head_td_order {width:5%;min-width:20px;}

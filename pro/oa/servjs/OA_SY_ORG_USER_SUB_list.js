@@ -7,7 +7,6 @@ _viewer.getBtn("upUserPassword").unbind("click").bind("click", function(event) {
   	} else {
   		 var res = confirm("您确定要重置密码吗？");
   		 if (res == true) {
-  			 debugger;
   			var temp = new rh.ui.popPrompt({
   				title:"请输入初始密码",
   				tip:"密码格式为：数字，字母",

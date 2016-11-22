@@ -285,13 +285,11 @@ function rtx_updateGroupImages()
 
 function RAP(nick)
 {
-//	debugger;
 	rtx_addPresence(nick);
 }
 
 function rtx_addPresence(nick)
 {
-//	debugger;
     var src = rtxEvent.srcElement;
     	src = src == undefined ? $.data(document.body,"target") : src;
 	var id;
@@ -365,7 +363,6 @@ function rtx_showUIMouse()
 
 function rtx_showUI(inputType)
 {
-//	debugger;
 	var obj = rtxEvent.srcElement;
 		obj = obj == undefined ? $.data(document.body,"target") : obj;
 	if(obj && rtx_nameControl)
@@ -557,7 +554,6 @@ function rtx_nameControlOnload()
 
 function rtx_nameControlLoadTimer()
 {
-//	debugger;
 	if(!rtx_isNameControlLoadError)
 	{
 		var obj = document.all(rtx_nameControlID);
@@ -590,7 +586,6 @@ function rtx_nameControlLoadTimer()
 
 function rtx_nameControlOnError()
 {
-//	debugger;
 	rtx_isNameControlLoadError = true;
 }
 
@@ -694,7 +689,6 @@ function rtx_winOnload()
 
 function rtx_register_winOnload()
 {
-//	debugger;
 //	if(!rtx_isFirstLoad)
 //	{
 //		rtx_isFirstLoad = true;
@@ -754,7 +748,6 @@ function rtx_isOnlineState(state)
 
 function rtx_onlogin()
 {
-//	debugger;
 	if(m_isLogout)
 	{
 		m_isLogout = false;
@@ -768,7 +761,6 @@ function rtx_onlogin()
 
 function rtx_updateAllStatus(retryCount)
 {
-//	debugger;
 	var updateCount;
 	var state = 0;
 	var stateImage;
@@ -914,7 +906,6 @@ function rtx_getStatusImage(state, stateImage, showOffline)
 }
 function rtx_getStatusFromImage(stateImage)
 {
-//	debugger;
 	var state = RTX_STATUS_UNKNOWN;
 	var stateFromImage;
 	var ext = "";
@@ -977,7 +968,6 @@ function rtx_updateImageOfID(id, state, stateImage)
 
 function rtx_updateImage(id, img)
 {
-//	debugger;
 	var obj = document.images(id);
 
 	if(obj && typeof(img) == "string")

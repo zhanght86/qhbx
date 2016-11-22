@@ -244,7 +244,7 @@ public class GwServ extends CommonServ {
         /*if (paramBean.getAddFlag()) { // 新建公文时从公文模版复制正文
             copyZhengwen(paramBean, outBean);
         }*/
-        // 百年人寿公文，起草节点修改某种数据类型后，删除原有流程，启动新流程
+        // 公文，起草节点修改某种数据类型后，删除原有流程，启动新流程
         // 比如：发文，修改发文类型后需重启流程；签报，修改签报类型后需重启流程
         if (!paramBean.getAddFlag()) {
             Bean data = paramBean.getSaveFullData();

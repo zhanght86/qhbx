@@ -61,7 +61,6 @@ var ptManaglink = {
 	},
 	showChnl:function(){
 		var tab = jQuery(".tabDiv .ui-tabs-selected");
-		debugger;
 		if(tab=="system"){
 			$("#tableChnl").css('display','block');
 		}

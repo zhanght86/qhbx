@@ -2,7 +2,7 @@
   background:url() no-repeat center;background-color:#fff;
 }
 .pageBody .banner-bg{position:absolute;top:-10px;left:0px;z-index:-1;height:500px;width:100%;background:url(/sy/comm/page/images/banner-gray-light.jpg) no-repeat center;background-size:100% 100%;}
-.pageBody .banner-bg-banner{position:absolute;top:32px;left:154px;z-index:1;height:45px;width:210px;background:url(/bn/style/images/bainian_bg.gif) no-repeat center;background-size:100% 100%;}
+.pageBody .banner-bg-banner{position:absolute;top:32px;left:154px;z-index:1;height:50px;width:300px;background:url(/bn/style/images/bainian_bg.gif) no-repeat center;background-size:100% 100%;background-size:100% 100%;}
 .pageBody .banner-bg-text{position:absolute;top:37px;left:356px;z-index:1;height:25px;width:206px;font-family:Microsoft YaHei;font-size:22px;color:#313131}
 #banner #logo .banner_info{float:right;color:#000;margin-right:220px;text-align:left;margin-top:30px;font-family:寰蒋闆呴粦;font-size:12px;}
 #banner #logo .banner_info .date_info{margin-bottom:8px;}

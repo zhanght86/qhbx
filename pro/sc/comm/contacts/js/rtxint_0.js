@@ -892,7 +892,6 @@ function rtx_getStatusImage(state, stateImage, showOffline)
 }
 function rtx_getStatusFromImage(stateImage)
 {
-	debugger;
 	var state = RTX_STATUS_UNKNOWN;
 	var stateFromImage;
 	var ext = "";

@@ -1,6 +1,5 @@
 var _viewer = this;
 var num=_viewer.grid.getCheckBox().length;
-debugger;
 var servId=$("#BN_SEAL_DESTROY-ID").val();
 sealtListView();
 function sealtListView(){

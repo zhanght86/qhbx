@@ -1172,7 +1172,6 @@ rh.vi.wfCardView.prototype._beforeSongjiao = function() {
  */
 rh.vi.wfCardView.prototype._mindMust = function() {
 	var _self = this;
-	debugger;
 	var mindMustReq = _self.getNodeMindObj();
 	
 	mindMustReq.NI_ID = _self.getNodeInstBean().NI_ID;
@@ -1197,7 +1196,6 @@ rh.vi.wfCardView.prototype._mindMust = function() {
  * 根据 节点信息， 打开人员选择窗口 ，也就是送交人 @param aId 动作ID
  */
 rh.vi.wfCardView.prototype._openSelectOrg = function(aId, aObj, event) {
-debugger;
 	var _self = this;
 _self._parHandler.saveMind();
 	if (_self._beforeSongjiao() == false || _self._mindMust() == false) {

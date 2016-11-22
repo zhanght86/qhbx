@@ -260,8 +260,6 @@ public class ScTodoCollection {
 		String userCode = Context.getUserBean().getCode();
 		try {
 			// newOaws = new ScNewTodoWebServ();
-			// oaTodos = (ArrayList<Bean>) newOaws.getNewOaTodos();
-			//oaTodos = getNewOaTodos(userCode);百年项目只显示OA的待办
 			ptTodos = getPtTodos(userCode);
 			if (oaTodos != null) {
 				todos.addAll(oaTodos);
@@ -293,8 +291,6 @@ public class ScTodoCollection {
 		String userCode = Context.getUserBean().getCode();
 		try {
 			// newOaws = new ScNewTodoWebServ();
-			// oaReads = (ArrayList<Bean>) newOaws.getNewOaReads();
-			//oaReads = getNewOaReads(userCode);百年项目待阅只取OA
 			ptReads = getPtReads(userCode);
 			if (oaReads != null) {
 				reads.addAll(oaReads);

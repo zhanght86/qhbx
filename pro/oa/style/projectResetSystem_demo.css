@@ -118,7 +118,7 @@ background:#CDD8E4 url(blue/i-window-top-back.png) repeat-x left -2px;z-index:99
 .pageBody-lightBlue .portal-box-title li.ui-tabs-selected a {background:url(images/header/head_tabs_white_left.png) no-repeat left top;background-color:#fff;}
 .pageBody-lightBlue .portal-box-title li a {color:#74b0ef;}
 .pageBody-lightBlue .portal-box-border {border:1px #74b0ef solid;}
-.pageBody-lightBlue .portal-box-tab .portal-box-title li.ui-tabs-selected a {color:#7C4849;}
+.pageBody-lightBlue .portal-box-tab .portal-box-title li.ui-tabs-selected a {color:#136098;}
 .pageBody-lightBlue .publish_count {color:white;}
 /* 覆盖Tab条背景---------------*/
 .pageBody-lightBlue #homeTabs .ui-widget-header {background:url(blue/bg.png) left bottom repeat-x;}

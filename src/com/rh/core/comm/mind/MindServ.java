@@ -789,7 +789,7 @@ public class MindServ extends CommonServ {
         Map<String, Bean> mindMap = MindUtils.getMindMap(minds);
 
         outBean.set("pass", "NO");
-        /*百年项目出现意见丢失情况，前台参数传递到后台过程中丢失，另百年项目所有流程的普通意见均为必填，
+        /*项目出现意见丢失情况，前台参数传递到后台过程中丢失，另项目所有流程的普通意见均为必填，
          * 故判断如果没有普通意见则返回错误，不能送交*/
 //        if(generalMind.isEmpty()){
 //        	 outBean.set("reason", "意见未找到，请刷新页面，再送交审批。 "/* + generalMind.getStr("CODE_NAME")*/);

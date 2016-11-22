@@ -5,7 +5,6 @@ function gwSimpleFenfa(obj,includeSubOdept){
 		dictName = "SY_ORG_DEPT_USER_SUB";
 	}
 	
-//	debugger;
 	var _viewer = obj;
 //	var _self = this;
 	var params = {

@@ -46,9 +46,7 @@ _viewer.getBtn("TestPrint").unbind("click").bind("click", function() {
 	var servSrcId=_viewer.getServSrcId();
 	var data = {};
 	data["_WHERE_"] = " and SERV_ID ='"+servId+"'";
-	// debugger;
 	var out = FireFly.doAct("SY_COMM_PRINT_TMPL", "finds", data);
-	// debugger;
 	var ftlcontent = out["_DATA_"];
 	var content = "";
 	for (var i = 0; i < ftlcontent.length; i++) {

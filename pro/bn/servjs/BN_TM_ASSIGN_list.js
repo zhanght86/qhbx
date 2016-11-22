@@ -106,7 +106,6 @@ if (_viewer.getParHandler() != null) {
 					buttons : {
 						"确定" : function() {
 							//_viewer.shieldHide();
-							debugger;
 							var params = {};
 							params.REHANDLE_REQUIREMENT = jQuery("#REHANDLE_REQUIREMENT").val();
 							params.IDSTR = varPk;

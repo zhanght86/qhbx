@@ -1,7 +1,7 @@
 <div id="tinyPanel-wrapper" class="tiny-vertical" style="height:${hei};width:auto;margin:4px auto;position:relative;">
 	
     <!--
-	<div title="百年内刊" style="width:48%;float:left;">
+	<div title="前海再保险内刊" style="width:48%;float:left;">
 	<div title="上一期" id="nkpred" style="width:35px;height:35px;position:absolute;top:80px;left:0px;background:url('/bn/style/images/bnnk_arrow_left.png') no-repeat"></div>
 		<a href="javascript:void(0);" news_id="">
 			 <img id="leftPic" style='border: 0;height:${imgHeight};' src="${src}" alt="" />
@@ -15,13 +15,13 @@
 	
 	
 	
-	 <div title="百年内刊" id="p" style="width:48%;float:left;">
+	 <div title="前海再保险内刊" id="p" style="width:48%;float:left;">
 	 <div title="下一期" id="nknext" style="width:35px;height:35px;position:absolute;top:80px;right:0px;background:url('/bn/style/images/bnnk_arrow_right.png') no-repeat;"></div>
 		<a href="javascript:void(0);" news_id="">
 			 <img id="rightPic" periodNum="0" style='border: 0;height:${imgHeight};' src="/bn/style/images/u171.jpg" alt="" />
 		</a>
 	</div> 
-	<!--<div title="百年内刊" id="w" style="width:48%;float:left;display:none;">
+	<!--<div title="前海再保险内刊" id="w" style="width:48%;float:left;display:none;">
 		<a href="javascript:openContacturl('P');">
 			 <img style='border: 0;height:${imgHeight};' src="${src}" alt="" />
 		</a>

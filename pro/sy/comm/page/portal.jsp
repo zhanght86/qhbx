@@ -61,9 +61,9 @@
   //其他用户以及总公司门户管理员可看到总公司门户、分公司、个人门户
   //&& roleCodes.indexOf("Z_MHGLY") == -1
   if(odeptlevel==2){
-	  defaultTab = Context.getSyConf("SY_DEFAULT_TAB1","");
+	  defaultTab = Context.getSyConf("SY_DEFAULT_TAB","");
   }else if(Context.getSyConf("BN_DEFAULT_CMPY_SUB","").equals(oDeptCode)){
-	  defaultTab = Context.getSyConf("SY_DEFAULT_TAB1","");
+	  defaultTab = Context.getSyConf("SY_DEFAULT_TAB","");
   }else{
 	  defaultTab = Context.getSyConf("SY_DEFAULT_TAB","");
   }

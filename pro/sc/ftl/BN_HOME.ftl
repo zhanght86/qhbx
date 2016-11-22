@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<title>关于百年</title>
+<title>关于前海再保险</title>
 <link rel="stylesheet" type="text/css" href="/sc/css/infoMore_reset.css"/>
 <style type="text/css">
 
@@ -29,7 +29,7 @@
 <body style="background-color:#fff !important;">
 <div class="info-wrapper">
   	<div class="info-header">
-  		<span>关于百年</span>
+  		<span>关于前海再保险</span>
   		<div class="info-header-icon"></div>
   	</div>
 	<div class="info-title">
@@ -55,7 +55,7 @@
 				<span id = "newsBody" style="width:98%;" >
 					<#if (content.NEWS_BODY?length >1050)>
 						${content.NEWS_BODY?substring(0,1050)}...
-						<a href='#' data_id='${content.NEWS_ID}' class='readMore' onclick="newsView(this)">[关于百年]</a>
+						<a href='#' data_id='${content.NEWS_ID}' class='readMore' onclick="newsView(this)">[关于前海再保险]</a>
 					<#else>
 						${content.NEWS_BODY}
 					</#if>

@@ -33,7 +33,7 @@
 	function openMoreListLink() {
 		var params = {};
 		params["LINK_TYPE"]="2";	
-		var tabOpt = {"url":"SY_COMM_LINK.list.do","params":params,"menuFlag":3,"tTitle":"百年人寿",'nohex':'true'};
+		var tabOpt = {"url":"SY_COMM_LINK.list.do","params":params,"menuFlag":3,"tTitle":"前海再保险",'nohex':'true'};
 		var opts = {"tTitle":"常用链接","url":"SY_COMM_LINK.list.do","menuFlag":3};
 		var tabP = jQuery.toJSON(opts);
 		tabP = tabP.replace(/\"/g,"'");

@@ -13,10 +13,10 @@
 <div class="agentnav">
 	<div class="sidenav" id="sidenav">
 		<ul >
-			<li class="Snav"><a href="<%=request.getContextPath()%>/sy/comm/page/portal.jsp">百年首页</a></li>
-			<li class="Snav"><a href="<%=request.getContextPath()%>/bn/cms/rushHour/spike/index.jsp">尖峰时刻</a></li>
+			<li class="Snav"><a href="<%=request.getContextPath()%>/sy/comm/page/portal.jsp">前海再保险首页</a></li>
+	<!-- 		<li class="Snav"><a href="<%=request.getContextPath()%>/bn/cms/rushHour/spike/index.jsp">尖峰时刻</a></li>
 			<li class="Tnav"><a href="<%=request.getContextPath()%>/bn/cms/rushHour/cresta/index.jsp">百年登峰荣誉会</a></li>
-			<li class="Snav"><a target="_blank" href="<%=request.getContextPath()%>/bn/cms/aeonsummit2013/index.jsp">百年峰会</a></li>
+			<li class="Snav"><a target="_blank" href="<%=request.getContextPath()%>/bn/cms/aeonsummit2013/index.jsp">百年峰会</a></li>-->
 		</ul>
 	</div>
 </div>

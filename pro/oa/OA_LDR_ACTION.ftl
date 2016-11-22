@@ -68,7 +68,7 @@
 						<ul style='text-align:center;'>
 							<li style='font-size:24px;color:red;line-height:25px'>
 								<!--${orgVar.@ODEPT_NAME@}领导活动安排表-->
-								百年人寿公司领导活动安排表
+								公司领导活动安排表
 							</li>
 							<li  style="font-size:14px;font-weight: bold;">
 								<span style='line-height:35px' id='b-time'></span>

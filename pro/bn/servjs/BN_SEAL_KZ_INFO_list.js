@@ -1,7 +1,6 @@
 var _viewer = this;
 //隐藏删除按钮
 
-debugger;
 
 if (_viewer.getParHandler().wfCard && _viewer.getParHandler().wfCard.isWorkflow()) {
 	var deleBut = _viewer.getParHandler().wfCard.getCustomVarContent("deleBut");

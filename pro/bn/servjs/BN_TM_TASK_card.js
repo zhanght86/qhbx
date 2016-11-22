@@ -50,7 +50,7 @@ if(assignStartBtn){
 }
 var assignEndBtn=_viewer.getBtn("assignEnd");
 //var taskUser=_viewer.getItem("S_USER").getValue();
-if(assignEndBtn){debugger;
+if(assignEndBtn){
 	assignEndBtn.unbind("click").bind("click",function(){
 		var paramk={};
 		var taskId = _viewer.getPKCode();
@@ -98,7 +98,7 @@ try{
 //jQuery("#BN_TM_TASK-TASK_RECEIVER__NAME").after(GroupImg);
 //var selectGroup = jQuery("#selectGroup");
 
-//selectGroup.unbind("click").bind("click",function(){debugger;
+//selectGroup.unbind("click").bind("click",function(){
 //	//常用分组查询选择
 //	var extWhereStr =" AND (S_PUBLIC = 1 OR S_USER = ^@USER_CODE@^) AND S_FLAG = 1 and O_DEPT in (select DEPT_CODE from SY_ORG_DEPT where code_path like ^@ODEPT_CODE_PATH@%^)";
 //	var configStr =  "BN_TM_TASK_COMMON_GROUPS,{'SOURCE':'GROUPS_NAME~GROUP_ID','TARGET':'TASK_RECEIVER','PKHIDE':true,'TYPE':'multi','EXTWHERE':'"+extWhereStr+"','HIDE':'GROUP_ID'}";

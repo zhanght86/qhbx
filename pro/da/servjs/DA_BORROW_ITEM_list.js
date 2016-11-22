@@ -1,6 +1,6 @@
 var _viewer = this;
 //添加档案 按钮显示条件。没有变量或者已经办结则隐藏。
-if (_viewer.getParHandler() != null) {debugger
+if (_viewer.getParHandler() != null) {
 //var addItem = _viewer.getParHandler().wfCard.getCustomVarContent("addItem");
 var s_user = _viewer.getParHandler().getItem("S_USER").getValue();
 if( _viewer.getParHandler().itemValue("S_WF_STATE") == 2 || s_user !=System.getVar("@USER_CODE@")){

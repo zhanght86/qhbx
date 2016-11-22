@@ -1311,7 +1311,6 @@ rh.vi.listView.prototype._bldNavTree = function() {
 				        	if (item.ID == dictId) {//如果点击的是根节点，@TODO:多个根节点的点击，
 				        		nodeObj.css("background","none");
 				        	}
-							debugger;
 					    	_self.whereData[_self.TREE_WHERE] = _self.getNavTreeWhereStr();
 					    	_self.beforeTreeNodeClickLoad(item,id,dictId);
 					    	var opts = {};
@@ -1344,7 +1343,7 @@ rh.vi.listView.prototype._bldNavTree = function() {
 	                extWhere = Tools.itemVarReplace(extWhere,_self.links);
 					setting.data = FireFly.getDict(dictId,pId,Tools.parVarReplace(extWhere),null,null,params);//s_menuData.TOPMENU;//// 设置树的初始化数据
 					var child = setting.data[0].CHILD;
-				    if (child.length == 1) {
+				    if (child &&  child.length == 1) {
 				    	setting.data = child;
 				    }
 				    // 异步加载条件

@@ -161,7 +161,7 @@ input.submit:hover{background:url("/bn/style/images/login.png") no-repeat -145px
 	height:25px;
 	float:right;
 	display:inline;
-	width:80px;
+	width:100px;
 	font-family:黑体;
 }   
 .footer {margin:0 auto;position:absolute;bottom:0px;right:20px;}

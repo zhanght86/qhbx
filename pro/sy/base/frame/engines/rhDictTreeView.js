@@ -496,7 +496,6 @@ rh.vi.rhDictTreeView.prototype.setRightSelect = function(nodes){
  * 根据当前点的值放到右侧容器中
  */
 rh.vi.rhDictTreeView.prototype._setRightSelect = function(itemObj,removeFlag) {
-	debugger;
 	var _self = this;
 	if (this._model == "link") {
 		var id = itemObj.ID;//节点的编码

@@ -7,7 +7,6 @@ _viewer.getBtn('sendToChk').unbind("click").bind("click",function() {
 	var ids = _viewer.grid.getSelectPKCodes();
 	var validIds = new Array();
 	jQuery.each(ids,function(index,itemVal){
-		//debugger;
 		var chkState = _viewer.grid.getRowItemValue(itemVal,"CHK_STATE");
 		if(chkState == 1){ //未送审的数据可以送审
 			validIds.push(itemVal);
@@ -30,7 +29,6 @@ _viewer.getBtn('publish').unbind("click").bind("click",function() {
 	var ids = _viewer.grid.getSelectPKCodes();
 	var validIds = new Array();
 	jQuery.each(ids,function(index,itemVal){
-		//debugger;
 		var chkState = _viewer.grid.getRowItemValue(itemVal,"CHK_STATE");
 		var actState = _viewer.grid.getRowItemValue(itemVal,"ACT_STATE");
 		if(chkState == 20 && actState == 2){ //不审核，且未发布的信息可以启用

@@ -6,8 +6,8 @@ _self.navTreeContainer.data("orWid",_self.navTreeContainer.width());
 _self.contentMainCont.data("orWid",_self.contentMainCont.width());
 _self.navTreeContainer.width("2%");
 _self.contentMainCont.width("98%");
-//连接服务打开的title显示为百年人寿+栏目名称
-$(".conHeaderTitle-span.rh-slide-flagYellow").text("百年人寿 > "+_viewer.params.title);
+//连接服务打开的title显示为栏目名称
+$(".conHeaderTitle-span.rh-slide-flagYellow").text(_viewer.params.title);
 _self.navTreeContainer.hover(
  	   function(event) {
     	   if (jQuery(".content-navTree-close").length > 0) {

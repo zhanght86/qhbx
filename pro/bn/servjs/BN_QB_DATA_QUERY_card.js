@@ -2,7 +2,7 @@ var _viewer = this;
 var titleDiv = jQuery("<div class='BN_COMM_HEAD'></div>").css({"width":"100%","padding":"10px 0px"});
 var table = jQuery("<table width='98%'></table>").appendTo(titleDiv);
 var tr1 = jQuery("<tr></tr>").appendTo(table);
-jQuery("<td align='center'><font style='font-family: 方正小标宋简体;font-size: 28px;font-weight:bold;'>百年人寿保险股份有限公司</font></td>").appendTo(tr1);
+jQuery("<td align='center'><font style='font-family: 方正小标宋简体;font-size: 28px;font-weight:bold;'>前海再保险股份有限公司</font></td>").appendTo(tr1);
 var tr2 = jQuery("<tr></tr>").appendTo(table);
 jQuery("<td align='center'><font style='font-family: 方正小标宋简体;font-size: 20px;font-weight:bold;'>内部工作签报</font></td>").appendTo(tr2);
 _viewer.form.obj.prepend(titleDiv);

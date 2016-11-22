@@ -415,8 +415,6 @@ rh.vi.pageView.prototype._bldBanner = function() {
 		jQuery("<img class='rh-head-per-wei-img'/>").attr("src",FireFly.getContextPath() +"/sy/comm/page/img/jian.png").appendTo(perWei);
 	}*/
 	
-	debugger;
-	
 	//兼岗
 	var jianGangContainer = jQuery("<div class='rh-head-per-jian'></div>").appendTo(perConIn);
 	//根据系统配置启用进入个人信息、查看资料完整度功能

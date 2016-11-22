@@ -32,7 +32,7 @@
           <!--------------------前端导航--开始----------------------->
           <div class="list_a_div">
           	<span class="list_a_span">
-          		<a href="<@chnlUrl root_channel_id 1 />?selectMenu=first">百年文库</a> 〉文辑
+          		<a href="<@chnlUrl root_channel_id 1 />?selectMenu=first">前海再保险文库</a> 〉文辑
           	</span>
           </div>
           <!--------------------前端导航--结束----------------------->

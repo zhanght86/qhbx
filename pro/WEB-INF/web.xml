@@ -377,7 +377,7 @@
 			<url-pattern>/auth</url-pattern> 
 			<url-pattern>/auth/*</url-pattern> 
 		</servlet-mapping>
-		<!-- 百年人寿内网新闻、图片、文档链接处理  start -->
+		<!-- bnrs 内网新闻、图片、文档链接处理  start -->
 		<servlet>
 			<servlet-name>BnOAServlet</servlet-name> 
 			<servlet-class>com.rh.bn.BnOAServlet</servlet-class> 
@@ -389,7 +389,7 @@
 			<url-pattern>/bnnews/*</url-pattern>
 			<url-pattern>/web/guest/home</url-pattern> 
 		</servlet-mapping>
-<!-- 百年人寿内网新闻、图片、文档链接处理  end -->
+<!-- bnrs内网新闻、图片、文档链接处理  end -->
 <welcome-file-list>
     <welcome-file>
 			index.jsp

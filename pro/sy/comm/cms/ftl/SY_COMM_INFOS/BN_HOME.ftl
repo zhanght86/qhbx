@@ -52,7 +52,7 @@ function doPrint()
 				<td>
 					<div class="info-wrapper-news">
 						<div class="info-header">
-							<span>关于百年</span>
+							<span>关于前海再保险</span>
 							<div class="info-header-icon"></div>
 						</div>
 						<div class="info-title">

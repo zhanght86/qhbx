@@ -10,3 +10,13 @@ pro\WEB-INF\work
 pro\WEB-INF\update
 pro\WEB-INF\tmp
 pro\WEB-INF\doc\SY_COMM_MENU
+*.java.20*
+*.java20*
+*.js.20*
+*.js20*
+*.jsp.20*
+*.jsp20*
+*.css.20*
+*.css20*
+*.log.20*
+

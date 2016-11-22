@@ -15,7 +15,7 @@
     top: -13px;
     right: 20px;
 }
-.footcss{text-align:center;color:#666;margin-left: -200px;height:20px;line-height:20px;width:1050px;font-family: Microsoft YaHei;}
+.footcss{text-align:center;color:#666;height:20px;line-height:20px;width:100%;font-family: Microsoft YaHei;}
 .news_title p {font-family: Microsoft YaHei; font-size:18px; font-weight:bold;}
 .foot{ width:100%; background:#f7f7f7; padding:25px 0px; margin-top:20px;}
 .foot dl{ width:1190px; margin:0px auto;}
@@ -118,7 +118,7 @@ function GetRequest(param) {
 								</#if>
 							
 									点击量 ： <span id="count"></span>		
-								<a style="position: absolute; right: 10px;" href="#"><span>首页 > </span><span id="link_span">百年讲坛</span></a>
+								<a style="position: absolute; right: 10px;" href="#"><span>首页 > </span><span id="link_span">讲坛</span></a>
 							</div>
 						
 							
@@ -170,9 +170,9 @@ function GetRequest(param) {
 							</div>
 							</#if>
 							<!-- 投票 begin-->
-							<div class="news_vote" id="vote_item">
+							<!--div class="news_vote" id="vote_item">
 							<a  class ="print" href="javascript:doPrint()"><img style="border:0px;" src="/sy/comm/cms/img/print.gif"/></a>
-							</div>
+							</div-->
 							<!-- 投票 end-->
 						</div>
 						<!-- 评论 begin-->
@@ -269,16 +269,15 @@ jQuery(document).ready(function(){
 
 </script>
 
-<!-- 百年foot开始 -->
-<div class="foot">
+<!-- foot开始 -->
+<!--div class="foot">
     	<dl class="clearfix">
-        	<dt><img alt="" src="/sy/comm/page/images/foot.jpg" /></dt>
-			<div class="footcss">Copyright Aeon Life Insurance Company,Ltd.All Rights Reserved.</div>
-			<div class="footcss">版权所有 2015 百年人寿保险股份有限公司</div>
+        	
+			<div class="footcss">版权所有 2011北京软虹科技有限公司</div>
 			   
         </dl>
-    </div>
-	<!-- 百年foot结束 -->
+    </div-->
+	<!-- foot结束 -->
 <div id="d-top">
 
 	<a title="回到顶部" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;parent.document.body.scrollTop=0;parent.document.documentElement.scrollTop=0;this.blur();return false;" 

@@ -1,7 +1,5 @@
 package com.rh.core.comm.news.link;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,9 +13,49 @@ import com.rh.core.serv.ServMgr;
  * @author hai
  *
  */
-public class LinkServ extends CommonServ {
+public class LinksServ extends CommonServ {
     /**默认显示5条*/
 	private static final String SHOWNUM = "5";
+	
+	
+    
+    /**
+     * 获取启用的常用下载列表
+     * 
+     * @param param 参数
+     * @return 返回
+     */
+    public OutBean getComDownload(ParamBean param) {
+        String shownum = param.getStr("COUNT");
+        if (shownum.equals("")) {
+            shownum = SHOWNUM;
+        }
+        OutBean outBean = ServMgr.act("BN_MH_DOWNLOAD", "finds",
+                new ParamBean().set("S_FLAG", 1).set("LINK_TYPE", "1")
+                        .setShowNum(Integer.parseInt(shownum)));
+        /** 将文件信息放入返回参数中 **/
+        List<Bean> linkBeans = outBean.getDataList();
+        List<Bean> fileBeans = new ArrayList<Bean>();
+        ParamBean fileWhereBean = new ParamBean();
+        try {
+            for (int i = 0; i < linkBeans.size(); i++) {
+                fileWhereBean.set("DATA_ID", linkBeans.get(i).getId());
+                fileWhereBean.set("SERV_ID", "SY_COMM_LINK");
+                OutBean fileBean = ServMgr.act("SY_COMM_FILE", "finds",
+                        fileWhereBean);
+                fileBeans.add(fileBean.getDataList().get(0));
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        return outBean.setData(fileBeans);
+    }
+    
+    
+    
+    public OutBean getComLinks2(ParamBean param) {
+        return new OutBean();
+    }
   /**
    * 获取启用的常用链接列表 
    * @param param 参数
@@ -40,34 +78,7 @@ public class LinkServ extends CommonServ {
 		}*/
 		return outBean;
 	}
-	/**
-	   * 获取启用的常用下载列表 
-	   * @param param 参数
-	   * @return 返回
-	   */
-		public OutBean getComDownloads(ParamBean param) {
-			String shownum = param.getStr("COUNT");
-			if (shownum.equals("")) {
-				shownum = SHOWNUM;
-			}
-			OutBean outBean = ServMgr.act("BN_MH_DOWNLOAD", "finds", new ParamBean().set("S_FLAG", 1).set("LINK_TYPE","1")
-					.setShowNum(Integer.parseInt(shownum))); 
-			/**  将文件信息放入返回参数中  **/
-			List<Bean> linkBeans = outBean.getDataList();
-			List<Bean> fileBeans = new ArrayList<Bean>();
-			ParamBean fileWhereBean = new ParamBean();
-			try {
-				for(int i=0;i<linkBeans.size();i++){
-					fileWhereBean.set("DATA_ID",linkBeans.get(i).getId());
-					fileWhereBean.set("SERV_ID", "SY_COMM_LINK");
-					OutBean fileBean = ServMgr.act("SY_COMM_FILE","finds",fileWhereBean);
-					fileBeans.add(fileBean.getDataList().get(0));
-				}
-			} catch (Exception e) {
-				// TODO: handle exception
-			}
-			return outBean.setData(fileBeans);
-		}
+
 	/*@SuppressWarnings("deprecation")
 	protected void afterQuery(ParamBean paramBean, OutBean outBean) {
 		List<Bean> dataLists = outBean.getDataList();

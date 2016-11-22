@@ -18,10 +18,10 @@ function newsViewY(id){
 <div class='portal-box-title doubanner pt-todo-wrapper' style='position:relative;margin-left:4px;width:99%;'>
 	
 	<ul>
-		<li class="${C} tab-item on current " chnlId="" id="li1" style="float:left;margin:0px 10px;padding-left:20px;" onclick="changeContent(this)">
+		<!--li class="${C} tab-item on current " chnlId="" id="li1" style="float:left;margin:0px 10px;padding-left:20px;" onclick="changeContent(this)">
 		<span style="cursor:pointer;">业务快报</span>
-		</li>
-		<li class="${C}" style="float:left;margin:0px 10px;padding-left:15px;" id="li2" chnlId="${$CHNL_ID$}" onclick="changeContent(this)">
+		</li-->
+		<li class="${C} tab-item on current" style="float:left;margin:0px 10px;padding-left:15px;" id="li2" chnlId="${$CHNL_ID$}" onclick="changeContent(this)">
 		<span style="cursor:pointer;">公司新闻</span>
 		
 		</li>
@@ -49,18 +49,15 @@ function newsViewY(id){
 <#else>
 <div class='portal-box-con' style='height:${hei}px;max-height:${hei}px;'>
 </#if>
-<div id="1">
+<!--div id="1">
 
 <ul class="uly">
-
-
 	<li style="width:100%;position: relative;">
 		<#include "BN_YWKB.ftl"/>
 	</li>
-
 </ul>
-</div>
-<div id="2" style="display:none;">
+</div-->
+<div id="2" style="display:'';">
 <#if (_DATA_?size == 0)>
 <tr><td align="center">该栏目下没有信息！</td></tr>
 <#else>
@@ -71,14 +68,6 @@ function newsViewY(id){
 			<span class="icon" style="float:left;"></span>
 
 			<span class="elipd" style="width:64%;float:left;height:25px;line-height:25px;">${content.NEWS_SUBJECT}</span>
-			<#--
-			<script>
-			var newQx = "${NEW_QX!'0'}";
-			if (rhDate.doDateDiff('D',"${content.NEWS_TIME?substring(0,10)}",rhDate.getCurentTime().substring(0, 10))<=newQx) {
-				$("<i class='new'></i>").appendTo($("#${$CHNL_ID$}${content.NEWS_ID}"));
-			}
-			</script>
-			-->
 			
 			<span style="float:right;margin-right:6px;line-height:25px;color:#999999;">
 				[${content.NEWS_TIME?substring(0,10)}]
@@ -94,17 +83,12 @@ function newsViewY(id){
 </div>
 <script type ="text/javascript" >
 	jQuery(document).ready(function(jQuery) {
+		$("#li2").addClass("on");
+		$("#li1").removeClass("on");
+		$("#li1").css("display","none");
+		$("#2").css("display","block");
+		$("#1").css("display","none");
 		
-		if(System.getVar("@ROLE_CODES@").indexOf("'${ROLE}'")>0){
-		
-			$("#ywkb").css("display","none");
-		}else{
-			$("#li2").addClass("on");
-			$("#li1").removeClass("on");
-			$("#li1").css("display","none");
-			$("#2").css("display","block");
-			$("#1").css("display","none");
-		}
 	});
 	
 	/*点击事件*/
