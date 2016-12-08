@@ -24,7 +24,7 @@ function digui(id){
 	if(id != ""){
 //		var ul = jQuery("div[itemid='"+id+"']").parent().find("ul[class='bbit-tree-node-ct']");
 //		ul.css("display","");
-		alert( jQuery("div[itemid='"+id+"']").parent().parent().parent().first().attr("itemid"));
+//		alert( jQuery("div[itemid='"+id+"']").parent().parent().parent().first().attr("itemid"));
 		  
 		
 		//digui(item.CHILD);

@@ -261,25 +261,25 @@ function confirmSelectDir(idArray, nameArray) {
 	var dirParam = {"_PK_":dirID};
 	var dirBean = FireFly.doAct("DA_DIR", "byid", dirParam , false);
 	
-	if (dirBean.ARCH_STRATEGY == "2") { //传统立卷的 ， 就得选出是哪个卷 , 现在是已经知道了PID,列出下面的卷就行了
-	    var extWhereStr = "and P_ID = ^" + dirID + "^ and S_FLAG=1 and DA_FILE_TYPE = 1"; //未整理的卷
-		var inputName = "volumeCode";  //dirBean.SERV_ID
-		var configStr = "DA_VOLUME,{'TARGET':'V_ID~DA_NUM','SOURCE':'V_ID~DA_NUM~TITLE','PKHIDE':true,'EXTWHERE':'"+extWhereStr+"','TYPE':'single'}";
-		var options = {"itemCode":inputName,
-		"config" :configStr,
-		"rebackCodes":inputName,
-		"parHandler":this,
-		"formHandler":this,
-		"title":"选择要归到哪个卷",
-		"replaceCallBack":function(volObj){
-			    assignGdValue(dirID, nameArray[0], volObj.V_ID, volObj.DA_NUM);
-			}
-		};
-		var queryView = new rh.vi.rhSelectListView(options);
-		queryView.show(event);	
-		
-		return;
-	}
+//	if (dirBean.ARCH_STRATEGY == "2") { //传统立卷的 ， 就得选出是哪个卷 , 现在是已经知道了PID,列出下面的卷就行了
+//	    var extWhereStr = "and P_ID = ^" + dirID + "^ and S_FLAG=1 and DA_FILE_TYPE = 1"; //未整理的卷
+//		var inputName = "volumeCode";  //dirBean.SERV_ID
+//		var configStr = "DA_VOLUME,{'TARGET':'V_ID~DA_NUM','SOURCE':'V_ID~DA_NUM~TITLE','PKHIDE':true,'EXTWHERE':'"+extWhereStr+"','TYPE':'single'}";
+//		var options = {"itemCode":inputName,
+//		"config" :configStr,
+//		"rebackCodes":inputName,
+//		"parHandler":this,
+//		"formHandler":this,
+//		"title":"选择要归到哪个卷",
+//		"replaceCallBack":function(volObj){
+//			    assignGdValue(dirID, nameArray[0], volObj.V_ID, volObj.DA_NUM);
+//			}
+//		};
+//		var queryView = new rh.vi.rhSelectListView(options);
+//		queryView.show(event);	
+//		
+//		return;
+//	}
 	
 	assignGdValue(dirID, nameArray[0]);
 }

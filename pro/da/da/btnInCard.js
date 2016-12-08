@@ -425,7 +425,6 @@ rh.da.cardPubBtn.prototype.printGwFile = function(docId){
  */
 rh.da.cardPubBtn.prototype.printAudit = function(dataId){
 	//先根据dataId从entity中查询到servId 和 servSrcId
-	alert(dataId)l
 	var resultEntity = FireFly.doAct("SY_COMM_ENTITY","finds",{"DATA_ID":dataId});
 	
 	if (resultEntity._OKCOUNT_ > 0) {

@@ -2,7 +2,6 @@ GLOBAL.namespace("rh.da");
 
 var printValArr = "";
 var printNameArr = "";
-
 rh.da.rhDABtns = function(options) {
 	this._viewer = options.parHandler || null;
 	this.selectAllFlag;

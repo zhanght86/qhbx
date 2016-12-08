@@ -35,7 +35,7 @@ var ptManaglink = {
 			 ptManaglink.createLinks(returnData);
 		});
 	},
-	createLinks:function(SYArray){
+	createLinks:function(SYArray){debugger;
 		jQuery.each(SYArray._DATA_,function(n,syslink) {
 			var code = syslink.DEPT_CODE;
 			var name = syslink.DEPT_NAME;
@@ -56,7 +56,7 @@ var ptManaglink = {
 			Tab.open("/sy/comm/page/page.jsp?openTab="+(tabP)+"&where="+encodeURIComponent(where));
 			var pageView = new rh.vi.portalView(options);
 			pageView.show();*/
-			window.open("http://localhost:8081/sy/comm/page/portal.jsp?sysSub=aa");
+			window.open("/sy/comm/page/portal.jsp?sysSub=aa");
 		});
 	},
 	showChnl:function(){

@@ -10,7 +10,6 @@ if (_viewer.getItem("FONDS_ID").getValue() == "") {
 		_viewer.getItem("FONDS_ID").setValue(fonds["FONDS_NUMBER"]);
 	}
 }
-
 //如果是只读模式，不添加P_ID
 var read = _viewer._readOnly;
 if(read){
@@ -23,7 +22,12 @@ if(read){
 		_viewer.getItem("P_ID").getValue(pid[0]);
 	} else{
 		var dataObj = _viewer.getParams();
+		if(dataObj){
 		_viewer.getItem("P_ID").setValue(dataObj["TERR_DIR_ID"]);
+		}else{
+			alert("请选择左侧分类后，重新新建");
+			return;
+		}
 		/**传递值，包括：勾选的“文书档案的ID--件号” 、勾选的数据对应的服务、所选树的ID。 **/
 		_viewer.setExtendSubmitData({"TRANSMIT_DATA_ID_DA_NUM":dataObj.DATA_ID_DA_NUM,"TRANSMIT_DATA_SERV":dataObj.DATA_SERV_ID,"TRANSMIT_TERR_DIR_ID":dataObj.TERR_DIR_ID});
 		_viewer.afterSave = function(){
