@@ -53,7 +53,7 @@
 .rh-tmpl-tabel .rh-linkselect-table td{border:none;}
 .rh-tmpl-tabel .rh-linkselect-table .ui-linkselect-default-delete {text-align:left}
 
-select.ui-select-default{padding:0px;border:1px solid #BBB;height:22px}
+select.ui-select-default{padding-top:0px;padding-right:0px;padding-left:0px;padding-bottom:5px;border:1px solid #BBB;height:22px}
 .ui-form-default span.disabled,.ui-form-default input.disabled,.ui-form-default div.disabled{background-color:#FFF;color:#000}
 .ui-form-default div.inner {margin-top:0px;float:left;height:100%}
 .ui-form-default div.blank {border:0px;}

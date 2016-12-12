@@ -5,7 +5,7 @@
 .portal-box-title-bottom-line{left:0px;margin-left:-3px;border-bottom: 2px #d20000 solid;top: 0px;position:relative;}
 
 </style>
-<div id='EXTEND_LINK' class='portal-box ${boxTheme}'  style='width:258px; margin-left:0px; margin-right:0px; min-height:${minheight};'>
+<div id='EXTEND_LINK' class='portal-box ${boxTheme}'  style='margin-left:0px; margin-right:0px; min-height:${minheight};'>
 <div class='pt-gsyw-wrapper portal-box-title' style='position:relative;'>
 	<span class='portal-box-title-icon icon_portal_links'></span>
 	<span class='portal-box-title-top'></span>

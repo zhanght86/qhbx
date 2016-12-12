@@ -1,70 +1,21 @@
-<#assign mindList = userMind.getMindListByMindSort(odeptCode) > 
-	<#if mindList?size != 0>	
-		<tr style="height:35px;">
-			<td class="pb5 pt5" align="center" style="background-color:#c7d9ef;font-weight:bold;width:10%;">意见类型</td>
-			<td class="pb5 pt5" align="center" style="background-color:#c7d9ef;font-weight:bold;width:10%;">部门</td>
-			<td class="pb5 pt5" align="center" style="background-color:#c7d9ef;font-weight:bold;width:10%;">签意见人</td>
-			<td class="pb5 pt5" align="center" style="background-color:#c7d9ef;font-weight:bold;width:15%;">办理环节</td>
-			<td class="pb5 pt5" align="center" style="background-color:#c7d9ef;font-weight:bold;width:45%;">意见内容</td>
-			<td class="pb5 pt5" align="center" style="background-color:#c7d9ef;font-weight:bold;width:120px;">签意见时间</td>
-		</tr>
-		<#list mindList as mind>
-			<tr>
-				<td class="pb5 pt5" style="padding-left:5px;padding-right:5px;">
-					<#if mind.MIND_CODE_NAME??>
-					    <table class='mindShowList' width="100%;" cellPadding='0' cellSpacing='0' border='0'>
-							<tr>
-								<td class='p5 lh150' style='word-wrap: break-word; word-break: break-all;'>
-									<span>${mind.MIND_CODE_NAME}</span>
-								</td>
-							</tr>
-						</table>
-					</#if>
-					</td>	
-					<td class="pb5 pt5" align="center" style="padding-left:5px;padding-right:5px;">
-						<table class='mindShowList' width="100%;" cellPadding='0' cellSpacing='0' border='0'>
-							<tr>
-								<td class='p5 lh150' style='word-wrap: break-word; word-break: break-all;'>
-									<span>${mind.S_TNAME}</span>
-								</td>
-							</tr>
-						</table>
-					</td>
-					<td class="pb5 pt5" style="padding-left:5px;padding-right:5px;">
-						<table class='mindShowList' width="100%;" cellPadding='0' cellSpacing='0' border='0'>
-							<tr>
-								<td class='p5 lh150' style='word-wrap: break-word; word-break: break-all;'>
-									<#if mind.IS_BD?? && mind.IS_BD = 1 && mind.BD_UNAME?length gt 0>
-								    	<span>${mind.S_UNAME}(${mind.BD_UNAME}补登)</span>
-								    <#elseif mind.BD_UNAME?length gt 0>
-								    	<span>${mind.BD_UNAME}(${mind.S_UNAME}授权)</span>
-								    <#else>
-								    	<span>${mind.S_UNAME}<span>
-								    </#if>
-								</td>
-							</tr>
-						</table>
-					</td>
-					<td class="pb5 pt5" style="padding-left:5px;padding-right:5px;">
-						<#if mind.WF_NI_NAME??>
-							<table class='mindShowList' width="100%;" cellPadding='0' cellSpacing='0' border='0'>
-								<tr>
-									<td class='p5 lh150' style='word-wrap: break-word; word-break: break-all;'>
-										<span>${mind.WF_NI_NAME}</span>
-									</td>
-								</tr>
-							</table>
-						</#if>	
-					</td>
-					<td style="word-wrap:break-word;word-break:break-all;" class="p5 lh150">
+<#assign mindTypeList = userMind.getMindTypeList(odeptCode) >
+	<#list mindTypeList as mindType>
+	<#assign mindList = userMind.getMindListByType(mindType.ID, odeptCode) > 
+		<#if mindList?size != 0>	
+		<tr>
+			<td width="15%" class="tc pb5">${mindType.NAME}</td>
+			<td width="85%">
+				<table class='mindShowList' width="100%" border="0" cellspacing="0" cellpadding="0">
+				<#list mindList as mind>
+					<tr><td style="word-wrap:break-word;word-break:break-all;" class="p5 lh150">
 						<#if mind.MIND_CONTENT??>
 						<span class="MIND_CONTENT">${mind.MIND_CONTENT?replace("\n","<br>")}</span>
 						</#if>
 						<#if mind._MIND_FILE_LIST?? && mind._MIND_FILE_LIST?size gt 0>
-						&nbsp;&nbsp;（
+						&nbsp;&nbsp;&nbsp;&nbsp;（
 						<#list mind._MIND_FILE_LIST as fileBean>
 						${fileBean_index + 1}.&nbsp;<a href="#" onclick="RHFile.read('${fileBean.FILE_ID}','${fileBean.FILE_NAME}')" fileID="${fileBean.FILE_ID}"  class="MIND_FILE"><span class="icon-image iconC" style="border:0"></span>${fileBean.FILE_NAME}</a>
-						[<a href="/file/${fileBean.FILE_ID}" target="_blank">下载</a>]；
+						[<a href="/file/${fileBean.FILE_ID}" target="_blank">下载</a>]；&nbsp;
 						</#list>
 						）
 						</#if>
@@ -76,34 +27,35 @@
 								&nbsp;[<a href="javascript:void(0)" MIND_ID="${mind.MIND_ID}" class="DELETE_MIND">删除</a>]
 							<#elseif NI_ID?? && DEL_MIND?? && DEL_MIND = "true" && mind.S_USER = userBean.USER_CODE>
 								&nbsp;[<a href="javascript:void(0)" MIND_ID="${mind.MIND_ID}" class="DELETE_MIND">删除</a>]
-							<#--<#elseif NI_ID?? && DEL_SELF_MIND?? && DEL_SELF_MIND && mind.S_USER = userBean.USER_CODE>
-							    &nbsp;[<a href="javascript:void(0)" MIND_ID="${mind.MIND_ID}" class="DELETE_MIND">删除</a>]	-->	
+							<#elseif NI_ID?? && DEL_SELF_MIND?? && DEL_SELF_MIND && mind.S_USER = userBean.USER_CODE>
+							    &nbsp;[<a href="javascript:void(0)" MIND_ID="${mind.MIND_ID}" class="DELETE_MIND">删除</a>]		
 							</#if>
 						</#if>
-					</td>
-					<td class="pb5 pt5" style="padding-left:5px;padding-right:5px;">
-				     	<span>
-			     			<#if mind.MIND_TIME??> <!--从别处导过来的数据，有的没取到时间值，或者时间格式是只到日期的-->
-					        	<#if mind.MIND_TIME?length gt 16>
-					        		<table class='mindShowList' width="100%;" cellPadding='0' cellSpacing='0' border='0'>
-										<tr>
-											<td class='p5 lh150' style='word-wrap: break-word; word-break: break-all;'>
-												<span>${mind.MIND_TIME?substring(0,16)}</span>
-											</td>
-										</tr>
-									</table>    
-					        	<#else>
-							        <table class='mindShowList' width="100%;" cellPadding='0' cellSpacing='0' border='0'>
-										<tr>
-											<td class='p5 lh150' style='word-wrap: break-word; word-break: break-all;'>
-												<span> ${mind.MIND_TIME}</span>
-											</td>
-										</tr>
-									</table>
-					        	</#if>
-					    	</#if>    
-				     	</span>
-					</td>
-				</tr>
-			</#list>
+					</td></tr>
+					<tr><td class="tr p5 pr30">
+						<span>${mind.S_TNAME}&nbsp;&nbsp;&nbsp;&nbsp; </span>
+						<#if mind.IS_BD?? && mind.IS_BD = 1 && mind.BD_UNAME?length gt 0>
+					    	<span>${mind.S_UNAME}(${mind.BD_UNAME}补登)</span>
+					    <#elseif mind.BD_UNAME?length gt 0>
+					    	<span>${mind.BD_UNAME}(${mind.S_UNAME}授权)</span>
+					    <#else>
+					    	<span>${mind.S_UNAME}<span>
+					    </#if>
+					    
+					    <span class='pl50 mindList_time'>
+						    <#if mind.MIND_TIME??> <!--从别处导过来的数据，有的没取到时间值，或者时间格式是只到日期的-->
+						        <#if mind.MIND_TIME?length gt 16>    
+						            ${mind.MIND_TIME?substring(0,16)}
+						        <#else>
+						            ${mind.MIND_TIME}
+						        </#if>
+						    </#if>    
+					    </span>
+					
+					</td></tr>
+				</#list>
+				</table>
+			</td>
+		</tr>
 		</#if>
+	</#list>

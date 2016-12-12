@@ -1,7 +1,6 @@
 GLOBAL.namespace("rh.vi");
 
 rh.vi.gwHeader = function(options) {
-	alert(111);
 	this.servId = options.servId || null;
 	this.parHandler = options.parHandler || null;
 	this._viewer = this.parHandler;

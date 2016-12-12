@@ -9,7 +9,7 @@
 "SERV_SEARCH_FLAG":"2",
 "SERV_TYPE":"2",
 "SERV_CMPY":"",
-"SERV_NAME":"文书档案立卷",
+"SERV_NAME":"文书档案管理",
 "SERV_CLASS":"com.rh.da.vol.DaVolumeServ",
 "SERV_SRC_ID":"",
 "S_USER":"3GfueMFzRakELZ8B9Hk_G7",
@@ -27,7 +27,7 @@
 "SERV_CARD_TMPL":"2",
 "SERV_KEYS":"V_ID",
 "SERV_LIST_STYLE":"",
-"S_MTIME":"2014-02-26 16:28:16:062",
+"S_MTIME":"2016-11-24 21:12:00:192",
 "SERV_LINK_FLAG":"1",
 "SERV_MEMO":"",
 "SERV_DATA_TITLE":"",
@@ -96,12 +96,13 @@
 "LINK_PAGE_COUNT":"50",
 "LINK_ID":"0q8SfdNudfJVrgLXLgGdap",
 "LINK_NAME":"文书档案",
+"LINK_SHOW_MOBILE":"0",
 "LINK_ORDER":"0",
 "LINK_SHOW_TYPE":"1"
 }
 ],
 "S_FLAG":"1",
-"SAFE_FLAG":"1",
+"SAFE_FLAG":"0",
 "TABLE_VIEW":"DA_VOLUME_WENSHU",
 "SY_SERV_QUERY":
 [

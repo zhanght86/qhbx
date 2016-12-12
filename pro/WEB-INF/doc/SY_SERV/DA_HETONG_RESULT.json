@@ -391,12 +391,12 @@
 "WHERE_ORDER":"10",
 "_PK_":"30cXaJVvZeNXZSIpmkUyhs",
 "WHERE_SERV_TYPE":"",
-"S_MTIME":"2015-08-27 14:34:21:779",
+"S_MTIME":"2016-11-25 17:39:42:607",
 "WHERE_NAME":"公司领导或者档案集中管理员看全部",
 "WHERE_ID":"30cXaJVvZeNXZSIpmkUyhs",
 "_ROWNUM_":"0",
 "WHERE_FLOW_FLAG":"9",
-"WHERE_SCRIPT":"\"@ROLE_CODES@\".indexOf(\"'RGSLD'\") >= 0 ||\"@ROLE_CODES@\".indexOf(\"'Z_JZGDY'\") >= 0",
+"WHERE_SCRIPT":"\"@ROLE_CODES@\".indexOf(\"'RGSLD'\") >= 0 ||\"@ROLE_CODES@\".indexOf(\"'DAGLY'\") >= 0",
 "WHERE_CONTENT":"and S_ODEPT = '@ODEPT_CODE@'"
 },
 {

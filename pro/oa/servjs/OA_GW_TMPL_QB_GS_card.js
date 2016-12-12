@@ -22,6 +22,8 @@ if(_viewer.wfCard && _viewer.wfCard.isWorkflow()){
 			return true;
 		}
 	}else{//签报类型数据项置为只读
+		if(_viewer.getItem("GW_FILE_TYPE")){
 		_viewer.getItem("GW_FILE_TYPE").disabled();
+		}
 	}
 }

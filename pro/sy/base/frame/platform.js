@@ -863,6 +863,6 @@ var FireFly = {
 //		if (url.length == 0) {
 //		    url = getRootPath() + "/";
 //		}
-		self.parent.window.location.href = FireFlyContextPath + "/login_ntlm.jsp"; 
+		self.parent.window.location.href = FireFlyContextPath + "/login.jsp"; 
 	}
 }

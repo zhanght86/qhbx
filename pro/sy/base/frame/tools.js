@@ -2502,7 +2502,6 @@ var Todo = {
 				data[UIConst.PK_KEY] = todoParams.todoId;
 				data["TODO_ID"] = todoParams.todoId;
 				var res = FireFly.doAct("SY_COMM_TODO","endReadCon",data,false);
-				alert(11);
 				if (res[UIConst.RTN_MSG].indexOf(UIConst.RTN_OK) == 0) {
 					if(todoParams.portalHandler || window.portalView){
 						var con = jQuery("#SY_COMM_TODO .portal-box-con");

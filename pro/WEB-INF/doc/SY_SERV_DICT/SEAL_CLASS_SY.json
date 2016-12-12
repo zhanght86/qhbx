@@ -3,7 +3,7 @@
 "DICT_NAME_LAYER":"0",
 "S_PUBLIC":"1",
 "TABLE_SELECT":"",
-"S_MTIME":"2015-11-03 15:08:21:349",
+"S_MTIME":"2015-12-31 15:58:24:602",
 "TABLE_WHERE":"",
 "SY_SERV_DICT_ITEM":
 [
@@ -20,7 +20,7 @@
 "ITEM_LEVEL":"0",
 "_PK_":"0GUKxJW8R00oz8Zc2KWbt8",
 "S_CMPY":"zhbx",
-"ITEM_NAME":"总公司印章",
+"ITEM_NAME":"公司印章",
 "ITEM_PCODE":"",
 "ITEM_CODE":"1",
 "ITEM_LEAF":"1",
@@ -39,7 +39,7 @@
 "ITEM_LEVEL":"0",
 "_PK_":"2lNKb9SBN7WFilVBeY4NJkn",
 "S_CMPY":"zhbx",
-"ITEM_NAME":"分公司印章",
+"ITEM_NAME":"部门印章",
 "ITEM_PCODE":"",
 "ITEM_CODE":"2",
 "ITEM_LEAF":"1",

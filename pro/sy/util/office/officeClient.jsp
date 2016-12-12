@@ -107,7 +107,7 @@
 <%	
 	}
 %>
-	_menuItems[_menuIndex++] = {"name":"　调试信息　","id":"5"};
+//	_menuItems[_menuIndex++] = {"name":"　调试信息　","id":"5"};
 <%
 	if(fileAction.indexOf(";seal;") >= 0){
 %>	

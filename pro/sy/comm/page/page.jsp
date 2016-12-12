@@ -24,8 +24,8 @@
 </head>
 <%
   if (request.getQueryString() != null) {
-	  System.out.println(request.getQueryString());
-	  System.out.println(request.getRequestURI().toString() + "?" + request.getQueryString());
+	  //System.out.println(request.getQueryString());
+	  //System.out.println(request.getRequestURI().toString() + "?" + request.getQueryString());
 	  request.getSession().setAttribute("GOTO_URL", request.getRequestURI().toString() + "?" + request.getQueryString());
   } else {
 	  request.getSession().setAttribute("GOTO_URL", request.getRequestURI().toString());
@@ -63,6 +63,15 @@
   String homepage = request.getParameter("home");
   String homeConfig = null;
   //从连接中的openTab中拿出url。还原系统参数的设置
+  System.out.println(openTab);
+  if(openTab.indexOf("{",openTab.indexOf("?"))>0){//解决菜单中配置{extWhere="s":"s"}，从门户中点击报404 的错误
+      StringBuffer sb = new StringBuffer(openTab);
+      String temp = sb.substring(sb.indexOf("{",sb.indexOf("?")),sb.indexOf("}",sb.indexOf("?"))+1).replace("'", "").replace("\"", "");
+      System.out.print(temp);
+      sb.replace(sb.indexOf("{",sb.indexOf("?")),sb.indexOf("}",sb.indexOf("?"))+1, temp);
+      openTab= sb.toString();
+     }
+  
   System.out.println(openTab);
   Bean openTabBean = JsonUtils.toBean(openTab);
   if(openTabBean.isNotEmpty("url")){
@@ -199,6 +208,7 @@ if (bannerTabBack.length() > 0) {%>
 <div id="homeTabsULFill" class="homeTabsULFill"></div>
 <div id="homeTabs"><!--Begin homeTabs -->
     <%
+    System.out.println("-------------"+homeConfig +homeConfig != null);
       if (homeConfig != null) {%>
       	<ul class="tabUL">
 		</ul>
@@ -269,7 +279,7 @@ if (<%=homeConfig%> != null) {//首页的配置
 }
 if ("<%=func%>" === "openTodo") {//自动进入待办的配置
     opts["openTodo"] = {"todoServId":"<%=todoServId%>","todoUrl":"<%=todoUrl%>","todoTitle":"<%=todoTitle%>","servPk":"<%=servPk%>"};
-}
+}debugger;
 //opts["openTab"] = "<new String(Strings.escapeAngle(Lang.hexToStr(openTab)))%>";
 opts["openTab"] = "<%=openTab%>";
 opts["defaultTab"] = "<%=defaultTab%>";

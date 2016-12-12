@@ -237,6 +237,7 @@ rh.vi.pageView.prototype._bldMenu = function() {
 			   	  nextUl.slideDown("normal").addClass("leftMenu-ul-show");
 			   }
 			});
+			jQuery("#left-homeMenu").find("ul").first().css({"display":"none"})
     }
     initLeftMenu(childrens); 
 };

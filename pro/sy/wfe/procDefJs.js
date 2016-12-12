@@ -168,7 +168,7 @@ function openLineDefDlg(lineDef){
 }
 function saveNodeInfo(rtnObj,lable){
 	 var retStr=JSON.stringify(rtnObj);
-	 var flash = document.getElementById("workFlow");
+	  var flash = getFlashObject("workFlow");
 	 flash.saveJosn(retStr);
 	 flash.saveNodeLabel(lable);
 }

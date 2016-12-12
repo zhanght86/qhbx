@@ -97,7 +97,6 @@ function batchFenfa(){
 
 jQuery("td[icode='S_EMERGENCY__NAME']", _viewer.grid.getTable())
 				.each(function() {
-					alert(jQuery(this).text());
 					if(jQuery(this).text()==""){
 						jQuery(this).text(jQuery(this).attr("title"));
 						

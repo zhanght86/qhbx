@@ -116,7 +116,6 @@ rh.vi.portalView.prototype._editModel = function() {
 	//构造按钮条
 	var btnBar = jQuery("<div></div>").addClass("portal-btnBar");
 	var tempData = "";
-	alert(_self.opts.sId);
 	if (_self.opts.sId == "SY_COMM_TEMPL") {
 		tempData = {
 				"model":{"ACT_NAME":"选择布局","ACT_CSS":"add","ACT_CODE":"model","ACT_TITLE":"选择模版的布局","ACT_VISIBLE":true},

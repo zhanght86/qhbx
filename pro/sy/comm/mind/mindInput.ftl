@@ -88,7 +88,7 @@
 	<tr>
 	    <td class="saveBarLeft"></td>
 	    <td align="center" class="mt20 mb10 saveBarRight">
-	        <span style="display:inline-block;margin:5px 0 5px 0;"><a id="saveMindBtn" class="rh-icon rhGrid-btnBar-a fr"><span class="rh-icon-inner">暂存意见</span><span class="rh-icon-img btn-save"/></a></span>
+	        <span style="display:inline-block;margin:5px 0 5px 0;"><a id="saveMindBtn" class="rh-icon rhGrid-btnBar-a fr"><span class="rh-icon-inner">保存意见</span><span class="rh-icon-img btn-save"/></a></span>
 	    </td>
 	</tr>
 	<#else>

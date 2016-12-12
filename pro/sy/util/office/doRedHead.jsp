@@ -127,7 +127,7 @@
 
 </SCRIPT>
 
-<SCRIPT  LANGUAGE="JavaScript">
+<SCRIPT  LANGUAGE="JavaScript">debugger;
 var redHead = new RedHead();
 function insertdata(){
     showStatus("正在生成文件正文,请等待....");
