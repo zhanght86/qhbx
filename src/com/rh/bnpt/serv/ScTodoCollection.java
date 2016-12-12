@@ -337,7 +337,7 @@ public class ScTodoCollection {
 	 * @return 数据Bean
 	 */
 	public OutBean getWts() {
-		String serverAddre = Context.getSyConf("SYS_HOST_ADDR", "http://oanew"); // 服务器地址
+		String serverAddre = Context.getSyConf("SYS_HOST_ADDR", ""); // 服务器地址
 		OutBean outBean = new OutBean();
 		String currentUser = Context.getUserBean().getId();
 		// 得到委托人列表
