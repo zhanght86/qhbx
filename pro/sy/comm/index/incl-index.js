@@ -28,7 +28,7 @@ var LogMgr = function(id, pswds, cmpyCode, cmpyName) {
             jQuery("#msg").html(msg);
             return;
         }
-        //var pswdsBase64 = jQuery.base64.decode(pswds);
+        var pswdsBase64 = jQuery.base64.encode(pswds);
         var params = {};
         if (jQuery("#USER_LAST_CLIENT").length == 1) {
         	params["USER_LAST_CLIENT"] = jQuery("#USER_LAST_CLIENT").val();
@@ -36,7 +36,10 @@ var LogMgr = function(id, pswds, cmpyCode, cmpyName) {
         	params["USER_LAST_PCNAME"] = jQuery("#USER_LAST_PCNAME").val();
         	params["USER_LAST_BROWSER"] = jQuery("#USER_LAST_BROWSER").val();
         }
-        var resultData = FireFly.login(id, pswds, cmpyCode,params);
+        if(jQuery("#passwdAuth").length>0 ){
+        	params["passwd"] = "passwdAuth";
+        }
+        var resultData = FireFly.login(id, pswdsBase64, cmpyCode,params);
         //如果data中有exception属性，那么说明ajax出错了。
         if (resultData.exception) {
             jQuery.messager.alert("系统登录出错", resultData["msg"]);
@@ -73,15 +76,19 @@ var LogMgr = function(id, pswds, cmpyCode, cmpyName) {
 					if (jumpTo && jumpTo.val() == "portal") {
 						homeUrl = "sy/comm/page/portal.jsp";
 					}
+						//处理委托
+					if(resultData["TO_USER_CODE"] && resultData["TO_USER_CODE"].length>0){//增加委托参数
+						homeUrl += "?TO_USER_CODE="+	resultData["TO_USER_CODE"];					
+					}
 	                //判断屏幕可用大小与登录窗口之间的差，如果差值大于100，则打开一个最大化窗口(非最大化窗口存在问题：登录系统后，窗口最大化，页面下方存在大量空白区域)
-	                if((window.screen.availWidth - jQuery(window).width()) > 100
-	                		&& (window.screen.availHeight-jQuery(window).height()) > 100 && (jQuery("#rhClient").length == 0)){
-	                	openMaxedWindow(homeUrl);
-	                } else {
+//	                if((window.screen.availWidth - jQuery(window).width()) > 100
+//	                		&& (window.screen.availHeight-jQuery(window).height()) > 100 && (jQuery("#rhClient").length == 0)){
+//	                	openMaxedWindow(homeUrl);
+//	                } else {
 	                	setTimeout(function() {
 	                		Tools.redirect(homeUrl);
 	                	},100);
-	                }
+//	                }
 			    } else if (resultData[UIConst.RTN_MSG].indexOf(UIConst.RTN_ERR) == 0) {
 	                var msg = resultData[UIConst.RTN_MSG];
 	                msg = msg.substring(6);

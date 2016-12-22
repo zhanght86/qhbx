@@ -8,6 +8,7 @@ import com.rh.core.org.mgr.UserMgr;
 import com.rh.core.serv.dict.DictMgr;
 import com.rh.core.util.Constant;
 import com.rh.core.util.EncryptUtils;
+import com.rh.core.util.encoder.Base64;
 
 /**
  * 基于用户名密码的认证模块
@@ -32,6 +33,7 @@ public class PasswordLoginModule extends AbstractLoginModule {
             throw new RuntimeException("认证参数错误，用户名：" + loginName + ";公司编码：" + cmpyCode 
                     + ";密码长度：" + password.length());
         }
+         password = new String(Base64.decode(password.getBytes()));
         //验证公司信息
         Bean cmpy = DictMgr.getItem("SY_ORG_CMPY", cmpyCode);
         if (cmpy == null) {

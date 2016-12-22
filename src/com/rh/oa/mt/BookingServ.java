@@ -156,24 +156,26 @@ public class BookingServ extends CommonServ {
             throw new TipException("预定时间早于系统时间，不可预订");
         }
         
-        // 加锁
-        lock = new TaskLock("meetingRoom", meetingRoomId);
+        if(meetingRoomId.length()>0 && false){//选择了会议室才，加锁.暂时不用
+            // 加锁
+            lock = new TaskLock("meetingRoom", meetingRoomId);
 
-        boolean lockSuccess = lock.lock(); // 加锁成功
-        if (lockSuccess) {
-            boolean isOccupy = true;
-            try {
-                isOccupy = findMeetingRoomIsBooked(paramBean);
-            } catch (Exception e) {
-                lock.release();
-                throw new RuntimeException(e);
+            boolean lockSuccess = lock.lock(); // 加锁成功
+            if (lockSuccess) {
+                boolean isOccupy = true;
+                try {
+                    isOccupy = findMeetingRoomIsBooked(paramBean);
+                } catch (Exception e) {
+                    lock.release();
+                    throw new RuntimeException(e);
+                }
+                if (isOccupy) {
+                    lock.release();
+                    throw new TipException("此会议室在" + startTime + "到" + endTime + "时间段已存在预定信息！");
+                }
+            } else {
+                throw new TipException("此会议室正在预定！不可同时预定");
             }
-            if (isOccupy) {
-                lock.release();
-                throw new TipException("此会议室在" + startTime + "到" + endTime + "时间段已存在预定信息！");
-            }
-        } else {
-            throw new TipException("此会议室正在预定！不可同时预定");
         }
     }
 

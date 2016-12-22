@@ -383,7 +383,7 @@ function saveToPdf(){
 	document.write('<param name="IsShowStatus" value="-1">   ');
 	document.write('<param name="EkeyType" value="1">   ');
 	document.write('<SPAN STYLE="color:red">不能装载印章管理控件。请在检查浏览器的选项中检查浏览器的安全设置。</SPAN>   ');
-	document.write('</Object>   ');
+	document.write('</object>   ');
 <%
 	}
 %>

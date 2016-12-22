@@ -40,7 +40,6 @@
 	<classpathentry kind="lib" path="pro/WEB-INF/lib/poi-3.12-20150511.jar"/>
 	<classpathentry kind="lib" path="pro/WEB-INF/lib/prettytime-2.1.3.Final.jar"/>
 	<classpathentry kind="lib" path="pro/WEB-INF/lib/quartz-all-2.1.3.jar"/>
-	<classpathentry kind="lib" path="pro/WEB-INF/lib/rh-aeon.jar"/>
 	<classpathentry kind="lib" path="pro/WEB-INF/lib/rh-da.jar"/>
 	<classpathentry kind="lib" path="pro/WEB-INF/lib/rh-extend.jar"/>
 	<classpathentry kind="lib" path="pro/WEB-INF/lib/rh-oa.jar"/>
@@ -64,5 +63,7 @@
 	<classpathentry kind="lib" path="pro/WEB-INF/lib/zxing.jar"/>
 	<classpathentry kind="lib" path="pro/WEB-INF/lib/ojdbc14.jar"/>
 	<classpathentry kind="lib" path="pro/WEB-INF/lib/jsdk-15.jar"/>
+	<classpathentry kind="lib" path="pro/WEB-INF/lib/rh-util.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="pro/WEB-INF/classes"/>
 </classpath>

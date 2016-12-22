@@ -116,6 +116,7 @@ function editOfficeFileExt(fileName, downLoadUrl, upLoadUrl, params) {
 		extParams += "&eKeySN="+params.eKeySN+"&sealID="+params.sealID+"&fileId="+params.fileId+"&servId="+params.servId;
 	}
 	url += extParams;
+	
 	return showDialog(url, window.screen.width, window.screen.height);
 }
 
@@ -172,7 +173,7 @@ zotnClientNTKO.DownloadFile = function(DownloadURL, fileName, ifEncrypt,
 		ifDownload = false;
 	}
 	if (!ifDownload && isWordOrExcelFile(fileName)) {
-		readOfficeFile(fileName, DownloadURL, isRevision);
+		readOfficeFile(fileName, DownloadURL, isRevision,true);
 	} else {
 		if (ZotnClient && ZotnClient.IpAddress) {
 			ZotnClient.DownloadFile(this._createUrl(DownloadURL), fileName,

@@ -1,0 +1,20 @@
+.rh-right-radius-head{box-shadow:0 0 0 #000;border:1px #e9e9e9 solid;border-top-left-radius:5px;border-top-right-radius:5px}
+.rh-bottom-right-radius{box-shadow:0 0 0 #000;border:1px #e9e9e9 solid;border-top:0 #e9e9e9 solid;border-bottom-left-radius:5px;border-bottom-right-radius:5px}
+.ui-dialog-titlebar.ui-widget-header{position:relative;border:0 #f00 solid;background:none;background-color:#469dda;}
+.ui-dialog .ui-dialog-titlebar{color:#000;padding:0;position:relative;height:38px;line-height:38px;text-align:center;border-radius:0 0}
+.ui-dialog .ui-dialog-title{margin:2px 16px 2px 0;font-size:14px;text-shadow:0 0 0 #fff;font-family:"寰蒋闆呴粦";color:#fff}
+.ui-dialog .ui-dialog-titlebar-close{text-decoration:none;cursor:pointer;background:none;background:url("blue/img/i-window-close.png") no-repeat left top;position:absolute;right:10px;top:5px;width:54px;height:27px}
+.ui-dialog .ui-dialog-titlebar-close span.ui-icon{background:none;display:block;width:54px;height:27px;color:#000;text-indent:0;line-height:27px;font-family:"寰蒋闆呴粦";color:#fff}
+.ui-dialog .ui-dialog-titlebar-close:hover,.ui-dialog .ui-dialog-titlebar-close:focus{font-weight:bold;border:none;background:url("blue/img/i-window-close-active.png") no-repeat left top}
+.rh-small-dialog .ui-dialog-content{border-left:6px #fafafa solid;border-right:5px #fafafa solid}
+.rh-small-dialog .ui-widget-content{box-shadow:0 0 0 rgba(1,2,3,0.2) inset;background-color:#fafafa}
+/****************张金喜*****覆盖掉选择框的确定取消按钮样式**********************/
+.ui-dialog .ui-dialog-buttonpane{background:none;background-color:#ededed;border-top:1px #c8c8c8 solid;text-align:left;margin:0 0 0 0;height:39px;line-height:39px}
+.ui-dialog-buttonpane button{text-shadow:0 0 0 #fff;width:130px;height:31px;border:none;color:#000;line-height:28px;font-family:"微软雅黑";font-size:12px}
+.ui-dialog-buttonpane button{background:url("/sc/blue/img/i-window-btn-right.png") no-repeat 0 top}
+.ui-dialog-buttonpane button:hover{background:url("/sc/blue/img/i-window-btn-right-active.png") no-repeat right top;color:#fff}
+.ui-dialog-buttonpane button:first-child{background:url("/sc/blue/img/i-window-btn-right.png") no-repeat 0 top}
+.ui-dialog-buttonpane button:first-child:hover{background:url("/sc/blue/img/i-window-btn-right-active.png") no-repeat right top}
+.ui-dialog .ui-dialog-buttonpane button{margin:3px 3px;}
+/****************张金喜*****覆盖掉选择框的确定取消按钮样式**********************/
+  

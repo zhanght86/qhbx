@@ -1007,4 +1007,13 @@ public class UserMgr {
         }
         return getUser(userCode);
     }
+    
+    /**
+     * 清楚用户的缓存
+     * @param userCode
+     */
+    public static void clearUserCache(String userCode)
+    {
+      CacheMgr.getInstance().remove(userCode, "SY_ORG_USER");
+    }
 }

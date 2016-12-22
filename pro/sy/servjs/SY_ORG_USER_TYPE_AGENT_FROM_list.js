@@ -128,7 +128,7 @@ if(!_viewer.links.LINK_TYPE_FLAG){
 					"AGT_ID":_viewer.getParHandler().itemValue("AGT_ID"),
 					"MAIN_AGT_STATUS":mainStatus,
 					"startDate":_viewer.getParHandler().itemValue("AGT_BEGIN_DATE"),
-					"endDate":_viewer.getParHandler().itemValue("AGT_END_DATE"),
+					"endDate":_viewer.getParHandler().itemValue("AGT_END_DATE")
 				}
 			};
 			var cardView = new rh.vi.cardView(temp);

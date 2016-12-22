@@ -241,9 +241,9 @@ public class GwServ extends CommonServ {
      * @param outBean 保存后的数据信息
      */
     protected void afterSave(ParamBean paramBean, OutBean outBean) {
-        /*if (paramBean.getAddFlag()) { // 新建公文时从公文模版复制正文
+        if (paramBean.getAddFlag()) { // 新建公文时从公文模版复制正文
             copyZhengwen(paramBean, outBean);
-        }*/
+        }
         // 公文，起草节点修改某种数据类型后，删除原有流程，启动新流程
         // 比如：发文，修改发文类型后需重启流程；签报，修改签报类型后需重启流程
         if (!paramBean.getAddFlag()) {
@@ -369,7 +369,6 @@ public class GwServ extends CommonServ {
         if (paramBean.isEmpty("GW_YEAR_CODE")) {
             OutBean out = new OutBean();
             out.set("GW_YEAR_NUMBER", "");
-            /*out.setError("代字为空，不能编号!");*/
             return out;
         }
         
@@ -398,18 +397,13 @@ public class GwServ extends CommonServ {
         } else {
             codeBean.set("GW_YEAR_NUMBER", 1);
         }
-        // 生成最大公文编号的同时保存代字、年度和编号
-        //如果是收文的添加模式，则不保存
-        if(paramBean.getStr("").equals("")&&paramBean.getStr("").endsWith("")){
-            
-        }else{
-            ParamBean param = new ParamBean(servId, ServMgr.ACT_SAVE);
-            param.setId(paramBean.getId()).set("GW_YEAR_CODE", paramBean.getStr("GW_YEAR_CODE"))
-                .set("GW_YEAR", paramBean.getStr("GW_YEAR")).set("GW_YEAR_NUMBER", codeBean.getStr("GW_YEAR_NUMBER"));
-            ServMgr.act(param);
-        }
+        // 生成最大公文编号的同时保存代字、年度和编号，编号有变化自动保存，新建是有bug
+//        ParamBean param = new ParamBean(servId, ServMgr.ACT_SAVE);
+//        param.setId(paramBean.getId()).set("GW_YEAR_CODE", paramBean.getStr("GW_YEAR_CODE"))
+//            .set("GW_YEAR", paramBean.getStr("GW_YEAR")).set("GW_YEAR_NUMBER", codeBean.getStr("GW_YEAR_NUMBER"));
+//        ServMgr.act(param);
 
-        codeBean.setOk();
+        codeBean.setOk("");
         return codeBean;
     }
 

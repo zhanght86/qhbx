@@ -203,7 +203,7 @@
 			<input class="_btn_" id="_setupBtn_" type="button" value="页面设置" onclick="javascript:PageSetup();" />
 			<input class="_btn_" id="_viewBtn_" type="button" value="打印预览" onclick="javascript:printView();" />
 			<input class="_btn_" id="_printBtn_" type="button" value="打  印" onclick="javascript:doPrint();" />
-			<input class="_btn_" id="_printBtn_" type="button" value="另 存 " onclick="javascript:saveAs();" />
+			<!-- input class="_btn_" id="_printBtn_" type="button" value="另 存 " onclick="javascript:saveAs();" /> -->
 		    <input class="_btn_" id="_closeBtn_" type="button" value="关  闭" onclick="javascript:closeWin();" />
 		</div>
 		<div style="margin-top:5px;margin-bottom:5px;">&nbsp;</div>

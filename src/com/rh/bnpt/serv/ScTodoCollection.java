@@ -64,7 +64,6 @@ public class ScTodoCollection {
 		ParamBean paramBean = new ParamBean();
 		paramBean.setServId("SY_COMM_TODO");
 		paramBean.setShowNum(ConfMgr.getConf("BN_SC_TODO_SHOWNUM", 50));
-//		paramBean.setWhere(where);
 		paramBean.setOrder("S_EMERGENCY desc,TODO_SEND_TIME desc");
 		paramBean.setAct("query");
 		ArrayList<Bean> todoListtmp = (ArrayList<Bean>) ServMgr.act(paramBean).getDataList();
@@ -257,7 +256,12 @@ public class ScTodoCollection {
 		ArrayList<Bean> ptTodos = null;
 		ArrayList<Bean> oaTodos = null;
 		ArrayList<Bean> todos = new ArrayList<Bean>();
-		String userCode = Context.getUserBean().getCode();
+		UserBean userBean = Context.getUserBean();
+		if(userBean== null){
+		    return outBean;
+		}
+		 String userCode = userBean.getCode();
+	
 		try {
 			// newOaws = new ScNewTodoWebServ();
 			ptTodos = getPtTodos(userCode);

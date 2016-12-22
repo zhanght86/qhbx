@@ -198,11 +198,11 @@ _viewer.beforeSave = function() {
 //		}
 //	}
 //}
-//发文页面添加模式下加载正文模板
-if(_viewer.byIdData["_ADD_"] == "true"){
-	var fileData = _viewer.form._loadFile("ZHENGWEN");
-	_viewer.getItem("ZHENGWEN").fillData(fileData);
-}
+////发文页面添加模式下加载正文模板
+//if(_viewer.byIdData["_ADD_"] == "true"){
+//	var fileData = _viewer.form._loadFile("ZHENGWEN");
+//	_viewer.getItem("ZHENGWEN").fillData(fileData);
+//}
 /**
  * 相关文件
  */

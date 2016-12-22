@@ -30,7 +30,7 @@ public class ServListener {
      * @throws Exception 例外
      */
     public ServListener(String serv, String lisCls, String conf) throws Exception {
-        this.cls = Class.forName(lisCls);
+        this.cls = Class.forName(lisCls.trim());
         this.serv = serv;
         this.conf = conf;
     }

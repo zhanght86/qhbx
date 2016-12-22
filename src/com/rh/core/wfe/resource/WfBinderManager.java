@@ -422,7 +422,6 @@ public class WfBinderManager {
         	extCls = classes[0];
         	//configStr = classes[1];
         }
-        
         Class<?> clz = null;
         try {
             clz = Class.forName(extCls);

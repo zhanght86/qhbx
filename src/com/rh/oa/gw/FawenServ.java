@@ -66,11 +66,11 @@ public class FawenServ extends GwServ {
     @Override
     protected void afterByid(ParamBean paramBean, OutBean outBean) {
         super.afterByid(paramBean, outBean);
-        if (outBean.getBoolean("_ADD_")) { // 新建公文时从公文模版复制正文
-            outBean.setId(outBean.getStr("GW_ID"));
-            paramBean.setId(outBean.getStr("GW_ID"));
-            copyZhengwen(paramBean, outBean);
-        }
+//        if (outBean.getBoolean("_ADD_")) { // 新建公文时从公文模版复制正文
+//            outBean.setId(outBean.getStr("GW_ID"));
+//            paramBean.setId(outBean.getStr("GW_ID"));
+//            copyZhengwen(paramBean, outBean);
+//        }
         if (paramBean.containsKey(GwConstant.GW_PARAM)) {
             Bean gwParamBean = paramBean.getBean(GwConstant.GW_PARAM);
             outBean.copyFrom(gwParamBean);

@@ -1,20 +1,15 @@
 package com.rh.core.org.serv;
 
-import java.net.InetAddress;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang.RandomStringUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
-import com.rh.bn.sync.impl.org.BnUserSync;
-import com.rh.bn.sync.job.BnOrgAndUserSyncJob;
 import com.rh.core.base.Bean;
 import com.rh.core.base.Context;
 import com.rh.core.base.Context.APP;
-import com.rh.core.base.Context.THREAD;
 import com.rh.core.base.TipException;
-import com.rh.core.comm.CacheMgr;
+import com.rh.core.base.db.Transaction;
 import com.rh.core.org.UserBean;
 import com.rh.core.org.mgr.UserMgr;
 import com.rh.core.plug.im.ImMgr;
@@ -22,11 +17,14 @@ import com.rh.core.serv.CommonServ;
 import com.rh.core.serv.OutBean;
 import com.rh.core.serv.ParamBean;
 import com.rh.core.serv.ServDao;
+import com.rh.core.serv.ServDefBean;
 import com.rh.core.serv.ServMgr;
+import com.rh.core.serv.ServUtils;
 import com.rh.core.serv.dict.DictMgr;
 import com.rh.core.util.Constant;
-import com.rh.core.util.DateUtils;
 import com.rh.core.util.EncryptUtils;
+import com.rh.core.util.PinyinUtils;
+import com.rh.ldap.ADMgr;
 
 /**
  * 用户服务类
@@ -35,29 +33,21 @@ import com.rh.core.util.EncryptUtils;
  * 
  */
 public class UserServ extends CommonServ {
-	
-	private static Log log = LogFactory.getLog(BnOrgAndUserSyncJob.class);
-    
+
     /** 服务名称：工作兼岗 */
     public static final String JIANGANG_SERV = "SY_ORG_USER_JIANGANG";  
     /** 关联类型：工作兼岗 */
-    public static final int RELATE_TYPE_JIANGANG = 1;
-    /** 用户缓存类型 */
-    public static final String CACHE_TYPE_USER = "SY_ORG_USER";
+    public static final int RELATE_TYPE_JIANGANG = 1;  
     
     @Override
     protected void afterSave(ParamBean paramBean, OutBean outBean) {
         if (outBean.isOk()) {
             if (!paramBean.getAddFlag()) { //修改模式
-            	UserBean currUser = Context.getUserBean();
-                if (currUser != null && paramBean.getId().equals(currUser.getCode())) { //如果操作者为当前人，则清除当前用户缓存
+                UserBean userBean = Context.getUserBean();
+                if (userBean != null && paramBean.getId().equals(userBean.getCode())) { //如果操作者为当前人，则清除当前用户缓存
                     UserMgr.clearSelfUserCache();
                 } else { //不是当前用户，清除该用户缓存
-                    UserBean userBean = UserMgr.getCacheUser(paramBean.getId());
-                    if(userBean != null) {
-                        UserMgr.clearSelfUserCache(userBean);
-                    }
-
+                    UserMgr.clearUserCache(paramBean.getId());
                 }
                     
                 if (paramBean.contains("DEPT_CODE")) { //如果修改了部门，则清除用户的菜单缓存
@@ -76,6 +66,32 @@ public class UserServ extends CommonServ {
         if (!paramBean.containsKey("_JIANGANG_FLAG_")) {
             treatJiangangUser(paramBean, outBean);
         }
+
+        
+        /**
+         * 创建域用户(默认创建AD用户)
+         */
+        String conf = Context.getSyConf("AD_USER_OPEN", "2");
+        //读取配置
+        log.info("-------创建获取是否同步值-----AD_USER_OPEN==" + conf + "-----");
+        if ("1".equals(conf)) {
+            ADMgr adMgr = new ADMgr();
+            if(paramBean.getAddFlag()){
+                paramBean.set("USER_PASSWORD",paramBean.getStr("USER_PASSWORD_REAL"));
+                log.info("-------AD:创建用户-----开始-----");
+                OutBean createBean = adMgr.createAccount(paramBean);
+                log.info("-------AD:创建用户-----结束-----");
+                adMgr.modifyPsd(paramBean);
+                outBean.setMsg(outBean.getMsg() + createBean.getMsg());
+            } else {
+                paramBean.set("USER_PASSWORD",paramBean.getStr("USER_PASSWORD_REAL"));
+                log.info("-------AD:修改用户-----开始-----");
+                OutBean modifyBean = adMgr.modify(paramBean);
+                log.info("-------AD:修改用户-----结束-----");
+                outBean.setMsg(outBean.getMsg() + modifyBean.getMsg());
+            }
+        }
+        
     }
     
     /**
@@ -84,10 +100,12 @@ public class UserServ extends CommonServ {
      */
     @Override
     protected void beforeSave(ParamBean paramBean) {
-        
+
         // 去除姓名左右空格
         if (paramBean.isNotEmpty("USER_NAME")) {
             paramBean.set("USER_NAME", paramBean.getStr("USER_NAME").trim());
+            paramBean.set("USER_SHORT_NAME", PinyinUtils.getHeadStr(paramBean.getStr("USER_NAME")));
+            paramBean.set("USER_EN_NAME", PinyinUtils.getPinyinStr(paramBean.getStr("USER_NAME")));
         }
         
         // 去除登录名左右空格
@@ -123,14 +141,17 @@ public class UserServ extends CommonServ {
     protected void beforeDelete(ParamBean paramBean) {
         /** 处理兼岗用户 */
         if (!paramBean.containsKey("_JIANGANG_FLAG_")) {
-            if (!UserMgr.isMainUser(paramBean.getId())) {
-                throw new TipException("不能删除兼岗用户信息");
+            String[] users = paramBean.getId().split(",");
+            for (String user : users) {
+                if (!UserMgr.isMainUser(user)) {
+                    throw new TipException("不能删除兼岗用户信息");
+                }
             }
         }
     }
     
     /**
-     * 删除之后处理
+     * 删除之后更新IM处理
      * @param paramBean 参数信息
      * @param outBean 删除结果信息
      */
@@ -138,30 +159,36 @@ public class UserServ extends CommonServ {
         if (outBean.isOk()) {
             String[] ids = outBean.getDeleteIds().split(Constant.SEPARATOR);
             for (String id : ids) {
-                CacheMgr.getInstance().remove(id, UserMgr.CACHE_TYPE_USER); // 清除缓存
+                UserMgr.clearUserCache(id);
             }
-            if (Context.appBoolean(APP.IM)) { // 启动了IM进行同步
-                ImMgr.getIm().deleteUser(paramBean.getId());
+            if (Context.appBoolean(APP.IM)) { //启动了IM进行同步
+                ImMgr.getIm().deleteUser(outBean.getDeleteIds());
+            }
+            if (!paramBean.getDeleteDropFlag()) { //假删除修改登录名确保不会重复
+                ParamBean modifyBean = new ParamBean();
+                modifyBean.setServId(ServMgr.SY_ORG_USER_ALL);
+                List<Bean> dataList = outBean.getDataList();
+                for (Bean userBean : dataList) {
+                    modifyBean.setAct(ServMgr.ACT_SAVE);
+                    modifyBean.setId(userBean.getId());
+                    // 非兼岗用户被删除的时候在登录名后面添加随机后缀
+                    if (userBean.getInt("JIANGANG_FLAG") == Constant.NO_INT) {
+                        String newLoginName = userBean.getStr("USER_LOGIN_NAME");
+                        newLoginName += "@" + userBean.getId();
+                            int size = 40;
+                            if (newLoginName.length() > size) {
+                                newLoginName = newLoginName.substring(0, size);
+                            }
+                            modifyBean.set("USER_LOGIN_NAME", newLoginName);
+                            ServMgr.act(modifyBean);
+                    }
+                }
             }
             
-            ParamBean modifyBean = new ParamBean();
-            modifyBean.setServId(ServMgr.SY_ORG_USER_ALL);
-            for (String id : ids) {
-    		Bean userBean = ServDao.find(ServMgr.SY_ORG_USER, new Bean(id));
-    		modifyBean.setAct(ServMgr.ACT_SAVE);
-    		modifyBean.setId(id);
-    		// 非兼岗用户被删除的时候在登录名后面添加随机后缀
-    		if (userBean.getInt("JIANGANG_FLAG") == Constant.NO_INT) {
-    		    String newLoginName = userBean.getStr("USER_LOGIN_NAME");
-    		    newLoginName += "@" + id;
-                    int size = 40;
-                    if (newLoginName.length() > size) {
-                    	newLoginName = newLoginName.substring(0, size);
-                    }
-                    modifyBean.set("USER_LOGIN_NAME", newLoginName);
-                    ServMgr.act(modifyBean);
-    		}
-            }
+            /**
+             * 禁用AD用户
+             */
+            falseDelete(paramBean , outBean);
         }
     }
     
@@ -239,11 +266,36 @@ public class UserServ extends CommonServ {
         return toBean;
     }
 
+    
+    /**
+     * 初始化用户名拼音和检查
+     * @param paramBean 参数
+     * @return 更新数量
+     */
+    public OutBean initPinyin(ParamBean paramBean) {
+        ServDefBean servDef = ServUtils.getServDef(paramBean.getServId());
+        ParamBean param = new ParamBean(ServMgr.SY_ORG_USER_ALL, ServMgr.ACT_FINDS);
+        param.setWhere(servDef.getServDefWhere());
+        List<Bean> list = ServMgr.act(param).getDataList();
+        List<Bean> dataList = new ArrayList<Bean>(list.size());
+        for (Bean user : list) {
+            Bean data = new Bean();
+            data.set("USER_SHORT_NAME", PinyinUtils.getHeadStr(user.getStr("USER_NAME")))
+                .set("USER_EN_NAME", PinyinUtils.getPinyinStr(user.getStr("USER_NAME")))
+                .set("USER_CODE", user.getId());
+            dataList.add(data);
+        }
+        String sql = "update SY_ORG_USER set USER_SHORT_NAME=#USER_SHORT_NAME#,USER_EN_NAME=#USER_EN_NAME#"
+                + " where USER_CODE=#USER_CODE#";
+        int count = Transaction.getExecutor().executeBatchBean(sql, dataList);
+        return new OutBean().setOk(Context.getSyMsg("SY_BATCHSAVE_OK", count+""));
+    }
+    
     /**
      * 去除bean中的无用key
      * @param b 待处理bean
      */
-    public void removeUnuseKeys(Bean b) {
+    private void removeUnuseKeys(Bean b) {
         b.remove(Constant.KEY_ID);
         b.remove("USER_CODE");
         b.remove("S_MTIME");
@@ -264,55 +316,98 @@ public class UserServ extends CommonServ {
         b.remove("ODEPT_CODE");
         b.remove("_OLDBEAN_");
     }
+    
     /**
-     * 按指定时间批量更新HR用户
-     * @author ldd
+     * AD单点登录
+     * @param paramBean userName
+     * @return outBean
      */
-    public OutBean upUserForTime(ParamBean paramBean){
-    	(new BnUserSync()).sync(paramBean.getStr("BEGIN_TIME"));
-        // 记录Job执行时间
-    	ServDao.create("BN_ORG_SYNC_LOG",
-                (new Bean()).set("SYNC_TIME", DateUtils.getDatetime()).set("SYNC_HOST", getHostName()));
-    	return new OutBean();
-    }
-    /**
-     * 获取运行环境的主机名
-     * @return 主机名
-     */
-    private static String getHostName() {
-        String hostName = "";
-        try {
-            hostName = InetAddress.getLocalHost().getCanonicalHostName();
-        } catch (Exception e) {
-            log.error("无法获得主机地址:" + e.getMessage());
+    public OutBean toADLogin(ParamBean paramBean) {
+        OutBean outBean = new OutBean();
+        String homeUrl = "";
+        String userCode = "";
+        log.debug("-------SY_ORG_USER 登录开始！----------");
+        if (Context.getUserBean(Context.getRequest()) == null) {
+            ParamBean paramADBean = new ParamBean();
+            paramADBean.set("USER_LOGIN_NAME", paramBean.getStr("userName"));
+            log.debug("-------SY_ORG_USER outBean===" + paramADBean+ " 信息----------");
+            List<Bean> datas = ServDao.finds("SY_ORG_USER", paramADBean);
+            if (datas != null && datas.size() > 0) {
+                Bean bean = datas.get(0);
+                userCode = bean.getStr("USER_CODE");
+                if (userCode != null && userCode.length() > 0) {
+                    //登录成功
+                    //获取用户编码                
+                    UserBean userBean = UserMgr.getUser(userCode);
+                    Context.setOnlineUser(Context.getRequest(), userBean); //登录成功
+                    homeUrl = "sy/comm/page/page.jsp";
+                }
+            }
         }
-        return hostName;
+        return outBean.set("homeUrl", homeUrl);
     }
+    
     /**
-     * 批量重置密码
-     * @author changyc
-     * @param paramBean
+     * 禁用AD用户
+     * @param paramBean userName
+     * @return outBean
+     */  
+    @SuppressWarnings("null")
+    private void falseDelete(ParamBean paramBean,OutBean outBean) {
+        String conf = Context.getSyConf("AD_USER_OPEN", "");
+        log.debug("-------禁用获取是否同步值-----AD_USER_OPEN==" + conf + "-----");
+        if ("1".equals(conf)) {
+            Bean bean = ServDao.find(paramBean.getServId(), paramBean.getId());
+            ADMgr adMgr = new ADMgr();
+            paramBean.set("USER_AD_OU", bean.getStr("USER_AD_OU"));
+            outBean = adMgr.falseDelUser(paramBean);
+            if (outBean == null) {
+                log.debug("-------ldap设置禁用失败----------");
+                outBean.setError(outBean.getMsg() +"; AD:禁用账号失败！");
+            }else {
+                outBean.setOk(outBean.getMsg() + "; AD:禁用账号成功！");
+            }
+        }
+    }
+    
+    /**
+     * 真删除AD用户
+     * @param paramBean userName
+     * @return outBean
      */
-    public OutBean upUserPwd(ParamBean paramBean) {
-    	OutBean outBean = new OutBean();
-    	String userIds = paramBean.getStr("userIds");
-    	String servId = paramBean.getStr("serv");
-    	String[] uIds = userIds.split(",");
-        String password = EncryptUtils.encrypt(paramBean.getStr("pwd"), 
-        		Context.getSyConf("SY_USER_PASSWORD_ENCRYPT", EncryptUtils.DES));
-    	for (int i = 0; i < uIds.length; i++) {
-    		ParamBean pBean = new ParamBean();
-    		pBean.set("_PK_", uIds[i]);
-    		pBean.set("USER_PASSWORD",password);
-    		ServDao.update(servId, pBean);
-    		/*
-    		 * 清除修改密码的人的缓存。否则用户第一次修改密码的时候会从缓存中去密码,清除类型SY_ORG_USER
-    		 */
-    		CacheMgr.getInstance().remove(uIds[i], CACHE_TYPE_USER);
-    		//Context.setThread(THREAD.USERBEAN, ((UserBean) Context.getThread(THREAD.USERBEAN)).set("USER_PASSWORD",password));
-		}
-    	outBean.setOk("重置成功！");
-    	return outBean;
-	}
+    public OutBean deleteADUser(ParamBean paramBean) {
+        String conf = Context.getSyConf("AD_USER_OPEN", "");
+        //读取配置
+        OutBean outBean = new OutBean();
+        log.debug("-------真删除获取是否同步值-----AD_USER_OPEN==" + conf + "-----");
+        if ("1".equals(conf)) {
+/*          Bean bean = ServDao.find(paramBean.getServId(), paramBean.getId());
+            paramBean.set("USER_DESC", bean.getStr("USER_DESC"));
+            ADMgr adMgr = new ADMgr();
+            outBean = adMgr.delUser(paramBean);
+            if (!outBean.isOk()) {
+                log.debug("-------ldap设置修改删除失败信息----------");
+                outBean.setError(outBean.getMsg());
+            }*/
+        }
+        return outBean;
+    }
+
+    /**
+     * 获取当前用户信息
+     * @return 信息
+     */
+    public OutBean getUserLoginInfo() {
+        UserBean userBean = Context.getUserBean();
+        String loginName = userBean.getLoginName();
+        String passwordStr = userBean.getPassword();
+        if (!passwordStr.equals("")) {
+            passwordStr =  new String(EncryptUtils.desDecrypt(passwordStr));
+        }
+        OutBean outBean = new OutBean();
+        outBean.set("loginName", loginName);
+        outBean.set("password", passwordStr);       
+        return outBean;
+    } 
     
 }

@@ -1,2 +1,29 @@
 /* @group 按钮组件样式控制  ---------------------------------------------------------------------------------*/ 
 .rh-icon:hover .rh-icon-inner:active {padding-top:1px;}
+
+#remb {
+	border:0px red solid;
+	height:25px;
+	float:right;
+	display:inline;
+	width:100px;
+	font-family:黑体;
+}   
+input.submit:hover{background:url("/bn/style/images/login.png") no-repeat -145px -162px;color:white;}
+.loginAuto-check {float:right;margin-top:14px;}
+.loginAuto-lb {
+	padding:5px 0px 3px 5px;
+	float:right;
+	display:block;
+	color:#737373;
+	margin-top:12px;
+	font-size:18px;
+}
+
+.btn-group {
+	cursor:pointer;
+}
+
+.btn-group label{
+	float:right;
+}

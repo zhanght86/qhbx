@@ -19,22 +19,31 @@ _viewer.form.getItem("GW_YEAR_CODE").hide();
 _viewer.form.getItem("GW_YEAR").hide();
 _viewer.form.getItem("GW_YEAR_NUMBER").hide();
 
-// 如果当前节点为编号节点，则显示编号
-if(_viewer.wfCard.isWorkflow() && _viewer.wfCard.getCustomVarContent("gwCode")){
+
+// 如果当前节点为编号节点，则显示编号，否则编号后才显示
+var canCode = _viewer.wfCard.isWorkflow() && _viewer.wfCard.getCustomVarContent("gwCode");
+if(canCode || (_viewer.byIdData["GW_YEAR_CODE"] && _viewer.byIdData["GW_YEAR_CODE"].length >0)){
 	//设置机关代字
 	var yearCode = _viewer.form.getItem("GW_YEAR_CODE");
-	_viewer.form.getItem("GW_YEAR_CODE").getContainer().remove();
+	yearCode.getContainer().remove();
 	yearCode.obj.css({"display":"inline-block","width":"100px","border":"1px solid #91BDEA"}).appendTo(td21);
+	if(!canCode){
+		yearCode.disabled();
+	}
 	var gwCode = jQuery("<span></span>").appendTo(td21);
 	jQuery("<font>（</font>").appendTo(gwCode);
 	_viewer.form.getItem("GW_YEAR").getContainer().remove();
 	_viewer.form.getItem("GW_YEAR").obj.css({"width":"40px","background":"transparent","border-bottom":"1px solid #91BDEA","height":"20px","line-height":"20px"}).appendTo(gwCode);
 	jQuery("<font>）</font>").appendTo(gwCode);
+	if(!canCode){
+		_viewer.form.getItem("GW_YEAR").disabled();
+	}
 	_viewer.form.getItem("GW_YEAR_NUMBER").getContainer().remove();
 	_viewer.form.getItem("GW_YEAR_NUMBER").obj.css({"width":"40px","background":"transparent","border-bottom":"1px solid #91BDEA","height":"20px","line-height":"20px"}).appendTo(gwCode);
 	jQuery("<font>号</font>").appendTo(gwCode);
-
-	
+	if(!canCode){
+		_viewer.form.getItem("GW_YEAR_NUMBER").disabled();
+	}
 	yearCode.addOptions(tmpl["GW_YEAR_CODES"]); //将动态获取的机关代字设入下拉框
 	if (_viewer.getByIdData("GW_YEAR_CODE") != "") {
 		yearCode.setValue(_viewer.byIdData["GW_YEAR_CODE"]); //设置保存的机关代字

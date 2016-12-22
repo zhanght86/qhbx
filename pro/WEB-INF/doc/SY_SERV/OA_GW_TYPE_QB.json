@@ -4089,7 +4089,7 @@
 "ITEM_CARD_COLS":"2",
 "ITEM_SUM_FLAG":"0",
 "ITEM_TYPE":"3",
-"S_MTIME":"2016-04-19 09:53:37:784",
+"S_MTIME":"2016-12-20 17:15:31:173",
 "ITEM_LIST_FORMAT":"",
 "ITEM_ID":"3UK78LLiRdOHv6XTnb7AmM",
 "ITEM_LIST_FLAG":"2",
@@ -4115,7 +4115,7 @@
 "ITEM_MOBILE_TYPE":"3",
 "ITEM_LABEL_HIDDEN":"2",
 "ITEM_INPUT_DEFAULT":"",
-"ITEM_INPUT_CONFIG":"{'VALUE':'13','TYPES':'*.jpg;*.jpeg;*.png;*.gif;*.pdf;*.doc;*.docx;*.wps;*.xls;*.xlsx;*.ppt;*.pptx;*.txt;','UPLOAD_BTN_NAME':'上传文件','FILENUMBER':'13'}"
+"ITEM_INPUT_CONFIG":"{'VALUE':'3','TYPES':'*.jpg;*.jpeg;*.png;*.gif;*.pdf;*.doc;*.docx;*.wps;*.xls;*.xlsx;*.ppt;*.pptx;*.txt;','UPLOAD_BTN_NAME':'上传文件','FILENUMBER':'1'}"
 },
 {
 "SERV_ID":"OA_GW_TYPE_QB",

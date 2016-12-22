@@ -35,7 +35,7 @@ var ptManaglink = {
 			 ptManaglink.createLinks(returnData);
 		});
 	},
-	createLinks:function(SYArray){debugger;
+	createLinks:function(SYArray){
 		jQuery.each(SYArray._DATA_,function(n,syslink) {
 			var code = syslink.DEPT_CODE;
 			var name = syslink.DEPT_NAME;

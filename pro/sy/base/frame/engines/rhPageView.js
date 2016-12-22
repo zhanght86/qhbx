@@ -122,7 +122,7 @@ rh.vi.pageView.prototype._bldMenu = function() {
             var configCon = jQuery("<div></div>").addClass("configDiv").appendTo(jQuery("#left-homeMenu"));
 
 			var expandBar = jQuery("<a href='javascript:void(0);' title='收起边栏' class='leftMenu-close'>&nbsp;&nbsp;&nbsp;&nbsp;</a>").appendTo(configCon);
-			/*var configBar = jQuery("<a href='javascript:void(0);' title='风格配置' class='leftMenu-config'>&nbsp;&nbsp;&nbsp;&nbsp;</a>").appendTo(configCon);*/
+			var configBar = jQuery("<a href='javascript:void(0);' title='风格配置' class='leftMenu-config'>&nbsp;&nbsp;&nbsp;&nbsp;</a>").appendTo(configCon);
 
 			var toggled = true; 
 			jQuery("h3[aria-expanded='true']").next().addClass("leftMenu-ul-show");
@@ -246,87 +246,6 @@ rh.vi.pageView.prototype._bldMenu = function() {
  */
 rh.vi.pageView.prototype._bldBanner = function() {
 	var _self = this;
-	/*
-	//用户信息区
-	var userTipDiv = jQuery("<span></span>").addClass("left-topUserTip").appendTo(jQuery("#banner"));
-	//var userImg = jQuery("<span>&nbsp;</span>").addClass("left-topBar-user").appendTo(userTipDiv);
-	//var time = rhDate.getDateTime("hh");
-	var preDept = "";
-	if (this._preDeptUser && (this._preDeptUser.length > 0)) {//配置了显示用户名变量
-		preDept = Tools.systemVarReplace(this._preDeptUser);
-		var preDeptTemp = [];
-		var array = preDept.split("-");
-		var latest = "";
-		for (var i = 0;i < array.length;i++) {//重复名称的处理
-			if (array[i] == latest) {
-				continue;
-			} else {
-				latest = array[i];
-				preDeptTemp.push(array[i]);
-			}
-		}
-		preDept = preDeptTemp.join("-");
-	} else {
-		preDept = System.getUser("DEPT_NAME") + "&nbsp;&nbsp;&nbsp;&nbsp;" + System.getUser("USER_NAME");
-	}
-	var userCode = jQuery("<div></div>").html("你好：" + preDept).addClass("left-topBar-user-text").appendTo(userTipDiv);
-	if (System.getVar("@JIAN_CODES@").length > 0) {
-		var jianGang = jQuery("<div id='jiangang' style='display:inline-block;position:relative;'></div>").html("(<a href='javascript:void(0);'>兼岗</a>)").addClass("left-topBar-jian-text").appendTo(userCode);
-		jianGang.bind("click", function() {
-			var obj = jQuery(".left-topBar-jian-list");
-			if (obj.length == 1) {
-				if (jQuery(".left-topBar-jian-list:visible").length == 1) {
-					jQuery(".left-topBar-jian-list:visible").hide("normal");
-				} else {
-					jQuery(".left-topBar-jian-list").show("normal");
-				}
-			} else {
-				var jianList = jQuery("<ul></ul>").addClass("left-topBar-jian-list");
-				var data = FireFly.doAct("SY_ORG_LOGIN","getJianUsers",null,false);
-				jQuery.each(data._DATA_,function(i,n) {
-					var content = jQuery("<a href='#'>" + n.USER_NAME + "  (" + n.TODO_COUNT + "条)" + "</a>");
-					content.bind("click",function(event) {
-						var result = FireFly.doAct("SY_ORG_LOGIN","changeUser",{"TO_USER_CODE":n.USER_CODE},false);
-						if (result[UIConst.RTN_MSG].indexOf(UIConst.RTN_OK) == 0) {
-							var res = confirm("当前页面将刷新，确定继续吗？");
-							if (res === true) {
-								_self._refresh();
-							}
-					    } 
-						event.stopPropagation();
-					});
-					jQuery("<li></li>").append(content).appendTo(jianList);
-				});
-				jianList.appendTo(jianGang);
-				jianList.show("normal");
-				jianList.bind("mouseleave",function(event) {
-					jianList.hide("slow");
-				});
-			}
-		});
-	}
-	//密码修改块
-	if (this._pwdFlag == true || this._pwdFlag == "true") {//密码修改显示
-		var pswdDiv =  jQuery("<span></span>").addClass("left-topPswdTip").appendTo(jQuery("#banner"));
-		var pasd = jQuery("<div id='changPswd'></div>").html("(<a href='javascript:void(0);'>密码修改</a>)").addClass("left-topBar-pwd-text").appendTo(pswdDiv);
-		jQuery("#changPswd").bind("click", function() {
-			var options = {
-					"url" : "SY_ORG_USER_PASSWORD.card.do?pkCode=" + System.getUser("USER_CODE"),
-					"tTitle" : "修改密码" ,
-					"menuFlag":3
-			};
-			Tab.open(options);
-		});
-	}
-	//日期块
-	var date = jQuery("<div></div>").html(System.getVar("@DATE_CN@") + "&nbsp;&nbsp;&nbsp;&nbsp;" + System.getVar("@DATE_WEEK_DAY_CN@")).addClass("left-topBar-date-text").appendTo(userTipDiv);
-	//手机版链接块
-	if (this._mbLink == true || this._mbLink == "true") {
-		var mb = jQuery("<div id='toMb'></div>").html("(<a href='#'>手机版</a>)").addClass("left-topBar-mb-text").appendTo(jQuery("#banner"));
-		jQuery("#toMb").bind("click",function() {
-			window.location.href = "/index_mb.jsp";
-		});
-	}*/
 	
 	//通用连接区
 	var cmLinkCon = jQuery("<div></div>").addClass("rh-head-cm");
@@ -436,7 +355,7 @@ rh.vi.pageView.prototype._bldBanner = function() {
 		});
 	}
 	var userCode = jQuery(".user_info");
-	if (System.getVar("@JIAN_CODES@").length > 0) {
+	if (System.getVar("@JIAN_CODES@").length > 0 && false) {//去掉兼岗
 		var jianGang = jQuery("<div id='jiangang' style='display:inline-block;position:relative;'></div>").html("(<a href='javascript:void(0);' style='margin-left:15px;' >兼岗</a>)").addClass("left-topBar-jian-text").appendTo(userCode);
 		jianGang.bind("click", function() {
 			var obj = jQuery(".left-topBar-jian-list");
@@ -490,15 +409,17 @@ rh.vi.pageView.prototype._bldTabs = function() {
 	jQuery("<a href='javascript:void(0)' title='收起' class='rh-head-icons rh-head-close'/>").appendTo(tabUL);
 	
 	jQuery("#loginOut").on("click", function(event) {//退出
-	       var resultData = FireFly.logout();
-	       if (resultData[UIConst.RTN_MSG].indexOf(UIConst.RTN_OK) == 0) {
-	    	   if (_self.opts.rhClient == "true" || _self.opts.rhClient == true) {
-	    		   document.title = "RhClientAction_Close";
-	    	   } else {
-	    		   // 由logout.jsp去决定退出该导向到哪个页面
-	    		   Tools.redirect(FireFly.getContextPath() + "/logout.jsp");  
-	    	   }
-	       }
+//	       var resultData = FireFly.logout();
+//	       if (resultData[UIConst.RTN_MSG].indexOf(UIConst.RTN_OK) == 0) {
+//	    	   if (_self.opts.rhClient == "true" || _self.opts.rhClient == true) {
+//	    		   document.title = "RhClientAction_Close";
+//	    	   } else {
+//	    		   // 由logout.jsp去决定退出该导向到哪个页面
+//	    		   Tools.redirect(FireFly.getContextPath() + "/logout.jsp");  
+//	    	   }
+//	       }
+		//由原来的退出改为关闭浏览器
+		window.close();
 	       event.stopPropagation();
 	       return false;
 	});

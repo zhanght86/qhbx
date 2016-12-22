@@ -7,8 +7,8 @@
 		btnSave.remove();
 		var queryBtn = _viewer.getBtn("query");
 		var clearBtn = _viewer.getBtn("clear");
-		if (queryBtn) {
-			queryBtn.unbind("click").click(function(){
+		if (queryBtn) {debugger;
+			queryBtn.unbind("click").click(function(){debugger;
 				//var queryData = _viewer.itemValues();
 				var where = " and S_ODEPT='"+System.getVar("@ODEPT_CODE@")+"'";
 				var catID = _viewer.getItem("DA_CATEGORY").getValue() || "";

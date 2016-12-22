@@ -88,7 +88,6 @@
 /*打开更多待办待阅*/
 function openMoreTodo(){
 	var $element = jQuery("#tabControl .tab-item.current").find("a");
-	debugger;
 	var openUrl = "";
 	var tTitle = "";
 	if($element.attr("title")=="待办"){
@@ -103,62 +102,9 @@ function openMoreTodo(){
 	tabP = tabP.replace(/\"/g,"'");
 	window.open("/sy/comm/page/page.jsp?openTab="+tabP);
 }
-jQuery(document).ready(function(e) {
-
-	$(".pt-beautify").mCustomScrollbar({
-    	  theme:"dark-thin",
-    	  scrollInertia:200,
-    	  advanced:{
-				updateOnContentResize:true
-		  }
-      });
-	var offleft=$("ul#tabControl").offset().left;
-	$(".tab-item").on("click",function(event){
-			
-			event.preventDefault();
-			if($(this).hasClass("current")){
-				return false;
-			}
-			var id=$(this).find("a").attr("href");
-			var hid=$(this).siblings(".current").find("a").attr("href");
-			$(this).siblings(".current").removeClass("current");
-			$(this).addClass("current");
-			 
-			$(hid).hide();
-			$(id).show();
-			
-			var t  = $(this).position().left,
-			    ow = $(this).outerWidth(true);
-				
-			/*	
-			$(this).siblings(".slide").css({left:t,width:ow});
-			$(this).siblings(".hover").css({left:t,width:ow});
-			 */
-			 if("0" == $(this).index()){
-				$(this).siblings(".slide").css({left:t,width:ow});
-				$(this).siblings(".hover").css("left","18px");
-			 }
-			 if("1" == $(this).index()){
-				$(this).siblings(".slide").css({left:t,width:ow});
-				$(this).siblings(".hover").css("left","117px");
-			 }
-			  if("2" == $(this).index()){
-				$(this).siblings(".slide").css({left:t,width:ow});
-				$(this).siblings(".hover").css("left","215px");
-			 }
-			 
-			 
-	});
-	
-	asyncRender("#js-todo" , "getTodos");
- 	asyncRender("#js-toRead" , "getReads");
- 	asyncRender("#js-delegate" , "getWts");
-});
 
 function asyncRender(target,act){
-
-
-	FireFly.doAct("SC_TODO_COLLECTIONS",act,{},false,true,function(result){
+    FireFly.doAct("SC_TODO_COLLECTIONS",act,{},false,true,function(result){
 		var data = result["_DATA_"],
 		    len = len = data ? result["_DATA_"].length : 0,
 		    $tabItem = $(".tab-item").find("a[href=" + target + "]"),
@@ -180,9 +126,29 @@ function asyncRender(target,act){
 }
 
 
-
+/*
 function handRefresh(){
 	this.portalView.refreshBlock("SC_TODOS_COLLECTION");
+}*/
+
+/**手动刷新待办，待阅，委托**/
+function handRefresh(){
+	var type ="";
+	var currentTab = jQuery(".current").find("a").attr("href");
+	if(currentTab == "#js-todo"){
+		type = "todo";
+	}else if(currentTab == "#js-toRead"){
+		type = "read";
+	}else if(currentTab == "#js-delegate"){
+		type = "wt";
+	}
+	if(type=="todo"){
+		asyncRender("#js-todo" , "getTodos");
+	}else if(type == "read"){
+		asyncRender("#js-toRead" , "getReads");
+	}else if(type=="wt"){
+		asyncRender("#js-delegate" , "getWts");
+	}
 }
 
 function openUrlPage(url,sysCode,title,todoId,servId,object1,todoCatalog,owner,con){
@@ -245,4 +211,61 @@ function openUrlPage(url,sysCode,title,todoId,servId,object1,todoCatalog,owner,c
 		window.open(oaAddr+"/servlet/com.zotn.screens.util.ShowSecondPageServlet?defaultUrl="+encodeURIComponent(url)+"&fromPt=1&userCode="+userCode);
 	}
 }
+
+
+jQuery(document).ready(function(e) {
+
+	$(".pt-beautify").mCustomScrollbar({
+    	  theme:"dark-thin",
+    	  scrollInertia:200,
+    	  advanced:{
+				updateOnContentResize:true
+		  }
+      });
+	var offleft=$("ul#tabControl").offset().left;
+	$(".tab-item").on("click",function(event){
+			
+			event.preventDefault();
+			if($(this).hasClass("current")){
+				return false;
+			}
+			var id=$(this).find("a").attr("href");
+			var hid=$(this).siblings(".current").find("a").attr("href");
+			$(this).siblings(".current").removeClass("current");
+			$(this).addClass("current");
+			 
+			$(hid).hide();
+			$(id).show();
+			
+			var t  = $(this).position().left,
+			    ow = $(this).outerWidth(true);
+				
+			/*	
+			$(this).siblings(".slide").css({left:t,width:ow});
+			$(this).siblings(".hover").css({left:t,width:ow});
+			 */
+			 if("0" == $(this).index()){
+				$(this).siblings(".slide").css({left:t,width:ow});
+				$(this).siblings(".hover").css("left","18px");
+			 }
+			 if("1" == $(this).index()){
+				$(this).siblings(".slide").css({left:t,width:ow});
+				$(this).siblings(".hover").css("left","117px");
+			 }
+			  if("2" == $(this).index()){
+				$(this).siblings(".slide").css({left:t,width:ow});
+				$(this).siblings(".hover").css("left","215px");
+			 }
+			 
+			 
+	});
+	
+	asyncRender("#js-todo" , "getTodos");
+ 	asyncRender("#js-toRead" , "getReads");
+ 	asyncRender("#js-delegate" , "getWts");
+	/**定时刷新待办组件**/
+	window.setInterval(function(){
+		handRefresh();
+	},30000);
+});
 </script>

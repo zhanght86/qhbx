@@ -11,7 +11,8 @@ import org.apache.commons.logging.LogFactory;
  */
 public class LoginModuleFactory {
 
-    private static final String LOGIN_MODULE_LDAP = "com.rh.core.org.auth.login.LdapLoginModule";
+    private static final String LOGIN_MODULE_LDAP = "com.rh.ldap.LdapLoginModule";
+    
     private static final String LOGIN_MODULE_DEFAULT = "com.rh.core.org.auth.login.PasswordLoginModule";
     /** log. */
     private static Log log = LogFactory.getLog(LoginModuleFactory.class);

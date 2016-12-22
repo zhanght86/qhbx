@@ -327,4 +327,14 @@ public class JsonUtils {
         }
         return sb.toString();     
      }
+    
+    
+    public static void main(String[] args){
+       String  s =  "{'tTitle':'快捷菜单','url':'SY_COMM_ENTITY_DOING.list.do?extWhere={SERV_ID:'DA_BORROW'}','menuFlag':3}";
+        StringBuffer sb = new StringBuffer(s);
+        String temp = sb.substring(sb.indexOf("{",sb.indexOf("?")),sb.indexOf("}",sb.indexOf("?"))+1).replace("'", "\"").replace("\"", "\"");
+        System.out.print(temp);
+        sb.replace(sb.indexOf("{",sb.indexOf("?")),sb.indexOf("}",sb.indexOf("?"))+1, temp);
+        System.out.print(JsonUtils.toBean(sb.toString()));
+    }
 }

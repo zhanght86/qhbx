@@ -5,13 +5,14 @@
 <%@ page import="com.rh.core.util.Lang" %>
 <%@ page import="com.rh.core.comm.portal.PortalTemplServ" %>
 <%@ page import="com.rh.core.org.mgr.OrgMgr"%>
+<%@ page import="com.rh.core.org.mgr.UserMgr"%>
 <%@ page import="com.rh.core.serv.OutBean" %>
 <%@ page import="com.rh.core.util.Strings" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>门户</title>
+    <title>个人门户</title>
     <%@ include file= "/sy/base/view/inHeader.jsp" %>
     <script type="text/javascript" src="<%=urlPath%>/bn/base/frame/engines/rhPageView.js"></script>
 	<script type="text/javascript" src="<%=urlPath%>/bn/base/frame/engines/portal.js"></script>
@@ -101,6 +102,12 @@
 	  //}
 	}
   List<Bean> tabList = JsonUtils.toBeanList(defaultTab);
+  //获取委托的参数
+  String TO_USER_CODE = RequestUtils.getStr(request,"TO_USER_CODE");
+  String toUserName = "";
+  if(TO_USER_CODE.length()>0){
+      toUserName = UserMgr.getUser(TO_USER_CODE).getName();
+  }
 %>
 <style type="text/css">
 .footcss{text-align:center;color:#666;margin-left: -200px;height:20px;line-height:20px;width:1050px;font-family: Microsoft YaHei;}
@@ -218,6 +225,9 @@
 
 <!-- foot结束 -->
 </div>
+<div id="agtdialog" class="dialog">
+	<div></div>
+</div>
 </body>
 <script type="text/javascript">
 //全文检索
@@ -259,11 +269,17 @@ showSubCmpy();
 var styleDef = "";//样式默认定义
 var pageTitle = "门户";//页面的浏览器标题
 var tabColor = "";//tab的颜色配置信息
-document.title = pageTitle;
+//document.title = pageTitle;
 var opts = {"id":"rhHome","styleDef":styleDef,"rhClient":"<%=rhClient%>","tabColor":tabColor};
 opts["defaultTab"] = "<%=defaultTab%>";
 var pageView = new rh.vi.pageView(opts);
 pageView.show();
-
+if('<%=TO_USER_CODE%>'.length>0){
+	   var userid = "<%=userBean.getId()%>";
+		showRHDialog("委托提醒", "您的工作已经委托给【<%=toUserName%>】，是否进入委托设置结束委托？", function(){
+			window.open("/sy/comm/page/page.jsp?openTab=%7B%27tTitle%27%3A%27%E5%BF%AB%E6%8D%B7%E8%8F%9C%E5%8D%95%27%2C%27url%27%3A%27SY_ORG_USER_TYPE_AGENT.list.do%27%2C%27menuFlag%27%3A3%7D&userCode="
+					+userid);
+		},this);
+}
 </script>
 </html>

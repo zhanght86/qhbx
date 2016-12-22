@@ -551,8 +551,7 @@ public class ServDefBean extends Bean {
                         whereStr = null;
                     }
                     if (whereStr != null) {
-//                        where.append(" and ").append(this.getPKey())
-                        where.append(" and DATA_ID ")
+                        where.append(" and ").append(this.getPKey())
                                 .append(" in (select DATA_ID from SY_SERV_FLOW where 1=1 ")
                                 .append(whereStr).append(")");
                     }

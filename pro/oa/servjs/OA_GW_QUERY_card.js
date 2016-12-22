@@ -11,7 +11,6 @@ showCommField();
 
 //在类型变得时候，清除已经填入的值 TODO
 genTmplOptions();
-	
 //文件类型变化的时候，修改其显示的字段  TMPL_TYPE_CODE
 jQuery("#OA_GW_QUERY-TMPL_TYPE_CODE").change(function(){
     showPageByType();
@@ -71,7 +70,7 @@ function changeQueryPageMode(){
  * 显示公共的项
  */
 function showCommField() {
-	_viewer.getItem("TMPL_CODE").show();
+	//_viewer.getItem("TMPL_CODE").show();
 	_viewer.getItem("TMPL_TYPE_CODE").show();
 	_viewer.getItem("GW_TITLE").show();
 	_viewer.getItem("S_WF_STATE").show();
@@ -182,17 +181,17 @@ function showPageByType() {
 function genTmplOptions() {
 	//初始显示相应项
     var typeVal = _viewer.getItem("TMPL_TYPE_CODE").getValue();
-	if (typeVal == "OA_GW_TYPE_FW") {
-		_viewer.getItem("TMPL_CODE").addOptionsByDict("OA_GW_TMPL_FW_CODE");
-	} else if (typeVal == "OA_GW_TYPE_SW") {
-		_viewer.getItem("TMPL_CODE").addOptionsByDict("OA_GW_TMPL_SW_CODE");
-	} else if (typeVal == "OA_GW_TYPE_QS_BM") {
-		_viewer.getItem("TMPL_CODE").addOptionsByDict("OA_GW_TMPL_QS_BM_CODE");
-	} else if (typeVal == "OA_GW_TYPE_QS_YW") {
-		_viewer.getItem("TMPL_CODE").addOptionsByDict("OA_GW_TMPL_QS_YW_CODE");
-	} else {
-		_viewer.getItem("TMPL_CODE").removeOptions();
-	}
+//	if (typeVal == "OA_GW_TYPE_FW") {
+//		_viewer.getItem("TMPL_CODE").addOptionsByDict("OA_GW_TMPL_FW_CODE");
+//	} else if (typeVal == "OA_GW_TYPE_SW") {
+//		_viewer.getItem("TMPL_CODE").addOptionsByDict("OA_GW_TMPL_SW_CODE");
+//	} else if (typeVal == "OA_GW_TYPE_QS_BM") {
+//		_viewer.getItem("TMPL_CODE").addOptionsByDict("OA_GW_TMPL_QS_BM_CODE");
+//	} else if (typeVal == "OA_GW_TYPE_QS_YW") {
+//		_viewer.getItem("TMPL_CODE").addOptionsByDict("OA_GW_TMPL_QS_YW_CODE");
+//	} else {
+//		_viewer.getItem("TMPL_CODE").removeOptions();
+//	}
 }
 
 /**

@@ -85,7 +85,7 @@ rh.vi.pageView.prototype._bldMenu = function() {
 rh.vi.pageView.prototype._bldBanner = function() {
 	var userCode = jQuery(".user_info");
 	//alert(System.getVar("@JIAN_CODES@").length > 0);
-	if (System.getVar("@JIAN_CODES@").length > 0) {
+	if (System.getVar("@JIAN_CODES@").length > 0 && false) {
 		var jianGang = jQuery("<div id='jiangang' style='display:inline-block;position:relative;'></div>").html("(<a href='javascript:void(0);' style='margin-left:15px;' >兼岗</a>)").addClass("left-topBar-jian-text").appendTo(userCode);
 		jianGang.bind("click", function() {
 			var obj = jQuery(".left-topBar-jian-list");

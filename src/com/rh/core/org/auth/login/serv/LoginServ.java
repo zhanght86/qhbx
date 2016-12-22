@@ -44,9 +44,16 @@ public class LoginServ extends BaseServ {
         // 如果用户将SY_ORG_LOGIN_MODULE_NAME设置为“custom”，SY_ORG_LOGIN_MODULE_CLASS配置会生效
         String loginModuleName = Context.getSyConf("SY_ORG_LOGIN_MODULE_NAME", "");
         String loginModuleClass = Context.getSyConf("SY_ORG_LOGIN_MODULE_CLASS", "");
-
+        if(bean.getStr("passwd").length()>0){//单独密码登录的地方
+            loginModuleName = "passwd";
+        }
         OutBean outBean = LoginModuleFactory.getLoginModule(loginModuleName, loginModuleClass).login(paramBean);
         // 处理委托
+        List<Bean> agtList  = ServDao.finds("SY_ORG_USER_TYPE_AGENT_FROM", " and S_FLAG = '1' and AGT_STATUS =1  and FROM_USER_CODE ='"
+        +outBean.getStr("USER_CODE")+"'");
+        if(agtList.size()>0){
+            outBean.set("TO_USER_CODE", agtList.get(0).getStr("TO_USER_CODE"));
+        }
         outBean.setOk();
         return outBean;
     }

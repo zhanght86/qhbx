@@ -149,7 +149,6 @@ public class FormMindView {
         bean.set("existCurOdeptMind", existCurOdeptMind); //本机构的意见条数，决定是否显示本机构的表头
         bean.set("userBean", this.userMind.getViewUser());
         bean.set("DEL_SELF_MIND", isUserCanDelSelfMind());
-        
         String fileStr = Context.appStr(Context.APP.SYSPATH) + File.separator
                 + "sy" + File.separator + "comm" + File.separator + "mind"
                 + File.separator;

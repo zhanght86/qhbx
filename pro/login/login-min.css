@@ -1,0 +1,59 @@
+body{color:#000;background:#fff;font-size:1em;line-height:166.6%;text-align:center}
+body,h1,h2,h3,ul,li,form,p,img{margin:0;padding:0;border:0}
+input,img{margin:0;line-height:normal}
+ul,li{list-style:none}
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clearfix:after{clear:both;overflow:hidden}
+.clearfix{zoom:1;}
+.login-corner-all,.login-corner-top,.login-corner-left,.login-corner-tl{border-top-left-radius:5px}
+.login-corner-all,.login-corner-top,.login-corner-right,.login-corner-tr{border-top-right-radius:5px}
+.login-corner-all,.login-corner-bottom,.login-corner-left,.login-corner-bl{border-bottom-left-radius:5px}
+.login-corner-all,.login-corner-bottom,.login-corner-right,.login-corner-br{border-bottom-right-radius:5px}
+.login-wrapper{height:630px;border-bottom:1px solid #e1e1e1}
+.login-wrapper li{float:left}
+.login-wrapper a{color:#000;text-decoration:none}
+.login-wrapper a:hover,.login-wrapper a:focus{text-decoration:underline}
+.login-header{position:relative;z-index:2;overflow:hidden;width:1000px;height:70px;margin:0 auto}
+.login-header-right,.login-ukey-name,.login-cert-name,.login-ukey-name-icon,.login-cert-name-icon,.login-ukey-pwd,.login-cert-pwd,.login-ukey-btn,.login-cert-btn,.login-form-bottom a>em,.login-cert-file,.login-cert-file a{background:transparent url(img/login-bg.png) no-repeat}
+.login-header-left,.login-header-right{position:absolute}
+.login-header-left{left:0;bottom:5px;width:320px;height:55px}
+.login-header-right{right:0;bottom:5px;width:160px;height:45px;background-position:0 -45px}
+.login-container{height:520px;margin:0 auto;background:transparent url('img/login.jpg') no-repeat center center}
+.login-main{position:relative;width:1000px;height:100%;margin:0 auto;overflow:visible;clear:both}
+.login-section{position:relative;float:right;z-index:2;width:361px;height:373px;margin-top:65px;margin-right:86px;background-color:#fff;font-family:"微软雅黑";font-size:16px;text-align:left;-webkit-border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-o-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px}
+.login-tab{width:100%;height:56px;overflow:hidden;clear:both}
+.login-tab-ukey,.login-tab-cert{position:relative;width:180px;height:55px;background-color:#ededed;overflow:hidden;font-size:16px;text-align:center;color:#626262;line-height:55px;cursor:pointer}
+.login-tab-ukey{border-bottom:1px solid #e1e1e1}
+.login-tab-cert{border-bottom:1px solid #e1e1e1}
+.login-separater{display:block;width:1px;height:55px;background-color:#e1e1e1;line-height:46px}
+.login-tab-item.current>div{border-bottom:0;background-color:#fff}
+.login-form{height:284px}
+.login-ukey-form{padding-top:40px}
+.login-cert-form{padding-top:20px}
+.login-form input[type=text],.login-form input[type=password]{font-family:"微软雅黑";font-size:1em;word-spacing:1px;letter-spacing:1px}
+.login-input{width:240px;height:30px;margin-top:4px;margin-left:35px;padding-left:5px;border:none;background-color:transparent !important;line-height:28px}
+.login-ukey-name,.login-ukey-pwd,.login-cert-name,.login-cert-pwd{position:relative;width:314px;height:39px;margin:0 auto}
+.login-ukey-name,.login-cert-name{background-position:0 -196px}
+.login-ukey-name-icon,.login-cert-name-icon{position:absolute;top:0;right:0;width:35px;height:38px;background-position:0 -103px;cursor:pointer}
+.login-ukey-pwd{margin-top:30px;background-position:0 -245px}
+.login-cert-pwd{margin-top:15px;background-position:0 -245px}
+.login-cert-file{position:relative;width:314px;height:39px;margin:0 auto;margin-top:15px;background-position:0 -294px}
+.login-cert-file input[type=file]{position:absolute;top:0;right:0;width:0;height:0;z-index:-100;filter:alpha(opacity=0);opacity:0;cursor:pointer}
+.login-cert-file a{display:block;position:absolute;top:0;right:0;width:84px;height:38px;background-position:-230px -145px;color:#fff;font-family:"微软雅黑";font-size:12px;line-height:40px;text-align:center;text-decoration:none}
+.login-cert-file a:hover{text-decoration:none}
+.login-cert-file input[type=text]{margin-left:2px}
+.login-group-btn{position:relative;width:314px;height:40px;margin:0 auto;margin-top:20px;font-size:12px}
+.login-group-btn .btn{float:left;width:142px;height:38px;border:0;background-position:0 0;color:#fff;font-family:"微软雅黑";font-size:14px}
+.login-group-btn .btn:hover{background-position:-172px 0}
+.login-group-btn input[type=checkbox]{float:left;margin-top:10px;margin-left:30px}
+.login-group-btn label{float:left;margin-top:9px;margin-left:5px}
+.login-form-bottom{position:absolute;left:0;bottom:0;width:100%;height:50px;padding-top:18px;background-color:#f3f3f3}
+.login-form-bottom-left{position:relative;float:left;width:142px;margin-top:5px;margin-left:30px}
+.login-form-bottom-right{position:relative;float:left;width:142px;margin-left:30px}
+.login-form-bottom a{display:block;color:#333;font-size:12px}
+.login-form-bottom a>em{position:absolute;top:4px;left:-6px;width:13px;height:13px;background-position:0 -88px}
+.login-footer{position:relative;z-index:2;width:1000px;height:40px;margin:0 auto;overflow:hidden}
+.login-footer p{float:right;margin-right:2px;font:12px/36px "微软雅黑"}
+#msg{line-height:30px;text-align:center;margin:0 auto;color:#f00;width:345px;height:30px}
+.mb-link{border:0 #f00 solid;position:absolute;bottom:140px;right:20px}
+.mb-link-title{text-align:center}

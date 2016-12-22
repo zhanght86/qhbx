@@ -203,6 +203,8 @@ function openAndSealOfficeFile(){
 	//TANGER_OCX_OBJ.IsRemoveMacrosOnSave = false;
 	//读取ekey信息
 	var ntkosignctl = document.getElementById("ntkosignctl");
+	alert(ntkosignctl);
+	alert( ntkosignctl.IsEkeyConnected);
 	if(ntkosignctl && ntkosignctl.IsEkeyConnected){
 		if(ntkosignctl.EkeySN != _officeParam.eKeySN){
 			alert("您选的印章不在当前ekey中。");

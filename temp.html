@@ -1,0 +1,92 @@
+<p>
+    <br />
+    <br />
+</p>
+<p style="text-align:center;">
+    <strong><span style="color:red;font-family:宋体;font-size:35px;">出差审批单</span></strong>
+</p>
+<p>
+    <br />
+</p>
+<p style="text-align:center;">
+    <strong><span style="color:red;font-family:宋体;font-size:35px;"></span></strong>
+</p>
+<style type="text/css" _ue_org_tagname="style">
+{
+border-collapse:collapse;
+}
+table td
+{
+empty-cells : show;
+}
+tr td {
+border-color:red;
+color:red;
+border:red 1px solid;
+}
+
+div>p{
+font-size:12px;
+ margin-left:5px;
+}
+p{
+margin-left:5px;
+}
+.label{
+	text-align:center;
+	color:red;
+}
+.content{
+	text-align:left;
+	color:#000000;
+}
+</style>
+<table align="center" style="width:515px;table-layout:fixed;" border="0" cellspacing="0" cellpadding="0" uetable="null">
+    <tbody>
+        <tr style="height:30px;">
+            <td width="515" style="border:0px #ff0000;border-image:none;" colspan="4">
+                <span class="label" style="font-family:宋体,simsun;">出差审批单编号：</span><span class="content">${APPLY_CODE}</span>
+            </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr style="height:50px;">
+            <td width="129"  class="label">出差人</td>
+            <td width="129" class="content">  
+				${S_USER__NAME}
+            </td>
+            <td width="129" >
+                出差地点
+            </td>
+            <td width="129" class="content">
+                ${CC_SITE}
+            </td>
+        </tr>
+        <tr>
+            <td width="129" class="label">出差开始时间               
+            </td>
+            <td width="129" class="content">
+                ${CC_START_TIME}
+            </td>
+            <td width="129" class="label">出差结束时间</td>
+            <td width="129" class="content">${CC_END_TIME}
+            </td>
+        </tr>
+        <tr style="height:50px;">
+            <td width="129" height="96" class="label">出差事由
+            </td>
+            <td width="386" class="content" height="96" colspan="3">
+                ${CC_REASON}
+            </td>
+        </tr>
+        <tr style="height:80px;">
+            <td width="129" class="label">审批人</td>
+            <td width="386" class="content" colspan="3">${_userMind_.getPrintData(&quot;PS-0003&quot;)}
+			<br />${_userMind_.getPrintData(&quot;ZB-0001&quot;)}
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="clear:both;">
+    <br />
+</p>

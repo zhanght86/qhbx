@@ -4,7 +4,7 @@
 	<div class="clearfix">
 		<img id='SC_USER_IMG' style='float:left;padding: 0px 10px;cursor:pointer;'src="" title="进入个人基本信息">
 		<div style='float:left;padding:10px 0;color:#000;font-size:13px;line-height:19px;font-weight:normal '>
-			<span id='SC_USER_NAME' style='display: block;'>
+			<span id='SC_USER_NAME' style='display: none;'>
 				<div id="jiangang" title="查看兼岗情况" class="left-topBar-jian-text" style="display:inline-block;margin:0px;">
 					<a href="javascript:void(0);" class="left-topBar-jian-text-con"></a>
 				</div>

@@ -10,6 +10,9 @@ pro\WEB-INF\work
 pro\WEB-INF\update
 pro\WEB-INF\tmp
 pro\WEB-INF\doc\SY_COMM_MENU
+pro/WEB-INF/doc/SY_COMM_MENU
+pro/WEB-INF/work
+pro/WEB-INF/work/*
 *.java.20*
 *.java20*
 *.js.20*
@@ -20,3 +23,11 @@ pro\WEB-INF\doc\SY_COMM_MENU
 *.css20*
 *.log.20*
 
+
+.classpath
+CCPrintTemp.html
+gsfw.html
+gsfwPrintTemp.html
+doc/需完善功能.docx
+printTemplate/cc.html
+.classpath

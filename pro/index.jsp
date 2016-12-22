@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--index.jsp 平台登录页面-->
+<!--login.jsp 登录页面-->
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.Random"%>
 <%@ page import="com.rh.core.org.mgr.UserMgr" %>
 <%@ page import="com.rh.core.util.RequestUtils" %>
 <%@ page import="java.util.Map" %>
@@ -8,48 +9,48 @@
 <%@ page import="com.rh.core.comm.ConfMgr" %>
 <%@ page import="com.rh.core.org.UserBean" %>
 <%@ page import="com.rh.core.util.Lang" %>
+<%@ page import="com.rh.core.comm.loginbkg.*" %>
+
 
 <%
     final String CONTEXT_PATH = request.getContextPath();
 	String jumpTo = RequestUtils.get(request,"jumpTo","portal");
-	%>	
+	response.setHeader("Pragma","no-cache"); 
+	response.setHeader("Cache-Control","no-cache"); 
+	response.setDateHeader("Expires", 0); 
+	
+	Random rand = new Random();
+	long randnum = Math.abs(rand.nextLong());
+	session.setAttribute("RandNum", String.valueOf(randnum));
+	String loginType = RequestUtils.get(request, "loginType", "key");
+	if(Context.getUserBean(request)!=null){
+		Context.getUserBean(request).set("hasOaFlag", "");
+	}
+	LoginBkgServ bkgServ = new LoginBkgServ();
+	Bean bkgBean = null;//bkgServ.getLoginBkgPic();
+%>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>软虹云平台</title>
-    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precompose.png"/>
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <title>个人门户-登录</title>
     <!-- 引用公用头部资源文件：开始 -->
-    <%@ include file= "sy/base/view/inHeader.jsp" %>
-    <!-- 引用公用头部资源文件：结束 -->
-    <link rel="stylesheet" type="text/css" href="<%=CONTEXT_PATH %>/sy/comm/index/incl-index.css" charset="UTF-8"/>
+    <%@ include file= "/sy/base/view/inHeader.jsp" %>
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precompose.png"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/login/login_dialog.css" charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/login/login.css" charset="UTF-8"/>
+    <script type="text/javascript" src="/login/js/jquery.easing.1.3.js"></script>
 </head>
-<body>
-<script type="text/javascript" src="<%=CONTEXT_PATH %>/sy/comm/index/incl-index.js" charset="UTF-8"></script>
-<script type="text/javascript">
-/** 增加手机浏览器的判断 */
-Tools.toMbIndex();
-/** 页面初始化方法：开始 */
-$(function(){
-    if (self.frameElement && self.frameElement.tagName && self.frameElement.tagName == "IFRAME") {
-        //self.parent.window.location.href = FireFly.getContextPath();
-        
-    } else {
-        loginInit();
-    }
-    var temp = document.documentElement.scrollHeight-151;//设置背景高度SY_ORG_CMPY
-    jQuery("#logo").height(temp);
-
-	var imgLink = FireFly.getHttpHost() + FireFly.contextPath + "/file?act=qrCode&value=" + FireFly.getHttpHost() + FireFly.contextPath + "&size=150";
-    jQuery("#mb-link-img").attr("src",imgLink);
-
-});
-</script>
+<body style="padding-top:0px;">
+<!--script type="text/javascript" src="/login/js/method.js"></script--> 
+<script type="text/javascript" src="/login/js/login.js"></script>
+<script type="text/javascript" src="/sy/comm/index/incl-index.js"></script>
 <%
 	if(userBean != null) {
 %>
 		<script type="text/javascript">
-		var homeUrl = "sy/comm/page/page.jsp";
+		var homeUrl = "/sy/comm/page/portal.jsp";
 		//设置cookie
 		document.cookie="RhClientLogin=true";
 		window.location.href = homeUrl;
@@ -57,50 +58,117 @@ $(function(){
 <%
     } else {
 %>
-<div id="logo">
-    <div id="top_logo">
-		<div id="msg"></div>
-		<div id="form" style="position: relative;" class="radius5">
-			 
-			 <div class="radius3" style="padding:8px;">
-				 <table class="form-table">
-					<div style="display:none" id="cmpy"><input id="CMPY_CODE" name="CMPY_CODE" type="text" value="zhbx" class="ipt-t"/><input id="CMPY_CODE__NAME" name="CMPY_CODE__NAME" type="text" class="ipt-t icon-input-cmpy" value="zhbx" onfocus="this.className+=' ipt-t-focus icon-input-cmpy'" onblur="this.className='ipt-t icon-input-cmpy'"  size='30'/><span class="dict-cmpy"></span></div>
-					
-					<tr><td>用户名:</td>
-						<td><div id="user"><input id="USER_CODE" name="USER_CODE" type="text" class="ipt-t" onfocus="this.className+=' ipt-t-focus'" onblur="this.className='ipt-t'" /></div>
-						</td>
-					</tr>
-					<tr><td>密<span style="padding:0px 6px;"></span>码:</td>
-						<td><div id="pwd"><input id="USER_PASSWORDS" name="USER_PASSWORDS" type="password" class="ipt-t" onfocus="this.className+=' ipt-t-focus'" onblur="this.className='ipt-t'" /></div>
-						</td>
-					</tr>
-				 </table>
-					 <div id="submit" style="border:0px red solid;margin-top:0px;"><input type="submit" id="btnLogin" class="submit textShadow" title="登录" value="登&nbsp;&nbsp;录" /></div>
-					 <div id="remb" style=""><label class="loginAuto-lb">记住密码</label><input id="LOGIN_AUTO" name="LOGIN_AUTO" type="checkbox" class="loginAuto-check"/></div>
-			 </div>
-		</div>
-	</div>
-    
-</div>
-<input type="hidden" id="rhDevIndex" value="true"/>
-<input type="hidden" id="jumpTo" value="<%=jumpTo%>"/>
 
-<!--div class="mb-link">
-	<img id="mb-link-img" src='' width='150px' height='150px'></img>
-	<div class="mb-link-title">扫描二维码进入手机登录</div>
+<div class="login-wrapper">
+    <div class="login-header">
+        <div class="login-header-left">
+        	<a href="#" target="_blank" title="前海再保险股份有限公司" tabindex="-1">
+            	<img src="/login/img/login-logo.png" alt="前海再保险股份有限公司" />
+            </a>
+        </div>
+        <div ></div>
+    </div>
+    <!--<div id="msg">-->
+    <%	
+    	String pic = "";
+    	String bannerPic = "";
+    	String dyStyle = "";
+    	if(bkgBean!=null){
+    		pic = bkgBean.getStr("LOGIN_BKG_PATH").split(",")[0];
+    		bannerPic = bkgBean.getStr("LOGIN_BANNER_PATH").split(",")[0];
+    		dyStyle = bkgBean.getStr("LOGIN_BANNER_DY_STYLE");
+    		Context.setApp("bannerBkgPic",bannerPic);
+    		Context.setApp("bannerDyStyle",dyStyle);
+    	}
+    	if("".equals(pic)){
+    	Context.setApp("bannerBkgPic","");
+    %>
+    <div class="login-container">
+    <%}else{ %>
+    <script>
+	    if('<%=bannerPic%>'.length!=0){
+	    	System.setBannerBkgUrl('<%=CONTEXT_PATH+"/file/"+bannerPic %>');
+	    }else{
+	    	System.setBannerBkgUrl('');
+	    };
+	    if('<%=dyStyle%>'.length!=0){
+	    	System.setBannerDyStyle('<%=dyStyle%>');
+	    }else{
+	    	System.setBannerDyStyle('');
+	    }
+	    
+    </script>
+    <div class="login-container" style="background:transparent url('<%=CONTEXT_PATH+"/file/"+pic %>') no-repeat center center">
+    <%} %>
+    	<div class="login-main">
+        	<div class="login-section">
+                <div class="login-form-wrapper">
+				<div id="msg" style=""></div>
+                 	<form id="ukey-form" class="ukey-form active" action="return false" method="post">
+                    	<input type="hidden" name="randnum" value="<%=randnum%>" />
+		               
+                    	<div class="name-block nomal-block">
+                        	<label for="ukey_form_cmpyName" class="tips">用户名称</label>                    
+							<input name="USER_CODE"  id="USER_CODE" class="nomal-input" type="text" value="" tabindex="2"/>
+                        </div>
+                        <div class="pwd-block mt30 nomal-block">
+                        	<label for="ukey_form_pwd"  class="tips">密码</label>
+                        	<input type="password" class="nomal-input" id="USER_PASSWORDS" name="USER_PASSWORDS"tabindex="3"/>
+                        </div>
+						<input name="cmpyCode" id="CMPY_CODE" class="cmpy_code" type="hidden" value="zhbx"/>
+							<input name="CMPY_CODE__NAME" id="CMPY_CODE__NAME" class="cmpy_code" type="hidden" value="前海再保险"/>
+						<input type="hidden" id="jumpTo" value="<%=jumpTo%>"/>
+                        <div class="btn-group">
+                    		 <input type="button" id="btnLogin" class="btn btn-fl" value="登录" tabindex="3"/><!--input id="LOGIN_AUTO" name="LOGIN_AUTO" type="checkbox" class="loginAuto-check"/><label class="loginAuto-lb">记住密码</label-->
+                   		</div>
+						
+                        <div class="form-bottom">
+                        	<div class="bottom-half">
+                                <a href="javascript:void(0);"  class="test-tab"  tabindex="4">
+                                    <em></em>
+                                    <span>系统插件测试页</span>
+                                </a>
+                            </div>
+                           
+                            <div></div>
+                        </div>
+                    </form>
+                    <!-------------end of login-ukey-form----------------->
+                  
+                  
+       
+                </div>
+                <!-------------end of login-form----------------->
+            </div>
+        </div>
+    </div>
+     
+    <!--<div id="progess"></div>-->
+    <div class="login-footer">
+        <p>Copyright &copy;版权所有 <a href="#" target="_blank" tabindex="-1">北京北京软虹有限公司</a></p>
+    </div>
 </div>
- -->
-<div class="rh-browser-container">
-	<div id="rh-browser-check" class="rh-browser-check"><a style='font-size:14px;color:green;' href="javascript:Tools.redirect('/sy/comm/index/activeTest.jsp');">系统插件测试页</a></div>
-</div>
-
-<div class="footer">
-<p id="notSupportIE6"></p>
-</div>
+<div id="progess"></div>
+ 
 <%
  }
  %>
+<script>
+$(function(){
+    jQuery("#USER_CODE").keypress(function(e){
+        if (e.keyCode == "13") {
+            jQuery("#USER_PASSWORDS").focus();
+        }
+    });
+    jQuery("#USER_PASSWORDS").keypress(function(e){
+        if (e.keyCode == "13") {
+            doLogin();
+        }
+    });
+	
+	
+   });
+</script>
 </body>
 
 </html>
-

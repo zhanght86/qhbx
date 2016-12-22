@@ -13,7 +13,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>OA办公系统</title> 
+    <title>综合办公系统</title> 
    <script type="text/javascript">
 		window.moveTo(0,0);
 		window.resizeTo(screen.availWidth,screen.availHeight);  
@@ -241,8 +241,8 @@ if (bannerTabBack.length() > 0) {%>
 			} else {
 			%>
 			<li class="<%=homeTabColorBean.getStr("li") %> replaceLi platformPage" pretabid='platformPage'>
-				<a class="<%=homeTabColorBean.getStr("a") %> rh-open-default" title="信息平台" href='#platformPage'>
-					<span>信息平台</span></a></li>
+				<a class="<%=homeTabColorBean.getStr("a") %> rh-open-default" title="综合办公" href='#platformPage'>
+					<span>综合办公</span></a></li>
 			</ul>
 			<div id='platformPage'></div>	
 			<%
@@ -271,7 +271,7 @@ var pwdFlag = System.getVar("@C_SY_PWD_SHOW@") || "true";//密码修改是否显
 var preDeptUser = System.getVar("@C_SY_PRE_DEPT_USER@") || "";//用户名前缀显示的部门
 var tabColor = System.getVar("@C_SY_TAB_COLOR@") || "";//tab的颜色配置信息
 var wbimFlag = System.getVar("@C_SY_WBIM_FLAG@") || "false";//即时通讯是否启用
-document.title = pageTitle;
+//document.title = pageTitle;
 var opts = {"id":"rhHome","styleDef":styleDef,"topPannel":topAlert,"wbimFlag":wbimFlag,"rhClient":"<%=rhClient%>",
 		"mbLink": mbLink,"tabColor":tabColor,"pwdFlag":pwdFlag,"preDeptUser":preDeptUser};
 if (<%=homeConfig%> != null) {//首页的配置
@@ -279,7 +279,7 @@ if (<%=homeConfig%> != null) {//首页的配置
 }
 if ("<%=func%>" === "openTodo") {//自动进入待办的配置
     opts["openTodo"] = {"todoServId":"<%=todoServId%>","todoUrl":"<%=todoUrl%>","todoTitle":"<%=todoTitle%>","servPk":"<%=servPk%>"};
-}debugger;
+}
 //opts["openTab"] = "<new String(Strings.escapeAngle(Lang.hexToStr(openTab)))%>";
 opts["openTab"] = "<%=openTab%>";
 opts["defaultTab"] = "<%=defaultTab%>";

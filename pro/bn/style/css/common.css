@@ -4,7 +4,7 @@
 .pageBody .banner-bg{position:absolute;top:-10px;left:0px;z-index:-1;height:500px;width:100%;background:url(/sy/comm/page/images/banner-gray-light.jpg) no-repeat center;background-size:100% 100%;}
 .pageBody .banner-bg-banner{position:absolute;top:32px;left:154px;z-index:1;height:50px;width:300px;background:url(/bn/style/images/bainian_bg.gif) no-repeat center;background-size:100% 100%;background-size:100% 100%;}
 .pageBody .banner-bg-text{position:absolute;top:37px;left:356px;z-index:1;height:25px;width:206px;font-family:Microsoft YaHei;font-size:22px;color:#313131}
-#banner #logo .banner_info{float:right;color:#000;margin-right:220px;text-align:left;margin-top:30px;font-family:寰蒋闆呴粦;font-size:12px;}
+#banner #logo .banner_info{float:right;color:#000;margin-right:220px;text-align:left;margin-top:30px;font-family:微软雅黑;font-size:12px;}
 #banner #logo .banner_info .date_info{margin-bottom:8px;}
 #banner #logo .banner_info .user_info{margin-bottom:8px;}
 #banner #logo .banner_info .logout{color:#e7340c;cursor:pointer;}
@@ -15,7 +15,7 @@
 .ui-tabs .ui-tabs-nav { margin: 0; font-size:16px;border-bottom:none;}
 .ui-tabs .ui-corner-top { -moz-border-radius-topleft: 0px; -webkit-border-top-left-radius: 0px; -khtml-border-top-left-radius: 0px; border-top-left-radius: 0px;}
 .ui-tabs .ui-tabs-nav li {list-style: none; float: left; position: relative;background:none; margin: 0px 2px 0px 0px;border:none;padding: 0px 0px 0px 0px; white-space: nowrap;  line-height:30px;}
-.ui-tabs .ui-tabs-nav li.replaceLi {padding-right:0px;}/* 棣栭〉tab鐨勭壒娈婂鐞� -----*/
+.ui-tabs .ui-tabs-nav li.replaceLi {padding-right:0px;}
 .ui-tabs .ui-tabs-nav li a { display:block; float:left; width:83px; height:32px; padding-left:0px; margin-top:0px; margin-right:0px;font-family:Microsoft yahei;color:#fff;}
 .ui-tabs .ui-tabs-nav .redLi {background:none;}
 .ui-tabs .ui-tabs-nav li .redA {background:none;text-align:center;padding-right:0px;color:#fff;}

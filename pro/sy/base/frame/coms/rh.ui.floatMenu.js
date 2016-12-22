@@ -61,8 +61,8 @@ rh.ui.floatMenu.prototype._layout = function(menus) {
 	this.main = jQuery("<div class='float_menu_box__slideShow__stMore' style='display:none;'></div>").appendTo(slideShow);
 	this.mainData = jQuery("<ul class='float_menu_box__slideShow__stMore__ul'></ul>").appendTo(this.main);
 	jQuery("<em class='float_menu_box__slideShow__stMoreClose' style='display:none;'><a title='关闭导航'></a></em>").appendTo(slideShow);
-	//jQuery("<div class='float_menu_box__questionnaire  float_menu_box_nav'><a class='float_menu_box__p__a'><span class='float_menu_box__icon'></span><span class='float_menu_box__text'>问卷调查</span></a></div>").appendTo(imBox);
-	//jQuery("<div class='float_menu_box__onlineHelp  float_menu_box_nav'><a class='float_menu_box__p__a'><span class='float_menu_box__icon'></span><span class='float_menu_box__text'>在线帮助</span></a></div>").appendTo(imBox);
+	jQuery("<div class='float_menu_box__questionnaire  float_menu_box_nav'><a class='float_menu_box__p__a'><span class='float_menu_box__icon'></span><span class='float_menu_box__text'>问卷调查</span></a></div>").appendTo(imBox);
+	jQuery("<div class='float_menu_box__onlineHelp  float_menu_box_nav'><a class='float_menu_box__p__a'><span class='float_menu_box__icon'></span><span class='float_menu_box__text'>在线帮助</span></a></div>").appendTo(imBox);
 	var shortCutShow = jQuery("<div class='float_menu_box__shortCutShow'></div>").appendTo(imBox);
 	jQuery("<div class='float_menu_box__shortcut  float_menu_box_nav'><a class='float_menu_box__p__a'><span class='float_menu_box__text'>快捷功能</span></a></div>").appendTo(shortCutShow);
 	var shortCut = jQuery("<div class='float_menu_box__shortcut__stMore' style='display:none;'></div>").appendTo(shortCutShow);

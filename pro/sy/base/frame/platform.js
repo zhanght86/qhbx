@@ -505,10 +505,13 @@ function openPostWindow(servid, servSrcId,dataId,content) {
 	hiddInput_content.name = "Content";
 	hiddInput_content.value = content;
 	tempForm.appendChild(hiddInput_content);
-	tempForm.attachEvent("onsubmit", function() {
+	
+//	tempForm.attachEvent("onsubmit", function() {
+//			});
+	jQuery(tempForm).unbind("onsubmit").bind("onsubmit", function() {
 			});
 	document.body.appendChild(tempForm);
-	tempForm.fireEvent("onsubmit");
+	jQuery(tempForm).trigger("onsubmit");
 	// 将form的target设置成和windows.open()的name参数一样的值，通过浏览器自动识别实现了将内容post到新窗口中
 	tempForm.submit();
 	document.body.removeChild(tempForm);

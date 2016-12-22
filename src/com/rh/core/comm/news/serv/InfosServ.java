@@ -674,7 +674,6 @@ public class InfosServ extends NewsServ {
 		outBean.set("CHNL_NAME", bean.get("CHNL_NAME"));
 		return outBean;
 	}
-
 	/**
 	 * 返回信息的更多做分页处理[带时间]
 	 * 
