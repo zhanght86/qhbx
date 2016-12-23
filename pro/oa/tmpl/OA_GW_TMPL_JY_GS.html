@@ -2,7 +2,15 @@
 
 	<table style="width:800px;">
 
-	<tr><td id="gwheader"></td></tr>
+	<tr><td id="gwheader">
+                <table class='gwHeaderTable' border='0'>
+                    <tr>
+                        <td align='center' class='gwHeader'>
+                            <span code="TMPL_TITLE"></span>
+                        </td>
+                    </tr>
+                </table>
+            </td></tr>
 
 	</table>
 
@@ -15,10 +23,35 @@
 	<td class='rh-item'  code='GW_TITLE' align='center' colspan='3' ></td>
 
 	</tr>
-
+<tr style="border:0px;" id="GWCODE-TR">
+            <td class='rh-label' align='center' style="border-top:0px;">
+                文&nbsp;&nbsp;&nbsp;&nbsp;号
+            </td>
+            <td colspan="3" align='left' style="border-top:0px;">
+                <table style="width:400px">
+                    <tr>
+                        <td class='rh-item' code="GW_YEAR_CODE" style="border:0px;width:50%">
+                        </td>
+                        <td style="border:0px;width:1%;" id="GW_YEAR-left">
+                            <span class='gw-font'>〔</span>
+                        </td>
+                        <td class='rh-item' code="GW_YEAR" style="border:0px;width:18%">
+                        </td>
+                        <td style="border:0px;width:1%;" id="GW_YEAR-right">
+                            <span class='gw-font'>〕</span>
+                        </td>
+                        <td class='rh-item' code="GW_YEAR_NUMBER" style="border:0px;width:20%">
+                        </td>
+                        <td style="border:0px;width:1%">
+                            <span class='gw-font'>号</span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
 	<tr>
 
-	<td class='rh-label' align='center'>单&nbsp;&nbsp;&nbsp;&nbsp;位:</td>
+	<td class='rh-label' align='center'>拟稿部门:</td>
 
 	<td class='rh-item' code='S_TNAME'  align='center'></td>
 

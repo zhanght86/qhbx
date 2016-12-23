@@ -339,7 +339,13 @@ function saveToPdf(){
 		clickSaveBtn();
 	}else if(4 == btnCmdid){ //保存并关闭
 		clickSaveBtn();
-		window.close();
+		//window.close();
+		if ( opener ) {
+			var objType = typeof (opener.officeClientCloseCallBack) ;
+			if(objType == "function" || objType == "object"){
+				opener.officeClientCloseCallBack();//关闭窗口回调刷新父页面函数
+			}		
+		}
 	}else if(5 == btnCmdid){
 		var _msg_out = document.getElementById("_msg_out");
 		alert(_msg_out.innerHTML);
