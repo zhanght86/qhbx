@@ -1284,9 +1284,12 @@ rh.cm.mind.prototype._deleteMind = function(){
 			var res = FireFly.doAct("SY_COMM_MIND", "delete", data, true);
 			_self.refresh();
 
-			if (_self.regularMind) { // 清除固定意见框
-				if(_self.regularMind && _self.regularMind.mindId == mindId){
-					_self.regularMind.clearContent();
+			if (_self._regularMind) { // 清除固定意见框
+				if(_self._regularMind && _self._regularMind.mindId == mindId){
+					_self._regularMind.clearContent();
+					if(_self.regularMind){
+						_self.regularMind.val("");
+					}
 				}
 			}
 

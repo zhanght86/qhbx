@@ -30,12 +30,12 @@
 <body>
 	<input id="userName" type="hidden" />
 	<script type="text/javascript"> 
-	    jQuery(function($) {
+	    jQuery(function($) {debugger;
 		resizeWindow();         
 		    var homeUrl="";
 				try{
 			        var wshNetwork = new ActiveXObject("WScript.Network");
-					if(wshNetwork.UserDomain=="QHR"&&(wshNetwork.UserName!=""|| wshNetwork.UserName!="null")){
+					if(wshNetwork.UserDomain=="QIANHAIRE"&&(wshNetwork.UserName!=""|| wshNetwork.UserName!="null")){
 						var userName = wshNetwork.UserName;
 						if(userName.length > 0){
 							var loginParam = {};

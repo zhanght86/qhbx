@@ -35,67 +35,14 @@ _viewer.beforeSave= function (){
 	}
   }
 }
-
-_viewer.getBtn("commit").unbind("click").bind("click", function() {
-	var data = {};
-	var serid = _viewer.servId;
-	var chnlid=_viewer.getItem("CHNL_ID").getValue();
-	data["CHNL_ID"]=chnlid;
-     var outbean = FireFly.doAct(serid,"queryChnl",data);
-   var check=outbean['CHNL_CHECK'];
-   var checker = outbean['CHNL_CHECKER'];
-   _viewer.getItem("NEWS_CHECK").setValue(check);
-   _viewer.getItem("NEWS_CHECKER").setValue(checker);
-	if (check == '2' || check =='') {
-		_viewer.getItem("NEWS_CHECKED").setValue(6);
-	} else {
-		_viewer.getItem("NEWS_CHECKED").setValue(3);
-	}
-	_viewer.saveForm();
-	//发起一条待办
-	 var newstitle = _viewer.getItem("NEWS_SUBJECT").getValue(); // 信息标题
-    //var TODO_CODE =  TODO_OBJECT_ID1 TODO_CATALOG TODO_URL
-    var newsid =_viewer.getItem("NEWS_ID").getValue();
-    var senduser =_viewer.getItem("NEWS_USER").getValue();
-   if(check == '1'){
-   	var data={};
-   	 data["OWNER_CODE"] = checker; //代办用户
-   	 data["SEND_USER_CODE"] = senduser;
-   	 data["TODO_TITLE"] = newstitle;
-   	 data["TODO_CODE"] = serid;
-   	 data["TODO_OBJECT_ID1"] = newsid;
-   	 data["SERV_ID"] = "SY_COMM_INFOS_DEAL";	 
-   	 data["TODO_CATALOG"] = 1;
-   	 data["TODO_URL"] ="SY_COMM_INFOS_DEAL.byid.do?data={_PK_:"+newsid+"}";
-     FireFly.doAct("SY_COMM_TODO","addToDo",data);
-   }
-});
-_viewer.getBtn("postCard").unbind("click").bind("click", function() {
-	var data = {};
-	var serid = _viewer.servId;
-	var chnlid=_viewer.getItem("CHNL_ID").getValue();
-	data["CHNL_ID"]=chnlid;
-     var outbean = FireFly.doAct(serid,"queryChnl",data);
-   var check=outbean['CHNL_CHECK'];
-   var checker = outbean['CHNL_CHECKER'];
-   _viewer.getItem("NEWS_CHECK").setValue(check);
-   _viewer.getItem("NEWS_CHECKER").setValue(checker);
-   var nowDate = rhDate.getTime();
-   _viewer.getItem("NEWS_TIME").setValue(nowDate);
-	if (check == '2' || check =='') {
-		_viewer.getItem("NEWS_CHECKED").setValue(6);
-	} else {
-		_viewer.getItem("NEWS_CHECKED").setValue(3);
-	}
-	
-	_viewer.saveForm();
-	//点击发布 同时发布到某个栏目下
+_viewer.afterSave= function (){
+//点击发布 同时发布到某个栏目下
 	//获取同时发布大的栏目
+	var serid = _viewer.servId;
 	var copychnlname = _viewer.getItem("COPY_TO_NAME").getValue();
 	var pkdata =_viewer.getPKCode();
 	var oldData =FireFly.byId(serid,pkdata);
     var oldChnl =oldData["CHNL_ID"];
-
 	var tupians={};
 	 tupians["DATA_ID"]=pkdata;
 	 tupians["FILE_CAT"]="TUPIANJI";
@@ -156,5 +103,64 @@ _viewer.getBtn("postCard").unbind("click").bind("click", function() {
      }
 	 
 	}
+}
+_viewer.getBtn("commit").unbind("click").bind("click", function() {
+	var data = {};
+	var serid = _viewer.servId;
+	var chnlid=_viewer.getItem("CHNL_ID").getValue();
+	data["CHNL_ID"]=chnlid;
+     var outbean = FireFly.doAct(serid,"queryChnl",data);
+   var check=outbean['CHNL_CHECK'];
+   var checker = outbean['CHNL_CHECKER'];
+   _viewer.getItem("NEWS_CHECK").setValue(check);
+   _viewer.getItem("NEWS_CHECKER").setValue(checker);
+	if (check == '2' || check =='') {
+		_viewer.getItem("NEWS_CHECKED").setValue(6);
+	} else {
+		_viewer.getItem("NEWS_CHECKED").setValue(3);
+	}
+	_viewer.saveForm();
+	//发起一条待办
+	 var newstitle = _viewer.getItem("NEWS_SUBJECT").getValue(); // 信息标题
+    //var TODO_CODE =  TODO_OBJECT_ID1 TODO_CATALOG TODO_URL
+    var newsid =_viewer.getItem("NEWS_ID").getValue();
+    var senduser =_viewer.getItem("NEWS_USER").getValue();
+   if(check == '1'){
+   	var data={};
+   	 data["OWNER_CODE"] = checker; //代办用户
+   	 data["SEND_USER_CODE"] = senduser;
+   	 data["TODO_TITLE"] = newstitle;
+   	 data["TODO_CODE"] = serid;
+   	 data["TODO_OBJECT_ID1"] = newsid;
+   	 data["SERV_ID"] = "SY_COMM_INFOS_DEAL";	 
+   	 data["TODO_CATALOG"] = 1;
+   	 data["TODO_URL"] ="SY_COMM_INFOS_DEAL.byid.do?data={_PK_:"+newsid+"}";
+     FireFly.doAct("SY_COMM_TODO","addToDo",data);
+   }
+});
+_viewer.getBtn("postCard").unbind("click").bind("click", function() {
+	var data = {};
+
+	var serid = _viewer.servId;
+	if(_viewer.getPKCode()==""){
+		alert("请先保存后，再发布。");
+		return;
+	}
+	var chnlid=_viewer.getItem("CHNL_ID").getValue();
+	data["CHNL_ID"]=chnlid;
+     var outbean = FireFly.doAct(serid,"queryChnl",data);
+   var check=outbean['CHNL_CHECK'];
+   var checker = outbean['CHNL_CHECKER'];
+   _viewer.getItem("NEWS_CHECK").setValue(check);
+   _viewer.getItem("NEWS_CHECKER").setValue(checker);
+   var nowDate = rhDate.getTime();
+   _viewer.getItem("NEWS_TIME").setValue(nowDate);
+	if (check == '2' || check =='') {
+		_viewer.getItem("NEWS_CHECKED").setValue(6);
+	} else {
+		_viewer.getItem("NEWS_CHECKED").setValue(3);
+	}
+	
+	_viewer.saveForm();
 	
 });

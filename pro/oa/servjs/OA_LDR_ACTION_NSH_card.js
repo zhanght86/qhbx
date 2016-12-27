@@ -68,7 +68,7 @@ if(end1!=""){
 /**
  * 保存之前
  */
-_viewer.beforeSave = function() {
+_viewer.beforeSave = function() {debugger;
 	var sDate = jQuery("#OA_LDR_ACTION_NSH-BEGIN_TIME_Z").val();
 	var sHour = jQuery("#OA_LDR_ACTION_NSH-BEGIN_TIME-HH").val();
 	var sMin = jQuery("#OA_LDR_ACTION_NSH-BEGIN_TIME-MM").val();
@@ -108,15 +108,23 @@ _viewer.beforeSave = function() {
 			if(data.length>0){
 				for(var i=0;i<data.length;i++){
 					var idTrue = data[i].ACT_ID==_viewer.getItem("ACT_ID").getValue();
-					if(data[i].BEGIN_TIME>beginTime && data[i].BEGIN_TIME<endTime){
+				//	var tipMsg = $.toJSON(data[i]);
+					if(data[i].BEGIN_TIME<beginTime && data[i].END_TIME>beginTime){
 						if(!idTrue){
-							alert("活动时间冲突！"+$.toJSON(data[i]));
+							
+							alert("活动时间冲突！【"+data[i].LDR_ID__NAME +"】在"+data[i].BEGIN_TIME+"到"+data[i].END_TIME+"已经安排了活动");
 							//Tip.showError("活动时间冲突！",true);
 							return false;
 						}
-					}else if(data[i].END_TIME>beginTime && data[i].END_TIME<endTime){
+					}else if(data[i].BEGIN_TIME<endTime && data[i].END_TIME>endTime){
 						if(!idTrue){
-							alert("活动时间冲突！"+$.toJSON(data[i]));
+							alert("活动时间冲突！【"+data[i].LDR_ID__NAME +"】在"+data[i].BEGIN_TIME+"到"+data[i].END_TIME+"已经安排了活动");
+							//_self.cardBarTipError("校验未通过！");
+							return  false;
+						}
+					}else if(data[i].BEGIN_TIME>=beginTime && data[i].END_TIME<=endTime){
+						if(!idTrue){
+							alert("活动时间冲突！【"+data[i].LDR_ID__NAME +"】在"+data[i].BEGIN_TIME+"到"+data[i].END_TIME+"已经安排了活动");
 							//_self.cardBarTipError("校验未通过！");
 							return  false;
 						}

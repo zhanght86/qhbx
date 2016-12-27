@@ -16,7 +16,7 @@ _viewer.getBtn("sendNotify").bind("click", function() {
 });
 
 jQuery("td[icode='USER_NAME']",_viewer.grid.getTable()).find("a").bind("mouseover", function(event) {
-	var userCode = jQuery(this).parent().parent().find("[icode='USER_CODE']").html();
+	var userCode = jQuery(this).parent().parent().find("[icode='USER_CODE']").html();debugger;
 	new rh.vi.userInfo(event, userCode);
 }).attr("onclick","");
 

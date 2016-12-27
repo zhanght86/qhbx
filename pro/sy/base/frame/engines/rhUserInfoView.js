@@ -132,8 +132,8 @@ rh.vi.userInfo.prototype._getUserInfoDialog = function(e, options) {
 				}).appendTo(jQuery("#user-info-div"));
 		//拿到图片路径
 		//设置img圆角显示
-		//jQuery("<img class = 'rh-user-info-circular-bead'/>").attr("src", this.userObj.USER_IMG).attr("width","100").attr("height","100")
-		//	.attr("title",this.userObj.USER_LOGIN_NAME).appendTo(jQuery("#user-info-img-div"));
+		jQuery("<img class = 'rh-user-info-circular-bead'/>").attr("src", this.userObj.USER_IMG).attr("width","100").attr("height","100")
+			.attr("title",this.userObj.USER_LOGIN_NAME).appendTo(jQuery("#user-info-img-div"));
 		
 		//添加在线状态图标
 		jQuery("<div>&nbsp;</div>").attr("id", "user-info-on-line").appendTo(jQuery("#user-info-img-div"));

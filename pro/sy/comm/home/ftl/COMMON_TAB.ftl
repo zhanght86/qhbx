@@ -218,7 +218,6 @@ JSON配置说明
 											"objectID1":pkCode,
 											"areaId":jQuery("#${titleCode!boxTheme}_box").parent().attr("comid"),
 											"ownerCode":todoOwner};	
-										debugger;
 							  Todo.openByParams(todoOpts);
 					  	}else{
 						  	var options = {

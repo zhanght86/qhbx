@@ -1,0 +1,117 @@
+		html, body {
+			margin:0;
+			padding:0;
+		}
+		
+		.mobile {
+			width:100%;
+			height:100%;
+   			background:white url('img/top_blue_mb.jpg') no-repeat  center top;
+   			font-size:12px;
+   			font-family:Î¢ÈíÑÅºÚ,ËÎÌå;
+   			color:#383838;
+   			overflow-x:hidden;
+   			border:0px red solid;
+		}
+		
+		.mobile #container {
+			margin:0;
+			padding:0;
+		}
+		
+		.mobile #top {
+			display:none;
+		}
+		
+		.mobile #logo {
+			margin:3% auto 20px auto;
+   			padding-top:0px;
+   			width:300px;
+   			height:180px;
+   			border:0px red solid;
+   			background:url('img/logo_mb-1.png')  no-repeat center center;
+		}	
+				
+		.radius5 {
+			-moz-border-radius:5px 5px;
+			-webkit-border-radius:5px 5px;
+			-o-border-radius:5px 5px;
+			-ms-border-radius:5px 5px;
+			-khtml-border-radius:5px 5px;
+			border-radius:5px 5px;
+		}
+		
+		.mobile #bottom {
+			width:296px;
+   			height:71px;
+			margin:150px auto 0 auto;
+			background:url('img/taizi_mb.png') no-repeat center center;
+		}			
+		
+		.mobile #activeTest {
+			display:none;
+		}		
+		
+		.mobile #spanValicode {
+			height:60px;
+		}	
+		
+		.mobile #valicode {
+			width:110px;
+			height:30px;
+		}
+			
+		.mobile #imgValicode {
+			width:50px; 
+			height:30px; 
+			vertical-align:middle;
+		}
+	
+		.mobile #usual {
+			cursor:pointer;
+			width:180px;
+			height:30px;
+			font-size:20px;
+			background:url('img/submit_mb.png') no-repeat center center;
+			color:white;
+			font-family:Î¢ÈíÑÅºÚ,ËÎÌå;
+			text-shadow:0px -1px 1px black;
+		}
+				
+		.mobile .input {
+			margin:20px auto 20px auto;
+		}		
+		
+		.mobile .input input {
+			-moz-box-shadow:2px 2px 3px #BDBEBB inset;
+			-webkit-box-shadow:2px 2px 3px #BDBEBB inset;
+			box-shadow:2px 2px 3px #BDBEBB inset;
+			border-radius:12px;
+			width:100%;
+			height:100%;
+		}
+		
+		.mobile .inputCon {
+			font-size:20px;
+			width:180px;
+			height:30px;
+			line-height:30px;
+			margin:0 auto 0 auto;
+			display:block;
+		}		
+		
+		.mobile .label {
+			display:none;
+		}				
+		
+		.mobile .errorMessage {
+			clear:both;
+			width :180px;
+			height :10px;	
+			line-height:10px;
+			text-align:left;
+			color:red;
+			font-weight:bold;
+			letter-spacing:0px;
+			margin:auto auto;
+		}

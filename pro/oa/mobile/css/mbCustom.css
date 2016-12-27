@@ -1,0 +1,538 @@
+/**
+* 自定义样式(或覆盖jquery mobile 样式)，供手机OA使用
+* @author zjx
+* @date   2015-1-6
+*/
+/*=================global样式====================*/
+body,input,select,textarea,button,.ui-btn {
+	font-family: 'Microsoft YaHei';
+}
+.ui-icon-gear:after,
+/* .ui-icon-back:after, */
+.ui-icon-list:after,
+.ui-icon-save:after,
+.ui-icon-finish:after,
+.ui-icon-over:after,
+.ui-icon-stop:after,
+.ui-icon-shouhui:after,
+.ui-icon-deliver:after,
+.ui-icon-send:after,
+.ui-icon-zhuanfa:after,
+.ui-icon-fenfa:after,
+.ui-icon-imp:after,
+.ui-icon-fllow:after,
+.ui-icon-qian:after,
+.ui-icon-confirm:after,
+.ui-icon-cancel:after,
+.ui-icon-close:after
+/* .ui-icon-refresh:after */{
+	-webkit-border-radius: 0;
+		    border-radius: 0;
+	background-color: transparent;
+	background-size: cover;
+}
+/** 设置 */
+.ui-icon-gear:after {
+	background-image: url('../css/customImages/sc-icon-gear.png');
+}
+/** 返回 */
+/* .ui-icon-back:after {
+	background-image: url('../css/customImages/sc-icon-back.png');
+} */
+/** 退回 */
+.ui-footer .ui-icon-back:after {
+	background-image: url('../css/customImages/sc-icon-shouhui.png');
+}
+/** panel */
+.ui-icon-list:after {
+	background-image: url('../css/customImages/sc-icon-list.png');
+}
+/** 保存 */
+.ui-icon-save:after {
+	background-image: url('../css/customImages/sc-icon-save.png');
+}
+/** 办结 */
+.ui-icon-finish:after {
+	background-image: url('../css/customImages/sc-icon-finish.png');
+}
+/** 结束终止*/
+.ui-icon-over:after {
+	background-image: url('../css/customImages/sc-icon-over.png');
+}
+/** 终止会签*/
+.ui-icon-stop:after {
+	background-image: url('../css/customImages/sc-icon-stop.png');
+}
+/** 收回 */
+.ui-icon-shouhui:after {
+	background-image: url('../css/customImages/sc-icon-shouhui.png');
+}
+/** 送交|流转*/
+.ui-icon-deliver:after,
+.ui-icon-send:after {
+	background-image: url('../css/customImages/sc-icon-deliver.png');
+}
+/** 转发*/
+.ui-icon-zhuanfa:after {
+	background-image: url('../css/customImages/sc-icon-zhuanfa.png');
+}
+/** 分发*/
+.ui-icon-fenfa:after {
+	background-image: url('../css/customImages/sc-icon-fenfa.png');
+}
+/** 签收转收文登记*/
+.ui-icon-imp:after {
+	background-image: url('../css/customImages/sc-icon-imp.png');
+}
+/** 流程跟踪 */
+.ui-icon-fllow:after {
+	background-image: url('../css/customImages/sc-icon-fllow.png');
+}
+/** 阅毕 */
+.ui-icon-qian:after {
+	background-image: url('../css/customImages/sc-icon-confirm.png');
+}
+/** 确认*/
+.ui-icon-confirm:after {
+	background-image: url('../css/customImages/sc-icon-confirm.png');
+}
+/** 取消 */
+.ui-icon-cancel:after {
+	background-image: url('../css/customImages/sc-icon-cancel.png');
+}
+/** 刷新 */
+/* .ui-icon-refresh:after {
+	background-image: url('../css/customImages/sc-icon-refresh.png');
+}
+.ui-icon-refresh:active:after {
+	-webkit-transform: rotate(720deg);
+	transition: all 1500ms ease;
+} */
+
+
+
+
+/*=================#desktop样式====================*/
+#mbDesk .zhbx-username {
+	margin: 0 20%;
+}
+
+#mbDesk .zhbx-logo {
+	position: absolute;
+	display: inline-block;
+	/* height: 70%;
+	top: 15%; */
+	height: 90%;
+	top: 10%;
+	left: 5%;
+}
+
+#mbDesk a:-webkit-any-link {
+	display: inline-block;
+	text-decoration: none !important;
+}
+
+#mbDesk .mb-desk-app {
+	position: relative;
+	float: left;
+	z-index: 1;
+	width: 85px;
+	height: 75px;
+	padding: 10px 5px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#mbDesk .zhbx-desk-dbsw {
+	background: url("../css/customImages/dbsw.png");
+	background-size: cover;
+}
+
+#mbDesk .zhbx-desk-tzgg {
+	background: url("../css/customImages/tzgg.png");
+	background-size: cover;
+}
+
+#mbDesk .zhbx-desk-cx {
+	background: url("../css/customImages/cx.png");
+	background-size: cover;
+}
+
+#mbDesk .zhbx-desk-ybsw {
+	background: url("../css/customImages/ybsw.png");
+	background-size: cover;
+}
+
+#mbDesk .zhbx-desk-dysw {
+	background: url("../css/customImages/dysw.png");
+	background-size: cover;
+}
+
+#mbDesk .zhbx-desk-gsyw {
+	background: url("../css/customImages/gsyw.png");
+	background-size: cover;
+}
+
+#mbDesk .zhbx-desk-rcap {
+	background: url("../css/customImages/rcap.png");
+	background-size: cover;
+}
+#mbDesk .zhbx-desk-txl {
+	background: url("../css/customImages/txl.png");
+	background-size: cover;
+}
+
+/**增加委托事务样式,2016 0913 by ayf begin **/
+#mbDesk .zhbx-desk-wtsw {
+	background: url("../css/customImages/wtsw.png");
+	background-size: cover;
+}
+/**2016 0913 by ayf end **/
+
+#mbDesk .mb-desk-app span.sc-desk-app-icon {
+	display: inline-block;
+	width: 57px;
+	height: 57px;
+	-webkit-border-radius: .875em;
+	border-radius: .875em;
+	-webkit-box-shadow: 1px 1010px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+}
+
+#mbDesk .mb-desk-app-text {
+	font-size: .8em;
+	height: 20px;
+	line-height: 20px;
+	color: #333;
+	/* text-shadow: 0 1px 0 rgba(155, 155, 155, 0.9); */
+	text-shadow: none;
+}
+
+#mbDesk .mb-desk-new-count {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	min-width: 11px;
+	height: 18px;
+	padding: 0 2px;
+	border: 2px solid #FFF;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	-o-border-radius: 1em;
+	border-radius: 1em;
+	background-image: -webkit-linear-gradient(rgba(228, 62, 62, 0.9),
+		#E43E3E );
+	background-image: -moz-linear-gradient(rgba(228, 62, 62, 0.9),
+		rgba(228, 62, 62, 1) );
+	background-image: -o-linear-gradient(rgba(228, 62, 62, 0.9),
+		rgba(228, 62, 62, 1) );
+	background-image: linear-gradient(rgba(228, 62, 62, 0.9), #E43E3E );
+	color: #FFF;
+	font-size: 0.75em;
+	line-height: 18px;
+	text-align: center;
+	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+#mbDesk .ui-block-a,.ui-block-b,.ui-block-c {
+	text-align: center;
+}
+#mbDesk .zhbx-username:active {
+	background: -webkit-linear-gradient(top,#247AB2, #3599E6 ,#247AB2);
+}
+#mbDesk .zhbx-username:focus .jiangang-tips.info,
+#mbDesk .zhbx-username:active .jiangang-tips.info{
+	-webkit-animation:none 0 ease 0 1 normal;
+}
+#mbDesk .jiangang-tips{
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	width: 0.5em;
+	height: 0.5em;
+	margin-top:-0.2em;
+	-webkit-border-radius: 1em;
+			border-radius: 1em;
+	-webkit-box-shadow: 0 0 3px 3px #fff;
+			box-shadow: 0 0 3px 3px #fff;
+}
+#mbDesk .jiangang-tips.info{
+	display: block;
+	background-color: red;
+	-webkit-animation-name: scaleTips;
+	-webkit-animation-duration: 500ms;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
+@-webkit-keyframes scaleTips {
+    from {-webkit-transform: scale(0.6);}
+    to { -webkit-transform: scale(1.2); }
+}
+@keyframes scaleTips {
+    from {transform: scale(0.6);}
+    to {transform: scale(1.2);}
+}
+#mbDesk .jiangang{
+	display:none;
+	position:absolute;
+	top:53px;
+	z-index:100;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,.3);
+}
+/*=================#listview样式====================*/
+#listview .ui-content{
+	padding: 0;
+}
+#listview .zhbx-list-time{
+	font-size: .7em;
+	text-align: right;
+	margin: .3em 0;
+}
+#listview .mbGrid-more {
+	width: 100%;
+	height: 44px;
+	border: 0px #F00 solid;
+	background-color: #FFF;
+	font-size: 1em;
+	text-align: center;
+	line-height: 44px;
+	cursor: pointer;
+}
+#listview .mbGrid-more-icon {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	margin: 0px 0px -3px 10px;
+}
+#listview .mb-down-nav {
+	background: url("../css/customImages/navDown.png") no-repeat center center;
+}
+#listview .mbGrid-overTip {
+	width: 100%;
+	height: 44px;
+	background-color: #FFF;
+	color: #808080;
+	font-size: 1em;
+	text-align: center;
+	line-height: 44px;
+}
+#listview #listview_content .ui-btn{
+	padding: 0 1em;
+}
+#listview .ui-listview > li h2{
+	margin: 0 0 .45em 0;
+}
+#listview .ui-listview > .ui-li-has-icon > .ui-btn, .ui-listview > .ui-li-static.ui-li-has-icon{
+	padding-left: 1em; /* 列表的星星会影响到下面h2标签的整体宽度 */
+}
+#listview .ui-li-has-icon > .ui-btn > img:first-child{
+	/* 定位星星的位置到标题正前方 */
+	/* left: .4em;
+	top: 2em; */
+}
+#listview.ui-page-theme-a{
+	background: #e3e3e3;
+}
+#listview.ui-page-theme-a #listview_content .ui-btn,
+#listview.ui-page-theme-a #listview_content .ui-btn:visited{
+	background: #fff;	
+}
+
+/*=================#cardview样式====================*/
+#cardview .ui-listview>li p {
+	white-space: normal;
+}
+#cardview .customNav.ui-hide{
+	display:none;
+}
+#cardview .ui-input-text span{
+	/*font-weight: bolder;*/
+	
+	opacity: .5;
+	
+	/*color: inherit;*/
+	color: #000;
+	text-shadow: inherit;
+	
+	padding: .4em;
+	line-height: 1.4em;
+	display: block;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	
+	margin: 0;
+	min-height: 2.2em;
+	text-align: left; /* Opera aligns type="date" right by default */
+	border: 0;
+	background: transparent none;
+	-webkit-appearance: none;
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+#cardview .ui-listview > .ui-li-static.ui-li-has-icon{
+	padding-left: 1.5em;
+}
+#cardview .ui-listview > .ui-li-has-icon > img:first-child{
+	left: 0.2em;
+	top: 0.6em;
+	max-height: 1.3em;
+	max-width: 1.3em;
+}
+/*=================#newsview样式====================*/
+#newsview .zhbx-news-title{
+	margin-bottom: .5em;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#newsview .zhbx-news-time{
+	text-align: center;
+	margin-bottom: 1em;
+	font-size: .9em;
+}
+
+#newsview .zhbx-news-viewcount{
+	text-align: center;
+	margin-bottom: 1em;
+	font-size: .9em;
+}
+
+#newsview .zhbx-news-content img{
+	max-width: 100%;
+}
+
+#newsview .zhbx-p-text-right{
+	text-align: right;
+}
+
+/*=================#cardToCardView样式====================*/
+#cardToCardView .ui-input-text span{
+	/*font-weight: bolder;*/
+	
+	opacity: .5;
+	
+	/*color: inherit;*/
+	color: #000;
+	text-shadow: inherit;
+	
+	padding: .4em;
+	line-height: 1.4em;
+	display: block;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	
+	margin: 0;
+	min-height: 2.2em;
+	text-align: left; /* Opera aligns type="date" right by default */
+	border: 0;
+	background: transparent none;
+	-webkit-appearance: none;
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+#cardToCardView .ui-listview > .ui-li-static.ui-li-has-icon{
+	padding-left: 1.5em;
+}
+#cardToCardView .ui-listview > .ui-li-has-icon > img:first-child{
+	left: 0.2em;
+	top: 0.6em;
+	max-height: 1.3em;
+	max-width: 1.3em;
+}
+#cardToCardView .ui-listview > li p {
+	white-space: normal;
+}
+
+/*=================media query样式====================*/
+/*
+IPHONE 4		320*480	
+IPHONE 5		320*568
+Galaxy Note2  	360*640
+Galaxy S3	  	360*640			 
+Galaxy S/S2/W   480*800
+*/
+/*IPHONE 4 In Portrait*/
+@media only screen and (min-device-width : 320px) and (max-device-width
+	: 480px) and (orientation : portrait) {
+	.mb-desk-app {
+		width: 70px;
+		/* height: 64px; */
+		padding: 5px 12px;
+	}
+	.mb-desk-app span.sc-desk-app-icon {
+		width: 60px;
+		height: 60px;
+	}
+	.mb-desk-app-text { /* font-size: 0.8em;
+		line-height: normal; */
+		
+	}
+	.mb-desk-new-count {
+		top: 1px;
+	}
+}
+/*IPHONE 5 In Portrait*/
+@media only screen and (min-device-width : 320px) and (max-device-width
+	: 568px) and (orientation : portrait) {
+	.mb-desk-app {
+		width: 80px;
+		padding: 16px 6px;
+	}
+	.mb-desk-app span.sc-desk-app-icon {
+		width: 65px;
+		height: 65px;
+	}
+	.mb-desk-new-count {
+		top: 5px;
+		right: 5px;
+	}
+}
+/*SCH-1869*/
+@media only screen and (min-device-width : 480px) and (max-device-width
+	: 800px) and (orientation : portrait) {
+	.mb-desk-app {
+		width: 80px;
+		padding: 16px 6px;
+	}
+	.mb-desk-app span.sc-desk-app-icon {
+		width: 65px;
+		height: 65px;
+	}
+	.mb-desk-new-count {
+		top: 5px;
+		right: 5px;
+	}
+}
+/*Galaxy Note2 In Portrait*/
+@media only screen and (min-device-width : 720px) and (max-device-width
+	: 1280px) and (orientation : portrait) {
+	.mb-desk-app {
+		width: 98px;
+		padding: 20px 5px;
+	}
+	.mb-desk-app span.sc-desk-app-icon {
+		width: 70px;
+		height: 70px;
+	}
+	.mb-desk-new-count {
+		top: 10px;
+		right: 10px;
+	}
+}

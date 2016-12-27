@@ -123,6 +123,10 @@ public class UserTypeAgentServ extends CommonServ {
                 modifyAgent("single", agent, agent.getInt("AGT_STATUS"), AGT_STATUS_IDLE);
             }
         }
+        //被委托人修改到同一个界面，一块操作
+       if(paramBean.getStr("TO_USER_CODE").length()>0){
+           
+       }
     }
 
     /**

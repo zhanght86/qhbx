@@ -1,0 +1,149 @@
+<p>
+    <br />
+</p>
+<p style="text-align:center;color:red;font-size:20px;">
+    <strong>请假审批单</strong><br />
+</p><style type="text/css" _ue_org_tagname="style">
+ 
+  table{
+border-collapse:collapse;
+}
+table td
+{
+empty-cells : show;
+}
+  tr  td{
+    border:red 1px solid;
+    color:red;
+  }
+  
+   div>p{
+    font-size:16px;
+     margin-left:5px;
+  }
+  p{
+    margin-left:5px;
+  }
+.label{
+  
+}
+.content{
+  color:black;
+}
+</style>
+<p>
+    <br />
+</p>
+<div name="remove-br-div" width="100%">
+    <table align="center" style="border-image:none;width:515px;table-layout:fixed;border-spacing:0px;" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="128" class="label">
+                    标题
+                </td>
+                <td width="387" class="content" colspan="3">
+                    ${APPLY_TITLE}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    申请人
+                </td>
+                <td class="content">
+                    ${S_USER__NAME}
+                </td>
+                <td class="label">
+                    所在部门
+                </td>
+                <td class="content">
+                    ${S_TDEPT__NAME}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    申请时间
+                </td>
+                <td class="content">
+                    ${S_ATIME}
+                </td>
+                <td class="label">
+                    请假类型
+                </td>
+                <td class="content">
+                    ${APPLY_TYPE__NAME}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    请假时间
+                </td>
+                <td class="content" colspan="3">
+                    从${QJ_START_TIME}到${QJ_END_TIME} 共 ${QJ_NUMBER}天
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    请假原因
+                </td>
+                <td class="content" colspan="3">
+                    ${QJ_REASON}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    外出地点
+                </td>
+                <td class="content">
+                    ${OUT_PLACE}
+                </td>
+                <td class="label">
+                    请假期间联系电话
+                </td>
+                <td class="content">
+                    ${APPLY_PHONE}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    工作承接人
+                </td>
+                <td class="content">
+                    ${HAND_USER__NAME!''}
+                </td>
+                <td class="label">
+                    承接人电话
+                </td>
+                <td class="content">
+                    ${HAND_USER_PHONE}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    请假人部门意见
+                </td>
+                <td class="content" colspan="3">
+                    ${_userMind_.getPrintData(&quot;SH-0008&quot;)} ${_userMind_.getPrintData(&quot;SH-0009&quot;)}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    人力资源部门意见
+                </td>
+                <td class="content" colspan="3">
+                    ${_userMind_.getPrintData(&quot;BL-0001&quot;)}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    公司领导意见
+                </td>
+                <td class="content" colspan="3">
+                    ${_userMind_.getPrintData(&quot;PS-0002&quot;)}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    <br />
+</p>

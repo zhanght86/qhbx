@@ -73,7 +73,7 @@
 				timeoutId,timeLeaveId;
 			//显示快捷菜单
 			this.carouselEl.on("mouseenter","a.shortcut-thumbnail",function(event){
-				event.preventDefault();
+				event.preventDefault();debugger;
 				//1. 定位
 				//2. show
 				//3. 设置状态	
@@ -360,7 +360,7 @@
 		 */
 		,isAllowSpeacilSetting:function(){
 			var roles = System.getVar("@ROLE_CODES@");
-			return roles && roles.indexOf("RADMIN")>-1;
+			return roles && roles.indexOf("BNADMIN")>-1;
 		}
 		/**
 		 * 添加管理员操作dom
@@ -399,7 +399,7 @@
 			var menuHtml = '',
 		  	    pageSize = this.perSize,
 		  	    nowPage  = 0;
-				
+				debugger;
 		    for(var i=0 ,len=menuArr.length; i < len ;i++){
 				
 		    	  //如果不支持链接跳转，设置href 和 hover样式
@@ -494,7 +494,7 @@
 			if(!pid){
 				return false;
 			}
-			//this.addAdminOpt();
+			this.addAdminOpt();
 			//设置父菜单
 			this.menuType = pid ;
 			

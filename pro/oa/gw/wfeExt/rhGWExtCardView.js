@@ -74,6 +74,7 @@ rh.vi.gwExtCardView.prototype.init = function() {
 					btn.layoutObj.unbind("click").bind(
 							"click",
 							function(event) {
+								jQuery(this).unbind("click");//防止双击点击两次
 								if (actItem.ACT_MEMO.length > 1
 										&& actItem.ACT_MEMO != "null") {
 									var func = new Function(dataObj.ACT_MEMO);

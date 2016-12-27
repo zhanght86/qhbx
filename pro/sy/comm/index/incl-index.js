@@ -80,6 +80,7 @@ var LogMgr = function(id, pswds, cmpyCode, cmpyName) {
 					if(resultData["TO_USER_CODE"] && resultData["TO_USER_CODE"].length>0){//增加委托参数
 						homeUrl += "?TO_USER_CODE="+	resultData["TO_USER_CODE"];					
 					}
+					setCookie();
 	                //判断屏幕可用大小与登录窗口之间的差，如果差值大于100，则打开一个最大化窗口(非最大化窗口存在问题：登录系统后，窗口最大化，页面下方存在大量空白区域)
 //	                if((window.screen.availWidth - jQuery(window).width()) > 100
 //	                		&& (window.screen.availHeight-jQuery(window).height()) > 100 && (jQuery("#rhClient").length == 0)){

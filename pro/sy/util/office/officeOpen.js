@@ -495,7 +495,6 @@ function readOfficeDocument() {
 	_office = new zotn.office(TANGER_OCX_OBJ);
 	//取得当前编辑器是wps还是word
 	_officeParam.currentApp = _office.getAppName();	
-	
 	if(_office.docType == DOC_TYPE.excel || _office.docType == DOC_TYPE.et){
 		//设置excel文件只读
 		TANGER_OCX_OBJ.SetReadOnly(true,PROTECTED_PASSWD);

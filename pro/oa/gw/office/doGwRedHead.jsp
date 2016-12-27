@@ -70,6 +70,7 @@
 	function existWord(){
 		
 		var wordVer = ZotnClient.WordVersion;
+		alert(wordVer);
 		if(wordVer && wordVer.length > 0){
 			ZotnClient.EditorWordTypes = "doc,wps";
 			ZotnClient.EditorExcelTypes= "xls,et";			
@@ -129,7 +130,12 @@
 		
 			var needEncrypt = false;
 			//从服务器上下载到本地
+			try{
 			var fileName = ZotnClient.DownloadFile(DownloadURL, "demo_file.doc" ,false,false,true,false);
+			}catch(e){
+				alert(e);
+			}
+			
 			var tempFileName = ZotnClient.DownloadFile(TempDownloadURL, "demo_file.doc" ,false,false,true,false);
 			var downLoadFileName = "";
 			redHead.createWord("c:\\ZotnDoc\\"+fileName,"c:\\ZotnDoc\\"+tempFileName,tempFileName);

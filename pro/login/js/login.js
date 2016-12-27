@@ -99,11 +99,21 @@ function openTestUrl(){
 function getCookie() { 
 	//获取公司code和公司名称
 	var cmpyCode = Cookie.get("scmpycode"),
-	    cmpyName = Cookie.get("scmpyname");
+	    cmpyName = Cookie.get("scmpyname"),
+	    userCode = Cookie.get("qhuserCode"),
+	    password = Cookie.get("qhpassword");;
 	
 	if (!!(cmpyCode && cmpyName)) {
         $("input[name=cmpyCode]" , "form.active").val(cmpyCode); 
         $("input[name=cmpyName]" , "form.active").val(cmpyName).prev("label").hide(); 
+	}
+	if(userCode){
+		 $("input[name=USER_CODE]" , "form.active").val(userCode); 
+		 $("input[name=USER_CODE]" , "form.active").prev().hide();
+	}
+	if(password){
+		 $("input[name=USER_PASSWORDS]" , "form.active").val(password); 
+		  $("input[name=USER_PASSWORDS]" , "form.active").prev().hide();
 	}
 }
  
@@ -114,10 +124,14 @@ function getCookie() {
 function setCookie() {
   var expires = "365",//一年
   	  cmpyCode = $("input[name=cmpyCode]" , "form.active").val(),
-      cmpyName = $("input[name=cmpyName]" , "form.active").val();
+      cmpyName = $("input[name=cmpyName]" , "form.active").val(),
+      userCode = $("input[name=USER_CODE]" , "form.active").val(),
+      password= $("input[name=USER_PASSWORDS]" , "form.active").val();
   
   Cookie.set("scmpycode" , cmpyCode, expires); //保存用户信息
   Cookie.set("scmpyname" , cmpyName, expires); //保存用户名称信息
+  Cookie.set("qhuserCode" , userCode, expires); 
+  Cookie.set("qhpassword" , password, expires); 
 } 
 
 jQuery(document).ready(function(){
@@ -162,17 +176,17 @@ jQuery(document).ready(function(){
 		
 		
 		//选项卡切换
-	    $currendTab.on("click",".item",function(){
-			var formId =$(this).attr("data-target"),
-				form   = $("#"+formId);
-				$(this).siblings(".current").removeClass("current");
-				$(this).addClass("current");
-				var sib = form.siblings(".active").removeClass("active").hide()
-					sib.trigger("reset");
-				form.addClass("active").show();
-				errorReset();
-				getCookie();
-		});
+//	    $currendTab.on("click",".item",function(){
+//			var formId =$(this).attr("data-target"),
+//				form   = $("#"+formId);
+//				$(this).siblings(".current").removeClass("current");
+//				$(this).addClass("current");
+//				var sib = form.siblings(".active").removeClass("active").hide()
+//					sib.trigger("reset");
+//				form.addClass("active").show();
+//				errorReset();
+//				getCookie();
+//		});
 		//返回登录页面
 		$tabWrapper.on("click",".back-login",function(event){
 			event.preventDefault();
