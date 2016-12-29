@@ -115,3 +115,8 @@ if (_viewer.wfCard != null && _viewer.wfCard._getBtn("cmSimpleFenFa")) {
 		return true;
 	}
 }
+
+//if(_viewer.byIdData["_ADD_"] == "true"){
+//	var fileData = _viewer.form._loadFile("ZHENGWEN");
+//	_viewer.getItem("ZHENGWEN").fillData(fileData);
+//}

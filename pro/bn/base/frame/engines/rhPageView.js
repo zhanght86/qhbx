@@ -17,7 +17,7 @@ rh.vi.pageView = function(options) {
 /*
  * 渲染主方法
  */
-rh.vi.pageView.prototype.show = function() {
+rh.vi.pageView.prototype.show = function() {debugger;
 	this._initMainData();
 	this._layout();
 	this._bldMenu();
@@ -85,7 +85,7 @@ rh.vi.pageView.prototype._bldMenu = function() {
 rh.vi.pageView.prototype._bldBanner = function() {
 	var userCode = jQuery(".user_info");
 	//alert(System.getVar("@JIAN_CODES@").length > 0);
-	if (System.getVar("@JIAN_CODES@").length > 0 && false) {
+	if (System.getVar("@JIAN_CODES@").length > 0) {
 		var jianGang = jQuery("<div id='jiangang' style='display:inline-block;position:relative;'></div>").html("(<a href='javascript:void(0);' style='margin-left:15px;' >兼岗</a>)").addClass("left-topBar-jian-text").appendTo(userCode);
 		jianGang.bind("click", function() {
 			var obj = jQuery(".left-topBar-jian-list");
@@ -99,7 +99,7 @@ rh.vi.pageView.prototype._bldBanner = function() {
 				var jianList = jQuery("<ul></ul>").addClass("left-topBar-jian-list");
 				var data = FireFly.doAct("SY_ORG_LOGIN","getJianUsers",null,false);
 				jQuery.each(data._DATA_,function(i,n) {
-					var content = jQuery("<a href='#'>" + n.USER_NAME + "  (" + n.TODO_COUNT + "条)" + "</a>");
+					var content = jQuery("<a href='#'>" + n.DEPT_NAME+"  "+n.USER_NAME + "  (" + n.TODO_COUNT + "条)" + "</a>");
 					content.bind("click",function(event) {
 						var result = FireFly.doAct("SY_ORG_LOGIN","changeUser",{"TO_USER_CODE":n.USER_CODE},false);
 						if (result[UIConst.RTN_MSG].indexOf(UIConst.RTN_OK) == 0) {

@@ -1,4 +1,5 @@
 var _viewer = this;
+debugger;
 //添加档案 按钮显示条件。没有变量或者已经办结则隐藏。
 if (_viewer.getParHandler() != null) {
 //var addItem = _viewer.getParHandler().wfCard.getCustomVarContent("addItem");

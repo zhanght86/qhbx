@@ -52,8 +52,8 @@ public class ADMgr {
 	 * ldap配置信息
 	 */
 	private String LDAP_URL = "ldap://10.0.50.8";//Context.getSyConf("LDAP_URL", "ldap://10.0.50.8");
-	private String LDAP_ADMINISTRATOR ="adminsadmin@qianhaire.local"; //Context.getSyConf("LDAP_ADMINISTRATOR", "adminsadmin").concat("@qianhaire.local");
-	private String ldapAdminPsd = "4f1e2efa627e1aa36f65536863cb23f9";//Context.getSyConf("LDAP_ADMINISTRATOR_PASSWORD", "20160325@qhr");//加密后的密码
+	private String LDAP_ADMINISTRATOR ="adminoa@qianhaire.local"; //Context.getSyConf("LDAP_ADMINISTRATOR", "adminsadmin").concat("@qianhaire.local");
+	private String ldapAdminPsd = "4ed71005301d78129348fc0d1dc1f624";//Context.getSyConf("LDAP_ADMINISTRATOR_PASSWORD", "20160325@qhr");//加密后的密码
 	private String LDAP_PASSWORD = EncryptUtils.decrypt(new String(ldapAdminPsd.getBytes()),	 EncryptUtils.DES);
 //	private String LDAP_URL =  Context.getSyConf("LDAP_URL", "ldap://10.0.50.8");
 //    private String LDAP_ADMINISTRATOR =Context.getSyConf("LDAP_ADMINISTRATOR", "adminsadmin").concat("@qianhaire.local");
@@ -476,10 +476,15 @@ public class ADMgr {
 //                            "sAMAccountName", "name", "distinguishedName", "mail", "title", "whenCreated", "whenChanged" });
                 SearchControls sdf = new SearchControls();
                 sdf.setReturningAttributes(new String[] {
-                        "sAMAccountName", "name", "distinguishedName", "mail"});
+                       "name"});
                       list = ad.search("DC=qianhaire,DC=local",
-                            "(&(objectClass=top)(objectClass=organizationalPerson)(sAMAccountName=zhangs))",sdf );
+                            "objectClass=User",sdf );
                     System.out.println(list);
+                    while(list.hasMoreElements()){
+                        SearchResult sr = list.nextElement();
+                        System.out.println(sr.getAttributes());
+                    }
+                    
         } catch (Exception e) {
             System.err.println("Problem: " + e);
         } finally {

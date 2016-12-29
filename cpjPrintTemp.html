@@ -1,0 +1,154 @@
+<p style="text-align:center;">
+    <strong><span style="color:red;font-family:宋体;font-size:35px;">呈批件审签单</span></strong>
+</p><style type="text/css" _ue_org_tagname="style">
+ 
+  table{
+border-collapse:collapse;
+}
+table td
+{
+empty-cells : show;
+}
+  tr td {
+    border:red 1px solid;
+    color:red;
+  }
+
+   div>p{
+    font-size:16px;
+     margin-left:5px;
+  }
+  p{
+    margin-left:5px;
+  }
+  .label{
+	text-align:center;
+	
+  }
+  .content{
+	color:black;
+  }
+</style>
+<div name="remove-br-div">
+    <table  align="center" style="width:640px;table-layout:fixed;" border="0" cellspacing="0" cellpadding="0" uetable="null">
+        <tbody>
+            <tr style="height:20px;">
+                <td width="640" style="padding:1px;border:0px" colspan="4">
+                    <p style="text-align:right;">
+                        <span style="color:red;font-family:宋体;font-size:16px;">密级：<span style="font-family:宋体;font-size:16px;"></span><span style="color:black;font-size:16px;font-:宋体;">${GW_SECRET__NAME}</span></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:20px;">
+                <td width="640" style="padding:1px;border-bottom-color:#ff0000;border:0px;" colspan="4">
+                    <p style="text-align:right;">
+                        <span style="color:red;font-family:宋体;font-size:16px;">紧急程度：<span style="color:black;font-family:宋体;font-size:16px;">${S_EMERGENCY__NAME}</span></span>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td width="162" style="padding:1px;border:1px solid #ff0000;border-image:none;height:50px;">
+                    <p style="text-align:center;">
+                        <span style="color:#ff0000;font-family:宋体;font-size:16px;">文  号</span>
+                    </p>
+                </td>
+                <td width="182" class="content">
+                    ${GW_YEAR_CODE}〔${GW_YEAR?string('####')}〕${GW_YEAR_NUMBER}号
+                </td>
+                <td width="123" class="label">
+                    <p style="text-align:center;">
+                        <span style="color:#ff0000;font-family:宋体;font-size:16px;">办理期限</span>
+                    </p>
+                </td>
+                <td width="162" class="content">
+                    ${GW_EXPIRE_TIME}<br />
+                </td>
+            </tr>
+            <tr>
+                <td width="162" height="27" class="label">
+                    <p style="text-align:center;">
+                        <span style="color:red;font-family:宋体;font-size:16px;">起草部门</span>
+                    </p>
+                </td>
+                <td width="182" height="27" class="content">
+                    ${S_TNAME__NAME}<br />
+                </td>
+                <td width="123" height="27" class="label">
+                    <p style="text-align:center;">
+                        <span style="color:red;font-family:宋体;font-size:16px;">起草人</span>
+                    </p>
+                </td>
+                <td width="163" height="27" class="content">
+                    ${GW_CONTACT__NAME}<br />
+                </td>
+            </tr>
+            <tr style="height:50px;">
+                <td width="162" class="label">
+                    <p style="text-align:center;">
+                        <span style="color:red;font-family:宋体;font-:16px;"><span style="color:red;font-family:宋体;font-size:16px;">标  题</span></span>
+                    </p>
+                </td>
+                <td width="488" class="content" colspan="3">
+                    ${GW_TITLE}<br />
+                </td>
+            </tr>
+            <tr style="height:50px;">
+                <td width="162" class="label">
+                    <p style="text-align:center;">
+                        <span style="color:red;font-family:宋体;font-:16px;"><span style="color:red;font-family:宋体;font-size:16px;">拟稿部门意见</span></span>
+                    </p>
+                </td>
+                <td width="488" class="content" colspan="3">
+                    <p>
+                           ${_userMind_.getPrintData(&quot;SH-0008&quot;)}
+                    </p>
+                    <p>
+                           ${_userMind_.getPrintData(&quot;SH-0009&quot;)}
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:50px;">
+                <td width="163" class="label">
+                        <span style="color:red;font-family:宋体;font-:16px;"><span style="color:red;font-family:宋体;font-size:16px;">会签意见</span></span>
+                </td>
+                <td width="488" class="content" colspan="3">
+                    ${_userMind_.getPrintData(&quot;HQ-0002&quot;)}
+                </td>
+            </tr>
+            <tr style="height:50px;">
+                <td width="163" class="label">
+                        <span style="color:red;font-family:宋体;font-:16px;"><span style="color:red;font-family:宋体;font-size:16px;">综合行政部意见</span></span>
+                    
+                </td>
+                <td width="488" class="content" colspan="3">
+                    ${_userMind_.getPrintData(&quot;HG-0002&quot;)}                  ${_userMind_.getPrintData(&quot;HP-0005&quot;)}                  
+                </td>
+            </tr>
+            <tr style="height:50px;">
+                <td width="163" class="label">
+                        <span style="color:red;font-family:宋体;font-:16px;"><span style="color:red;font-family:宋体;font-size:16px;">主办部门意见</span></span>
+                   
+                </td>
+                <td width="488" class="content" colspan="3">
+                    <p>
+                           ${_userMind_.getPrintData(&quot;ZB-0002&quot;)}
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:50px;">
+                <td width="163" class="label">
+                        <span style="color:red;font-family:宋体;font-:16px;"><span style="color:red;font-family:宋体;font-size:16px;">公司领导意见</span></span>
+                    
+                </td>
+                <td width="488" class="content" colspan="3">
+                     ${_userMind_.getPrintData(&quot;PS-0002&quot;)}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    <br />
+</p>

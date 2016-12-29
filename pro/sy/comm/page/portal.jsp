@@ -205,12 +205,12 @@
 </div><!-- End 风格面板 -->
 <!-- foot开始 -->
 
-<div class="foot">
+<!-- div class="foot">
     	<dl class="clearfix">
-        	<dt><!--img alt="" src="images/foot.jpg" />--></dt> 
+   
 			<div class="footcss">版权所有 2011 北京软虹科技有限公司</div>
         </dl>
-    </div>
+    </div> -->
 <!-- <table style="width:100%;">
 	<tr align="center">
 	<td>

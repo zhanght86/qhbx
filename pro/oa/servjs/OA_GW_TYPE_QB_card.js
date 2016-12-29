@@ -163,3 +163,8 @@ if (printDaGdInfoObj) {
 // 初始化盖章按钮
 var gwSeal = new rh.vi.gwSeal({servId:_viewer.servId,parHandler:_viewer});
 gwSeal.init();
+
+//if(_viewer.byIdData["_ADD_"] == "true"){
+//	var fileData = _viewer.form._loadFile("ZHENGWEN");
+//	_viewer.getItem("ZHENGWEN").fillData(fileData);
+//}

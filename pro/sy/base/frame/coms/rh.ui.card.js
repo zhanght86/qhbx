@@ -3811,7 +3811,7 @@ rh.ui.linkSelect.prototype._build = function() {
 	//
 	var _self = this;
    // 20160425this.obj = jQuery("<div style='border:1px #91bdea solid;min-height:27px;'><a class='ui-linkSelect-default rh-icon' style='width:80px;height: 22px;margin-left:0px;' href='javascript:void(0);'><span class='rh-icon-inner' style='padding-left: 2px;'>选择相关文件</span></a></div>");	
-	this.obj = jQuery("<div style='border: 1px solid rgb(145, 189, 234); border-image: none; min-height: 27px;'><a class='ui-linkSelect-default rh-icon' style='width:80px;height: 22px;margin-left:0px;' href='javascript:void(0);'><span class='rh-icon-inner' style='padding-left: 2px;'>选择相关文件</span></a></div>");	  
+	this.obj = jQuery("<div style='border: 1px solid rgb(145, 189, 234); border-image: none; min-height: 27px;'><a class='ui-linkSelect-default rh-icon' style='width:80px;height: 22px;margin-left:0px;' href='javascript:void(0);'><span class='rh-icon-inner' style='padding-left: 2px;'>选择在线相关文件</span></a></div>");	  
 	this.obj.find("a").unbind("click").bind("click",function() {
     	if (_self.beforeClick() === false) {
     		return true;
@@ -3885,7 +3885,7 @@ rh.ui.linkSelect.prototype.setValue = function() {
 /**
  * 构造列表
  */
-rh.ui.linkSelect.prototype.fillData = function() {
+rh.ui.linkSelect.prototype.fillData = function() {debugger;
 	var _self = this;
 	var param = {};
 	param[UIConst.EXT_WHERE] = " and DATA_ID='" + this.pkCode + "' and SERV_ID='" + this.srcServId + "'";// + " and RELATE_TYPE='" + this._itemCode + "'";

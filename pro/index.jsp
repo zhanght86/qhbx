@@ -122,17 +122,17 @@
                     		 <input type="button" id="btnLogin" class="btn btn-fl" value="登录" tabindex="3"/><!--input id="LOGIN_AUTO" name="LOGIN_AUTO" type="checkbox" class="loginAuto-check"/><label class="loginAuto-lb">记住密码</label-->
                    		</div>
 						
-                        <div class="form-bottom">
+                        <!-- div class="form-bottom">
                         	<div class="bottom-half">
                                 <a href="javascript:void(0);"  class="test-tab"  tabindex="4">
                                     <em></em>
                                     <span>系统插件测试页</span>
                                 </a>
-                            </div>
+                            </div> 
                            
                             <div></div>
                         </div>
-                    </form>
+                    </form>-->
                     <!-------------end of login-ukey-form----------------->
                   
                   
@@ -145,7 +145,10 @@
      
     <!--<div id="progess"></div>-->
     <div class="login-footer">
-        <p>Copyright &copy;版权所有 <a href="#" target="_blank" tabindex="-1">北京北京软虹有限公司</a></p>
+        <p ><a href="javascript:openTestUrl();"  style="color:red;"  class="test-tab"  tabindex="4">
+                                    <em></em>
+                                    <span >系统插件测试页</span>
+                                </a></p>
     </div>
 </div>
 <div id="progess"></div>
@@ -165,7 +168,7 @@ $(function(){
             doLogin();
         }
     });
-
+	jQuery(".login-container").css({"min-height":"490px","height":$(window).height()-110});
 	
    });
 </script>

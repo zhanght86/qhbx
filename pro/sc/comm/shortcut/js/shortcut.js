@@ -73,7 +73,7 @@
 				timeoutId,timeLeaveId;
 			//显示快捷菜单
 			this.carouselEl.on("mouseenter","a.shortcut-thumbnail",function(event){
-				event.preventDefault();debugger;
+				event.preventDefault();
 				//1. 定位
 				//2. show
 				//3. 设置状态	

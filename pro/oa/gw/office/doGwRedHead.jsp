@@ -70,7 +70,6 @@
 	function existWord(){
 		
 		var wordVer = ZotnClient.WordVersion;
-		alert(wordVer);
 		if(wordVer && wordVer.length > 0){
 			ZotnClient.EditorWordTypes = "doc,wps";
 			ZotnClient.EditorExcelTypes= "xls,et";			

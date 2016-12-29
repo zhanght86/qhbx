@@ -355,7 +355,7 @@ rh.vi.pageView.prototype._bldBanner = function() {
 		});
 	}
 	var userCode = jQuery(".user_info");
-	if (System.getVar("@JIAN_CODES@").length > 0 && false) {//去掉兼岗
+	if (System.getVar("@JIAN_CODES@").length > 0 ) {//去掉兼岗
 		var jianGang = jQuery("<div id='jiangang' style='display:inline-block;position:relative;'></div>").html("(<a href='javascript:void(0);' style='margin-left:15px;' >兼岗</a>)").addClass("left-topBar-jian-text").appendTo(userCode);
 		jianGang.bind("click", function() {
 			var obj = jQuery(".left-topBar-jian-list");
@@ -369,14 +369,13 @@ rh.vi.pageView.prototype._bldBanner = function() {
 				var jianList = jQuery("<ul></ul>").addClass("left-topBar-jian-list");
 				var data = FireFly.doAct("SY_ORG_LOGIN","getJianUsers",null,false);
 				jQuery.each(data._DATA_,function(i,n) {
-					var content = jQuery("<a href='#'>" + n.USER_NAME + "  (" + n.TODO_COUNT + "条)" + "</a>");
+					var content = jQuery("<a href='#'>"+ n.DEPT_NAME+"  " + n.USER_NAME + "  (" + n.TODO_COUNT + "条)" + "</a>");
 					content.bind("click",function(event) {
 						var result = FireFly.doAct("SY_ORG_LOGIN","changeUser",{"TO_USER_CODE":n.USER_CODE},false);
 						if (result[UIConst.RTN_MSG].indexOf(UIConst.RTN_OK) == 0) {
 							var res = confirm("当前页面将刷新，确定继续吗？");
 							if (res === true) {
-								window.location.reload();
-								//_self._refresh();
+								window.location.href = "/sy/comm/page/page.jsp";
 							}
 					    } 
 						event.stopPropagation();
@@ -398,7 +397,7 @@ rh.vi.pageView.prototype._bldBanner = function() {
 /*
  * 构造tabs
  */
-rh.vi.pageView.prototype._bldTabs = function() {
+rh.vi.pageView.prototype._bldTabs = function() {debugger;
 	var _self = this;
 	//初始化tabs
 	jQuery("#homeTabs").tabs({});
@@ -431,8 +430,8 @@ rh.vi.pageView.prototype._bldTabs = function() {
 		   if (platformFrame.length > 0) {
 			   platformFrame.height(platformFrame.height() - 45);
 		   }
-	       jQuery(".left-homeMenu").css("top","81px");
-	       Cookie.del(_self._banner);
+	       jQuery(".left-homeMenu").css("top","120px");
+	     //  Cookie.del(_self._banner);
 	   } else {
 	       jQuery("#banner").hide();
 	       expand.addClass("rh-head-expand");
@@ -440,7 +439,7 @@ rh.vi.pageView.prototype._bldTabs = function() {
 	    	   platformFrame.height(platformFrame.height() + 45);
 	       }
 	       jQuery(".left-homeMenu").css("top","36px");
-	       Cookie.set(_self._banner, "hide", "365");
+	      // Cookie.set(_self._banner, "hide", "365");
 	   }
 	});
 
@@ -1096,7 +1095,7 @@ rh.vi.pageView.prototype._refresh = function() {
 rh.vi.pageView.prototype._afterLoad = function() {
 	var _self = this;
 	//1.banner判断
-	if (Cookie.get(_self._banner) == "hide") {
+/*	if (Cookie.get(_self._banner) == "hide" && false) {
 	       if (jQuery("#platformFrame").length > 0) {
 	    	   jQuery("#banner").hide();
 	    	   jQuery(".rh-head-close").addClass("rh-head-expand");
@@ -1115,7 +1114,7 @@ rh.vi.pageView.prototype._afterLoad = function() {
 					}
 				});
 	       }
-	} else {
+	} else {*/
 		//tabs的fixed处理
 		if (!Browser.isMobileOS()) {
 			jQuery(window).scroll(function() {
@@ -1130,7 +1129,7 @@ rh.vi.pageView.prototype._afterLoad = function() {
 				}
 			});
 		}
-	}
+//	}
 	//2.加载待办的打开
 	if (this._openTodo) {
 		var openTodo = this._openTodo;

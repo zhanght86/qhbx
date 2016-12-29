@@ -77,6 +77,12 @@ public class GwServ extends CommonServ {
         } else {
             tmplId = outBean.getStr("TMPL_CODE");
         }
+        
+        if (outBean.getBoolean("_ADD_")) { // 新建公文时从公文模版复制正文
+          outBean.setId(outBean.getStr("GW_ID"));
+          paramBean.setId(outBean.getStr("GW_ID"));
+          copyZhengwen(paramBean, outBean);
+      }
 
         // 获取公文模板Bean，并放到outBean中供前端调用
         Bean tmplBean = GwTmplMgr.getTmpl(tmplId, outBean.getStr("S_ODEPT"));
@@ -241,9 +247,9 @@ public class GwServ extends CommonServ {
      * @param outBean 保存后的数据信息
      */
     protected void afterSave(ParamBean paramBean, OutBean outBean) {
-        if (paramBean.getAddFlag()) { // 新建公文时从公文模版复制正文
-            copyZhengwen(paramBean, outBean);
-        }
+//        if (paramBean.getAddFlag()) { // 新建公文时从公文模版复制正文
+//            copyZhengwen(paramBean, outBean);
+//        }
         // 公文，起草节点修改某种数据类型后，删除原有流程，启动新流程
         // 比如：发文，修改发文类型后需重启流程；签报，修改签报类型后需重启流程
         if (!paramBean.getAddFlag()) {

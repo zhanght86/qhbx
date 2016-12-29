@@ -250,7 +250,7 @@ rh.vi.wfCardView.prototype.getNextStepBean = function() {
  * code 组按钮编码
  * 
  */
-rh.vi.wfCardView.prototype._bldBtnGroup = function(name, code, next, actItem) {
+rh.vi.wfCardView.prototype._bldBtnGroup = function(name, code, next, actItem) {debugger;
 	var _self = this;
 	//构建按钮容器a标签
 	var temp = jQuery("<a></a>").addClass("rh-icon").addClass("rhGrid-btnBar-a rhCard-btnBar-wf");
@@ -1303,7 +1303,7 @@ _self._parHandler.saveMind();
 		var selectType = "single";
 		if (multiSelect == "true") {
 			selectType = "multi";
-			extendTreeSetting += "'cascadecheck':true,'checkParent':false,'showcheck':true,'childOnly':true";
+			extendTreeSetting += "'cascadecheck':false,'checkParent':false,'showcheck':true,'childOnly':true";
 		} else {
 			extendTreeSetting += "'cascadecheck':false,'checkParent':false,'showcheck':false";
 		}

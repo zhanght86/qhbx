@@ -7,6 +7,7 @@ import org.apache.commons.lang.StringUtils;
 
 import com.rh.core.base.Bean;
 import com.rh.core.base.Context;
+import com.rh.core.base.db.Transaction;
 import com.rh.core.org.mgr.UserMgr;
 import com.rh.core.serv.CommonServ;
 import com.rh.core.serv.OutBean;
@@ -73,6 +74,7 @@ public class UserTypeAgentServ extends CommonServ {
     protected void afterSave(ParamBean paramBean, OutBean outBean) {
         //变更前数据
         Bean oldMainData = paramBean.getSaveOldData();
+        
         int oldStatus = oldMainData.getInt("AGT_STATUS");
         String oldSdt = oldMainData.getStr("AGT_BEGIN_DATE");
         String oldEdt = oldMainData.getStr("AGT_END_DATE");
@@ -125,8 +127,15 @@ public class UserTypeAgentServ extends CommonServ {
         }
         //被委托人修改到同一个界面，一块操作
        if(paramBean.getStr("TO_USER_CODE").length()>0){
-           
+           //删除以前的重新添加
+           Bean b = new Bean();
+           b.set("TO_USER_CODE", paramBean.getStr("TO_USER_CODE"));
+           b.set("AGT_ID",outBean.getId());
+           ServDao.deletes("SY_ORG_USER_TYPE_AGENT_FROM",new ParamBean().set("AGT_ID", outBean.getId()));
+           ServDao.create("SY_ORG_USER_TYPE_AGENT_FROM",b);
        }
+       //启动委托计划
+       outBean.set(Constant.RTN_MSG,startAllAgent(paramBean).getMsg());
     }
 
     /**

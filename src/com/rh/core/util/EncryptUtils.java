@@ -112,7 +112,7 @@ public class EncryptUtils {
     public static void main(String[] args) {
         String mima = "cf7e2948b56067fc";
         String mingma = EncryptUtils.desDecrypt(mima);
-        String ss =EncryptUtils.encrypt("20160325@qhr",EncryptUtils.DES);
+        String ss =EncryptUtils.encrypt("1qaz@WSX",EncryptUtils.DES);
         System.out.println(ss);
     }
     

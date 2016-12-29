@@ -281,8 +281,8 @@ public class DoingOutBean extends WfOut {
 	 * 表单上定义的按钮
 	 */
 	private void addFormDefBtn() {
-	    //对于在办用户，默认增加“保存”按钮
-        if (this.wfAct.getNodeDef().isEntirelyControl()) {
+	    //对于在办用户，默认增加“保存”按钮，有编辑字段也添加保存按钮
+        if (this.wfAct.getNodeDef().isEntirelyControl() || this.wfAct.getNodeDef().getFieldException().length() > 0 ) {
             Bean saveAct = this.getServDefAct(ServMgr.ACT_SAVE);
             
             if (null == saveAct) {

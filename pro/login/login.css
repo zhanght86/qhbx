@@ -28,7 +28,7 @@ ul,li{
 
 
 .login-wrapper{
-	height:600px;
+	height:560px;
 	border-bottom: 1px solid #E1E1E1;	
 }
 .login-wrapper li{
@@ -36,7 +36,7 @@ ul,li{
 }
 .login-wrapper a{
 	color:#000;
-	text-decoration:none;
+	text-decoration:underline;
 }
 .login-wrapper a:hover,
 .login-wrapper a:focus{
@@ -93,10 +93,11 @@ ul,li{
 	height:490px;
 	margin:0 auto;
 	background:transparent url('img/login.jpg') no-repeat center center;
+	background-size:100% 100%;
 }
 .login-main{
 	position: relative;
-	width: 1000px;
+	width: 90%;
 	height: 100%;
 	margin: 0 auto;
 	overflow: visible;
@@ -109,7 +110,7 @@ ul,li{
 	float: right;
 	z-index: 2;
 	width: 361px;
-	height: 320px;
+	height: 250px;
 	margin-top: 65px;
 	margin-right: 86px;
 	border:1px solid #CCC;
@@ -269,8 +270,8 @@ ul,li{
 	position:relative;
 	width:314px;
 	height:40px;
-	margin:0 auto;
-	margin-top:20px;
+	margin-left:195px;
+	margin-top:25px;
 	font-size:12px;
 }
 
@@ -308,16 +309,17 @@ ul,li{
 	left:0;
 	bottom:0;
 	width:100%;
-	height:50px;
-	padding-top:18px;
+	height:30px;
+	padding-top:5px;
 	background-color: #F3F3F3;
 }
 .form-bottom a{
 	display:block;
 	color:#333;
 	font-size:12px;
+	text-decoration: underline;
 }
-
+/*去掉三角图
 .form-bottom a>em{
 	position:absolute;
 	top:3px;
@@ -325,7 +327,7 @@ ul,li{
 	width: 13px;
 	height: 13px;
 	background-position: 0 -88px;
-}
+}*/
 .bottom-half{
 	position:relative;
 	float:left;
