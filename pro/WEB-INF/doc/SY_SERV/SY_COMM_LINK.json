@@ -57,7 +57,7 @@
 "ACT_LOG_FLAG":"2",
 "ACT_ID":"3dBj8Kt_5f8UYUBFDCleu8",
 "ACT_HOT_KEY":"",
-"S_MTIME":"2016-11-25 18:00:30:110",
+"S_MTIME":"2016-12-26 11:08:05:916",
 "_ROWNUM_":"1",
 "ACT_TYPE":"1",
 "ACT_TIP":"",
@@ -66,7 +66,7 @@
 "ACT_GROUP":"1",
 "ACT_NAME":" 新 建",
 "ACT_CSS":"add",
-"ACT_EXPRESSION":"\"@ROLE_CODES@\".indexOf(\"'BNADMIN'\") >= 0",
+"ACT_EXPRESSION":"\"@ROLE_CODES@\".indexOf(\"'Z_MHGLY'\") >= 0",
 "ACT_MEMO":"",
 "SY_SERV_ACT_PARAM":
 [
@@ -192,7 +192,7 @@
 "ACT_LOG_FLAG":"1",
 "ACT_ID":"3H0r4lXzdctWIL1o6pLEHK",
 "ACT_HOT_KEY":"",
-"S_MTIME":"2016-11-25 18:00:30:110",
+"S_MTIME":"2016-12-26 11:08:14:107",
 "_ROWNUM_":"6",
 "ACT_TYPE":"1",
 "ACT_TIP":"",
@@ -201,7 +201,7 @@
 "ACT_GROUP":"1",
 "ACT_NAME":" 删 除 ",
 "ACT_CSS":"delete",
-"ACT_EXPRESSION":"\"@ROLE_CODES@\".indexOf(\"'BNADMIN'\") >= 0",
+"ACT_EXPRESSION":"\"@ROLE_CODES@\".indexOf(\"'Z_MHGLY'\") >= 0",
 "ACT_MEMO":"",
 "SY_SERV_ACT_PARAM":
 [

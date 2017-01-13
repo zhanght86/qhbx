@@ -59,7 +59,6 @@ mb.vi.wfCardView.prototype._bldBtnBar = function() {
 	_self._buttonData = _self.getButtonBean();
 	
 	var formSaveButtonFlag = false;
-	
 	console.log('---流程按钮和表单按钮统一---');
 	$.each(this._buttonData, function(i, actItem) {
 		var id,
@@ -341,67 +340,6 @@ mb.vi.wfCardView.prototype._openSelectOrg = function(nodeCode, result) {
 			oneUserCodes = rtnOneValue;
 		}
 	}
-		if(rtnTreeData["ALL_ORG"] == "yes") {
-		// 选中组织机构结构之后，回调方法：_self._confirmSend
-		// 建议角色ID，从工作流定义里面获取。
-		var multiSelect = rtnTreeData.multiSelect; // 是否能多选
-		this.binderType = rtnTreeData.binderType; // 送交类型
-
-		// 如果是角色，取到角色的CODE
-		this._binderRoleCode = rtnTreeData.roleCode;
-		var extendTreeSetting = "{'rhexpand':false";
-
-		var selectType = "single";
-		if (multiSelect == "true") {
-			selectType = "multi";
-			extendTreeSetting += "'cascadecheck':true,'checkParent':false,'showcheck':true,'childOnly':true";
-		} else {
-			extendTreeSetting += "'cascadecheck':false,'checkParent':false,'showcheck':false";
-		}
-		
-		extendTreeSetting += "}";
-		extendTreeSetting = StrToJson(extendTreeSetting);
-		//判断送角色还是用户
-		var configStr = "SY_ORG_DEPT_USER_ALL";
-		if(rtnTreeData["binderType"] =="ROLE"){
-			configStr = "SY_ORG_DEPT_ALL";
-		}
-		//configStr += ",{'TYPE':'" + selectType + "','MODEL':'default'}"; // multi
-		configStr += ",{'TYPE':'" + selectType + "'}"; // multi
-		var options = {
-			"itemCode" : inputName,
-			"config" : configStr,
-			"hide" : "explode",
-			"show" : "blind",
-			"rebackCodes" : inputName,
-			"replaceCallBack" : _self._confirmSendAll,
-			"extendDicSetting" : extendTreeSetting,
-			"dialogName" : bindTreeTitle,
-			"parHandler" : _self
-		};
-
-		var dictView = new rh.vi.rhDictTreeView(options);
-		dictView.show(event);
-
-		// 是否自动选择最终用户
-		if (rtnTreeData.autoSelect == 'true') {
-			var users = _findAllUsers(treeData);
-			var userIds = new Array();
-			jQuery(users).each(function(index, obj) {
-				userIds.push(obj.ID);
-			});
-
-			dictView.tree.selectNodes(userIds);
-			dictView.tree.expandParent();
-		}
-		return;
-	}
-//	if (sendDirectFlag) { // 直接送人
-//		var oneUserObj = StrToJson("{" + oneUserCodes + "}");
-//		var userCodeArray = [];
-//			userCodeArray.push(oneUserObj.ID);
-//		_self._confirmSend(userCodeArray);
-//	} else { // 显示组织机构树
 		var len = $('#' + nodeCode + '_dialog').length;
 		if (!len) {
 			var extendTreeSetting = {
@@ -636,7 +574,7 @@ mb.vi.wfCardView.prototype._initMind = function() {
 	
 	var group = $("<div id='"+_self._parHandler.pkCode+"_MIND' class='mb-card-group'></div>");
 	
-	var mindInputFieldCon = $("<div data-role='fieldcontain' data-theme='b'></div>"); // 意见输入框Field
+	var mindInputFieldCon = $("<div data-theme='b'></div>"); // 意见输入框Field
 	
 	var mindFieldCon = $("<div data-role='fieldcontain' data-theme='b'></div>"); // 意见列表Field
 		mindFieldCon.append("<label for='mind-list'>意见列表</label>");

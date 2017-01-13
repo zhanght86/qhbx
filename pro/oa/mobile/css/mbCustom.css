@@ -187,6 +187,16 @@ body,input,select,textarea,button,.ui-btn {
 	background: url("../css/customImages/wtsw.png");
 	background-size: cover;
 }
+
+#mbDesk .zhbx-desk-wtsz {
+	background: url("../css/customImages/wtsz.png");
+	background-size: cover;
+}
+
+#mbDesk .zhbx-desk-jzbg {
+	background: url("../css/customImages/jzbg.png");
+	background-size: cover;
+}
 /**2016 0913 by ayf end **/
 
 #mbDesk .mb-desk-app span.sc-desk-app-icon {
@@ -282,7 +292,7 @@ body,input,select,textarea,button,.ui-btn {
 #mbDesk .jiangang{
 	display:none;
 	position:absolute;
-	top:53px;
+	top:1px;
 	z-index:100;
 	width:100%;
 	height:100%;
@@ -535,4 +545,213 @@ Galaxy S/S2/W   480*800
 		top: 10px;
 		right: 10px;
 	}
+}
+
+.textarea{
+	min-height:2em;
+	padding: .4em;
+	white-space: pre-line;
+	font-size:1.125em;
+	line-height: 1.5em;
+}
+.sc-static-text{/*静态文本*/
+	border: 0;
+	white-space: pre-line;
+	font-weight: normal;
+	font-size:1.125em;
+	line-height: 1.5em;
+}
+.sc-file{
+	
+}
+.sc-file-icon{
+	
+}
+.sc-file-link,.relate-file{
+	display: block;
+	width: 90%;
+	padding: .5em 0 .5em 1em;
+	/* white-space: pre-line; */
+}
+
+.sc-input-text{
+	min-height:1em;
+	padding: .4em;
+	white-space: pre-line;
+	font-size:1.125em;
+	line-height: 1.5em;
+}
+
+.mb-card-group-title {
+	border: 0px #F00 solid;
+	/*background-color:#CCE6F2;*/
+	height: 44px;
+	line-height: 48px;
+	padding-left: 15px;
+	font-size:20px;
+	text-align:center;
+	color: #FF0000;font-family: 方正小标宋简体;font-size: 24px;
+}
+sc-default-profile{
+	width: 2em;
+	height: 2em;
+	margin-top: .5em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("../css/customImages/profile.png");
+}
+.sc-default-big-profile{
+	width: 9em;
+	height: 9em;
+	margin-top: .5em;
+	margin-left: .5em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("../css/customImages/sc-default-big-profile.jpg");
+}
+#contacts .ui-header{
+	text-align:center;
+}
+#contacts fieldset.ui-controlgroup {
+	display: inline-block;
+	padding: 2px 0;
+}
+#contacts .contacts-content{
+	display:none;
+}
+
+#contacts .ui-collapsible-heading-toggle{
+	background-color:white;
+}
+
+#contacts .contacts-content.contacts-content-active{
+	display:block;
+}
+#contacts .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, 
+#contacts .ui-li-static.ui-li-has-thumb {
+	min-height: 40px;
+	padding-left: 3em
+}
+#contacts .ui-listview > .ui-li-has-icon > .ui-btn,
+#contactsEdit .ui-listview > .ui-li-has-icon > .ui-btn{
+	min-height:2em;
+}
+#contacts .ui-listview .ui-li-has-icon > .ui-btn > img:first-child,
+#contactsEdit .ui-listview .ui-li-has-icon > .ui-btn > img:first-child{
+	max-width:2em;
+	max-height:2em;
+}
+#contacts .ui-listview > .ui-li-has-icon > .ui-btn > h1,
+#contactsEdit .ui-listview > .ui-li-has-icon > .ui-btn > h1{
+	margin-left:.5em;
+	/* margin-top:1em;  */
+}
+#contactDetail .ui-listview > .ui-li-has-thumb > .ui-btn{
+	min-height:10em;
+	padding: 0;
+}
+
+#contactDetail .ui-bar-inherit{
+	background-color:rgb(53, 153, 230);
+}
+#contactDetail .ui-listview .ui-li-has-thumb > .ui-btn > img:first-child{
+	max-width:10em;
+	max-height:10em;
+	margin-left: 1em;
+}
+#contactDetail .sc-contact-call{
+	margin-left: 1em;
+}
+#contactDetail .sc-contact-call:focus,
+#contactDetail .sc-contact-msg:focus{
+	-webkit-box-shadow: inset 0 0 3px rgb(56, 123, 190),0 0 9px rgb(56, 123, 190);
+	   -moz-box-shadow: inset 0 0 3px #387bbe,0 0 9px #387bbe;
+			box-shadow: inset 0 0 3px rgb(56, 123, 190),0 0 9px rgb(56, 123, 190);
+}
+#contactDetail .sc-contact-call:hover,
+#contactDetail .sc-contact-msg:hover{
+	text-shadow: 0 0 2px rgb(255, 255, 255);
+	box-shadow: inset 0 1px 0 rgb(86, 174, 251),0 0 10px 3px rgba(74, 162, 241, 0.5);
+}
+#contactDetail .sc-contact-call:active,
+#contactDetail .sc-contact-msg:active{
+	background: -webkit-linear-gradient(top,rgb(52, 119, 182),rgb(74, 162, 241)),
+ 				-webkit-linear-gradient(top,rgb(52, 118, 181),rgb(36, 90, 141));
+}
+#contactDetail .sc-contact-call,
+#contactDetail .sc-contact-msg{
+	border: 0;
+	border-radius: 1em;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(rgb(53, 153, 230)),to(rgb(36, 122, 178)));
+	background-image: -webkit-linear-gradient(rgb(53, 153, 230),rgb(36, 122, 178));
+	background-image: linear-gradient(rgb(53, 153, 230),rgb(36, 122, 178));
+	color: rgb(255, 255, 255);
+	text-shadow: 0 1px 0 rgb(25, 75, 126);
+}
+#contactsEdit .ui-controlgroup{
+	display: inline-block;
+	width: 50%;
+	margin-left: 22%;
+	padding: 2px 0;
+	text-align: center;
+}
+#contactsEdit .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, 
+#contactsEdit .ui-li-static.ui-li-has-thumb {
+	min-height: 40px;
+	padding-left: 3em
+}
+#contactsEdit .ui-li .ui-checkbox{
+	float:right;
+}
+#contactsEdit .ui-li .ui-checkbox> label{
+	border:none;
+	background:none;
+}
+#contactsEdit .ui-li .ui-checkbox> label .ui-btn-inner{
+	border:none;
+}
+#contactsEdit .ui-li .ui-checkbox> input{
+	width:0;
+	height:0;
+}
+
+.ui-listview{
+	border:1px #cccccc solid;
+}
+.ui-collapsible{
+	border:1px #cccccc solid;
+}
+
+#ldrActionGroup .ui-collapsible .ui-collapsible-heading .ui-collapsible-heading-toggle {
+	background-color: white;
+}
+#ldrActionGroup .ui-collapsible .ui-collapsible-heading .ui-btn {
+	background-color: white;
+}
+
+.ui-page-theme-a .button{
+	border: 0;
+	border-radius: 1em;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(rgb(53, 153, 230)),to(rgb(36, 122, 178)));
+	background-image: -webkit-linear-gradient(rgb(53, 153, 230),rgb(36, 122, 178));
+	background-image: linear-gradient(rgb(53, 153, 230),rgb(36, 122, 178));
+	color: rgb(0, 0, 0);
+	text-shadow: 0 1px 0 rgb(25, 75, 126);
+}
+
+.ui-page-theme-a .button:hover{
+	border: 0;
+	border-radius: 1em;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(rgb(53, 153, 230)),to(rgb(36, 122, 178)));
+	background-image: -webkit-linear-gradient(rgb(53, 153, 230),rgb(36, 122, 178));
+	background-image: linear-gradient(rgb(53, 153, 230),rgb(36, 122, 178));
+	color: rgb(0, 0, 0);
+	text-shadow: 0 1px 0 rgb(25, 75, 126);
+}
+.sc-textarea{
+	min-height:2em;
+	padding: .4em;
+	white-space: pre-line;
+	font-size:1.125em;
+	line-height: 1.5em;
 }

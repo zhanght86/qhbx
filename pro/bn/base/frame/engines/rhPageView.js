@@ -17,7 +17,7 @@ rh.vi.pageView = function(options) {
 /*
  * 渲染主方法
  */
-rh.vi.pageView.prototype.show = function() {debugger;
+rh.vi.pageView.prototype.show = function() {
 	this._initMainData();
 	this._layout();
 	this._bldMenu();

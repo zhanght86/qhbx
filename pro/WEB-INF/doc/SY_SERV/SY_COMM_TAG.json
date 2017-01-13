@@ -192,7 +192,7 @@
 "ACT_LOG_FLAG":"1",
 "ACT_ID":"2wU1nn1RV5aGDsxhsEuZfI",
 "ACT_HOT_KEY":"",
-"S_MTIME":"2012-12-27 17:33:34:056",
+"S_MTIME":"2016-12-19 18:12:19:836",
 "_ROWNUM_":"6",
 "ACT_TYPE":"1",
 "ACT_TIP":"",
@@ -201,7 +201,7 @@
 "ACT_GROUP":"1",
 "ACT_NAME":" 删 除 ",
 "ACT_CSS":"delete",
-"ACT_EXPRESSION":"",
+"ACT_EXPRESSION":"\"@ROLE_CODES@\".indexOf(\"'BNADMIN'\") >= 0;",
 "ACT_MEMO":"",
 "SY_SERV_ACT_PARAM":
 [

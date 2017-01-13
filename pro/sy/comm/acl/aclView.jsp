@@ -36,7 +36,7 @@
 		// 计算宽度
 		function caclWidth() {
 			var left = 300;
-			var other = 30;
+			var other = 60;
 			var width = jQuery("#acl_container").outerWidth();
 			jQuery("#acl_left").css({"min-width":left + "px"});
 			if (jQuery.browser.msie) {

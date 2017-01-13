@@ -49,10 +49,9 @@ mb.vi.mind.prototype.show = function() {
  */
 mb.vi.mind.prototype._initMainData = function() {
 	var _self = this;
-	this._mindInput = this._mind['mindInput'];
-	this._mindList = this._mind['mindDatas']['mindList']['mindList'];
-	this._odeptList = this._mind['mindDatas']['mindList']['odeptList'];
-	this._currMind = this._mind['mindDatas']['_DATA_'];
+	this._mindInput = this._mind["mindInput"];
+	this._mindList = this._mind["mindDatas"]["mindList"];
+	this._currMind = this._mind["mindDatas"]["_DATA_"];
 	if (this._currMind && this._currMind.length) {
 		$.each(this._currMind, function(index, item) {
 			// 如果用户相同，证明是当前用户填写的意见，防止并发同部门的情况下，意见可以互相删除
@@ -74,19 +73,9 @@ mb.vi.mind.prototype._layout = function() {
 	if (generalMind.CODE_ID && secondStep != 'toread') {
 		// 绘制textarea
 		// TODO 此时的_pCon应该是fieldcontain
-		$(_self._pCon[0]).append("<label for='mind-content'>意见框<span style='font-size:10px;'>(办理意见)</span></label>" +
-//							"<div data-role='controlgroup'><textarea id='mind-content'>" + (_self.mindContent ? _self.mindContent : '') + "</textarea></div>");
+		$(_self._pCon[0]).append("<label for='mind-content'>办理意见</label>" +
 							"<textarea id='mind-content'>" + (_self.mindContent ? _self.mindContent : '') + "</textarea>");
 		
-		// 绘制'常用意见'和'保存'按钮
-//		$(_self._pCon[0]).append("<div class='ui-grid-a'>" +
-//								"<div class='ui-block-a'>" +
-//									"<a href='#use-mind-popup_popup' class='use-mind-js' data-rel='popup' data-role='button'>常用意见</a>" +
-//								"</div>" +
-//								"<div class='ui-block-b'>" +
-//									"<a id='save-btn' href='#' data-role='button'>保存意见</a>" +
-//								"</div>" +
-//							"</div>");
 		$(_self._pCon[0]).append("<label></label><div class='ui-grid-a'>" +
 								"<div class='ui-block-a'>" +
 									"<a href='#use-mind-popup_popup' class='use-mind-js' data-rel='popup' data-role='button'>常用意见</a>" +
@@ -97,7 +86,7 @@ mb.vi.mind.prototype._layout = function() {
 							"</div>");
 		// TODO 查询常用意见，并绘制弹出框
 		var cyyjParam = {}; // 常用意见查询参数
-			cyyjParam['_WHERE'] = " and 1=1 and (S_USER = '" + System.getUser('@USER_CODE@') + "' or S_PUBLIC = '1') and S_ODEPT = '" + System.getUser('@ODEPT_CODE@') + "' and TYPE_CODE = 'MIND'";
+			cyyjParam['_WHERE'] = " and 1=1 and (S_USER = '" + System.getUser('USER_CODE') + "' or S_PUBLIC = '1') and S_ODEPT = '" + System.getUser('ODEPT_CODE') + "' and TYPE_CODE = 'MIND'";
 			cyyjParam['_NOPAGE_'] = true;
 		FireFly.doAct('SY_COMM_USUAL', 'query', cyyjParam).then(function(result) {
 			if (result['_OKCOUNT_'] >= 0) {
@@ -142,32 +131,25 @@ mb.vi.mind.prototype._layout = function() {
 			}
 		});
 	}
-	// 绘制'意见列表'
-	var mindListHtml = '',
-		odeptListHtml = '',
-		mindList = this._mindList,
-		odeptList = this._odeptList;
-	var mindListLen = mindList.length || 0,
-		odeptListLen = odeptList.length || 0;
-	
-	if (odeptListLen > 0) { // 如果有机构列表
-		for (var j=0; j<odeptListLen; j++) {
-			var $ulCon = _self._renderOdeptBean(odeptList[j], j);
-			if (mindListLen > 0 && mindList[0]['S_ODEPT'] == odeptList[j]['DEPT_CODE']) {
-				for (var i=0; i<mindListLen; i++) {
-					$ulCon.append(_self._renderMindBean(mindList[i]));
-				}
-				$ulCon.parent().attr('data-collapsed', false);
-				$ulCon.listview().listview('refresh');
-			} else {
-				for (var k=0; k<odeptList[j]['odeptMindList'].length; k++) {
-					$ulCon.append(_self._renderMindBean(odeptList[j]['odeptMindList'][k]));
-				}
-				$ulCon.listview().listview('refresh');
-			}
+
+	//意见列表
+	var 	mindList = this._mindList,
+		mindListLen = mindList.length;
+	if (mindListLen > 0) {
+		var mindListHtml='<div class="mind-list-item-js ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content" ><div class="ui-field-contain ui-li-static ui-body-inherit ui-collapsible-content ui-body-inherit" >';
+		for (var i=0; i<mindListLen; i++) {
+			mindListHtml += _self._renderMindBean(mindList[i]).html();
 		}
-	} else {
-		// TODO 没有机构列表时隐藏掉意见列表文字
+		mindListHtml +="</div></div><br /><br /><br />";
+	}
+	if(mindListHtml){
+		//判断是否存在意见列表
+		if (jQuery(_self._pCon[1]).children("li").length <= 0) {
+			jQuery(_self._pCon[1]).append(mindListHtml);
+		} else {
+			jQuery(_self._pCon[1]).empty();
+			jQuery(_self._pCon[1]).append(mindListHtml);
+		}
 	}
 };
 /**
@@ -189,29 +171,56 @@ mb.vi.mind.prototype._renderOdeptBean = function(odeptBean, index) {
 /**
  * 渲染意见
  */
-mb.vi.mind.prototype._renderMindBean = function(mindBean, isNew) {
-	var _self = this;
-	
-	// 意见列表
+mb.vi.mind.prototype._renderMindBean = function (mindBean,isNew) {
+	//意见列表
 	var $mindLi = '';
-	if (mindBean) {
+	if(mindBean){
 		var canDelete = false;
-		if (isNew || this.pkCode == mindBean['MIND_ID']) {
+		//if(isNew || this.pkCode == mindBean["MIND_ID"]){
+		if(this.opts.wfCard.reqdata.NI_ID == mindBean["WF_NI_ID"] && mindBean["S_USER"] == System.getUser("USER_CODE")){
 			canDelete = true;
 		}
-		$mindLi = $("<li data-mind-id = '" + mindBean['MIND_ID'] + "'></li>").append("<h5>" + mindBean['WF_NI_NAME'] + "</h5>");
+		var dateTime = mindBean["MIND_TIME"];
+		time = dateTime.toString().substring(0,10);
+		var d = new Date();
+		var t = "";
+		//同年
+		if(time.substring(0,4) == d.getFullYear()){
+			t = dateTime.substring(5,16);
+		}else{
+			t = time;
+		}
+		$mindLi = $("<li  id = '" + mindBean['MIND_ID'] +"'></li>").append("<h5>" + mindBean['WF_NI_NAME'] + "</h5>");
 		var $pCon = $("<p></p>").append("<strong>" + mindBean['S_UNAME'] + "</strong>")
-					.append("&nbsp;(" + mindBean['S_DNAME'] + ")&nbsp;：" + mindBean['MIND_CONTENT'] + "(" + mindBean['MIND_TIME'] + ")");
-		// TODO 缺少删除按钮和附件
+					.append("&nbsp;(" + mindBean['S_DNAME'] + ")&nbsp;：" + mindBean['MIND_CONTENT'] + "(" + mindBean['MIND_TIME'] + ")"+(canDelete ? "<span id='deleteMind'>&nbsp;&nbsp;删除</span>" : "<span>&nbsp;</span>"));
 		$mindLi.append($pCon);
 	}
-	return $mindLi;
+	var mindDiv = jQuery("<div></div>");
+	 $mindLi.appendTo(mindDiv);
+	return mindDiv;
 };
 
 mb.vi.mind.prototype._bindEvent = function() {
 	var _self = this;
-	$('#' + _self._dataId + '_MIND').on('vclick', '.删除', function(event) {
-		// TODO 意见删除按钮事件
+	$('#' + _self._dataId + '_MIND').on('vclick', '#deleteMind', function(event) {debugger;
+			event.preventDefault();
+		event.stopImmediatePropagation();
+		var $that = $(this).parent().parent();
+		if(confirm('是否删除?')){
+	    		 var id = $that.attr("id");
+	      	  	 FireFly.doAct("SY_COMM_MIND", "delete", {"_PK_": id}).done(function(result){
+		  		 	var rtnMsg = result[UIConst.RTN_MSG];
+	 				if (StringUtils.startWith(rtnMsg, UIConst.RTN_OK)) {
+			  			_self.pkCode = null;
+			  			$("#mind-content").val("");
+			  			_self.oldMindText = "";
+			  			$that.fadeOut(500,function(){
+			  				$that.remove();
+			  			});
+						_self._hasCommited=false;
+			  		 }
+		  		 });
+	    }
 	}).on('vclick', '#save-btn', function(event) { // 给保存按钮绑定事件
 		event.preventDefault();
 		event.stopImmediatePropagation();
@@ -250,46 +259,19 @@ mb.vi.mind.prototype._bindEvent = function() {
 			$.mobile.loading('hide');
 			var rtnMsg = result[UIConst.RTN_MSG];
 			if (StringUtils.startWith(rtnMsg, UIConst.RTN_OK)) {
-				_self.pkCode = result['MIND_ID'];
-				var mindOdept = result['S_ODEPT']; // 当前意见的机构
-				_self.oldMindText = result['MIND_CONTENT'] || '';
-				var $ulListView = '';
-				if ($('#' + mindOdept + '_list').length) { // 如果有本机构意见列表外框
-					var mindHtml = "<li data-mind-id = '" + result['MIND_ID'] + "'><h5>" + result['WF_NI_NAME'] + "</h5>" +
-									"<p>" +
-									"<strong>" + result['S_UNAME'] + "</strong>" +
-									"&nbsp;(" + result['S_DNAME'] + ")&nbsp;：" +
-									result['MIND_CONTENT'] + "(" + result['MIND_TIME'] + ")" +
-									"</p>" +
-									"</li>";
-					$ulListView = $($('#' + mindOdept + '_list').find('ul')[0]); // 本机构意见列表
-					$ulListView.find("li[data-mind-id='" + result['MIND_ID'] + "']").remove(); // 修改时先移除旧意见
-					if ($ulListView.find('li').length > 0) { // 删除旧意见后，还有其他li元素
-						$($ulListView.find('li')[0]).before(mindHtml);
-					} else { // 没有li元素，直接追加
-						$ulListView.append(mindHtml);
-					}
-				} else { // 如果没有本机构意见列表框
-					var $odeptColl = $("<div id='" + result['S_ODEPT'] + "_list' data-role='collapsible' data-collapsed='false'><h4>本机构</h4></div>");
-					$ulListView = $("<ul data-role='listview'></ul>");
-					var mindHtml = "<li data-mind-id = '" + result['MIND_ID'] + "'><h5>" + result['WF_NI_NAME'] + "</h5>" +
-									"<p>" +
-									"<strong>" + result['S_UNAME'] + "</strong>" +
-									"&nbsp;(" + result['S_DNAME'] + ")&nbsp;：" +
-									result['MIND_CONTENT'] + "(" + result['MIND_TIME'] + ")" +
-									"</p>" +
-									"</li>";
-					// 只在添加新机构折叠框时临时使用一次，目的是为了刷新
-					var $odeptCollSet = $("<div data-role='collapsible-set'></div>");
-					_self._pCon[1].append($odeptCollSet.append($odeptColl.append($ulListView.html(mindHtml))));
-					$odeptCollSet.collapsibleset().collapsibleset('refresh');
-				}
-				
-				$ulListView.listview().listview('refresh');
-				
-				// 重置意见必填判断标志
-				_self._wfCard._mindMust();
+			_self.pkCode = result["MIND_ID"];
+			_self.oldMindText = result["MIND_CONTENT"] || "";
+			if($("#" + _self.pkCode ).length) {
+				var $mindText = $("#" + _self.pkCode ).find(".sc-mind-text");
+				$mindText.html(result["MIND_CONTENT"]);
+			} else {
+				_self._wfCard._parHandler._refresh();
 			}
+			// zjx -- 重新判断是否为必填意见
+			_self._wfCard._mindMust();
+		} else {
+			navigator.notification.alert("意见保存失败，请检查!",null,'提示', '确定');
+		}
 		});
 	});
 };
@@ -310,20 +292,3 @@ mb.vi.mind.prototype._hideMindGroup = function() {
 		$('#' + _self._dataId + '_MIND').hide(); // 隐藏掉意见分组框
 	}
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -36,7 +36,7 @@ mb.vi.deskView.prototype._initMainData = function() {
 	}
 	
 	//获取个性化的设置
-	var userCode = System.getUser("USER_CODE");
+	var userCode = System.getUser("@USER_CODE@");
 	var desk = {};
 	desk["_NOPAGE_"] = true;
 	desk["_searchWhere"] = " and S_USER='" + userCode + "'"

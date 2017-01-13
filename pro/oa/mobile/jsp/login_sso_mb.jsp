@@ -3,7 +3,7 @@
 <%@ page import="com.rh.core.base.Bean" %>
 <%@ page import="com.rh.core.org.UserBean" %>
 <%@ page import="java.util.Map" %>
-
+<%@ page import="java.util.Map"%>
 <%
 	final String CONTEXT_PATH = request.getContextPath();
 	//Cookie[] cookies = request.getCookies(); // 获取Cookie数组
@@ -19,7 +19,6 @@
 		out.println("用户编码没有从Cookie中带过来，这种情况极少发生，在这里暂不做处理！");
 	} else {
 		if (!"".equals(userCode)) {
-			//String usercodetmp = LoginHelper.getOnceLoginInfo(userCode);
 			request.getSession().setAttribute("userCode", userCode);
 			homeUrl = "/oa/mobile/jsp/main.jsp";
 		} else {
@@ -37,13 +36,9 @@
 	<script type="text/javascript">
 		var homeUrl = "<%=homeUrl %>";
 		var userCode = "<%=userCode %>";
-		if (homeUrl == '') {
-			// 跳至登陆页
-			// TODO 如果不支持除微信以外的浏览器，直接关闭页面
-			window.location.href = "http://portal.cic.cn:8888"; // 此地址为中华保险移动端登录地址
-		} else {
-			window.location.href = homeUrl;
-		}
+	
+		window.location.href = homeUrl;
+		
 	</script>
 </head>
 <body>

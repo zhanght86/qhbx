@@ -39,7 +39,7 @@
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precompose.png"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="/login/login_dialog.css" charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="/login/login.css" charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/login/login.css?v=1" charset="UTF-8"/>
     <script type="text/javascript" src="/login/js/jquery.easing.1.3.js"></script>
 </head>
 <body style="padding-top:0px;">

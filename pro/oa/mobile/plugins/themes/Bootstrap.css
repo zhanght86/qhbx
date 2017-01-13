@@ -235,6 +235,8 @@ html body .ui-group-theme-a .ui-bar-inherit {
 .ui-page-theme-a,
 .ui-page-theme-a .ui-panel-wrapper {
 	background: #ffffff /*{a-page-background-color}*/;
+	background-image:url('/sy/comm/page/images/banner-gray-light.jpg');
+	background-repeat: no-repeat;
 	border-color: #cccccc /*{a-page-border}*/;
 	color: #333333 /*{a-page-color}*/;
 	text-shadow: 0 /*{a-page-shadow-x}*/ 0 /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #000000 /*{a-page-shadow-color}*/;
@@ -399,6 +401,7 @@ html body .ui-group-theme-b .ui-bar-inherit {
 .ui-page-theme-b,
 .ui-page-theme-b .ui-panel-wrapper {
 	background: #ffffff /*{b-page-background-color}*/;
+	background-repeat: no-repeat;
 	border-color: #cccccc /*{b-page-border}*/;
 	color: #333333 /*{b-page-color}*/;
 	text-shadow: 0 /*{b-page-shadow-x}*/ 0 /*{b-page-shadow-y}*/ 0 /*{b-page-shadow-radius}*/ #000000 /*{b-page-shadow-color}*/;
@@ -625,8 +628,6 @@ html .ui-bar-c .ui-btn:visited,
 html .ui-body-c .ui-btn:visited,
 html body .ui-group-theme-c .ui-btn:visited,
 html head + body .ui-btn.ui-btn-c:visited {
-	background: #BD362F /*{c-bup-background-color}*/;
-	border-color: #d82c35 /*{c-bup-border}*/;
 	color: #ffffff /*{c-bup-color}*/;
 	text-shadow: undefined /*{c-bup-shadow-x}*/ undefined /*{c-bup-shadow-y}*/ undefined /*{c-bup-shadow-radius}*/ undefined /*{c-bup-shadow-color}*/;
 }

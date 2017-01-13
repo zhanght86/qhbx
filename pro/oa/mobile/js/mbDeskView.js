@@ -24,14 +24,15 @@ mb.vi.deskView.prototype.show = function() {
 		_self._bldLayout();
 		_self._afterLoad();
 		// 3.设置兼岗信息
-		if (System.getUser('JIAN_CODES') && System.getUser('JIAN_CODES').length > 0) {
-			_self._getJiangang();
-			_self.headerWrp.on('vclick', '.zhbx-username', function(event) {
-				event.preventDefault();
-				event.stopImmediatePropagation();
-				$('.jiangang').slideToggle('fast');
-			});
-		}
+//		顶部的触发改为图标
+//		if (System.getUser('JIAN_CODES') && System.getUser('JIAN_CODES').length > 0) {
+//			_self._getJiangang();
+//			_self.headerWrp.on('vclick', '.zhbx-username', function(event) {
+//				event.preventDefault();
+//				event.stopImmediatePropagation();
+//				$('.jiangang').slideToggle('fast');
+//			});
+//		}
 	});
 };
 /**
@@ -40,12 +41,14 @@ mb.vi.deskView.prototype.show = function() {
 mb.vi.deskView.prototype._initMainData = function() {
 	var _self = this;
 	return FireFly.getMenu().then(function(result) {
-//		var menuDatas = result.TOPMENU,
-//			menuLen = menuDatas.length;
-		var menuDatas = result._DATA_,
+		var menuDatas = result.TOPMENU,
 			menuLen = menuDatas.length;
+//		var menuDatas = result._DATA_,
+//			menuLen = menuDatas.length;
 		for (var i = 0; i < menuLen; i++) {
-			_self._getLeafData(menuDatas[i]);
+			if(menuDatas[i].ID=="BN_MOBILE_OA_MENU__zhbx"){
+				_self._getLeafData(menuDatas[i]);
+			}
 		}
 	});
 };
@@ -60,12 +63,18 @@ mb.vi.deskView.prototype._getLeafData = function(menuData) {
 			_self._getLeafData(child[i]);
 		}
 	} else {
-//		var id = menuData.ID,
-//			area = menuData.AREA || '';
-		var id = menuData.MENU_ID,
-			area = menuData.MENU_AREA || '';
+		var id = menuData.ID,
+			area = menuData.AREA || '';
+//		var id = menuData.MENU_ID,
+//			area = menuData.MENU_AREA || '';
 		if (area == '4') { // 手机显示
-			_self.iconData[id] = menuData;
+			if(id == 'MOBILE_JZBG__zhbx'){//兼职办公
+				if(System.getUser('JIAN_CODES') && System.getUser('JIAN_CODES').length > 0)
+					_self.iconData[id] = menuData;
+					_self._getJiangang();
+				}else{
+					_self.iconData[id] = menuData;
+			}
 		}
 	}
 };
@@ -93,13 +102,13 @@ mb.vi.deskView.prototype._bldOneApp = function(index, item) {
 	if (item == null) {
 		return;
 	}
-	var id = item['MENU_ID']
+	var id = item['ID']
 	var classSuffix = String.fromCharCode(parseInt(97) + parseInt((index%3))); // 后缀的字母，分别是a/b/c
 	var $item = $("<div class='ui-block-"+classSuffix+"'><a href='#' id='" + id + "'></a></div>");
-		$item.data('sid', item['MENU_INFO']);
-		$item.data('title', item['DS_NAME']);
-	
-	var $block = $("<div class='mb-desk-app'><span class='sc-desk-app-icon zhbx-desk-"+item['DS_ICON']+"'></span><div class='mb-desk-app-text'>"+item['DS_NAME']+"</div></div>").appendTo($item.children());
+		$item.data('sid', item['INFO']);
+		$item.data('title', item['DSNAME']);
+
+	var $block = $("<div class='mb-desk-app'><span class='sc-desk-app-icon zhbx-desk-"+item['DSICON']+"'></span><div class='mb-desk-app-text'>"+item['DSNAME']+"</div></div>").appendTo($item.children());
 	
 	$item.on('vclick', function(event) {
 		event.preventDefault();
@@ -108,67 +117,62 @@ mb.vi.deskView.prototype._bldOneApp = function(index, item) {
 		var data = {};
 			data['sId'] = $(this).data('sid');
 			data['headerTitle'] = $(this).data('title');
-		
 		  if(id=="2yC9rhbMx4cGb3Un8Rz1ok__zhbx"){//待办事务
 		   data["secondStep"] = "card";
-		   data["extWhere"] = " and TODO_CODE_NAME in('总公司发文','分公司发文','自定义签报','工作通知书','总公司收文','分公司收文','合同审批单')";
-	   }
-	   if(id=="1cpQczPtF0qHMD7vIYLaHg__zhbx"){//公司要闻
+		//   data["extWhere"] = " and TODO_CODE_NAME in('公司发文','公司发文','签报','公司收文','公司收文','合同审批单')";
+	   }else    if(id=="1cpQczPtF0qHMD7vIYLaHg__zhbx"){//公司要闻
 		   data["secondStep"] = "readNews";
-	   }
-	   if(id=="233CBN9AAJdoHYRQwk5oJ4e__zhbx"){//通知公告
+	   }else    if(id=="233CBN9AAJdoHYRQwk5oJ4e__zhbx"){//通知公告
 		   data["secondStep"] = "readNews";
-	   }
-	   if(id=="3ltvUv5HpbSoXKJIoAOtvvq__zhbx") {//委托事务
+	   }else    if(id=="3ltvUv5HpbSoXKJIoAOtvvq__zhbx") {//委托事务
 			data["secondStep"] = "card";
-			data["extWhere"] = " and TODO_CODE in('OA_GW_TMPL_FW_GS','OA_GW_TMPL_FW_GW','OA_GW_TMPL_SW_GS','OA_GW_TMPL_SW_DW','OA_GW_TMPL_QB_GZ','OA_GW_TMPL_FW_DW','LW_CT_CONTRACT') and TODO_SEND_TIME > '@DATE_DIFF_DD30_N@'";
+			//data["extWhere"] = " and TODO_CODE in('OA_GW_TMPL_FW_GS','OA_GW_TMPL_FW_GW','OA_GW_TMPL_SW_GS','OA_GW_TMPL_SW_DW','OA_GW_TMPL_QB_GZ','OA_GW_TMPL_FW_DW','LW_CT_CONTRACT') and TODO_SEND_TIME > '@DATE_DIFF_DD30_N@'";
 
-
-	   }
-	   if(id=="08kPT9Gkp7SGQIFEHz3REI__zhbx"){//已办事务
+	   }else    if(id=="MOBILE_AGT_SET__zhbx") {//委托设置
+			data["secondStep"] = "agencySet";
+			//data["extWhere"] = " and TODO_CODE in('OA_GW_TMPL_FW_GS','OA_GW_TMPL_FW_GW','OA_GW_TMPL_SW_GS','OA_GW_TMPL_SW_DW','OA_GW_TMPL_QB_GZ','OA_GW_TMPL_FW_DW','LW_CT_CONTRACT') and TODO_SEND_TIME > '@DATE_DIFF_DD30_N@'";
+			data["id"]="agtSet";
+	   }else if(id=="08kPT9Gkp7SGQIFEHz3REI__zhbx"){//已办事务
 		   data["secondStep"] = "unfinish";
-            data["extWhere"] = "{'SERV_ID':'OA_GW_TMPL_FW_GS,OA_GW_TMPL_FW_GW,OA_GW_TMPL_SW_GS,OA_GW_TMPL_SW_DW,OA_GW_TMPL_QB_GZ,OA_GW_TMPL_FW_DW,LW_CT_CONTRACT'}";
-	   }
-	   if(id=="0rpCcZFMZd9r4EF7Cd027G__zhbx"){//通讯录
+          //  data["extWhere"] = "{'SERV_ID':'OA_GW_TMPL_FW_GS,OA_GW_TMPL_FW_GW,OA_GW_TMPL_SW_GS,OA_GW_TMPL_SW_DW,OA_GW_TMPL_QB_GZ,OA_GW_TMPL_FW_DW,LW_CT_CONTRACT'}";
+	   }else   if(id=="0rpCcZFMZd9r4EF7Cd027G__zhbx"){//通讯录
 		   $(function(){
 			   var contacts = new mb.vi.contacts(data);
 			   contacts.show();
 		   });
 		   return;
-	   }
-	    if(id=="0mFQGZOmh4Z93Gs8GC8UGe__zhbx"){//领导日程
+	   }else    if(id=="0mFQGZOmh4Z93Gs8GC8UGe__zhbx"){//领导日程
 		   $(function(){
 			   var ldrAction = new mb.vi.ldrAction(data);
 			   ldrAction.show();
 		   });
 		   return;
-	   }
-	   if (id == "2CkDrnkox9gqncIQX4qTZi__zhbx") { //查询
+	   }else    if(id  == "MOBILE_JZBG__zhbx"){//兼职
+			event.preventDefault();
+		    event.stopImmediatePropagation();
+		    $(".jiangang").slideToggle("fast");
+			return ;
+	   }else    if (id == "2CkDrnkox9gqncIQX4qTZi__zhbx") { //查询
 		   $.mobile.changePage("#search");
 		   return;
-	   }
-	   if (id == "1e7RLu33ddDGeOneBia84m__zhbx") { //密码修改
+	   }else    if (id == "1e7RLu33ddDGeOneBia84m__zhbx") { //密码修改
 		   $.mobile.changePage("#pwdEdit");
 		   return;
-	   }
-	   if(id=="3ygaSYOQp6UdWUwAbn7W1Qf__zhbx"){//党群工作
+	   }else    if(id=="3ygaSYOQp6UdWUwAbn7W1Qf__zhbx"){//党群工作
 		   data["secondStep"] = "chain";
 		   data["id"] = "listviewDq";
-	   }	   
-	   if(id=="24fsG3FcR5CpPSxjR8NDGJ__zhbx"){//待阅事务
+	   }else    if(id=="24fsG3FcR5CpPSxjR8NDGJ__zhbx"){//待阅事务
 		   data["secondStep"] = "toread";
-	   }
-	   if (id == "3eWN1gBmp6x8ZH4M6XuMBA__zhbx") { //OA短信
+	   }else    if (id == "3eWN1gBmp6x8ZH4M6XuMBA__zhbx") { //OA短信
 		   $.mobile.changePage("#message");
 		   return;
-	   }
-	   if (id == "274W9Q1Gx9B86Y0oz567xCH__zhbx") {//关于
+	   }else   if (id == "274W9Q1Gx9B86Y0oz567xCH__zhbx") {//关于
 		   $.mobile.changePage("#about");
 		   return;
 	   }
 	   
 	   var listview = new mb.vi.listView(data);
-	   	   listview.show();
+	   listview.show();
    });
    
    if (id == "2yC9rhbMx4cGb3Un8Rz1ok__zhbx") {
@@ -239,11 +243,12 @@ mb.vi.deskView.prototype._getJiangang = function() {
 			$('#'+_self.id).find('.jiangang').remove();
 			
 			var listData = result['_DATA_'];
-			// 如果不存在兼岗信息，则渲染
+			// 如果存在兼岗信息，则渲染
 			var liArr = [], 
 				tipsFlag = false;
+			liArr.push("<li class='backDesk'><p><h2>返回</h2><p></span></li>");
 			$.each(listData, function(i, obj) {
-				liArr.push("<li data-code='"+obj['USER_CODE_HEX']+"'><h2>"+obj['USER_NAME']+"</h2><p>"+obj['ODEPT_NAME']+' '+obj['TDEPT_NAME']+"</p><span class='ui-li-count'>"+obj['TODO_COUNT']+"</span></li>");
+				liArr.push("<li class='changeRole' data-code='"+obj['USER_CODE']+"'><h2>"+obj['USER_NAME']+"</h2><p>"+obj['ODEPT_NAME']+' '+obj['TDEPT_NAME']+"</p><span class='ui-li-count'>"+obj['TODO_COUNT']+"</span></li>");
 				// 如果TODO_COUNT>0,则jiangang-tips提示
 				if (parseInt(obj['TODO_COUNT'],10) > 0) {
 					tipsFlag = true;
@@ -262,8 +267,8 @@ mb.vi.deskView.prototype._getJiangang = function() {
 			var jiangangCtn = $("<div class='jiangang'></div>").appendTo($('#'+_self.id));
 			var $ul = $("<ul data-role='listview' data-inset='true'></ul>").appendTo(jiangangCtn);
 			$ul.append(liArr.join(''));
-			jiangangCtn.css("height", $.mobile.getScreenHeight() - 53).enhanceWithin(); // 组件初始化
-			$ul.on('vclick', 'li', function(event) {
+			jiangangCtn.css("height", $.mobile.getScreenHeight()).enhanceWithin(); // 组件初始化
+			$ul.on('vclick', '.changeRole', function(event) {
 				event.preventDefault();
 				event.stopImmediatePropagation();
 				_self.changeUserCode = $(this).data("code");
@@ -275,9 +280,6 @@ mb.vi.deskView.prototype._getJiangang = function() {
 				});
 				
 				FireFly.doAct('SY_ORG_LOGIN', 'changeUser', {'TO_USER_CODE':_self.changeUserCode}).then(function() {
-//					$.mobile.window.deskView._refresh();
-					// TODO 需要加密useCode
-//					window.location.href = homeUrl + "?userCode=" + _self.changeUserCode + "&homeUrl=" + homeUrl;
 					var hrefUrl = "/oa/mobile/jsp/login_sso_mb.jsp?userCode=" + _self.changeUserCode;
 					window.location.href = hrefUrl;
 				});
@@ -287,6 +289,11 @@ mb.vi.deskView.prototype._getJiangang = function() {
 				/*.finally(function() {
 					$.mobile.loading('hide');
 				});*/
+			});
+			$ul.on('vclick', '.backDesk', function(event) {
+					event.preventDefault();
+				    event.stopImmediatePropagation();
+				    $(".jiangang").slideToggle("fast");
 			});
 		}
 	});
@@ -311,15 +318,3 @@ mb.vi.deskView.prototype._refresh = function() {
 mb.vi.deskView.prototype.refresh = function() {
 	this._afterLoad();
 };
-
-
-
-
-
-
-
-
-
-
-
-

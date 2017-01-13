@@ -14,7 +14,7 @@ if (_viewer.wfCard != null) {
 }
 
 // 控制意见只能看本机构内的
-var odeptCode = System.getUser('ODEPT_CODE');
+var odeptCode = System.getUser('@ODEPT_CODE@');
 var pkCode = _viewer.getPKCode();
 $("div[id='" + pkCode + "_MIND']").find('.mind-list-item-js').hide();
 $("div[id='" + odeptCode + "_list']").show();

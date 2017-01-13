@@ -6,7 +6,6 @@ jQuery(CC_START_TIME.obj).addClass("Wdate").unbind("click").bind("click", functi
 	WdatePicker({
 		dateFmt:"yyyy-MM-dd",
 		startDate:"%yyyy-%MM-%dd",
-		minDate:"%yyyy-%MM-%dd",
 		maxDate:CC_END_TIME.getValue(),
 		onpicked:function(){
 			countDay();

@@ -401,11 +401,11 @@
 },
 {
 "SERV_ID":"DA_SHENGXIANG_RESULT",
-"S_FLAG":"2",
+"S_FLAG":"1",
 "WHERE_ORDER":"20",
 "_PK_":"3OZydWdv5b1rGv1LKumGE3",
 "WHERE_SERV_TYPE":"",
-"S_MTIME":"2016-12-24 15:45:50:409",
+"S_MTIME":"2015-08-27 14:37:56:807",
 "WHERE_NAME":"部门领导或部门档案管理员看本部门",
 "WHERE_ID":"3OZydWdv5b1rGv1LKumGE3",
 "_ROWNUM_":"1",

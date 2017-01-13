@@ -110,7 +110,7 @@ public class UserMgr {
         sql.and(COL_USER_LOGIN_NAME, loginName).and(COL_CMPY_CODE, cmpyCode).and(COL_S_FLAG, 1);
         Bean bean = ServDao.find(ServMgr.SY_ORG_USER, sql);
         if (bean == null) {
-            throw new TipException(Context.getSyMsg("SY_USER_NOT_FOUND", loginName + ":" + cmpyCode));
+            throw new TipException(Context.getSyMsg("SY_USER_NOT_FOUND", loginName ));
         }
         return new UserBean(bean);
     }

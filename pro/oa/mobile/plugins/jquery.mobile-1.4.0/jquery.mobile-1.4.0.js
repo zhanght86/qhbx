@@ -9370,7 +9370,7 @@ $.widget( "mobile.flipswitch", $.extend({
 				"keyup": "_timeout",
 				"change": "_timeout",
 				"input": "_timeout",
-				"paste": "_timeout",
+				"paste": "_timeout"
 			});
 
 			// Attach to the various you-have-become-visible notifications that the

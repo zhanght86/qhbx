@@ -57,7 +57,7 @@ background:#CDD8E4 url(blue/i-window-top-back.png) repeat-x left -2px;z-index:99
 .pageBody__default #homeTabs .ui-widget-header {background:url(red/rh-head-menu.png) left top repeat-x;}
 /* 覆盖banner的区域---------------*/
 /*.pageBody-lightBlue #banner {background:url(blue/head_bg_zhbx.gif) left top;}*/
-.pageBody__default #banner {background:#ffd58f;}
+
 /* 覆盖banner的背景---------------*/
 .pageBody__default .banner-logo {background:url(red/head_logo_zhbx.gif) left top no-repeat;}
 /* 覆盖banner右侧搜索框------------*/
@@ -182,7 +182,7 @@ background:#CDD8E4 url(blue/i-window-top-back.png) repeat-x left -2px;z-index:99
 /* 覆盖Tab条背景---------------*/
 .pageBody-darkRed #homeTabs .ui-widget-header {background:red url(darkRed/rh-head-menu.png) left top repeat-x;}
 /* 覆盖banner的区域---------------*/
-.pageBody-darkRed #banner {background:url(darkRed/head_bg_zhbx.gif) left top;}
+/*.pageBody-darkRed #banner {background:url(darkRed/head_bg_zhbx.gif) left top;}*/
 /* 覆盖banner的背景---------------*/
 .pageBody-darkRed .banner-logo {background:url(darkRed/head_logo_zhbx.gif) left top no-repeat;}
 /* 覆盖banner右侧搜索框------------*/

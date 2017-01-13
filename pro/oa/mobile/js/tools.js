@@ -2105,7 +2105,7 @@ var Agent = {
 	 * @return
 	 */
 	checkSubStatus: function(){
-		var subFlag = System.getUser("SUB_CODES");
+		var subFlag = System.getUser("@SUB_CODES@");
 		if (subFlag == "''") {
 			return false;
 		}else{
@@ -2350,22 +2350,28 @@ var UrlHelper={
  */
 var FileHelper={
 	//获取URL中的参数 
+//	download : function(url,filename,isNeedProgressBar) {
+//		this.url = url;
+//		this.filename = filename;
+//		//请求文件系统
+//    	window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
+//    	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem){
+//    		
+//    		var rootDirEntry = fileSystem.root;
+//    		rootDirEntry.getDirectory(
+//    				"scoa",
+//    				{create:true, exclusive:false},
+//    				function(dirEntry){
+//    					var dstn = dirEntry.fullPath;
+//    					getFile(dstn,url,filename,isNeedProgressBar);
+//    		},errorHandler.blank);
+//    	}, errorHandler.blank);
+//	}
+	
 	download : function(url,filename,isNeedProgressBar) {
-		this.url = url;
-		this.filename = filename;
-		//请求文件系统
-    	window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
-    	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem){
-    		
-    		var rootDirEntry = fileSystem.root;
-    		rootDirEntry.getDirectory(
-    				"scoa",
-    				{create:true, exclusive:false},
-    				function(dirEntry){
-    					var dstn = dirEntry.fullPath;
-    					getFile(dstn,url,filename,isNeedProgressBar);
-    		},errorHandler.blank);
-    	}, errorHandler.blank);
+		 var file = window.open(url,"文件查看",'height=50, width=100%, top=0, left=0');
+		 window.setTimeout(function(){file.close();},2000);
+		 
 	}
 }
 /**
@@ -2470,213 +2476,4 @@ function fileTransferErrorHandler(e){
 	  navigator.notification.alert(msg,null,"错误提示", "确定"); 
 }
 
-var RHFile = {
-		/*
-		 * 根据文件路径查看文件
-		 */
-		readFile: function(obj, url, fileName) {
-			if (this.isSupportConvert(fileName)) { // 如果支持文档转换
-				var docConversion = System.getVar('@C_DOCUMENT_CONVERSION@') || 'true';
-				if (docConversion == 'true') {
-//					RHWindow.openWindow(obj, url + '&act=preview&type=mobile');
-					
-//					$('#document_content').html('').append("<iframe align='center' frameborder='0' height='100%' width='100%' src='" + url + "&act=preview&type=mobile' id='framecontent'></iframe>");
-//					$.mobile.changePage("#document");
-					
-					window.location.href = url;
-				} else {
-//					RHWindow.openWindow(obj, url);
-					alert('该文档不支持阅读，请使用电脑！');
-				}
-			} else {
-//				RHWindow.openWindow(obj, url);
-				alert('该文档不支持阅读，请使用电脑！');
-			}
-		},
-		/*
-		 * 根据文件ID查看文件
-		 */
-		read: function(fileId, fileName) {
-			var url = '/file/' + fileId;
-			this.readFile(url, fileName);
-		},
-		/*
-		 * 是否办公文档类型
-		 */
-		isWorkDoc: function(fileName) {
-			var upperName = fileName.toUpperCase();
-			if (upperName.indexOf('.DOC') >= 0
-					|| upperName.indexOf('.DOCX') >= 0
-					|| upperName.indexOf('.XLSX') >= 0
-					|| upperName.indexOf('.XLS') >= 0
-					|| upperName.indexOf('.PPTX') >= 0
-					|| upperName.indexOf('.PPT') >= 0
-					|| upperName.indexOf('.PDF') >= 0
-					|| upperName.indexOf('.TXT') >= 0
-					) {
-				return true;
-			}
-			return false;
-		},
-		/*
-		 * 是否支持转换
-		 */
-		isSupportConvert: function(fileName) {
-			var upperName = fileName.toUpperCase();
-			if (this.isWorkDoc(fileName)) {
-				return true;
-			}
-			if (upperName.indexOf('.TXT') >= 0) {
-				return true;
-			}
-		}
-};
-
-var RHWindow = {
-		openWindow: function(obj, url, target, param) {
-			if (!url || url.length == 0) {
-				alert('打开一个窗口，地址必须有！');
-				return;
-			}
-			// 默认在新页面打开
-			if (!target || target.length == 0) {
-				target = '_blank';
-			}
-			// 默认打开一个最大化页面
-			if (!param || param.length == 0) {
-				var height = screen.availHeight - 40;
-				var width = screen.availWidth;
-				param = 'height=' + height + ',width=' 
-					+ width + ',top=0,left=0,toolbar=yes,menubar=no' 
-					+ ',scrollbars=yes,resizable=yes,location=yes,status=yes';
-			}
-			window.open(url, target, param);
-		}
-};
-
-
-var ZhbxFile = {
-		/*
-		 * 根据文档路径查看文件
-		 */
-		previewFileByUrl: function(obj, url, fileName) {
-			
-		},
-		/*
-		 * 根据文档ID查看文件
-		 */
-		previewFileByFileId: function(obj, fileId, fileName) {
-			
-		},
-		/*
-		 * 是否是office常用OA文档
-		 */
-		isOffice: function(fileName) {
-			var upperName = fileName.toUpperCase();
-			if (upperName.indexOf('.DOC') >= 0
-					|| upperName.indexOf('.DOCX') >= 0
-					|| upperName.indexOf('.XLSX') >= 0
-					|| upperName.indexOf('.XLS') >= 0
-					|| upperName.indexOf('.PPTX') >= 0
-					|| upperName.indexOf('.PPT') >= 0
-					|| upperName.indexOf('.PDF') >= 0
-					|| upperName.indexOf('.TXT') >= 0
-					) {
-				return true;
-			}
-			return false;
-		},
-		/*
-		 * android设备的文件预览
-		 */
-		previewInAndroid: function(obj, fileId, fileName) {
-			var changePageUrl = '/oa/mobile/jsp/previewFile.jsp?fileId=' + fileId;
-			var iframeUrl = 'http://' + FireFlyContextPath + '/file/' + fileId + '?act=preview';
-//			$.mobile.changePage(changePageUrl,
-//					'slideup',
-//					false,
-//					false);
-			
-//			window.location.href = changePageUrl;
-			
-			$.mobile.changePage($('#preview'), {transition: 'slideup'});
-			$.mobile.activePage.find('iframe').remove();
-			$.mobile.activePage.append("<iframe src='http://" + FireFlyContextPath + "/file/" 
-										+ fileId 
-										+ "?act=preview' " 
-										+ "frameborder='0' scrolling='auto' " 
-										+ "onload='ZhbxFile.onloadExe(this);'></iframe>");
-		},
-		/*
-		 * IOS设备的文件预览
-		 */
-		previewInIos: function(obj, url, fileName) {
-			var height = screen.availHeight - 40;
-			var width = screen.availWidth;
-			var target = '_self';
-			var param = 'height=' + height + ',width=' 
-				+ width + ',top=0,left=0,toolbar=yes,menubar=no' 
-				+ ',scrollbars=yes,resizable=yes,location=yes,status=yes';
-//			window.open(url, target, param);
-			window.open('www.baidu.com', target, param);
-		},
-		/*
-		 * 判断是什么设备
-		 */
-		isWhatDevice: function() {
-			if (Browser.versions().mobile && Browser.versions().iPhone) {
-				return 'IOS';
-			}
-			if (Browser.versions().mobile && Browser.versions().android) {
-				return 'Android';
-			}
-			return 'other';
-		},
-		onloadExe: function(obj) {
-		}
-};
-
-var AlertHelper = {
-		/**
-		 * 打开Alter
-		 */
-		openAlert: function(alertId, handler, title, content, setting) {
-			// 打开dialog的虚拟按钮
-			var openDialogBtn = $("<a id='openDialogBtn' href='#" + alertId + "' data-rel='dialog' data-transition='pop' style='display:none;'>Open Dialog</a>");
-			// dialog页面
-			var dialogDiv = $("<div id='" + alertId + "' data-role='page' data-close-btn='none'></div>");
-			// dialog页面头部
-			var dialogHeader = $("<div data-role='header'><h1>" + title + "</h1></div>");
-			// dialog页面内容部分
-			var dialogContenter = $("<div data-role='content'></div>");
-			// dialog提醒内容
-			var dialogContent = $("<p>" + content + "</p>");
-			dialogContenter.append(dialogContent);
-			if (setting.selectCallBack != null) {
-				// 确定按钮
-				var selectBtn = $("<a id='select-btn' class='ui-btn ui-shadow ui-corner-all ui-btn-a' data-inline='true'>确定</a>");
-				dialogContenter.append(selectBtn);
-				selectBtn.bind('click', function() {
-					setting.selectCallBack();
-				});
-			}
-			if (setting.cancelCallBack != null) {
-				// 取消按钮
-				var cancelBtn = $("<a id='cancel-btn' class='ui-btn ui-shadow ui-corner-all ui-btn-a' data-inline='true'>取消</a>");
-				dialogContenter.append(cancelBtn);
-				cancelBtn.bind('click', function() {
-					setting.cancelCallBack();
-				});
-			}
-			
-			// 追加到当前页面中
-			handler.find("#openDialogBtn").remove();
-			handler.find('#' + alertId).remove();
-			dialogDiv.append(dialogHeader).append(dialogContenter);
-			handler.append(openDialogBtn).append(dialogDiv);
-			
-			// 打开dialog
-			openDialogBtn.trigger('click');
-		}
-};
 

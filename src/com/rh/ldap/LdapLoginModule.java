@@ -63,13 +63,11 @@ public class LdapLoginModule extends AbstractLoginModule {
 			env.put(Context.SECURITY_PRINCIPAL, loginName + "@"+ADMgr.DOMAIN); // 用户的dn
 			env.put(Context.SECURITY_CREDENTIALS, password); // 密码
 			env.put(Context.SECURITY_AUTHENTICATION, "simple");
-			//特殊ip可以无秘密登陆
 			userBean = UserMgr.getUser(bean.getStr("USER_CODE"));
             String adminIP = com.rh.core.base.Context.getSyConf("sy_nopwd_login_ips", "");
-            boolean isTest = com.rh.core.base.Context.getSyConf("sy_istest_devlepment", false);
             String ipAddress = RequestUtils.getIpAddr(com.rh.core.base.Context.getRequest());
             boolean isNoPwdLogin = ipAddress.length()>0 && adminIP.contains(ipAddress);
-            if(isNoPwdLogin  || isTest ){
+            if(isNoPwdLogin){
             }else{
     			try {
     				ctx = new InitialLdapContext(env, null);
@@ -79,10 +77,10 @@ public class LdapLoginModule extends AbstractLoginModule {
     				throw new TipException("登陆失败：用户名或密码错误！");
     			}
     			// 登陆成功则把域用户密码同步到系统
-    			password = EncryptUtils.encrypt(password,
-    					com.rh.core.base.Context.getSyConf("SY_USER_PASSWORD_ENCRYPT", EncryptUtils.DES));
-    			userBean.set("USER_PASSWORD", password);
-    			ServDao.save(ServMgr.SY_ORG_USER, userBean);
+//    			password = EncryptUtils.encrypt(password,
+//    					com.rh.core.base.Context.getSyConf("SY_USER_PASSWORD_ENCRYPT", EncryptUtils.DES));
+//    			userBean.set("USER_PASSWORD", password);
+//    			ServDao.save(ServMgr.SY_ORG_USER, userBean);
             }
 			return userBean;
 		} else {

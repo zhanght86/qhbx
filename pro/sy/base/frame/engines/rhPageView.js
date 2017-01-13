@@ -397,7 +397,7 @@ rh.vi.pageView.prototype._bldBanner = function() {
 /*
  * 构造tabs
  */
-rh.vi.pageView.prototype._bldTabs = function() {debugger;
+rh.vi.pageView.prototype._bldTabs = function() {
 	var _self = this;
 	//初始化tabs
 	jQuery("#homeTabs").tabs({});
@@ -417,8 +417,8 @@ rh.vi.pageView.prototype._bldTabs = function() {debugger;
 //	    		   Tools.redirect(FireFly.getContextPath() + "/logout.jsp");  
 //	    	   }
 //	       }
-		//由原来的退出改为关闭浏览器
-		window.close();
+			//由原来的退出改为关闭浏览器
+			window.close();
 	       event.stopPropagation();
 	       return false;
 	});
