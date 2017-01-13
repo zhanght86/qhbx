@@ -116,6 +116,7 @@ public class DoingOutBean extends WfOut {
         // 增加用户自定义变量
         addCustomVarList();
         
+        
         this.getOutBean().set(DISPLAY_MODE, MODE_DOING);
         this.appendViewItem();
 	}

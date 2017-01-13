@@ -567,8 +567,22 @@ public class WfProcess extends AbstractWfProcess {
 	 */
 	public boolean canDelete(UserBean doUser) {
 		List<Bean> nodeInstList = WfNodeInstDao.getNextNodeInstList(this.getFirstWfAct().getId());
+		//根据自定义量判断能否删除和是否为起草点
+        List<WfAct> runningWfActList =  this.getRunningWfAct();
+        List<Bean> customVars = null;
+        if(runningWfActList.size()==1){
+            customVars = (ArrayList<Bean>)runningWfActList.get(0).getNodeDef().get(WfeConstant.CUSTOM_VARS);
+        }
+        boolean canDelete = false;
+        if(customVars!=null){
+            for(Bean b:customVars){
+                if(b.getStr("VAR_CODE").equals("CanDelete")  && b.getBoolean("VAR_CONTENT")){
+                    canDelete = true;
+                }
+            }
+        }
 		//起草节点 , 还没送出去
-		if (this.getFirstWfAct().isRunning() && null != nodeInstList) { 
+		if (this.getFirstWfAct().isRunning() && null != nodeInstList || canDelete) { 
 			return true;
 		}
 		
